@@ -1,0 +1,1970 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "swap": "Swap",
+    "advanceTrading": "Trade",
+    "earn": "Earn",
+    "p2p": "P2P",
+    "coinListing": "Coin Listing",
+    "referral": "Referral",
+    "listedCoin": "Listed Coins",
+    "applications": "Applications",
+    "transactions": "Transactions",
+    "spot": "Spot",
+    "margin": "Margin",
+    "future": "Future"
+    
+  },
+  "table": {
+    "name": "Name",
+    "price": "Price",
+    "last": "Last",
+    "marketcap":"Market Cap",
+    "action":"Action",
+    "last_price":"Last Price",
+    "change":"Change",
+    "high":"High",
+    "low":"Low",
+    "volume":"Volume",
+    "yield_Rate":"Yield Rate",
+    "staked_Amount":"Staked Amount",
+    "total_Duration":"Total Duration",
+    "duration_Left":"Duration Left",
+    "earnings":"Earnings"
+
+  },
+  "buttons": {
+    "place_buy_order":" PLACE BUY ORDER",
+    "depositWithdraw":"Deposit Withdraw",
+    "buy&sell": "Buy & Sell",
+    "inviteFriend": "Invite Friends",
+    "gotospot": "Go to my Spot Account",
+    "update": "Update",
+    "redeem": "Redeem",
+    "filter": "Filter",
+    "order": "Order",
+    "reset": "Reset Password",
+    "send&receive": "Send & Receive",
+    "continue": "Continue",
+    "Back": "Back",
+    "verify": "Verify",
+    "submit": "Submit",
+    "resend": "Resend code",
+    "resend_code": "Resend code in {{seconds}} seconds",
+    "create_an_account": "Create an account",
+    "yes_trust": "Yes trust",
+    "don't_trust": "Don't trust",
+    "create_account": "Create Account",
+    "email_didn't_arrive": "Email didn't arrive ?",
+    "sign_out": "Sign Out",
+    "send_code": "Send Code",
+    "use_another_phone_no": "Use another phone number",
+    "transfer_crypto": "Yes, transfer crypto",
+    "skip_for_now": "Skip for now",
+    "deposit": "Receive",
+    "withdraw": "Send",
+    "buy": "Buy",
+    "stake": "Stake",
+    "stake_now": "Stake Now",
+    "add_New_Address": "Add New Address",
+    "enable": "Enable",
+    "disable": "Disable",
+    "verified": "Verified",
+    "change_password": "Change",
+    "manage": "Manage",
+    "more": "More",
+    "start_application": "Start Application",
+    "add_asset": "Add Asset",
+    "get_started": "Get Started",
+    "agree_continue": "Agree & Continue",
+    "submit_your_application": "Submit Your Application",
+    "view": "View",
+    "convert_all": "Convert All",
+    "submit_id": "Submit ID",
+    "cancel": "Cancel",
+    "transfer": "Transfer",
+    "ok": "Ok",
+    "goToHome": "Go to Home",
+    "readAll": "Read All",
+    "deleteAll": "Delete All",
+    "confirm": "Confirm",
+    "trade": "Trade"
+  },
+  "getCodeFirst": "Please get a verification code first.",
+  "login": {
+    "sign_in_to": "Sign in to Coinhub",
+    "not_your_device": "Not your device? Use a private or incognito window to sign in.",
+    "enter_phone_text": "Enter the Verification code we sent to {{phoneNo}}",
+    "enter_email_text": "Enter the 5-digit code sent to {{email}}",
+    "enter_the_digit": "Enter 2FA code",
+    "this_help_us_keep": "This helps us keep your account secure by verifying that it's really you.",
+    "resend_code": "Resend code in {{seconds}} seconds",
+    "try_another_way": "Try another way",
+    "cancel_signing_in": "Cancel Signing In",
+    "trust_this_device": "Trust this device for {{days}} days?",
+    "if_you_choose_to_trust": "If you choose to trust this device you won't be asked for your 2-step verification for {{days}} days when signing in. You can always change this in settings.",
+    "not_now": "Not now",
+    "account_secure": "This helps us keep your account secure by verifying that it's really you.",
+    "title": "Log In",
+    "visiting": "Please check that you are visiting ",
+    "button": "Log In",
+    "forgot_password": "Forgot Password",
+    "not_on": "Not on"
+  },
+  "signup": {
+    "do_more_with_crypto": "Build your wealth  <br /> with COINHUB ",
+    "set_up_your_account": "Set up your account and verify your photo ID to <br /> get started on trading crypto.",
+    "create_an_account": "Create an account",
+    "email": "Email",
+    "password": "Password",
+    "referral_Code_(Optional)":"Referral Code (Optional)",
+    "phon_number":"Phone Number",
+    "forgot_password": "Forgot password",
+    "required_field": "Required field have an asterisk",
+    "term": "I certify that I am 18 years of age older, I agree to the <0> User Agreement </0> and I have read the <1> Privacy Policy.</1>",
+    "concent": "Please accept terms and conditions"
+  },
+
+  "emailVerify": {
+    "verify_email": "Verify your email",
+    "verification_email": "We sent a verification email to <0>{{email}}</0>. Click the link inside to get started!"
+  },
+  "twoStepVerification": {
+    "two_step": "Set up two-step Verification",
+    "mobile_number_associated": "Please enter the mobile number associated with your device. We'll <br /> text a verification code to your mobile phone when you sign in.",
+    "security_term": "Security is critical at Coinhub. To help keep your account safe, <br /> we'll text you a verification code when you sign in on a <br /> new device.",
+    "enter_verification_code": "Enter Verification code",
+    "text_message_with_digit": "A text message with {{digit}}-digit code has been sent to {{phoneNo}}. This helps us keep your account secure by verifying that it's really you."
+  },
+  "policies": {
+    "privacyPolicy": "Privacy policy"
+  },
+  "overivew": {
+    "tips1": "Bitcoin is the world's first widely-adopted cryptocurrency. With Bitcoin, people can securely and directly send each other digital money on the internet.",
+    "tips2": "Unlike services like Venmo and PayPal, which rely on the traditional financial system for permission to transfer money and on existing debit/credit accounts, Bitcoin is decentralized: any two people, anywhere in the world, can send Bitcoin to each other without the involvement of a bank, government, or other institution.",
+    "Market_cap": "The total market value of a cryptocurrency's circulating supply. It is analogous to the free-float capitalization in the stock market. Market Cap = Current Price x Circulating Supply.",
+    "Volume_(24h)": "A measure of how much of a cryptocurrency was traded in the last 24 hours.",
+    "Circulating_supply": "The amount of coins that are circulating in the market and are in public hands. It is analogous to the flowing shares in the stock market.",
+    "Popularity": "Popularity is based on the relative market cap of tradable assets on Coinbase. What this means:Popular assets have a large market cap, which may imply enthusiasm for the asset. Less popular assets may be relatively undiscovered."
+  },
+  "home": {
+    "my_balance": "My Balance",
+    "price": "Prices",
+    "top_mover": "Top Movers",
+    "sell_all": "See All",
+    "top_losers":"Top Losers",
+    "top_gainers":"Top Gainers",
+    "price_chart":"Price Chart",
+    "trading_view":"Trading View",
+    "depth_view":"Depth View",
+    "order_book":"Order Book",
+    "trade_history":"Trade History"
+  },
+  "portfolio": {
+    "spot_balance": "Spot Balance",
+    "funding_balance": "Funding Balance",
+    "total_balance": "Total Balance",
+    "assets": "Assets",
+    "rewards": "Rewards",
+    "balance": "Balance",
+    "coin": "Coin",
+    "name": "Name",
+    "wallet_overview": "Wallet Overview",
+    "p2p_Balance": "P2P Balance",
+    "in_Order": "In Order",
+    "action": "Action",
+    "fiat&Spot": "Fiat and Spot",
+    "p2p": "P2P",
+    "asset": "Asset",
+    "available_balance": "Available Balance",
+    "symbol": "Symbol",
+    "size": "Size",
+    "entryPrice": "Entry Price",
+    "markPrice": "Mark Price",
+    "unrealizedPNL": "Unrealized PNL (ROE%)",
+    "walletBalance": "Wallet Balance",
+    "marginBalance": "Margin Balance",
+    "availForTransfer": "Available For Transfer",
+    "estimated_balance":" Estimated Balance :",
+    "walletview": " Wallet View",
+    "coinview":"Coin View",
+    "amount":"Amount",
+    "order_Form":"Order Form",
+    "convert_to":"Convert to ",
+    "convert_History":"Convert History ",
+    "value":"USDT Value"
+  },
+  "coinDetail": {
+    "watchlist": "Watchlist",
+    "market_Stats": "Market stats",
+    "overview": "Overview",
+    "resources": "RESOURCES",
+    "whitepaper": "Whitepaper",
+    "official_Website": "Official website",
+    "primary_alance": "Primary balance",
+    "empty_data_contant": "No Primary balance to show ",
+    "spot":"Spot"
+  },
+  "earn": {
+    "my_earning": "My Earnings",
+    "history": "History",
+    "cosmos": "Cosmos",
+    "enter_staking_amount": "Enter Staking Amount",
+    "min_limit": "Min limit:",
+    "max_limit": "Max limit:",
+    "1m": "1M",
+    "3m": "3M",
+    "6m": "6M",
+    "1y": "1Y",
+    "you_will_earn": "You will earn:",
+    "cosmos_bal": "COSMOS Balance",
+    "1cosmos": "1 Cosmos"
+  },
+  "coinlisting": {
+    "welcome_hub": "Welcome to Coin Listing Hub",
+    "asset_Coinhub": "You're a few steps away from integrating your asset with Coinhub",
+    "first_asset": "Add your first asset",
+    "listed_Coinhub": "Apply to get listed on Coinhub for trading",
+    "intro": "Intro",
+    "listing-agreement": "Listing agreement",
+    "asset": "Asset",
+    "compliance": "Legal",
+    "prepare_submit": "Prepare to submit",
+    "submitting_review": "Submitting your asset for review",
+    "submitting_Adres1": "Thank your for choosing to list your asset on Coinhub.We're excited to hear from you. We encourage you to review the help'  articles on this page to prepare for the listing process.",
+    "submitting_Adres2": "This process will walk you through the application, from signing our listing agreement to providing general information on your asset along with the details for our compliance, legal, and security teams to review.",
+    "listing_Text": "By signing this agreement, you agree that the information you provide is truthful. you agree to abide by the terms of the agreement (including but not limited to the non-disclosure provision, the restriction on market manipulation, and the obligation not to use any of the information you receive for or allow a third party to engage in market manipulation). Please read this document over carefully",
+    "download_listing": "Download Listing Agreement",
+    "existing_asset": "Add an asset",
+    "network": "Network",
+    "network_token": "What network is your token build on?",
+    "asset_name": "Asset name",
+    "digital_asset": "What is the name of your digital asset?",
+    "asset_ticker": "Asset ticker",
+    "asset_tickerText": " What ticker is associated with your asset? Must be between 2-5 letters.",
+    "asset_icon": "Coin Icon(recommended)",
+    "upload_text": "Upload an icon, File should be a PNG,JPEG,JPG no larger than 500KB.",
+    "uploadIcon": "Upload an icon...",
+    "company_name": "Company name",
+    "provide_company": "Provide the full name of your company.",
+    "address_incorporation": "Address of incorporation",
+    "provide_incorporation": "Provide the company's address of incorporation",
+    "executives": "Executives",
+    "executives_text": "Add each executive of the company. For each, include full name,date of birth, and links to any relevant online or social media profiles(e.g. Linkedin, Twitter, GitHub, personal website).",
+    "plus_executive": "email : skill.trainings@antiersolutions.com",
+    "beneficial_owners": "Non-executive beneficial owners",
+    "beneficial_text": "Excluding company executives, add every board member and each investor who owns 10% or more of the company. For each, include full name and links to any relevant online or social media profiles(e.g. LinkedIn, Twitter, GitHub, personal website).",
+    "plus_beneficial_owners": "+ Add beneficial owners",
+    "asset_trading": "Asset trading",
+    "asset_trading_text": "Does your company or any related entity participate in the asset markets, either directly or indirectly on your behalf(e.g. proprietary trading, market making)?",
+    "yes": "Yes",
+    "no": "No",
+    "government_connections": "Government connections",
+    "government_connections_text": "Has your company or project received any sponsorship, assistance or financial contributions from any government entity or political figure?",
+    "ticker": "Ticker",
+    "delet_asset": "Delete Asset",
+    "list_desc": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+  },
+  "Phone number is required": "Phone number is required",
+  "Please enter valid phone number": "Please enter valid phone number",
+  "Password is requried": "Password is required",
+  "Password must be a minimum of 8 characters including number, upper, lower and one special character": "Password must be a minimum of 8 characters including number, upper, lower and one special character",
+  "Captcha is required": "Captcha is required",
+  "Email is required": "Email is required",
+  "Please enter valid email": "Please enter valid email",
+  "email": {
+    "taken": "Email is already taken",
+    "undisposable": "Please use a valid email",
+    "invalid": "Please enter a valid email"
+  },
+  "coin_listing.invalid_address": "Invalid Contract Address",
+  "jwt": {
+    "decode_and_verify": {
+      "segments": "Token not valid",
+      "expired": "Your email link is expired.Request a new link."
+    }
+  },
+  "totp": {
+    "error": "2FA code is invalid or expired"
+  },
+  "session": {
+    "code_not_match": "Invalid OTP",
+    "code_expired_at_be_expire": "Invalid OTP code"
+  },
+  "send&Receive": {
+    "note1": "Minimum receiving amount {{value}}",
+    "note2": "Receiving Fee {{value}}",
+    "note3": "Send only {{currency}} to this address. Sending any other coin or token to this address may result in loss of your assets.",
+    "note4": "Minimum amount to send {{value}}",
+    "note5": "<0>KYC</0>must be verified",
+    "note6": "Do not send directly to a crowdfund or ICO address, as your account will not be Credited with tokens from such sales.",
+    "note7": "Receiving amount should be total of minimum receivable plus the receiving fee.",
+    "note8": "For example: If you receive 100 {{currency}} and the receiving fee is 2%, then the receiving amount should be at least 102 {{currency}}.",
+    "note9": "No platform fees will be incurred for internal user's transactions."
+  },
+  "addressBook": {
+    "head": "Select Address From Address Book",
+    "desc": "Easily access your saved addresses for withdrawals. Label and save each address."
+  },
+  "google_enable": "Enable Google Authentication",
+  "google_enable2": "Enable Google Authenticator",
+  "google_disable": "Disable Google Authentication",
+  "6_dizits": "Enter two step verification code provided by your authentication app",
+  "install_authenticator": "Install an authenticator app if you don't have one.",
+  "scan_authenticator": " Scan QR code with the authenticator. ",
+  "authenticator_secret_code": "Authenticator Secret Code",
+  "change": "Change Password",
+  "settingsVeri": {
+    "email_verification": {
+      "heading": "Email Verification",
+      "title": "Change",
+      "description": "Your email address has been verified successfully, remember and protect this e-mail address, it is the single certificate for your account"
+    },
+    "phone_verification": {
+      "heading": "Phone Authentication",
+      "title": "Change",
+      "description": "Your phone number has been verified successfully, remember and protect this phone number, it is the single certificate for your account"
+    },
+    "google_verification": {
+      "heading": "Google Authentication",
+      "title": "Change",
+      "description": "Used for withdrawals and security modifications."
+    },
+    "device_activity": "Device and Activity",
+    "device_management": {
+      "heading": "Device Management",
+      "title": "Manage",
+      "description": "Manage devices allowed to access your account"
+    },
+    "account_activity": {
+      "heading": "Account Activity",
+      "title": "More",
+      "description": "Last Login"
+    },
+    "verify_account": {
+      "heading": "Verify Account",
+      "title": "Change",
+      "description": "Verify Identify documents for advanced amount to send and receiving options"
+    },
+    "change_password": {
+      "heading": "Password",
+      "title": "Change",
+      "description": "This password is required for login, please remember it"
+    }
+  },
+  "successMessage": {
+    "2fa_enabled": "2FA Enabled Successfully"
+  },
+  "validations": {
+    "fromDate": "Start date must be less than End date"
+  },
+  "referral": {
+    "welcome_referral": "Welcome to the Crypto Referral program.",
+    "invite_friends": "Invite friends to trade on Coinhub and earn commission on their first trading and receiving transactions.",
+    "rules": " Rules: Share your Lite Referral ID / link with a friend who does not have account with Coinhub.",
+    "rule_sub_contant": " Share your Referral ID/link with a friend who doesn’t have an account with Coinhub exchange. The rewards can be earned by performing any of the below tasks:",
+    "rule": "Rules",
+    "kyc_completed": "Note: The user must complete the identity verification to be eligible to apply for redemption of rewards. The reward amount is withdrawable when the total accumulated rewards are equivalent or more than <0>{{minRedemptionAmount}}</0>",
+    "verify": "Invite friends to sign up and verify the account. Referee will be rewarded <0>{{reward}}</0>  and Referrer will be rewarded <0>{{reward2}}</0>   on successful identity verification.",
+    "deposit": "When the referee’s first receiving amount is more than<0>{{deposit}}</0> both referrer and referee, Referee  will receive rewards up to <0>{{depositCurr}}</0> and Referrer will be rewarded up to <0>{{depositReferrer}}</0>",
+    "trade": "When the referee's first trade is more than  <0>{{trade}}</0> both referrer and referee, Referee will receive rewards up to  <0>{{tradeCurr}}</0> and Referrer will be rewarded  <0>{{tradeReferrer}}</0>",
+    "referral_id": "Referral ID",
+    "referral_link": "Referral Link",
+    "overview": "Overview",
+    "referral": "Referral",
+    "rewards": "Rewards"
+  },
+  "device_management_page": {
+    "heading": "Device Management",
+    "desc": "These devices are currently allowed to access your account"
+  },
+  "account_activity_page": {
+    "heading": "Account Activity",
+    "desc": "These devices are currently allowed to access your account"
+  },
+  "rewards": {
+    "reward_content": "To be eligible for rewards, each new user can earn by performing any of the below tasks",
+    "identity": " Sign up and complete the identity verification, the user will be rewarded",
+    "deposit": " On the first receiving amount of above  <0>{{deposit}}</0> the user will get a chance to earn rewards up to  <0>{{depositCurr}}</0>",
+    "depositlast": ", ",
+    "trade": " On the first trade of above <0>{{trade}}</0>  the user will get a chance to earn rewards up to <0>{{tradeCurr}}</0>"
+  },
+  "overview": {
+    "total_earning": "Total Earnings",
+    "pending_claims": "Pending Claims",
+    "no_of_friends": "Number of Friends Signed Up Successfully",
+    "redeem_modal_heading": "Redemption Request Placed Successfully",
+    "redeem_modal_par": "The reward will be soon credited into your spot account."
+  },
+  "rewardRefHis": {
+    "start_date": "Start Date ",
+    "end_date": " End Date",
+    "reward_type": "Reward Type",
+    "status": "Status",
+    "reward_history": "Redeem History",
+    "referral_history": " History",
+    "id": "ID",
+    "date_time": "Date & Time",
+    "amount": "Amount",
+    "currency": "Currency",
+    "email": "Email",
+    "history": "History"
+  },
+  "download": {
+    "start_date": "Start Date",
+    "end_date": "End Date"
+  },
+  "statusState": {
+    "collected": "Collected",
+    "collecting": "Collected",
+    "fee_processing": "Collected",
+    "fee_processed": "Collected",
+    "fee_collecting": "Collected",
+    "fee_collected": "Collected",
+    "failed": "Collected",
+    "errored": "Collected",
+    "deposited": "Deposited",
+    "prepared": "Pending",
+    "submitted": "Submitted",
+    "canceled": "Cancelled",
+    "accepted": "Accepted",
+    "skipped": "Processing",
+    "rejected": "Rejected",
+    "processing": "Processing",
+    "succeed": "Succeed",
+    "confirming": "Confirming",
+    "pending": "Pending",
+    "wait": "New",
+    "done": "Done",
+    "cancel": "Cancelled",
+    "reject": "Rejected",
+    "completed": "Completed"
+  },
+  "password": {
+    "weak": "Please choose a stronger password."
+  },
+  "landing": {
+    "title": "INTEGRATED MARKETS",
+    "coin": "Coin",
+    "last_price": "Last Price",
+    "24h_change": "24h Change",
+    "24h_high": "24h High",
+    "24h_low": "24h Low",
+    "24h_vol": "24h Volume",
+    "crypto_headline": "Buy and Sell Cryptocurrency",
+    "crypto_headline2": "Secure storage and transfer of cryptocurrency",
+    "get_startedtop": "Get started with cryptocurrencies ",
+    "get_startedCenter": " today New to Bitcoin?",
+    "new_to_bitcointop": " Evo Europe Exchange is the easiest place to get started.",
+    "get_started": "Evo Europe Exchange knows the importance of security and builds an infinitely safe haven for all its users to keep their digital currency out of harm’s way.",
+    "new_to_bitcoin": "New to Bitcoin ? Evo Europe Exchange is the easiest place to get started.",
+    "markets": "Markets",
+    "markets_desc": "Trade in major crypto markets like BTC, ETH, USDT, LTC, DASH, BCH, Evo Europe, XRP and amplify your profits. Choose from multiple trading pairs to diversify your portfolio.",
+    "wallet": "Secure wallet",
+    "wallet_desc": "Security is paramount to us. The multi-cryptocurrency, encrypted wallet integrated into the exchange allows secure storage and transfer of funds.",
+    "engine": "Advanced matching engine",
+    "engine_desc": " Evo Europe Exchange offers you a robust matching engine that is raring to go. It is capable of matching buy and sell orders with minimum latency.",
+    "two_factor": "Two-factor authentication",
+    "two_factor_desc": "It has never been easier to protect your assets. Our advanced security solution like two-factor authentication allows authenticated user access and transactions.",
+    "graph": "Trading view graph",
+    "graph_desc": "Never lose sight of what you are doing. Get a real-time, graphical view of your trades. Leverage the flexibility to filter data according to hours and minutes.",
+    "referral": "Sign-up and referral bonus",
+    "referral_desc": "Has a good deed brought you any money? This will! Refer Evo Europe Exchange to your friends and family and get referral rewards without investing a dime.",
+    "about": " Evo Europe Exchange is a platform for everyone who wants to simply buy and sell Bitcoins. Instant buy/sell of Bitcoins at fair price is guaranteed.",
+    "secure": "Secure, Fast and Reliable",
+    "finance": "Evo Europe TRADING PLATFORM",
+    "platform": "",
+    "volume": "24h Trading Volume is",
+    "trade": " Register",
+    "available": "Available on the",
+    "store": "App Store",
+    "get": " Get it on",
+    "play": "Google Play",
+    "maintext": "BUILD YOUR WEALTH WITH COINHUB",
+    "maintextSub": "We provide an easy and secure platform for buying and trading cryptocurrencies.",
+    "getStart": "Get Started",
+    "advantage": {
+      "easeConvenience": {
+        "easeConvenienceBold": "Trade with ease & convenience",
+        "easeConvenienceDetail": "Trade cryptocurrencies seamlessly on your PC or mobile device."
+      },
+      "signupProcess": {
+        "signupProcessBold": "Simple signup process",
+        "signupProcessDetail": "With just a few clicks, you can create your account and start using our services."
+      },
+
+      "cryptoPortfolia": {
+        "cryptoPortfoliaBold": "Create your crypto portfolia",
+        "cryptoPortfoliaDetail": "Manage all your digital currencies from one place."
+      },
+      "secure": {
+        "secureBold": "Secure Asset Storage",
+        "secureDetail": "Our encryption and storage system keep your assets safe and secure."
+      }
+    },
+    "aboutUs": {
+      "title": "Our history",
+      "detail": "In this digital age, we have the power to revolutionize the way we handle our assets. With blockchain technology, we can easily transfer, spend, and store our wealth. The use of virtual assets is rapidly growing, and a team of COINHUB is striving to provide the same opportunities to Mongolians."
+    },
+    "services": {
+      "mainTitle": "Explore Our Services",
+      "spotTrading": {
+        "title": "Spot Trading",
+        "detail": "Coinhub offers a comprehensive set of powerful tools for trading cryptocurrencies."
+      },
+      "cryptoDerivatives": {
+        "title": "Crypto Derivatives",
+        "detail": "Coinhub offers the most reliable and efficient platform for trading crypto futures."
+      },
+      "quickTransfer": {
+        "title": "Quick Transfer",
+        "detail": "Enjoy our quick, easy, and secure transactions."
+      },
+      "coinhubEarn": {
+        "title": "Coinhub Earn",
+        "detail": "Generate a steady income by staking your current asset."
+      },
+      "coinhubWallet": {
+        "title": "Coinhub Wallet",
+        "detail": "With Coinhub Wallet, you can transfer cryptocurrencies across different networks."
+      },
+      "chbToken": {
+        "title": "CHB token",
+        "detail": "Anyone who possesses CHB tokens is eligible to receive a weekly reward."
+      }
+    },
+    "coinhubApp": {
+      "title": "Trade with ease & convenience",
+      "detail": "With our user-friendly mobile app, you can easily trade various cryptocurrencies such as Bitcoin, Ethereum, BNB, and more. Our platform provides a seamless experience, allowing you to buy and sell cryptocurrencies with just a few taps on your mobile device. Enjoy real-time market data, secure transactions, and a range of trading options. Start trading today and take advantage of the dynamic world of cryptocurrencies."
+    },
+    "coinhubEcosystem": {
+      "mainTitle": "COINHUB ecosystem",
+      "tradingPlatform": {
+        "title": "Trading platform",
+        "detail": "Coinhub offers a wide range of features and tools for advanced traders as well as beginners."
+      },
+      "Chbtoken": {
+        "title": "CHB token",
+        "detail": "Anyone who possesses CHB tokens is eligible to receive a weekly reward."
+      },
+      "launchpad": {
+        "title": "Launchpad",
+        "detail": "Launchpad platform designed to assist new cryptocurrency startups in raising funds to launch their products or services."
+      },
+      "businessPartners": {
+        "title": "Business partners",
+        "detail": "Coinhub partners with multiple international liquidity providers to enhance its trading capabilities."
+      },
+      "supportCenter": {
+        "title": "Support center",
+        "detail": "Our support center is dedicated to solving all of your problems as quickly and efficiently as possible."
+      },
+      "community": {
+        "title": "Community",
+        "detail": "COINHUB community is the best place to connect, learn, and grow together."
+      }
+    }
+  },
+
+  "forgot_password": {
+    "title": "Reset Password",
+    "submit": "Submit",
+    "email": "Email",
+    "withdrawals": "*Any withdraw action is not available after 24 hours of password change."
+  },
+  "open_order": {
+    "date": "Date/Time",
+    "pair": "Pair",
+    "type": "Type",
+    "side": "Side",
+    "price": "Price",
+    "stop": "Stop Limit",
+    "amount": "Amount",
+    "filled": "Filled",
+    "total": "Total",
+    "remaining_amt": "Remaining Amount"
+  },
+  "all_order": {
+    "date": "Date/Time",
+    "pair": "Pair",
+    "type": "Type",
+    "side": "Side",
+    "avg": "Average",
+    "price": "Price",
+    "filled": "Filled",
+    "fees": "Fee",
+    "remaining_amt": "Remaining Amount",
+    "total": "Total",
+    "status": "Status",
+    "view": "View all"
+  },
+  "reward": {
+    "earnings": {
+      "not_enrolled": "Not enrolled in Mining Pool Program"
+    },
+    "mining_pool": {
+      "failed_to_create": "Failed to enroll",
+      "already_enrolled": "Already Enrolled",
+      "pending_admin_approval": "Pending Admin approval "
+    }
+  },
+  "logout": {
+    "title": "Logout"
+  },
+  "about_footer": {
+    "title": "About {{title}}",
+    "safety": "Safety Stability",
+    "multi_tier": "Multi-layer security; modular architecture",
+    "performance": "High Performance",
+    "processing": "Capable of processing multiple transactions in a second",
+    "liquidity": "High Liquidity",
+    "resources": "Multiple resources and partners",
+    "devices": "All Devices Covered",
+    "web": "Web, Android, iOS, Mobile Web, Windows, Mac",
+    "language": "Multilingual Support",
+    "support": "Both left to right and right to left languages",
+    "multi_coin": "Multiple-Coin Support",
+    "advantages": "Our Advantages",
+    "team": "Solid Team",
+    "team_record": "Evo Europe Exchange is backed by an expert team with rich experience and in-depth knowledge of cryptocurrency and finance industries.",
+    "products": "Proven Products",
+    "products_record": "Evo Europe Exchange has been rigorously tested with a large user base on parameters like security, speed, performance, and user experience.",
+    "superior": "Superior Technology",
+    "superior_record": "Our robust matching engine is powered to process multiple transactions in a second, making Evo Europe Exchange one of the fastest exchange platforms.",
+    "partners": "Abundant resources and partners",
+    "partners_record": "We have solid relationships with industry leaders, simply look at the list of investors and advisors who are willing to stand behind our platform.",
+    "security": "Multi-layer security",
+    "multilayer_security": "Evo Europe Exchange has security built right in with advanced technologies that work together in harmony to deliver world-class security."
+  },
+  "terms_footer": {
+    "title": "TERMS & CONDITIONS",
+    "last_revised": "This agreement is between you and the service operator, Evo Europe. By using any services made available through the Evo Europe website (https://app-stage.Evo Europe.org), API (https://app-stage.Evo Europe.org),  Evo Europe affiliates, you agree that you have read, understood and accepted all of the terms and conditions contained in this Terms of Use agreement, as well as our Privacy Policy and Consent Form which have incorporated the GDPR regulation. As this is a legally binding contract, please carefully read through this agreement and related notices before using any of our Services. By registering, accessing or using Evo Europe, you have agreed to the terms and conditions as laid out in this User Agreement. Should you disagree to this User Agreement, please proceed to initiate the account lock function (for existing users) and stop the usage of Evo Europex and any of its services.",
+    "title_second": "For more information on Evo Europex, you can refer to the company and license information found on the website. If you have questions regarding this agreement, please feel free to contact Evo Europex for clarification via our Customer Support team.",
+    "last_reviseddd": " PREAMBLE",
+    "agreement_title": "Evo Europe AG is a company duly incorporated under the laws of Switzerland with company registration number CHE-195-195.664 and official address at Dammstrasse 16, CH-6300, Zug, Switzerland (“Evo Europe”, “We”, “Us”, “Our” or “XM”). Evo Europe is a Swiss regulated financial intermediary, providing services in the area of Digital Assets, and is subject to the rules set out by the Financial Services Standards Association (“VQF”). ",
+    "agreement_title2": "The following terms and conditions (the “Terms”) incorporated herein, set forth the rights and obligations of the business relationship between Evo Europe and the Client (“Client”, “You” or “Your”) (the “Business Relationship”), subject to any special agreements between the Client and Evo Europe.",
+    "restrictions_title": "DEFINITIONS",
+    "title_one": "By registering to use a Evo Europex Account, you have affirmed that you are at least 18 years old and are an individual, legal person or other organization with full legal capacity to enter into this User Agreement between you and Evo Europex. If you are not, you and your guardian shall undertake all consequences resulting from your actions and Evo Europex shall have the right to cancel or freeze your account in addition to filing claims against you and your guardian for compensation.",
+    "PROHIBITION": "PROHIBITION OF USE",
+    "title_2": "By accessing and using Evo Europex and any of its services, you acknowledge and declare that you are not on any trade or economic sanctions lists, such as the United Nations Security Council Sanctions List and its equivalent. Evo Europex maintains the right to select its markets and jurisdictions to operate and may restrict or deny its services to certain countries. The content of this Agreement shall not be excluded from the laws of the country under which the user belongs. Evo Europex maintains its stance that prohibited users are not to use or access Evo Europex and any of its services.",
+    "title_3": "DESCRIPTION OF SERVICES",
+    "title_4": "Evo Europex provides an online digital asset trading platform (crypto to crypto) for products commonly known as cryptographic tokens, digital tokens or cryptographic currency. Evo Europex does not provide fiat trading capabilities on its platform and as such is not subjected to the stringent regulations that come with it. Evo Europex functions as a trading platform provider and is not a buyer or seller in trades made between traders. Evo Europex is also not a market maker. Traders must register and open an account with Evo Europex and deposit digital assets prior to commencement of trading. Traders may request the withdrawal of their digital assets, subject to the limitations as stated in the Terms and Conditions.",
+    "title_5": "Evo Europex strives to maintain the accuracy of information posted on its website however it cannot guarantee the accuracy, suitability, reliability, completeness, performance or fitness for purpose of the content through the website, and will not accept liability for any loss or damage that may arise directly or indirectly from the content. Information on Evo Europex website can be subjected to change without notice and is provided for the primary purpose of facilitating users to arrive at independent decisions. Evo Europex does not provide investment or advisory advice and will have no liability for the use or interpretation of information as stated in its website or other communication mediums. All users of Evo Europex must understand that there are risks involved in trading. Evo Europex encourages all users to exercise prudence and trade responsibly within their own means.",
+    "title_6": "While Evo Europex emphasises platform security to ensure the continuity and security of its services (announcements will be made in event of downtime/maintenance), it will be non-accountable to Act of God, malicious targeted hacking, terrorist attacks and other unforeseen circumstances. Evo Europex reserves the right to cancel, rollback or block transactions of all type on its platform in event of abnormal transactions. Evo Europex will not ask for any password from its users nor ask users to transfer funds that are not listed on its trading platform. Users are encouraged to exercise prudence in dealing with discounts or promotions that could lead to them getting scammed. While the list is non-exhaustive, you agree that Evo Europex will not be held responsible for any losses arising from the situations stated above.",
+    "title_7": "By using Evo Europex and any of its services, you declare that all information to Evo Europex in connection with these Terms are true, accurate and complete.",
+    "title_8": "Evo Europex ACCOUNT REGISTRATION & REQUIREMENTS",
+    "title_9": "REGISTRATION",
+    "title_10": "All users must register (https://app-stage.Evo Europe.org/user-registration) for a Evo Europex Account before using the site. To register for an account, you must provide your real name, email address and password, as well as accept the Terms of Use, Privacy Policy and Consent Form. Depending on certain conditions and in our sole discretion, we may refuse to open an account for you.",
+    "title_11": "USER IDENTITY VERIFICATION",
+    "title_12": "With registration of an account on Evo Europex, you agree to share personal information requested for the purposes of identity verification. This information is used specifically for the detection of money laundering, terrorist financing, fraud and other financial crimes on the Evo Europex platform. In addition to providing this information, to facilitate compliance with global industry standards for data retention, you agree to permit us to keep a record of such information for the lifetime of your account plus 5 years beyond account closing. You also authorise us to make inquiries, either directly or through third parties, that are deemed necessary to verify your identity or to protect you and/or us against financial crimes such as fraud.",
+    "title_13": "The Identity Verification information we request may include, but is not limited to, your: Name, Email Address, Contact Information, Telephone Number, Username, Government Issued ID. In providing this required information, you confirm that it is accurate and authentic. Post-registration, you must guarantee that the information is truthful, complete and updated in a timely manner with any changes. If there is any reasonable doubt that any information provided by you is wrong, untruthful, outdated or incomplete, Evo Europex shall have the right to send you a notice to demand corrections, remove relevant information directly and, as the case may be, terminate all or part of Evo Europex Service to you. You shall be solely and fully responsible for any loss or expenses incurred during the use of Evo Europex Service if you cannot be reached through the contact information provided. You hereby acknowledge and agree that you have the obligation to keep all information provided up to date if there are any changes.",
+    "title_14": "ACCOUNT USAGE REQUIREMENTS",
+    "title_15": "Evo Europex accounts can only be used by the person whose name they are registered under. Evo Europex reserves the right to suspend, freeze or cancel accounts that are used by persons other than the persons whose names they are registered under. Accordingly, Evo Europex will not take legal responsibility for these accounts.",
+    "title_16": "ACCOUNT SECURITY",
+    "title_17": "Evo Europex prioritizes maintaining the safety of those user funds entrusted to us and has implemented industry standard protections for our platform. With that said, there are account-level risks that are created by individual user actions. We request that you understand the need to independently take safety precautions to protect your own account and personal information.",
+    "title_18": "You shall be solely responsible for the safekeeping of your Evo Europex account and password on your own, and you shall be responsible for all activities under your log-in email, Evo Europex account and password (including but not limited to information disclosure, information posting, consent to or submission of various rules and agreements by clicking on the website, online renewal of agreement, etc.).",
+    "title_19": "You hereby agree that:",
+    "title_20": "(a). you will notify Evo Europex immediately if you are aware of any unauthorized use of your Evo Europex account and password by any person or any other violations to the security rules;",
+    "title_21": "(b). you will strictly observe the security, authentication, dealing, charging, withdrawal mechanism or procedures of the website/service; and",
+    "title_22": "(c). you will log out from the website by taking proper steps at the end of every visit.",
+    "title_23": "Evo Europex will not be responsible for any loss or consequences caused by your failure to comply with the above Account Security provision.",
+    "title_24": "DISPUTE RESOLUTION",
+    "title_25": "Evo Europex reserves the right to resolve issues and disputes at its sole discretion. Some issues include infringement of others’ rights, violation of laws and regulations, abnormal trades and others not explicitly mentioned in the Terms. Users agree to bear the costs arising from the process of dispute resolution.",
+    "title_26": "GUIDELINES FOR USAGE OF SERVICES ON Evo Europex",
+    "title_27": "You hereby agree to observe the following covenants during your use of services on Evo Europex:",
+    "listing_1": "All the activities that you carry out during the use of Evo Europex Service will be in compliance with the requirements of applicable laws, regulations, as well as the various guidelines of Evo Europex,",
+    "listing_2": "will not be in violation of public interests, public ethics or other’s legitimate interests,",
+    "listing_3": "will not constitute evasion of payable taxes or fees and will not violate this agreement or relevant rules. If you violate the foregoing promises and thereby cause any legal consequence, you shall independently undertake all of the legal liabilities in your own name and indemnify Evo Europex from all actions, claims, or costs arising from such violation. You will not use any data or information displayed on the site for commercial purposes without the prior written consent of Evo Europex. You will use the site in accordance with the Terms of Use and Privacy Policy, without taking acts of unfair competition nor attempting to intervene with the normal operation of Evo Europex. Examples of such malicious acts include, but are not limited to",
+    "listing_4": "using a device, software or subroutine to interfere with the site",
+    "listing_5": "overloading network equipments with unreasonable data loading requests",
+    "listing_6": "executing malicious sales or purchases on the market By accessing the Evo Europex Service, you agree that Evo Europex shall have the right to unilaterally determine whether you have violated any of the above covenants and take actions to apply relevant rules without receiving your consent or giving prior notice to you. Examples of such actions include, but are not limited to",
+    "listing_7": "block and close order requests",
+    "listing_8": "freezing your account",
+    "listing_9": "reporting the incident to authorities\n",
+    "listing_10": "publishing the alleged violations and actions that have been taken",
+    "listing_11": "deleting any information you published that is in violation",
+    "title_28": "If your alleged violation causes any losses to a third party, you shall solely undertake all the legal liabilities in your own name and hold Evo Europex harmless from any loss, fine or extra expenses. If, due to any alleged violation Evo Europex incurs any losses, is claimed by any third party for compensation or suffers any punishment imposed by any administrative authorities, you shall indemnify Evo Europex against any losses and expense caused thereby, including reasonable attorney’s fee.",
+    "title_29": "SERVICE FEES",
+    "title_30": "Evo Europex reserves the rights to levy service fees on users who use its services. It is in the discretion of Evo Europex to adjust the servce fees charged to users using its services.",
+    "title_31": "LIABILITY",
+    "title_32": "PROVISION OF SERVICE",
+    "title_33": "Evo Europex will provide Evo Europex Service at an “as is” and “commercially available” condition, and does not offer any form of warranty with regards to the Service’s reliability, stability, accuracy and completeness of the technology involved. Evo Europex serves merely as a venue of transactions where coin-related information can be acquired and coin-related transactions can be conducted. Evo Europex cannot control the quality, security or legality of the coin involved in any transaction, truthfulness of the transaction information, or capacity of the parties to any transaction to perform their obligations under the rules. You must carefully consider the associated investment risks, legal status and validity of the transaction information and investment decisions prior to your use of the Evo Europex Services provided.",
+    "title_34": "LIMITATION OF LIABILITY",
+    "title_35": "You acknowledge and agree, Evo Europex shall not be liable for any of your losses caused by any of the following events, including but not limited to:",
+    "listing1_1": "Losses of profits, goodwill, usage or data or any other intangible losses",
+    "listing2_1": "Use or failure to use Evo Europex Service",
+    "listing3_1": "Unauthorized use of your account or unauthorized alteration of your data by third parties",
+    "listing4_1": "Your misunderstanding of Evo Europex Service",
+    "listing5_1": "Any other losses related to Evo Europex Service which are not directly attributable to Evo Europex",
+    "title_36": "In no event shall Evo Europex be liable for any failure or delay of service resulting from regular network maintenance or external factors such as power failure, natural disaster, service provider-side problems or governmental acts.",
+    "title_37": "INDEMNIFICATION",
+    "title_38": "You agree to indemnify and hold harmless Evo Europex, its affiliates, contractors, licensors, and their respective directors, officers, employees and agents from and against any claims and damages (including attorneys’ fees, fines or penalties imposed by any regulatory authority) arising out of your breach or our enforcement of this Agreement. This shall also apply to your violation of any applicable law, regulation, or rights of any third party during your use of the Evo Europex Service.",
+    "title_39": "ANNOUNCEMENTS",
+    "title_40": "Please be aware that all official announcements, news, promotions, competitions and airdrops will be listed on our website where we urge all users to refer to regularly. Evo Europex will not be held liable or responsible in any manner of compensation should users incur personal losses arising from ignorance or negligence of the announcements.",
+    "title_41": "TERMINATION OF AGREEMENT",
+    "title_42": "You agree that we have the right to immediately suspend your account (and any accounts beneficially owned by related entities or affiliates), freeze or lock the funds in all such accounts, and suspend your access to Evo Europex if we suspect any such accounts to be in violation of the Terms of Service, Privacy Policy, AML/CTF acts or any applicable laws & regulations. Evo Europex shall have the right to keep and use the transaction data or other information related to such accounts. The above account controls may also be applied in the following cases:",
+    "title_43": "The account is subject to a governmental proceeding, criminal investigation or other pending litigation",
+    "title_44": "We detect unusual activity in the account",
+    "title_45": "We detect unauthorized access to the account",
+    "title_46": "We are required to do so by a court order or command by a regulatory/government authority",
+    "title_47": "In case of any of the following events, Evo Europex shall have the right to directly terminate this agreement by cancelling your account, and shall have the right to permanently freeze (cancel) the authorizations of your account on Evo Europex and withdraw the corresponding Evo Europex account thereof",
+    "title_48": "after Evo Europex terminates services to you,",
+    "title_49": "you allegedly register or register in any other person's name as Evo Europex user again, directly or indirectly;",
+    "title_50": "the main content of user’s information that you have provided is untruthful, inaccurate, outdated or incomplete;",
+    "title_51": "when this agreement (including the rules) is amended, you expressly state and notify Evo Europex of your unwillingness to accept the amended service agreement;",
+    "title_52": "any other circumstances where Evo Europex deems it should terminate the services.",
+    "title_53": "Should the account be terminated, the account & transactional information required for meeting data retention standards will be securely stored for five years. In addition, if a transaction is unfinished during the account termination process, Evo Europex shall have the right to notify your counterparty of the situation at that time.",
+    "title_55": "REMAINING FUNDS AFTER ACCOUNT TERMINATION (NORMAL)",
+    "title_56": "Once the account is closed/withdrawn, all remaining balance (which includes charges and liabilities owed to Evo Europex) on the account will be payable at once to Evo Europex. Upon payment of all outstanding charges to Evo Europex (if any), the user will have 5 working days to withdraw all funds from the account.",
+    "title_57": "REMAINING FUNDS AFTER ACCOUNT TERMINATION (FRAUD/AML/VIOLATION OF TERMS)",
+    "title_58": "Evo Europex maintains full custody of the funds and user data/information which may be turned over to the authorities in event of account suspension/closure arising from fraud investigations, AML investigations or violation of Evo Europex's Terms (eg. trading on Evo Europex from a sanctioned country).",
+    "title_59": "COMPLIANCE WITH LOCAL LAWS",
+    "title_60": "It is the responsibility of the user to abide by local laws in relation to the legal usage of Evo Europex in their local jurisdiction. Users must also factor, to the extent of their local law all aspects of taxation, the withholding, collection, reporting and remittance to their appropriate tax authorities. All users of Evo Europex and any of its services acknowledge and declare that the source of their funds come from a legitimate manner and are not derived from illegal activities. Evo Europex maintains a stance of cooperation with law enforcement authorities globally and will not hesitate to seize, freeze, terminate the account and funds of users which are flagged out or investigated by legal mandate.",
+    "title_61": "PRIVACY POLICY",
+    "title_62": "Evo Europex may announce and amend its privacy policy on the platform of Evo Europex from time to time and the privacy policy shall be an integral part of this Usage Agreement. The latest version of the Privacy Policy which has included the GDPR can always be found here on this page (https://app-stage.Evo Europe.org/privacy_policies).",
+    "title_63": "INDEMNITY AND DISCLAIMER",
+    "title_64": "You agree to indemnify Evo Europex and its entirety of affiliates and hold them harmless from and against all third party claims except from Evo Europex’s breach of these Terms. As mentioned in description of services, Evo Europex strives its best to maintain the data integrity on its site but does not guarantee the information and services provided in its platform. Evo Europex will not be liable for errors arising from the use of its services.",
+    "title_65": "COMPLAINTS",
+    "title_66": "If you have any complaints, feedback or questions, kindly contact https://app-stage.Evo Europe.org/contact and we will in our best efforts try to resolve it for you."
+  },
+  "privacy_footer": {
+    "title": "Privacy Policy",
+    "title1": "This Privacy Policy explains how Evo Europex Holdings Limited (“Evo Europex”) collects, uses, shares, and protects user information obtained through the Evo Europe.org website. The terms “we,” “us,” and “our” refer to Evo Europex Holdings Limited and its affiliates. When we ask for certain personal information from users it is because we are required by law to collect this information or it is relevant for specified purposes. Any non-required information you provide to us is done so voluntarily. You decided whether to provide us with these non-required information; you may not be able to access or utilize all of our Services if you choose not to.",
+    "title2": "By using the Site, you consent to the data practices described in this Privacy Policy. On occasion, Evo Europex may revise this Privacy Policy to reflect changes in law or our personal data collection and use practices. If material changes are made to this Privacy Policy, the changes will be announced by posting on the site. We will ask for your consent before using your information for any purpose that is not covered in this Privacy Policy.",
+    "title3": "The latest privacy policy has incorporated elements from the General Data Protection Regulation (GDPR) as we act in accordance to its personal information processing rules within the European Economic Area (EEA).",
+    "title4": "INFORMATION Evo Europe COLLECTS",
+    "title5": "We want you to understand the types of information we collect when you register for and use Evo Europex's services",
+    "title6": "1. Information you provide to us at registration",
+    "title7": "When you create a Evo Europex Account, you provide us with personal information that includes your contact information (Email Address, name, and a password). You can also choose to add a phone number for SMS or Google Authenticator account to be used for 2FA verification for improved security.",
+    "title8": "2. Information we collect when authenticating user identity",
+    "title9": "To comply with global industry regulatory standards including Anti-Money Laundering (AML), Know-Your-Customer (KYC), and Counter Terrorist Financing (CTF), Evo Europex requires user accounts to undergo user identity authentication for both Personal & Enterprise-level accounts. This entails collecting formal identification.",
+    "title10": "3. Information we collect as you use our services",
+    "title11": "(a). Service Usage Information",
+    "information_title": "Through your use of the Evo Europex platform, we also monitor and collect tracking information related to usage such as access date & time, device identification, operating system, browser type and IP address. This information may be directly obtained by Evo Europex or through third party services. This service usage data helps us our systems to ensure that our interface is accessible for users across all platforms and can aid during criminal investigations.",
+    "information": "(b). Transaction Information ",
+    "information_title2": "For all personal and enterprise user accounts, we collect transaction information including deposit snapshots, account balances, trade history, withdrawals, order activity and distribution history. This transaction data is monitored for suspicious trading activity for user fraud protection, and legal case resolution.",
+    "information2": "WHY DOES Evo Europex COLLECT THIS INFORMATION.",
+    "info_collects_title": "1. To provide and maintain our services",
+    "new_one": "We use the information collected to deliver our services and verify user identity. We use the IP address and unique identifiers stored in your device’s cookies to help us authenticate your identity and provide our service. Given our legal obligations and system requirements, we cannot provide you with services without data like identification, contact information and transaction-related information.",
+    "info_collects_your_title": "2. To protect our users",
+    "info_collects_your": "We use the information collected to protect our platform, users’ accounts and archives. We use IP addresses and cookie data to protect against automated abuse such as spam, phishing and Distributed Denial of Service (DDoS) attacks..",
+    "info_collects_your_one": "We analyse trading activity with the goal of detecting suspicious behavior early to prevent potential fraud and loss of funds to bad actors..",
+    "protect_collects_title": "3. To comply with legal and regulatory requirements",
+    "protect_collects": "Respect for the privacy and security of data you store with Evo Europex informs our approach to complying with regulations, governmental requests and user-generated inquiries. We will not disclose or provide any personal information to third party sources without review from our legal case team and/or prior consent from the user.",
+    "cookies_collects_title": "4. To measure site performance",
+    "cookies_collects": "We actively measure and analyse data to understand how our services are used. This review activity is conducted by our operations team to continually improve our platform’s performance and to resolve issues with the user experience. We continuously monitor our systems’ activity information and communications with users to look for and quickly fix problems.",
+    "use_cookies_title": "5. To communicate with you",
+    "use_cookies": "We use personal information collected, like an email address to interact with users directly when providing customer support on a ticket or to keep you informed on log ins, transations, and security. Without processing your personal information for confirming each communication, we will not be able to respond to your submitted requests, questions and inquiries. All direct communications are kept confidential and reviewed internally for accuracy.",
+    "third_party_title": "6. To enforce our Terms of Use and other agreements",
+    "third_party": "It is very important for us and our customers that we continually review, investigate and prevent any potentially prohibited or illegal activities that violate our Terms of Service. For the benefit of our entire user base, we carefully enforce our agreements with third parties and actively investigate violations of our posted Terms of Use. Evo Europex reserves the right to terminate the provision of service to any user found engaging in activities that violate our Terms of Use.",
+    "third_party_link_title": "HOW DOES Evo Europex PROTECT USER DATA",
+    "third_party_link": "Evo Europex has implemented a number of security measures to ensure that your information is not lost, abused, or altered. Our data security measures include, but are not limited to: PCI Scanning, Secured Sockets Layered encryption technology, pseudonymisation, internal data access restrictions, and strict physical access controls to buildings & files. Please note that it is impossible to guarantee 100% secure transmission of data over the Internet nor method of electronic storage. As such, we request that you understand the responsibility to independently take safety precautions to protect your own personal information.",
+    "google_title": "If you suspect that your personal information has been compromised, especially account and/or password information, please lock your account and contact Evo Europex customer service immediately.",
+    "google": "CONTACT US",
+    "california_title": "We are committed to respecting the freedoms and rights of all our Evo Europex users who have placed their trust in our service. If you should have any questions or concerns regarding this Privacy Policy, or if you would like to file a Data Protection request, please refer to our FAQ and contact us on our Support Page."
+  },
+  "contact_footer": {
+    "title": "Contact Us",
+    "contact": "Contact Form",
+    "fill_form": "Fill up the form. Your e-mail will not be published. Required fields are marked by ",
+    "name": "Name*",
+    "country_code": "Country code - Phone number*",
+    "website": "Website*",
+    "message": "Message*",
+    "submit": "Submit"
+  },
+  "orders": {
+    "title": "Order History"
+  },
+  "open_orders": {
+    "title": "Open Orders",
+    "date": "Date/Time",
+    "pair": "Pair",
+    "type": "Type",
+    "order": "Order Type",
+    "state": "State",
+    "price": "Price",
+    "vol": "Volume",
+    "avg": "Avg. Price",
+    "fulfilled": "Fulfilled",
+    "remaining_amt": "Remaining Amount"
+  },
+  "trade_history": {
+    "title": "Trade History",
+    "date": "Date",
+    "pair": "Pair",
+    "side": "Side",
+    "price": "Price",
+    "amount": "Amount",
+    "total": "Total",
+    "fee": "Fee",
+    "from": "From Date",
+    "todate": "To Date",
+    "request": "Request Status:",
+    "valid": "Valid Till:",
+    "transaction": "Transaction Id:",
+    "reward": "Reward Points",
+    "currency": "Currency:",
+    "description": "Detailed Description",
+    "trade": "No trade",
+    "trades": "TRADES",
+    "your": "Your Trades",
+    "view": "View",
+    "rewards": "Total Rewards",
+    "rewarded": "Rewarded at",
+    "previous": "Previous Rewards History",
+    "last": "Last Updated At",
+    "reward_": "Rewards",
+    "tillnow": " Today's Reward Till Now"
+  },
+  "pl_statement": {
+    "title": "Profit & Loss Statement",
+    "date": "Date",
+    "pair": "Pair",
+    "order_type": "Order Type",
+    "order_price": "Order Price",
+    "order_amount": "Order Amount",
+    "prev_avg_price": "Prev Avg Price",
+    "prev_net_pos": "Prev Net Position",
+    "avg_price": "Current Avg Price",
+    "net_pos": "Current Net Position",
+    "wallet_bal": "${currency} Balance (${bal})",
+    "from": "From Date",
+    "todate": "To Date",
+    "profit": "Profit/Loss"
+  },
+  "mining_pool": {
+    "rewards": "Rewards:",
+    "send": "SEND REQUEST",
+    "address": "USDT Deposit Address",
+    "title": "MINING POOL PROGRAM",
+    "enroll": "ENROLL",
+    "valid": "Valid Till: ",
+    "rebate": "Referral Rebate:",
+    "hold": "Hold Token Volume:",
+    "buy": "Buy Volume:",
+    "fee": "SignUp fee:",
+    "min_buy_volume": "Min Buy Volume",
+    "max_buy_volume": "Max Buy Volume"
+  },
+  "pool_details": {
+    "title": "MINING POOLS INFORMATION ",
+    "status": "Request Status:",
+    "valid": "Valid Till:",
+    "rebate": "Referral Rebate: ",
+    "token": "Hold Token Volume:",
+    "buy": "Buy Volume:",
+    "fee": "SignUp fee:",
+    "max": "Max Rewards: ",
+    "min": "Min Rewards:",
+    "pool": "Pool Name:",
+    "description": "Detailed Description",
+    "view": "View",
+    "detail": "Detail Description ",
+    "signup": "SignUp Fee",
+    "name": "Pool Name",
+    "pool_id": "Pool ID",
+    "account": "Account",
+    "mining_status": "Mining Status",
+    "community_sponser_id": "Community Sponser ID",
+    "valid_till": "Valid Till Date",
+    "current_progress": "Current Progress",
+    "estimate_release": "Estimate Release",
+    "task1": "Task 1:Trade Buy Volume (19:00-23:00)",
+    "task2": "Task 2: RST Balance (7:00-11:00)",
+    "mining_pool_package": "Mining Pool Package",
+    "total_mining_release": "Total Mining Release",
+    "total_community_release": "Total Community Release",
+    "mining_transaction_record": "Mining Transaction Record",
+    "community_reward_history": "Community Reward History",
+    "date": "Date",
+    "community_members": "Community Members",
+    "community_total_usdt": "Community Total USDT",
+    "community_reward_tier": "Community Reward Tier",
+    "usdt_release": "USDT Release",
+    "release_reference_no": "Release Ref No.",
+    "total_avail_for_withdraw": "Available Amount for Withdraw",
+    "reward_transfer": "Reward Transfer",
+    "amount": "Amount",
+    "withdraw": "Withdraw",
+    "state": "Admin Approval Status"
+  },
+  "register": {
+    "title": "Register",
+    "email": "Email",
+    "password": "Create Password",
+    "confirm_password": "Confirm Password",
+    "mandatory": "Referral Id(mandatory)",
+    "exchange_name": "I agree to Evo Europe",
+    "termsuse": "Terms and Conditions",
+    "already_register": "Already registered?",
+    "referal": "Referal Required",
+    "terms": "Please accept terms & conditions",
+    "referral_id": "Don't have referral id?",
+    "optional": "Referral Id (optional)"
+  },
+  "phone_tab": {
+    "country": "Country Code",
+    "phone_no": "Phone Number",
+    "save_no": "Send OTP",
+    "country_error": "You must select one option",
+    "title": "Verify Phone",
+    "phone_step": "Phone",
+    "title_profile": "Profile",
+    "update_no": "Update"
+  },
+  "phone_otp": {
+    "title": "Phone OTP",
+    "resend": "Resend OTP",
+    "verify": "Confirm",
+    "code": "Verification Code Is Required"
+  },
+  "email_otp": {
+    "title": "Email OTP",
+    "resend": "Resend OTP"
+  },
+  "kyc_tab": {
+    "kyc_verification": "Proceed To KYC Verification",
+    "document": "Document Type*",
+    "document_no": "*Document Number",
+    "selfie": "Upload Selfie*",
+    "document_date": "Document Expiry Date",
+    "upload": "Upload Document",
+    "upload_front": "Upload Document*",
+    "upload_front_desc": "Upload holding front ID",
+    "upload_back": "Upload Document (Back ID)",
+    "upload_back_desc": "Photo of Back ID ",
+    "upload_cardid": "*Upload Document(See Note**)",
+    "upload_cardid_desc": "Upload holding card ID",
+    "button": "Submit",
+    "title": "Know Your Customer",
+    "title_phone": "Phone",
+    "title_profile": "Profile",
+    "kyc": "KYC",
+    "photo": "** Photo of yourself holding ID card and a paper written 'Evo Europex Exchange' and today date 'DD/MM/YY'",
+    "attach": "** We will attach sample photo for you",
+    "file_size": "** File should be in jpeg, jpg, png format and shouldn't exceed 2 MB",
+    "file_direction": "** Before uploading your ID card, check that it is in the right direction",
+    "allowed_extensions": "** Only these extensions are allowed to upload: jpeg, jpg, png",
+    "message_try_again": "KYC is rejected. Make sure you have uploaded right details",
+    "text": "* Mandatory fields",
+    "kyc_number": "* Enter your First Kudi KYC ID *",
+    "kyc_id": "Kyc Id",
+    "register_kyc": "Don’t Have a KYC ID yet? You can easily register for one by clicking here ",
+    "forgot_kyc": "Forgot your First Kudi KYC ID? Simply go Here ",
+    "click_forgot": "and Click on Forgot User ID.",
+    "info_kyc": "To find out more information about Registering for KYC, Limits and Documents Needed Please Visits Here",
+    "register_kyc_link": "https://firstkudi.com/kyc/register",
+    "kyc_customer_link": "https://firstkudi.com/kyc/customer",
+    "info_link": "https://firstkudi.com/know-your-customer",
+    "document_type": "** Passport is acceptable.",
+    "all_document_type": "** Aadhar card, Driving license, Voter ID or Passport are acceptable."
+  },
+  "profile_tab": {
+    "title": "Profile",
+    "title_phone": "Phone",
+    "title_profile": "Profile",
+    "first_name": "First Name*",
+    "last_name": "Last Name*",
+    "middle_name": "Middle Name",
+    "dob": "Date of Birth*",
+    "address": "Address",
+    "city": "City",
+    "country": "Country*",
+    "code": "Postal Code",
+    "button": "Submit",
+    "country_error": "This field is required"
+  },
+  "change_password": {
+    "title": "Change Password",
+    "old_password": "Enter your old password",
+    "password": "Enter your password",
+    "confirm_password": "Enter your confirm password",
+    "button": "Submit"
+  },
+  "reset_password": {
+    "title": "Reset Password",
+    "characters": "Password should have atleast one upper case letter, one lower case letter, one special character and minimum 8 characters",
+    "new_password": "New Password",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "button": "Change Password",
+    "account": " Don't have an Account?",
+    "signup": "Sign Up Now",
+    "validationPassMess": "Password should have atleast one upper case letter, one lower case letter, one special character and minimum 8 characters",
+    "heading": "Reset Your Password",
+    "head_requirement": "Be sure to include the following requirements:",
+    "description": "*Any withdraw action is not available after 24 hours of password change."
+  },
+  "setting": {
+    "title_tier_2": "KYC Standard",
+    "title_tier_3": "KYC Comprehensive",
+    "title_tier_4": "KYC EDD",
+    "title": "KYC Free : E-mail & Phone verification",
+    "description-activated": "Your email address & phone has been verified successfully, remember and protect this e-mail address, it is the single certificate for your account",
+    "activated": "Verify",
+    "title_google": "Google Authentication",
+    "description": "Used for withdrawals and security modifications.",
+    "enable": "Enable",
+    "account_description": "Verify Identity documents for advanced withdraw and deposit options",
+    "title_account": "Verify Account",
+    "title_sms": "SMS Authentication",
+    "description_sms": "Used for withdrawals and security modifications.",
+    "enable_sms": "Enabled",
+    "title_password": "Password",
+    "description_password": "This password is required for login, please remember it.",
+    "go": "Change Password",
+    "panel": "API Tokens",
+    "description_panel": "Create and manage your API tokens.",
+    "enable_panel": "Enable",
+    "disable": "Disable",
+    "verified": "Verified",
+    "account": "Account Status",
+    "last": "Last login time",
+    "invite": "Link to invite friend",
+    "progress": "In Progress...",
+    "uid": "UID",
+    "email": "Email Address",
+    "account_info": "Account Information ",
+    "pool": "MINING POOL PROGRAM",
+    "refferal_program1": "Evo Europex Exchange Referral Program",
+    "refferal_program2": "It pays to have friends",
+    "trading_fee_enable": "Pay fees using Evo Europe",
+    "description_trading_fee": "Enabling this feature will result in an automatic deduction of trading fees from your Evo Europe holdings applying a 35% trading fees discount on every trade you make.",
+    "trading_level": "Trading Level"
+  },
+  "balance": {
+    "title": "Balances",
+    "estimated": "Estimated Value 0.18168671 BTC 24h Withdrawal Limit：2BTC In Use：0.00461913 BTC",
+    "coin": "Coin ",
+    "name": "Name",
+    "total_bal": "Total balance",
+    "avail_bal": "Available balance ",
+    "inorder": "In Order ",
+    "value": "BTC Value",
+    "deposit_withdraw": "Deposit/Withdraw",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "trade": "Trade",
+    "actions": "Actions"
+  },
+  "document_list": {
+    "title": "Add New Document",
+    "upload": "Uploaded File",
+    "doc": "Doc Type",
+    "number": "Doc Number",
+    "date": "Doc Expire Date",
+    "data": "No Date Found",
+    "list": "Documents list"
+  },
+  "index": {
+    "security": " Security Recommendations: confirm URL; enable 2FA; never disclose password or make any transactions to anyone claiming to be Evo Europex Exchange support.",
+    "visiting": "Make sure you are visiting",
+    "netcraft": "to prevent any phishing attacks , We recommend that you install the Netcraft Anti-Phishing Extension (offered by www.netcraft.com) .",
+    "browser": " Never install any browser plug-ins that claim to be associated with Evo Europex Exchange.(Except Netcraft Anti-Phishing Extension).",
+    "phone_calls": " Never make any phone calls to anyone that claims to be a Evo Europex Exchange Support Representative.",
+    "password": "Never tell your password or 2FA codes/keys to anyone, including Evo Europex Exchange Support.",
+    "funds": "Never send funds to anyone claiming to be a member of Evo Europex Exchange Support"
+  },
+  "deposit": {
+    "title": "Deposit",
+    "total_bal": "Total Balance",
+    "in_order": "In order",
+    "aval_bal": "Available balance",
+    "important": "Important",
+    "least": "Minimum deposit",
+    "fee_precentage": "Deposit Fee",
+    "to_address": "to your address.",
+    "send": "Send only",
+    "fiat_sending": " to this bank detail. Sending any other coin or token to this address may result in loss of your assets.",
+    "sending": "to this deposit address. Sending any other coin or token to this address may result in loss of your assets.",
+    "address": "Deposit Address",
+    "qr_code": "Show QR Code",
+    "copy_address": "Copy Address",
+    "only_dt": "Memo",
+    "dt": "Copy Memo",
+    "note": "Please note",
+    "coins": "Coins will be deposited immediately after network confirmations.",
+    "coins_first": "Coins will be deposited immediately after",
+    "xrp_warning_first": "Please enter both Memo/Tag and Address data, which are required to deposit",
+    "xrp_warning_last": "to your Evo Europex account successfully.",
+    "coins_last": "network confirmations.",
+    "progress": "After making a deposit, you can track its progress on the ",
+    "trade": "Go to Trade",
+    "history": "Deposit History",
+    "history_address": "Address",
+    "view": "View all",
+    "history_page": "history page.",
+    "bank_title": "Deposit using bank transfer",
+    "bank_description": "Please use the following credentials to initiate your bank transfer. Your deposit will be reflected in a few minutes to 24 hours. If it does not reflect in 24 hours, it will reverse to the originating bank automatically.",
+    "bank_name": "Bank Name",
+    "account_number": "Account Number",
+    "account_name": "User's Name",
+    "phone_number": "Phone Number",
+    "reference_code": "Your reference code",
+    "date": "Date",
+    "amount": "Amount",
+    "currency": "Currency",
+    "status": "Status",
+    "info": "View All",
+    "deposit": " You have no deposit history.",
+    "network": "Network",
+    "aasm_state": {
+      "collected": "collected",
+      "collecting": "collected",
+      "canceled": "cancelled",
+      "submitted": "submitted",
+      "accepted": "collected",
+      "skipped": "collected",
+      "fee_processing": "collected",
+      "fee_processed": "collected",
+      "fee_collecting": "collected",
+      "fee_collected": "collected",
+      "rejected": "rejected",
+      "prepared": "pending",
+      "processing": "collected",
+      "succeed": "succeed",
+      "failed": "collected",
+      "errored": "collected",
+      "confirming": "confirming"
+    }
+  },
+  "withdraw": {
+    "title": "Withdraws",
+    "total_bal": "Total Balance",
+    "in_order": "In order",
+    "aval_bal": "Available balance",
+    "important": "Important",
+    "least": "Minimum withdrawal",
+    "most": "At most",
+    "sales": "Do not withdraw directly to a crowdfund or ICO address,as your account will not be credited with tokens from such sales.",
+    "address": "Withdrawal Address ",
+    "manage": "Manage Address",
+    "amount": "Amount",
+    "limit": "24h Withdrawal Limit",
+    "available": "Available",
+    "fee": "Transaction Fee",
+    "will_get": "Receive amount",
+    "note": "Note",
+    "coins": "Coins will be withdraw immediately after network confirmations",
+    "coins_first": "Coins will be withdraw immediately after",
+    "coins_last": "network confirmations.",
+    "history_page": "history page.",
+    "progress": "After making a withdraw, you can track its progress on the",
+    "trade": "Go to Trade",
+    "history": "Withdrawal History",
+    "view": "View all",
+    "no_history": "You have no withdrawal history.",
+    "history_address": "Address",
+    "date": "Date",
+    "currency": "Currency",
+    "state": "Status",
+    "info": "View All",
+    "withdraw": "To withdraw you have to enable 2FA",
+    "enable": "ENABLE 2FA",
+    "beneficiary": {
+      "resend_pin": "Resend Pin",
+      "add_beneficiary": "Add Beneficiary",
+      "manage_beneficiary": "Manage Beneficiary"
+    },
+    "daily_limit": "Daily Withdraw Limit",
+    "limit_exceeded": "24H withdraw amount can not be more than the limit set for this currency",
+    "24_daliy_limit": "Your daily withdraw limit exceeded",
+    "aasm_state": {
+      "deposited": "deposited",
+      "prepared": "pending",
+      "submitted": "submitted",
+      "canceled": "cancelled",
+      "accepted": "accepted",
+      "skipped": "processing",
+      "rejected": "rejected",
+      "processing": "processing",
+      "succeed": "succeed",
+      "failed": "failed",
+      "errored": "failed",
+      "confirming": "confirming"
+    },
+    "network": "Network"
+  },
+  "adjustment": {
+    "aasm_state": {
+      "accepted": "Accepted",
+      "rejected": "Rejected",
+      "pending": "Pending"
+    }
+  },
+  "history_account": {
+    "title": "History",
+    "deposit": "Deposits",
+    "withdraw": "Withdraws",
+    "status": "Status",
+    "coin": "Coin",
+    "amount": "Amount",
+    "date": "Date",
+    "info": "Information",
+    "fiat_deposit": "Fiat deposit",
+    "no_history": "You have no deposit history.",
+    "address": "Address",
+    "txid": "Txid",
+    "currency": "Currency",
+    "network": "Network",
+    "adjustment": "Adjustments"
+  },
+  "header": {
+    "title": "Funds",
+    "order": "Orders",
+    "contact": "Contact",
+    "balance": "Balance",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "tran_history": "Transaction History",
+    "open_order": "Open Order",
+    "open_history": "Order History",
+    "trade_history": "Trade History",
+    "pl_statement": "P/L Statement",
+    "reward_history": "Reward History",
+    "pools": "Mining Pools",
+    "rewards": "Rewards",
+    "referral": "Referral",
+    "payment_crypto": "Buy crypto"
+  },
+  "footer": {
+    "home": "Home",
+    "language": "Language",
+    "about": "About",
+    "term": "Terms & Conditions ",
+    "privacy": "Privacy Policy",
+    "contact": "Contact us",
+    "rights": "All Rights Reserved",
+    "currency_details": "CurrencyDetails",
+
+    "Products": {
+      "Products": "Products",
+      "Trade": "Trade",
+      "CHBtoken": "CHB token",
+      "Earn": "Earn"
+    },
+    "aboutUs": {
+      "aboutUs": "About Us",
+      "aboutCOINUB": "About COINUB",
+      "marketNews": "Market news",
+      "socialresponsibility": "Social responsibility"
+    },
+    "Contacts": {
+      "Contacts": "Contacts",
+      "supportCenter": " Support center",
+      "sendRequest": "Send a request"
+    },
+    "address": "Address: Ulaanbaatar, Khan-Uul district, Khoroo-15, Stadium Orgil, Chingis Avenue, 6b, 2nd floor, N1b",
+    "termsConditions": "Terms & Conditions",
+    "fee": "Fee",
+    "privacyPolicy": "Privacy policy",
+    "policiesVASP": "Policies and Procudres of VASP"
+  },
+  "exchange": {
+    "trade": "Trade",
+    "charts": "Charts",
+    "limit": "Limit",
+    "market": "Market",
+    "history": "Orders History",
+    "open": "Open Orders"
+  },
+  "email_verify": {
+    "title": "VERIFY YOUR EMAIL ADDRESS",
+    "registration": "To complete registration, check for an email in your inbox  with further instruction. If you cannot find the email, please  check your spam folder",
+    "resend": "Resend Email",
+    "email": "Email"
+  },
+  "invite": {
+    "no1": "No.1",
+    "no2": "No.2",
+    "no3": "No.3",
+    "level1": "1st level: 5%",
+    "level2": "2nd level: 3%",
+    "level3": "3rd level: 1%",
+    "levelnd": "2nd to 4th level: 15% ",
+    "levelth": "5th to 8th level: 7%",
+    "levelel": "9th to 12th level: 3% ",
+    "id": "My Referral ID:",
+    "link": "Referral Link:",
+    "friends": "Referral Friends ",
+    "value": "Reward Value ",
+    "imc": "IMC",
+    "send": "Send",
+    "details": "Details",
+    "levelupto": "Upto 12 level referral reward on trading of referred",
+    "terms": "Referral will be in terms of Evo Europex Exchange",
+    "amount": "Total referral reward distributed amount is subject to a maximum of 8 crore Token.",
+    "currency": "Currency",
+    "actions": "Action",
+    "total rewards": "Total Rewards"
+  },
+  "success": {
+    "documents": {
+      "accepted": "Documents upload was successful"
+    },
+    "withdraw": {
+      "action": "Withdrawal request was received"
+    },
+    "otp": {
+      "enabled": "2FA was enabled"
+    },
+    "password": {
+      "changed": "Password was changed",
+      "forgot": "Password reset link has been sent to your email",
+      "successfuly": "Password was changed"
+    },
+    "order": {
+      "canceled": "Order was canceled",
+      "all": "All orders were canceled",
+      "created": "Order was created"
+    },
+    "message": {
+      "sent": "Message was sent"
+    },
+    "email": {
+      "confirmed": "Your email address has been successfully confirmed"
+    }
+  },
+  "resource": {
+    "labels": {
+      "private": "Can't update label",
+      "missing_key": "Key is missing",
+      "empty_key": "Key is missing or empty",
+      "missing_value": "Value is missing",
+      "empty_value": "Value is missing or empty"
+    },
+    "otp.missing_code": "Code is missing",
+    "otp.empty_code": "Code is empty",
+    "otp.invalid": "Invalid OTP",
+    "profile": {
+      "not_exist": "User has no profile",
+      "doesnt_exist_or_not_editable": "Once KYC is initiated , Profile can't be updated ",
+      "exist": "Profile already exists",
+      "missing_first_name": "First name is missing",
+      "missing_last_name": "Last name is missing",
+      "missing_dob": "Date of birth is missing",
+      "missing_address": "Address is missing",
+      "missing_postcode": "Postcode is missing",
+      "missing_city": "City is missing",
+      "missing_country": "Country is missing"
+    },
+    "phone": {
+      "verification": {
+        "send": "Verification code was sent to your phone"
+      },
+      "otp": {
+        "expired": "OTP expired"
+      },
+      "confirmed": "Your phone was confirmed",
+      "twillio": "Something wrong with Twilio Client",
+      "invalid_num": "Invalid phone number",
+      "exists": "Phone number already exists",
+      "number_exist": "Phone number already exists",
+      "verification_invalid": "OTP Code is Invalid",
+      "missing_phone_number": "Phone number is missing",
+      "empty_phone_number": "Phone number is missing or empty",
+      "missing_verification_code": "Verification code is missing",
+      "empty_verification_code": "Verification code is missing or empty",
+      "login_in_multiple_deivce": "You have reached your limit of 3 active sessions. Please sign out of unwanted sessions to connect successfully on this device"
+    },
+    "api_key": {
+      "2fa_disabled": "Only accounts with enabled 2FA alowed",
+      "missing_otp": "Theaccount has enabled 2FA but OTP code is missing",
+      "invalid_otp": "2FA code is invalid",
+      "missing_algorithm": "Algorithm is missing",
+      "empty_algorithm": "Algorithm is missing or empty",
+      "empty_kid": "KID is missing or empty",
+      "empty_scope": "Scope is missing or empty",
+      "missing_totp": "TOTP code is missing",
+      "empty_totp": "TOTP code is missing or empty",
+      "missing_kid": "KID is missing",
+      "empty_state": "State is missing or empty"
+    },
+    "documents": {
+      "limit_reached": "Maximum number of documents already reached",
+      "limit_will_be_reached": "Documents amount will reach limit by this upload",
+      "missing_doc_expire": "Documents expiration date is missing",
+      "empty_doc_expire": "Documents expiration date is missing or empty",
+      "missing_doc_type": "Documents type is missing",
+      "empty_doc_type": "Documents type is missing or empty",
+      "missing_doc_number": "Documents number is missing",
+      "empty_doc_number": "Documents number is missing or empty",
+      "missing_upload": "Attachment is missing"
+    },
+    "otp": {
+      "already_enabled": "2FA has been already enabled for this account",
+      "invalid": "2FA code is invalid",
+      "missing_code": "OTP code is missing",
+      "empty_code": "OTP code is missing or empty"
+    },
+    "password": {
+      "doesnt_match": "New passwords don't match",
+      "prev_pass_not_correct": "Old password is not correct",
+      "no_change_provided": "New password can't be the same, as old one",
+      "requirements": "Password does not meet the minimum requirements",
+      "user_doesnt_exist": "User doesn't exist",
+      "password_strength": "Password is too weak"
+    },
+    "document": {
+      "empty_doc_expire": "Expiration Date is invalid"
+    },
+    "user": {
+      "code_not_match": "Invalid OTP ",
+      "no_activity": "No record found",
+      "captcha": {
+        "required": "captcha_response is required",
+        "mandatory_fields": "Mandatory fields must be filled in"
+      },
+      "first_name": {
+        "invalid": "First name is invalid",
+        "blank": "First name is missing or empty"
+      },
+      "last_name": {
+        "invalid": "Last name is invalid",
+        "blank": "Last name is missing or empty"
+      },
+      "middle_name": {
+        "invalid": "middle name is invalid"
+      },
+      "city": {
+        "invalid": "City is invalid",
+        "blank": "City is missing or empty"
+      },
+      "postcode": {
+        "invalid": "Postcode is invalid"
+      },
+      "address": {
+        "invalid": "Address is invalid",
+        "blank": "Address is missing or empty"
+      },
+      "dob": {
+        "blank": "Date of birth is invalid"
+      },
+      "country": {
+        "blank": "Country is missing or empty"
+      },
+      "Postcode": "blank is missing or empty",
+      "must have alpha2 or alpha3 format": "Country must have alpha2 or alpha3 format"
+    },
+    "record": {
+      "not_found": "Record not found"
+    },
+    "authz": {
+      "invalid_session": "User Session Expired",
+      "user_not_active": "User is not active",
+      "invalid_signature": "API Key header 'signature' is invalid",
+      "apikey_not_active": "API Key state is 'inactive",
+      "disabled_2fa": "API Key owner has disabled 2FA",
+      "invalid_api_key_headers": "Blank or missing API Key headers",
+      "permission_denied": "Path is blacklisted",
+      "unexistent_apikey": "X-Auth-Apikey header is invalid",
+      "client_session_mismatch": "Session Expired"
+    }
+  },
+  "authz": {
+    "invalid_session": "User Session Expired",
+    "user_not_active": "User is not active",
+    "invalid_signature": "API Key header 'signature' is invalid",
+    "apikey_not_active": "API Key state is 'inactive",
+    "disabled_2fa": "API Key owner has disabled 2FA",
+    "invalid_api_key_headers": "Blank or missing API Key headers",
+    "permission_denied": "Path is blacklisted",
+    "unexistent_apikey": "X-Auth-Apikey header is invalid",
+    "client_session_mismatch": "Session Expired",
+    "csrf_token_mismatch": "Please try again after sometime",
+    "csrf_token_in_valid": "User Session Expired"
+  },
+  "identity": {
+    "password": {
+      "user_doesnt_exist": "User doesn't exist"
+    },
+    "session": {
+      "invalid_login_params": "Invalid email or password",
+      "invalid": "Invalid session",
+      "not_active": "Your account is not active",
+      "banned": "Your account is banned",
+      "invalid_params": "Invalid email or password",
+      "invalid_otp": "2FA code is invalid",
+      "invalid_captcha_format": "Invalid captcha format",
+      "invalid_phone_number": "Invalid phone number or password",
+      "invalid_email_id": "Invalid email id or password",
+      "user_blocked": "Your account is locked due to multiple failed login attempts",
+      "resend_limit": "Maximum limit reached. Please try again in a while",
+      "phone_resend_limit": "Oops! You have exceeded maximum OTP limit.",
+      "email_resend_limit": "Oops! You have exceeded maximum OTP limit."
+    },
+    "captcha": {
+      "required": "Captcha is required",
+      "verification_failed": "Captcha verification failed"
+    },
+    "user": {
+      "token_expiry": "Token expire, please resend email again",
+      "missing_email": "Email is missing",
+      "empty_email": "Email is missing or empty",
+      "missing_password": "Password is missing",
+      "empty_password": "Password is missing or empty",
+      "missing_token": "Token is missing",
+      "empty_token": "Token is missing or empty",
+      "missing_reset_password_token": "Reset password token is missing",
+      "empty_reset_password_token": "Reset password token is missing or empty",
+      "missing_confirm_password": "Confirm password is missing",
+      "empty_confirm_password": "Confirm password is missing or empty",
+      "missing_emai": "Email is missing",
+      "invalid_captcha_format": "Invalid captcha format",
+      "passwords_doesnt_match": "Passwords don't match",
+      "utilized_token": "Link has already been used",
+      "invalid_referral_format": "Invalid referral uid format",
+      "referral_doesnt_exist": "Referral doesn't exist",
+      "active_or_doesnt_exist": "User doesn't exist or has already been activated",
+      "no_activity": "No activity recorded or wrong topic",
+      "missing_topic": "Topic is missing",
+      "empty_topic": "Topic is missing or empty",
+      "missing_old_password": "Old password is missing",
+      "empty_old_password": "Old password is missing or empty",
+      "missing_new_password": "New password is missing",
+      "empty_new_password": "New password is missing or empty",
+      "incorrect_email_otp": "You have entered an incorrect email OTP",
+      "incorrect_phone_otp": "You have entered an incorrect phone OTP",
+      "phone": {
+        "limit": "Unable to change phone number please contact admin"
+      }
+    },
+    "verify_identity": "Verify your identity",
+    "verify_info": "We're verifying your info",
+    "would_you_like": "Would you like to transfer <br /> crypto to Coinhub?",
+    "protect_your_crypto": "Protect your crypto by transferring it from <br /> another exchange or wallet."
+  },
+  "account": {
+    "transactions.limit_exceeded": "Limit exceeded",
+    "currency.invalid_amount": "Invalid Amount",
+    "swap": {
+      "temporary_stop": "Swap is temporarily disabled"
+    },
+    "user": {
+      "incomplete_kyc": "incomplete kyc"
+    },
+    "trading": {
+      "temporary_stop": "Order placing is temporarily disabled for this market"
+    },
+    "currency": {
+      "doesnt_exist": "Currency doesn't exist",
+      "invalid_amount": "Invalid amount",
+      "withdrawal_disabled": "Withdraw is suspended for this currency.",
+      "deposit_disabled": "Deposit is suspended for this currency."
+    },
+    "transactions": {
+      "limit_exceeded": "Account's transactions limit exceeded"
+    },
+    "deposit": {
+      "invalid_state": "Deposit invalid state",
+      "non_integer_limit": "Value you send could not be parsed into integer type",
+      "invalid_limit": "Invalid limit",
+      "non_positive_page": "Page value must be positive",
+      "empty_txid": "Txid is missing, txid is empty",
+      "not_permitted": "Deposits allows after phone verification",
+      "deposit_disabled": "Deposit is suspended for this currency.",
+      "blockchain_key_doesnt_exist": "Please select a vaild network"
+    },
+    "deposit_address": {
+      "invalid_address_format": "Invalid deposit address format",
+      "doesnt_support_cash_address_format": "Currency doesn't support cash address format"
+    },
+    "withdraw": {
+      "invalid_state": "Invalid status",
+      "non_integer_limit": "Limit Value you send could not be parsed into integer type",
+      "invalid_limit": "Invalid limit",
+      "non_positive_page": "Page value must be positive",
+      "non_integer_otp": "OTP value could not be parsed into integer type",
+      "empty_otp": "OTP is missing, OTP is empty",
+      "empty_rid": "Rid is missing, rid is empty",
+      "non_decimal_amount": "Amount value you send could not be parsed into decimal type",
+      "non_positive_amount": "Amount value must be positive",
+      "not_permitted": "Please complete KYC and Phone verification for withdrawal",
+      "insufficient_balance": "Account balance is insufficient",
+      "invalid_amount": "Invalid withdraw amount",
+      "create_error": "Failed to create withdraw",
+      "invalid_otp": "Invalid 2FA code",
+      "invalid_2fa": "Invalid 2FA",
+      "disabled_api": "Withdrawal API is disabled",
+      "limit_exceeded": "24H withdraw amount can not be more than the limit set for this currency",
+      "temporary_stop": "Withdrawal is temporarily disabled",
+      "withdraw_disbale_24_hour": "The withdrawal has been disabled for 24 hours due to security reason.",
+      "invalid_withdraw_otp": "Please enter valid OTP",
+      "expire_withdraw_otp_time": "OTP expire",
+      "multiple_otp": "Too many attempts, try again later"
+    },
+    "beneficiary": {
+      "missing_name": "Missing beneficiary name",
+      "empty_name": "Beneficiary name can't be empty",
+      "too_long_name": "Beneficiary Name can't be too long. 64 characters are allowed.",
+      "duplicate_address": "Address already exists",
+      "invalid_pin": "Please enter valid OTP",
+      "invalid_address": "Invalid Address",
+      "missing_address_in_data": "Blockchain address can't be empty",
+      "cant_activate": "Beneficiary already activated",
+      "pin_expired": "OTP expire",
+      "invalid_otp": "Invalid 2FA",
+      "blockchain_key_doesnt_exist": "Blockchain key doesn't exist",
+      "cant_delete": "Beneficiary can't delete",
+      "failed_to_create": "Invalid address"
+    },
+    "card": {
+      "empty_card_details": "Please wait for card issuance. We'll inform you shortly.",
+      "invalid_zipcode": "Invalid postal code"
+    },
+    "bank_detail": {
+      "full_name": {
+        "invalid": "Account holder name is invalid"
+      }
+    }
+
+  },
+  "market": {
+    "doesnt_exist": "Market doesn't exist",
+    "trade.not_permitted": "Trade not permitted",
+    "order.binance.filter_failure": "Order not as per trading rules.",
+    "order.insufficient_market_liquidity": "Insufficient Balance",
+    "market": {
+      "doesnt_exist": "Market doesn't exist"
+    },
+    "order": {
+      "invalid_state": "Invalid deposit state",
+      "invalid_limit": "Invalid limit",
+      "non_integer_limit": "Limit value you send could not be parsed into integer type",
+      "empty_page": "Page is missing or empty",
+      "invalid_order_by": "Invalid order_by",
+      "invalid_side": "Invalid order side",
+      "non_decimal_volume": "Volume value you send could not be parsed into decimal type",
+      "non_positive_volume": "Amount value must be greater than zero",
+      "invalid_type": "Invalid order type",
+      "non_decimal_price": "Price value you send could not be parsed into decimal type",
+      "non_positive_price": "Price value must be positive",
+      "non_integer_id": "Id value  you send could not be parsed into integer type",
+      "empty_id": "Id is missing or empty",
+      "insufficient_market_liquidity": "This pair is not available for trading at the moment. Please try again later",
+      "invalid_volume_or_price": "Invalid volume or price",
+      "create_error": "Failed to create error",
+      "cancel_error": "Your order is under process. Please Wait",
+      "temporary_stop": "This Market is not available for trading",
+      "market_order_price": "Market order doesn't have price",
+      "binance": {
+        "server_error": "This pair is not available for trading at the moment. Please try again later",
+        "filter_failure": "Order not as per trading rules.",
+        "price_failure": "Order beyond the permissible price range.",
+        "usdt_10_$": "Minimum order size is 10 USDT"
+      }
+    },
+    "trade": {
+      "non_integer_limit": "Limit value you send could not be parsed into Integer type",
+      "invalid_limit": "Invalid limit",
+      "non_integer_timestamp": "Timestamp value you send could not be parsed into Integer type",
+      "empty_timestamp": "Timestamp is missing or empty",
+      "invalid_order_by": "Invalid order_by",
+      "not_permitted": "Please complete KYC for trading"
+    },
+    "account": {
+      "insufficient_balance": "This pair is not available for trading at the moment. Please try again later"
+    },
+    "referral": {
+      "failed_to_transfer": "Failed to transfer"
+    }
+  },
+  "public": {
+    "currency": {
+      "doesnt_exist": "Currency doesn't exist",
+      "invalid_type": "Invalid currency type"
+    },
+    "market": {
+      "doesnt_exist": "Market doesn't exist"
+    },
+    "order_book": {
+      "non_integer_ask_limit": "Ask limit value you send could not be parsed into Integer type",
+      "invalid_ask_limit": "Invlalid ask limit",
+      "non_integer_bid_limit": "Bid limir value you send could not be parsed into Integer type",
+      "invalid_bid_limit": "Invalid bid limit"
+    },
+    "trade": {
+      "non_integer_limit": "Limit value you send could not be parsed into Integer type",
+      "invalid_limit": "Invalid limit",
+      "non_positive_page": "Page value must be positive",
+      "non_integer_timestamp": "Timestamp value you send could not be parsed into Integer type",
+      "invalid_order_by": "Invalid order by"
+    },
+    "market_depth": {
+      "non_integer_limit": "Limit value you send could not be parsed into Integer type",
+      "invalid_limit": "Invalid limit"
+    },
+    "k_line": {
+      "non_integer_period": "Limit value you send could not be parsed into Integer type",
+      "invalid_period": "Invalid period",
+      "non_integer_time_from": "Limit value you send could not be parsed into Integer type",
+      "empty_time_from": "Time_from param is missing or empty",
+      "non_integer_time_to": "Limit value you send could not be parsed into Integer type",
+      "empty_time_to": "Time_to param is missing or empty",
+      "non_integer_limit": "Limit value you send could not be parsed into Integer type",
+      "invalid_limit": "Invalid limit"
+    }
+  },
+  "server": {
+    "internal_error": "Internal server error",
+    "method_not_allowed": "Method not allowed"
+  },
+  "withdraw_coin": {
+    "name": "Name",
+    "address": "Address",
+    "description": "Description",
+    "status": "Status",
+    "actions": "Actions",
+    "destination_tag": "Memo"
+  },
+  "withdraw_fiat": {
+    "desc": "Description",
+    "full_name": "Full Name",
+    "account_no": "Account Number",
+    "bank_name": "Bank Name",
+    "bank_swift_code": "Bank Swift Code(optional)",
+    "intermediary_bank_name": "Intermediary Bank Name(optional)",
+    "intermediary_bank_swift_code": "Intermediary Bank Name Swift Code(optional)",
+    "status": "Status",
+    "actions": "Actions",
+    "bank_code": "Bank Code",
+    "bank_type": "Bank Type",
+    "country_code": "Country Code"
+  },
+  "payment_gateway": {
+    "title": "Please scan the QR code to pay the invoice",
+    "success_msg": "Payment has been done successfully",
+    "link_expire": "Payment session has been expired.",
+    "warning": "Note: While processing payment from External Exchanges, It is mandatory to include Transaction fees of the Exchange"
+  },
+  "reward_history": {
+    "no_history": "You have no history.",
+    "currency": "Currency",
+    "reward": "Reward",
+    "email": "Email",
+    "date": "Date",
+    "level": "Level"
+  },
+  "symbol_detail": {
+    "btc_currency": {
+      "currency": "BTC (Bitcoin)",
+      "date": "2018-01-08",
+      "product_description": "1. Product Description",
+      "project_name": " Project Name: Bitcoin",
+      "token": "Token name: BTC",
+      "introduction": "2. Project Introduction",
+      "detail": "Bitcoin is a cryptocurrency and a digital payment system invented by an unknown programmer, or a group of programmers, under the name Satoshi Nakamoto.It was released as open-source software in 2009.The system is peer-to-peer, and transactions take place between users directly, without an intermediary. These transactions are verified by network nodes and recorded in a public distributed ledger called a blockchain. Since the system works without a central repository or single administrator, bitcoin is called the first decentralized digital currency.Besides being created as a reward for mining, bitcoin can be exchanged for other currencies, products, and services in legal or black markets.As of February 2015, over 100,000 merchants and vendors accepted bitcoin as payment. According to research produced by Cambridge University in 2017, there are 2.9 to 5.8 million unique users using a cryptocurrency wallet, most of them using bitcoin.",
+      "overview": " 3. Token Overview",
+      "total_supply": "Total Supply: 21M ",
+      "circulation": "Current Circulation: 18,491,550",
+      "link": "4. Support Links",
+      "website": "Official website:",
+      "white_paper": "Whitepaper:",
+      "site_link": "https://bitcoin.org/zh_CN/ ",
+      "pdf_link": "https:https://bitcoin.org/bitcoin.pdf"
+    },
+    "eth_currency": {
+      "currency": "ETH (Ethereum)",
+      "date": "2018-01-08",
+      "product_description": "1. Product Description",
+      "project_name": " Project Name: Ethereum",
+      "token": "Token name: ETH",
+      "introduction": "2. Project Introduction",
+      "detail": " Ethereum (ETH) is an open-source, public, blockchain-based distributed computing platform featuring smart contract (scripting) functionality, which facilitates online contractual agreements. Ethereum also provides a cryptocurrency token called \"ether\", which can be transferred between accounts and used to compensate participant nodes for computations performed. \"Gas\", an internal transaction pricing mechanism, is used to mitigate spamand allocate resources on the network.The value token of the Ethereum blockchain is called ether. It is listed under the diminutive ETH and traded on cryptocurrency exchanges. It is also used to pay for transaction fees and computational services on the Ethereum network.",
+      "overview": " 3. Token Overview",
+      "total_supply": "  Total Supply: 107,100,935 ",
+      "circulation": "Current Circulation: 107,100,935",
+      "link": "4. Support Links",
+      "website": "Official website:",
+      "white_paper": "Whitepaper:",
+      "site_link": "https://www.ethereum.org/ ",
+      "pdf_link": "https://github.com/ethereum/wiki/wiki/White-Paper"
+    },
+    "usdt_currency": {
+      "currency": "USDT (TetherUS)",
+      "date": "2018-01-08",
+      "product_description": "1. Product Description",
+      "project_name": "  Project Name: TetherUS",
+      "token": "Token name: USDT",
+      "introduction": " 2. Project Introduction ",
+      "detail": "USDT is a crypto-currency asset issued on the Bitcoin blockchain via the Omni Layer Protocol. Each USDT unit is backed by a U.S Dollar held in the reserves of the Tether Limited and can be redeemed through the Tether Platform. USDT can be transferred, stored, spent, just like Bitcoins or any other crypto-currency.USDT and other Tether currencies were created to facilitate the transfer of national currencies, to provide users with a stable alternative to Bitcoin and to provide an alternative for exchange and wallet audits which are currently unreliable. USDT provides an alternative to Proof of Solvency methods by introducing a Proof of Reserves Process. In the Tether Proof of Reserves system, the amount of USDT in circulations can be easily checked on the Bitcoin blockchain via the tools provided at Omnichest.info, while the corresponding total amount of USD held reserves is proved by publishing the bank balance and undergoing periodic audits by professionals.",
+      "overview": " 3. Token Overview",
+      "total_supply": "Total Supply: 2.83 billion ",
+      "circulation": " Current Circulation: 2.507 billion",
+      "link": "4. Support Links",
+      "website": "Official website:",
+      "white_paper": "Whitepaper:",
+      "site_link": " https://tether.to/ ",
+      "pdf_link": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
+    },
+    "zfl_currency": {
+      "currency": "ZFL (Zuflo)",
+      "date": "2018-01-08",
+      "product_description": "1. Product Description",
+      "project_name": "  Project Name: Zuflo",
+      "token": "Token name: ZFL",
+      "introduction": "2. Project Introduction",
+      "detail": " Launched on 08/01/2018 by a team based in Estonia and Asia, ZFL aims to address Trading and Finance under One Platform in several regions. ZFL will allow Zedxe.com platform users to improve efficiency, error reduction, time savings, and straight-through processing without any intermediaries, and with AI (Artificial Intelligence) Management tools.",
+      "overview": " 3. Token Overview",
+      "total_supply": " Total Supply: 500,000,000 ",
+      "circulation": " Current Circulation: 64,944,573",
+      "link": "4. Support Links",
+      "website": "Official website:",
+      "white_paper": "Whitepaper:",
+      "site_link": " https://www.zedxe.com ",
+      "pdf_link": " https://www.zedxe.com/wp-content/uploads/2020/07/zufloCoin_ZFL_whitePaper.pdf"
+    }
+  },
+  "about": {
+    "title": "About Evo Europex Exchange "
+  },
+  "kyc_id": {
+    "taken": "Please enter a valid KYC ID"
+  },
+  "user": {
+    "sumsub": {
+      "kyc": {
+        "tier2_not_verified": "Your previous KYC Standard is pending",
+        "already_verified": "Your KYC is already verified",
+        "in_progress": "Your KYC is in-progress",
+        "something_went_wrong": "Please tray again after sometime.",
+        "initiated_for_tier3": "Since you are already initiated for the KYC Comprehensive, you are not eligible for this KYC now.",
+        "phone_mismatch": "The cell number used in KYC does not correlate with the number provided on registration",
+        "current_residence": "Your current residence address same as your permanent address?",
+        "unemployed": "Are you Unemployed?",
+        "account_someone_else": "Are you creating an account and trading on behalf of someone else?",
+        "politically_exposed": "Are you a Politically Exposed Person?",
+        "politically_exposed_relatives": "Are you close relatives of the Politically Exposed Person?",
+        "politically_exposed_associates": "Are you close associates of the Politically Exposed Person?",
+        "legal_entity": "Are you creating an account and trading on behalf of another legal entity?",
+        "shareholders_politically": "Are shareholders & executive management of your organisation politically exposed persons?",
+        "shareholders_politically_relatives": "Are shareholders & executive management of your organisation close relatives of politically exposed persons?",
+        "shareholders_politically_associates": "Are shareholders & executive management of your organisation close associates of politically exposed persons?"
+      }
+    }
+  },
+  "apiTokens": {
+    "tip1": "This information will be shown only once and cannot be retrieved once lost. Please store it properly.",
+    "tip2": "To avoid asset loss,please do not tell your Secret Key and Private Key to others.If you forget you Secret Key,please delete it and apply for a new Secret Key pair."
+  },
+  "investment": {
+    "invalid": {
+      "amount_value": "Invalid amount"
+    }
+  },
+  "Currency.not.found": "Currency not found",
+  "don't have to convert": "You don't have any {{currency}} to convert. Try buying some to get started.",
+  "identity_vefification": "Identity Verification Required",
+  "identity_description": "Please verify your identity. <br /> Identity verification helps us ensure the safety and security of your Coinhub account.",
+  "crypto": {
+    "currency": {
+      "doesnt_exist": "Currency doesn't exist"
+    },
+    "setting": {
+      "create_error": "Convert setting not enable",
+      "invalid_state": "Invalid status"
+    }
+  },
+  "convert_disclaimer": "Disclaimer- The conversion rate is calculated based on current market price.",
+  "member": {
+    "coin_listing": {
+      "not_found": "Record not found"
+    },
+    "code_not_match": "Email code not match"
+  },
+  "Data.Not.found": "Whoops! Please try again later.",
+  "submission": {
+    "head": "Submission Successful",
+    "desc": "We will review your application for acceptability and completeness. This process may take few days. For further updates, we will notify you via Email."
+  },
+  "kyc": {
+    "note1": "Choose your register type then proceed to next step"
+  },
+  "notification": {
+    "deposit": {
+      "collected": "Your deposit of {{currency}} amount {{amount}} has been credited successfully.",
+      "rejected": "Your deposit of {{currency}} amount {{amount}} has not been credited.",
+      "processed": "Your deposit of {{currency}} amount {{amount}} has  been processed."
+    },
+    "withdraw": {
+      "succeed": "Your withdraw request of {{amount}} {{currency}} has been debited successfully.",
+      "failed": "Your withdraw request of {{amount}} {{currency}} has been failed.",
+      "processed": "Your withdraw request of {{amount}} {{currency}} has been processed."
+    },
+    "order": {
+      "done": "Your order of pair {{pair}} at {{price}} for amount {{amount}} has been executed successfully.",
+      "processed": "Your order of pair {{pair}} at {{price}} for amount {{amount}} has been processed."
+    },
+    "member": {
+      "initiated": "Your KYC request has been initiated.",
+      "under_review": "Your KYC request has been under review.",
+      "rejected": "Your KYC request has been rejected. Please check your email for rejection reason.",
+      "verified": "Your KYC request has been verified."
+    }
+  },
+  "future": {
+    "margin_mode": {
+      "note1": "Switching the margin mode will only apply it to the selected contract.",
+      "note2": "All cross positions under the same margin asset share the same asset cross margin balance. In the event of liquidation, your assets full margin balance along with any remaining open positions under the asset may be forfeited.",
+      "note3": "Manage your risk on individual positions by restricting the amount of margin allocated to each. If the margin ratio of a position reached 100%, the position will be liquidated. Margin can be added or removed to positions using this mode.",
+      "note4": "The margin mode cannot be changed while you have an open order/position"
+    },
+    "leverage": {
+      "note1": "Maximum position at current leverage: 40,000,000 USDT",
+      "note2": "Please note that leverage changing will also apply for open positions and open orders.",
+      "note3": "Selecting higher leverage such as [10x] increases your liquidation risk. Always manage your risk levels. See our help article for more information.",
+      "note4": "Leverage reduction is not supported with open positions in Isolated Margin Mode."
+    }
+  },
+  "BankDeposit": {
+    "head": "Bank Deposit",
+    "btnText": "Crypto Deposit",
+    "fq": {
+      "title": "FAQ",
+      "Q1": "Q1. What is the business case for introducing (or migrating parts to) blockchain?",
+      "ans1": "Reduced audit cost, lesser marketing budget (most of which is spent in faking numbers), reduced accounting cost, reduced compliance cost, faster business growth, better financial reconciliation",
+      "Q2": "Q2. Should blockchain always be public?",
+      "ans2": "No. It can be access controlled.",
+      "Q3": "Q3. How can we prevent wallets from being hacked?",
+      "ans3": "You may implement multiple factor authentication. At the end of the day, what happens if a user posts his credit card pin on his social media? It's the same thing."
+    },
+    "maintabs": {
+      "deposite": "Deposit",
+      "Withdraw": "Withdraw",
+      "Currency": "Currency",
+      "ChooseBankAccountlabel": "Choose Bank Account",
+      "BankAccount": "Bank Account",
+      "AccountName": "Account Name",
+      "personName": "Munkh-Erdene",
+      "ReceiverBank": "Receiver Bank",
+      "KhanBank": "Khan Bank",
+      "TransactionValue": "Transaction Value",
+      "note": " Please note that you must write your phone number and registration number on the transaction value",
+      "dbtn": "Fund Remitted. Please Check",
+      "Wbtn": "Withdraw Request Submitted."
+    }
+  },
+  "Fund": {
+    "head": "Fund Your Wallet",
+    "subheading1": "I have crypto assets",
+    "subheading2": "I don't have crypto assets",
+    "subheadingtitle1": "Crypto Deposit",
+    "subheadingtitle2": "Bank Deposit",
+    "detail1": "Get the deposit address for BTC, ETH or any other crypto and deposit via the blockchain.",
+    "detail2": "Deposit money from your bank account, and buy crypto with cash balance later."
+  },
+  "CryptoDeposit": {
+    "BTCaddress": "BTC address",
+    "important": "Important",
+    "point1": "Minimum Withdrawal 85 BTC",
+    "point2": "Deposit Fee 10.0%",
+    "point3": "Send only BTC to this address. Sending any other coin or token to this address may result in loss of your assets."
+  },
+  "tables": {
+    "nores": "No Record Found"
+   },
+   "minWithdrawAmount.lessThan.minDepositAmount": "Min withdraw amount should be greater than Min deposit amount"
+   
+}

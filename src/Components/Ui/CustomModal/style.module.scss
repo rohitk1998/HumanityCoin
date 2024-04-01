@@ -1,0 +1,33 @@
+@import "../../Assets/Styles/_mixins.scss";
+@import "../../Assets/Styles/_vars.scss";
+.customModal {
+  &_headerDesign {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    h5 {
+      margin: auto;
+      text-align: center;
+      @include fluid-type(320px, 1920px, 14px, 16px);
+      font-weight: 600;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      color: #8c8c8c;
+
+      &:hover {
+        animation: mymove 5s infinite;
+        color: black;
+
+        @keyframes mymove {
+          50% {
+            transform: translatex(-15px);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

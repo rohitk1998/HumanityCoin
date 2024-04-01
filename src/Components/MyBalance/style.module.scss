@@ -1,0 +1,30 @@
+@import "../Assets/Styles/_mixins.scss";
+@import "../Assets/Styles/_vars.scss";
+.mybalance{
+    background-color: #E6F7F5;
+    width: 100%;
+    padding: 23px 50px;
+    
+    h2{
+        color:$borderdarkgrey;
+        @include fluid-type(320px, 1920px, 14px, 20px);
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+    h4{
+        color:$darktext;
+        @include fluid-type(320px, 1920px, 20px, 36px);
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    @media (max-width:1366px) {
+        padding: 20px;
+        
+    }
+    @media (max-width:767px) {
+        padding: 20px 15px;
+    }
+
+
+}
+

@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap");
+$baseFontRegular: "Open Sans", sans-serif;
+$baseFontBold: "Open Sans", sans-serif;
+$baseFont3: 'Montserrat';
+$darktext: #000000;
+// $white: #000000;
+$lightbgyellow: #fff4c7;
+$baseblue: #00a79e;
+$baseblue1: #4e85fb;
+$base-hover: #00a79ec7;
+$bordergrey: #bcbcbc50;
+$pendingtext: #e5862f;
+$portfoliobg: #f7f9fd;
+$bgtablehead:#F6F6F6;
+$borderdarkgrey: #6b6b6b;
+$bgderkgrey: #f3f3f3;
+$grey-707070: #707070;
+$border-dcd5d5:#dcd5d5;
+$text-80838E: #80838e;
+$bg-icon-80838E: rgba(128, 131, 142, 0.1);
+$green-098551: #098551;
+$tableborders: #00000012;
+$bg-light-FBFCFF: #fbfcff;
+$bgrewardata: #f8f8f8;
+$bgblue-ffffff4a: #ffffff4a;
+$bg-light-gray-F3F3F3: #f3f3f3;
+$bg-light-blue-E9F5FF: #e6f7f5;
+$borderColor: #dcd6d6;
+$bg-totalearning: #bdcef0;
+$bg-totalearning1: #fafcff00;
+$border-light-gray-F3F3F3: #f3f3f3; // Dual Theme control mode start
+$staticBorder: $bordergrey;
+$CommonButton: $baseblue;
+$checkboxparagraph: black;
+$portfolioHead: #ecfffe;
+$btnTextLight: $text-80838E;
+$link: #03a89f;
+$lightblue-F5F8FF: #e6f7f5;
+$bgseparator:#585959;
+$white: white;
+$red: #cf0038;
+$red-CF304A: #cf304a;
+$tabletext: #1b1c1e;
+$plateformtext: #616161;
+$plateformhead: #0b3d4c;
+$green: #12b764;
+$tabletext: #1b1c1e;
+$tabletext: #1b1c1e;
+$blue-F1F5FF: #f1f5ff;
+$blue-F3F7FF: #f3f7ff;
+$tableborder:#D9D9D9;
+
+// Dual Theme control mode start
+
+$themes: (
+  lightTheme: (
+    "securityBtn": #dfe3ec,
+    "darkWhite": #000,
+    "darkWhiteReverse": #fff,
+  ),
+  darkTheme: (
+    "securityBtn": #282c34,
+    "darkWhite": #fff,
+    "darkWhiteReverse": #000,
+  ),
+);

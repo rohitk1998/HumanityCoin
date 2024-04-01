@@ -1,0 +1,138 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+.googleAuthModal {
+  h5 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .formErr {
+    color: red;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .note {
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .ant-btn {
+    margin-top: 10px !important;
+    background-color: $baseblue;
+    color: $white;
+    border: none;
+    border-radius: 30px;
+    padding: 9px 20px;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  .innerModelSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .anchortype {
+      margin-top: 35px !important;
+      width: 100%;
+    }
+    .barcodeContnt {
+      width: 100%;
+      form {
+        input {
+          border: 1px solid rgba(188, 188, 188, 0.3137254902);
+          opacity: 1;
+          width: 100%;
+          height: 40px;
+          box-shadow: none;
+          position: relative;
+          background-color: transparent;
+          border-radius: 50px;
+          outline: unset;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+  .modalNotes {
+    ul {
+      padding: 0;
+    }
+  }
+  .spanBalance {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    h3 {
+      font-weight: 600;
+    }
+
+    .infoSpan {
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media (max-width: 767px) {
+        right: 0;
+        left: unset;
+        transform: unset;
+      }
+    }
+
+    // &:hover {
+    //   .infoSpan {
+    //     display: block;
+    //     position: absolute;
+    //     top: 0px;
+    //     background-color: #f5f5f5;
+    //     border: 1px solid rgba(34, 36, 38, 0.15);
+    //     box-shadow: none;
+    //     border-radius: 0.28571429rem;
+    //     text-align: left;
+    //     color: rgba(0, 0, 0, 0.87);
+    //     padding: 0 5px;
+    //     width: 100%;
+    //   }
+    // }
+
+    .centerTxt {
+      text-align: left;
+      width: 100%;
+      display: flex !important;
+      gap: 5px;
+      justify-content: center;
+      img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.changePassClass {
+  input {
+    border: none !important;
+  }
+}
+.passPadding {
+  margin-top: 12px;
+  label {
+    margin-bottom: 8px;
+  }
+  .input_amount {
+    border: 1px solid #efefef !important;
+    border-radius: 100px;
+  }
+}

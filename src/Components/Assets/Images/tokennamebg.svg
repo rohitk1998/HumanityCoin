@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="578" viewBox="0 0 1920 578">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_55383" data-name="Rectangle 55383" width="1920" height="578" transform="translate(0 750)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#26e1d7" stop-opacity="0.722"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d7fccd"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Mask_Group_346" data-name="Mask Group 346" transform="translate(0 -750)" clip-path="url(#clip-path)">
+    <ellipse id="Ellipse_9728" data-name="Ellipse 9728" cx="1115" cy="403.5" rx="1115" ry="403.5" transform="translate(-809 529)" opacity="0.2" fill="url(#radial-gradient)"/>
+    <path id="Path_103516" data-name="Path 103516" d="M738.576-3.7c410.87,1.681,745.345,264.761,747.07,587.605s-329.953,583.2-740.824,581.518S-.523,900.664-2.248,577.819,327.705-5.38,738.576-3.7Z" transform="matrix(1, -0.017, 0.017, 1, 1035.276, 494.903)" opacity="0.5" fill="url(#radial-gradient-2)"/>
+  </g>
+</svg>

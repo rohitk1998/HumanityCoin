@@ -1,0 +1,43 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+.loginEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  label {
+    font-weight: 400;
+  }
+  &__outerline {
+    max-width: 541px;
+    width: 100%;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+    @media (max-width: 380px) {
+      padding: 0px;
+    }
+
+    &__main {
+      border: 1px solid $bordergrey;
+      border-radius: 34px;
+      padding: 25px 40px;
+      width: 100%;
+      @media (max-width: 767px) {
+        padding: 25px 30px;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    @include fluid-type(320px, 1920px, 14px, 16px);
+    color: $baseblue;
+    margin-top: 24px;
+    font-family: $baseFontRegular;
+  }
+}

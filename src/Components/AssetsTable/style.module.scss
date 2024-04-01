@@ -1,0 +1,47 @@
+@import "../Assets/Styles/_vars.scss";
+@import "../Assets/Styles/_mixins.scss";
+
+
+.assetcoinData {
+    display: flex;
+    gap: 8px;
+
+    &__Data {
+        :nth-child(2) {
+            color: $green-098551;
+            @include fluid-type(320px, 1920px, 12px, 14px);
+
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.buyStake {
+    display: flex;
+    gap: 8px;
+    color: $darktext;
+
+    &__buy {
+        // border: 1px solid $bordergrey;
+        background-color: $bg-light-gray-F3F3F3;
+        border-radius: 20px;
+        max-width: 122px;
+        width: 100%;
+        color: $darktext;
+        padding: 8px 15px;
+        display: flex;
+        justify-content: center;
+
+        &:hover,
+        :active,
+        :focus-within {
+            background-color: $baseblue;
+            color: $white;
+            transition: color 0.1s ease;
+        }
+    }
+}

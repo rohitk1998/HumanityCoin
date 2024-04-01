@@ -1,0 +1,84 @@
+@import "../../Assets/Styles/_mixins.scss";
+@import "../../Assets/Styles/_vars.scss";
+
+.input_textimg {
+  position: relative !important;
+
+  label {
+    @include fluid-type(320px, 1920px, 12px, 14px);
+    font-weight: 400;
+    display: block;
+    padding-bottom: 8px;
+    color: $darktext;
+  }
+
+  input {
+
+    &:hover,
+    &:active {
+      border-color: $baseblue !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    &:disabled {
+      background-color: $bg-light-gray-F3F3F3 !important;
+      border: none;
+    }
+
+    &.marginTopNone {
+      margin-top: 0;
+    }
+  }
+
+  .input_amount {
+    border-radius: 5px;
+    border: 1px solid $bordergrey;
+    opacity: 1;
+    width: 100%;
+    height: 40px !important;
+    box-shadow: none;
+    position: relative !important;
+    background-color: transparent !important;
+    border-radius: 50px !important;
+
+    &.onlyCurrency {
+      padding-right: 50px;
+    }
+  }
+  
+
+  .input_imgcontent {
+    color: $text-80838E;
+    position: absolute;
+    right: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+
+    .width_custm_input {
+      width: 100px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+
+    p {
+      margin-bottom: 0px;
+      cursor: pointer;
+      transition: 0.3s all;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .paddingRight {
+    padding-right: 50px;
+  }
+}
+.ant-input:focus {
+  border-color: #00a79e !important;
+  box-shadow: 0 0 0 2px rgba(0, 167, 158, 0.22) !important;
+}

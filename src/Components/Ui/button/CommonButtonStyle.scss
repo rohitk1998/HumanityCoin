@@ -1,0 +1,218 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+.ant-btn.btn_custom {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  border: 0;
+  border-radius: 40px !important;
+  background: $baseblue;
+  @include fluid-type(320px, 1920px, 14px, 16px);
+
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: unset;
+  text-align: center;
+  transition: all 0.25s;
+
+  &:hover,
+  &:focus {
+    background: $baseblue;
+    opacity: 0.8;
+  }
+  &.grayBtn {
+    background-color: $bgderkgrey;
+    color: $darktext;
+  }
+}
+
+.ant-btn-secondary {
+  // font-family: $secFont;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  // border: 1px solid $border;
+  border-radius: 5px;
+  // background: $light;
+  font-size: 16px;
+  // color: $navTextColor;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: unset;
+  transition: all 0.25s;
+
+  &:hover {
+    color: #fff;
+    background-color: $baseblue !important;
+
+    span {
+      path {
+        stroke: white !important;
+      }
+    }
+  }
+}
+
+.ant-btn.transparent {
+  &:hover {
+    color: $white !important;
+    background-color: $base-hover !important;
+    border-color: $base-hover !important ;
+    span {
+      path {
+        stroke: $white !important;
+      }
+    }
+  }
+  &:active,
+  &:focus {
+    color: $baseblue !important;
+  }
+}
+.ant-btn.transparent:hover > span {
+  color: $white;
+}
+.ant-btn.themeColor {
+  &:hover {
+    color: $white;
+    background-color: $base-hover !important;
+
+    span {
+      path {
+        stroke: $white !important;
+      }
+    }
+  }
+}
+
+.ant-btn.themeColor {
+  background-color: $baseblue !important;
+  color: $white;
+  border: 1px solid $baseblue;
+
+  span {
+    path {
+      stroke: $white !important;
+    }
+  }
+}
+
+.ant-btn.transparent {
+  background-color: transparent !important;
+  color: $baseblue;
+  border: 1px solid $baseblue;
+}
+
+.ant-btn.depositwdbtn {
+  border: 1px solid $bordergrey;
+  border-radius: 20px;
+  background-color: transparent;
+  color: $borderdarkgrey;
+  max-width: 122px;
+  width: 100%;
+  height: 40px;
+
+  > span {
+    @include fluid-type(320px, 1920px, 12px, 15px);
+    font-weight: 300;
+    display: flex;
+  }
+
+  &:hover,
+  :active,
+  :focus-within {
+    background-color: $baseblue;
+    color: $white;
+    transition: all 0.1s ease-in-out;
+
+    svg {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+.ant-btn.buystakebtn {
+  background-color: $bg-light-gray-F3F3F3;
+  border-radius: 20px;
+  // max-width: 122px;
+  // width: 100%;
+  max-width: fit-content;
+  height: 40px;
+  font-weight: 300;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 767px) {
+    height: 30px;
+  }
+
+  > span {
+    @include fluid-type(320px, 1920px, 12px, 15px);
+  }
+
+  &:hover {
+    background-color: $baseblue;
+    color: white;
+    transition: color 0.1s;
+  }
+}
+.ant-btn.graybutton {
+  background-color: rgb(170, 164, 164);
+}
+.ant-btn.yearbtn {
+  background-color: $bg-light-gray-F3F3F3;
+  color: $darktext;
+  height: 44px;
+  max-width: 88px;
+  width: 100%;
+
+  &:hover {
+    color: #fff;
+    background-color: $baseblue !important;
+
+    span {
+      svg {
+        fill: white !important;
+      }
+    }
+  }
+}
+
+.ant-btn.commonbtn {
+  width: 100%;
+  height: 40px;
+  @include fluid-type(320px, 1920px, 14px, 16px);
+  font-family: $baseFontRegular;
+  font-weight: 600;
+}
+
+.ant-btn.transparent {
+  background-color: transparent;
+  border: 1px solid $baseblue;
+  color: $baseblue;
+
+  .ant-btn-primary {
+    &:focus {
+      color: $baseblue !important;
+    }
+  }
+}
+
+.leftIcon {
+  margin-right: 7px;
+}
+
+// .onActive {
+//   display: none;
+
+//   &:active,
+//   .active {
+//     display: block;
+//   }
+// }
