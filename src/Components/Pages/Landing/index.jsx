@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { StoreImages } from "../../Storeimgaes/StoreImages";
 import style from "./style.module.scss";
+import "./index.css";
 import { Row, Col } from "antd";
 import Footer from "./Footer";
 import Header from "./Header";
