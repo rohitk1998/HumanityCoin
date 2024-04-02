@@ -32,11 +32,11 @@ export const useConnectMetamask = () => {
 
         const signer = await provider.getSigner();
 
-        const contractInstance = new web3Instance.eth.Contract(MigratorAndFeeDistributorABI,'0x6Ff8C15076d71f9E5e4A56c77579bFf5709d47B2')
+        const contractInstance = new web3Instance.eth.Contract(MigratorAndFeeDistributorABI,'0x97B537Cc74cb6C00bd7de77fC8f26E2E2E6ca7A9')
 
         console.log('contractInstance',contractInstance);
 
-        console.log(contractInstance.methods);
+        console.log(await contractInstance.swapTriggerPercentage());
 
         setContractInstance(contractInstance)
         setEthInstance({

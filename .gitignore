@@ -38,7 +38,6 @@ README.md
 .gradle/
 .env
 env.js
-index.css
 # environment config
 public/config/
 .vscode/tasks.json
