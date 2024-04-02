@@ -17,7 +17,7 @@ const Main = () => {
         <Header />
         <section>
           <div className={style.euroMultiCurrency}>
-            <div className="container">
+            <div>
               <Row className={style.euroMultiCurrency__Everything}>
                 <Col
                   lg={24}
@@ -63,7 +63,7 @@ const Main = () => {
         </div>
         <section>
           <div className={style.unswapEcosystem}>
-            <div className="container">
+            <div>
               <Row className={style.unswapEcosystem__growing}>
                 <Col lg={12} className={style.unswapEcosystem__growing__left}>
                   <Link>UNISWAP ECOSYSTEM →</Link>
@@ -92,7 +92,7 @@ const Main = () => {
         </section>
         <section>
           <div className={style.funding}>
-            <div className="container">
+            <div>
               <Link className={style.developers}>Developers →</Link>
               <Row className={style.funding__data} gutter={35}>
                 <Col lg={16} className={style.funding__data__left}>
@@ -143,7 +143,7 @@ const Main = () => {
         </section>
         <section>
           <div className={style.protocol}>
-            <div className="container">
+            <div>
               <Link className={style.developers}>PROTOCOL GOVERNANCE →</Link>
               <Row className={style.protocol__data} gutter={{ lg: 30 }}>
                 <Col lg={13} className={style.protocol__data__left}>

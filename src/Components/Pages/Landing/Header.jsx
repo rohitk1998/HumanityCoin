@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Drawer } from 'antd';
 import { Link as RouterLink } from 'react-router-dom';
 import style from './style.module.scss';
-import './index.css';
 import { rootName, appRootName } from '../../../utils/constant';
 import { publicRouteObj } from '../../../staticObjects';
 import { useNavigate } from 'react-router-dom';
