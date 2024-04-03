@@ -1,33 +1,41 @@
 import { Row, Col } from 'antd';
 import { Link as RouterLink } from 'react-router-dom';
 import { APP_NAVBAR_MENU } from '../../../utils/constant';
-import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
+import { useWeb3Modal } from '@web3modal/wagmi/react';
+import { useAccount } from 'wagmi';
+import { useEffect } from 'react';
+import { setAccount, setIsConnected } from '../../../redux/slice/app.slice';
+import { useDispatch, useSelector } from 'react-redux';
 
 const connectAppButtonStyle = {
   minWidth: '150px',
-  padding: '5px',
+  padding: '10px',
   height: '40px',
-  backgroundColor: '#169E93',
-  color: 'white',
-  borderRadius: '20px',
+  backgroundColor: 'white',
+  border:"1px solid lightgray",
+  color: 'grey',
+  borderRadius: '23px',
   alignItems: 'center',
   display: 'flex',
   justifyContent: 'center',
-  fontWeight: '600',
+  fontWeight: '500',
   cursor: 'pointer',
 };
 
 export default function AppHeader() {
-  const [
-    ethInstance,
-    account,
-    errorMessage,
-    setIsEthInstanceActive,
-    isEthInstanceActive,
-    disconnect,
-    contractInstance
-  ] = useConnectMetamask();
-  console.log('account', account);
+  const dispatch = useDispatch();
+  const { open } = useWeb3Modal();
+
+  const { address,isConnected } = useAccount();
+
+  const { account, isConnected: isWalletConnected } = useSelector(
+    (state) => state.app
+  );
+
+  useEffect(() => {
+    dispatch(setIsConnected(isConnected));
+    dispatch(setAccount(address));
+  }, [isConnected]);
 
   return (
     <div className="" style={{ width: '100%', backgroundColor: 'whitesmoke' }}>
@@ -82,20 +90,27 @@ export default function AppHeader() {
           >
             <div
               style={{
-                width:'70%',
+                width: '70%',
                 display: 'flex',
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'end',
               }}
             >
-              {account !== '' && account !== null  ? (
-                <p style={{ fontSize:"13px",fontWeight:"700",color:'grey' }}>{account.slice(0,16) + '...'}</p>
+              {isWalletConnected && account !== '' ? (
+                <button
+                  style={connectAppButtonStyle}
+                  onClick={() => {
+                    open();
+                  }}
+                >
+                  {account.slice(0,18) + "..."}
+                </button>
               ) : (
                 <button
                   style={connectAppButtonStyle}
                   onClick={() => {
-                    setIsEthInstanceActive(!isEthInstanceActive);
+                    open();
                   }}
                 >
                   Connect

@@ -9,9 +9,12 @@ import { Loader } from './Components/loader';
 
 function App() {
 
+
   return (
     <>
-      <Suspense fallback={<Loader loading={true} />}>
+    {/* fallback={<Loader loading={true} />} */}
+      <Suspense >
+        {/* <Loader loading={true}  /> */}
         <Routes>
           <Route element={<MainRoute />}>
             {mainRoute?.map((item, idx) => {

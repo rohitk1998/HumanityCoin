@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Web3 from 'web3';
-import MigratorAndFeeDistributorAbi from "../abi/MigratorAndFeeDistributor.json"
+import MigratorAndFeeDistributorAbi from '../abi/MigratorAndFeeDistributor.json';
 
-
-const MigratorAndFeeDistributorABI = MigratorAndFeeDistributorAbi.abi
+const MigratorAndFeeDistributorABI = MigratorAndFeeDistributorAbi.abi;
 
 export const useConnectMetamask = () => {
   const { ethereum } = window;
@@ -32,19 +31,22 @@ export const useConnectMetamask = () => {
 
         const signer = await provider.getSigner();
 
-        const contractInstance = new web3Instance.eth.Contract(MigratorAndFeeDistributorABI,'0x97B537Cc74cb6C00bd7de77fC8f26E2E2E6ca7A9')
+        const contractInstance = new web3Instance.eth.Contract(
+          MigratorAndFeeDistributorABI,
+          '0x97B537Cc74cb6C00bd7de77fC8f26E2E2E6ca7A9'
+        );
 
-        console.log('contractInstance',contractInstance);
+        console.log('contractInstance', contractInstance);
 
         console.log(await contractInstance.swapTriggerPercentage());
 
-        setContractInstance(contractInstance)
+        setContractInstance(contractInstance);
         setEthInstance({
           provider: provider,
           signer: signer,
         });
 
-        const walletAddress = await signer.getAddress()
+        const walletAddress = await signer.getAddress();
         setAccount(walletAddress);
       } catch (err) {
         setErrorMessage('Connection failed. Please try again.');
@@ -69,6 +71,6 @@ export const useConnectMetamask = () => {
     setIsEthInstanceActive,
     isEthInstanceActive,
     disconnect,
-    contractInstance
+    contractInstance,
   ];
 };
