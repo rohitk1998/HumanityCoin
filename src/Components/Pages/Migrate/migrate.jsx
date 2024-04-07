@@ -79,7 +79,7 @@ export default function Migrate() {
       </div>
       <div className='migrateContext'>
         <p>
-        We're excited to announce a new feature that lets you leverage your existing HMN tokens! As we move forward, we've introduced new HMN tokens with enhanced functionality. To ensure a smooth transition, we're offering you the chance to easily exchange your old HMN tokens for the new ones. This gives you the freedom to continue utilizing your HMN holdings and be part of the exciting future we're building. Don't miss this opportunity to upgrade your HMN experience!
+        We are excited to announce a new feature that lets you leverage your existing HMN tokens! As we move forward, we've introduced new HMN tokens with enhanced functionality. To ensure a smooth transition, we're offering you the chance to easily exchange your old HMN tokens for the new ones. This gives you the freedom to continue utilizing your HMN holdings and be part of the exciting future we are building. Don't miss this opportunity to upgrade your HMN experience!
         </p>
       </div>
     </div>
