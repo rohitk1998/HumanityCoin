@@ -80,7 +80,7 @@ function Community() {
           <div className="joinConversation">
             <p className="join">Join the conversation.</p>
             <p className="subtitle">
-            Humanity's global and vibrant community drives the success of the
+            Humanity global and vibrant community drives the success of the
               Protocol. Join the conversation on Discord, Twitter, and Reddit to
               stay up to date on the latest community news.
             </p>
