@@ -1,4 +1,7 @@
 export const publicRouteObj = {
+  community : 'community',
+  faq:'faq',
+  ecosystem:'ecosystem',
   swap:'swap'
 };
 
@@ -40,52 +43,20 @@ export const routeExists = [
 ];
 
 export const primaryRoutes = {
-  verification: "verification",
-  verificationCode: "verificationCode",
-  overview: "overview",
-  setting: "setting",
-  deviceManagement: "device-management",
-  accountActivity: "account-activity",
-  order: "order",
-  landing: "landing",
-  notfication: "notfication",
-  viewAll: "view-all",
-  viewHistory: "view-history",
-  intro: "intro/:id",
-  introWithoutId: "intro",
-  rewardViewAll: "reward_view_all",
-  referralViewAll: "referral_view_all",
-  kycRetail: "kycRetail",
-  kycCorporate: "kycCorporate",
-  convertMNG: "convertMNT",
-  convertHistory: "convertHistory",
-  authLanding: "authLanding",
-  logout: "logout",
-  cryoto_deposit: "cryoto_deposit",
-  bank_deposit: "bank_deposit",
-  fTransaferHistory: "future_transferHistory",
-  launchpadViewAll: "launchpadViewAll",
-  launchpadDetail: "launchpadDetail",
-  launchpadHistory: "launchpadHistory",
-  chbtoken: "chbtoken",
-  ourSubscription: "ourSubscription",
-  newDeatil: "newDeatil",
-  swap:'swap'
+  swap:'swap',
+  configure:'configure',
+  pool:'pool',
+  v2pool : '/pool/v2',
+  addLiquidity:'add',
+  community : 'community',
+  faq:'faq',
+  ecosystem : 'ecosystem' , 
+  migrate:'migrate'
 };
 
 const {
-  setting,
-  order,
-  addressManagement,
-  viewAll,
-  viewHistory,
-  referralViewAll,
-  rewardViewAll,
   introWithoutId,
-  intro,
-  kycRetail,
-  kycCorporate,
-  fTransaferHistory,
+  intro
 } = primaryRoutes;
 
 export const headerHeadingObj = {

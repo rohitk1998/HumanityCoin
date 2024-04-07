@@ -5,28 +5,26 @@ import MainRoute from './routes/mainRoute';
 import AppRoute from './routes/AppRoute';
 import { appRoute, mainRoute } from './routes/routingData';
 import { AppLayout, Landing } from './routes/lazyRoute';
-import { Loader } from './Components/loader';
+import MainLayout from './Components/Layout/MainLayout/mainLayout';
 
 function App() {
-
-
   return (
     <>
-    {/* fallback={<Loader loading={true} />} */}
-      <Suspense >
-        {/* <Loader loading={true}  /> */}
+      <Suspense>
         <Routes>
           <Route element={<MainRoute />}>
-            {mainRoute?.map((item, idx) => {
-              return (
-                <Route
-                  key={idx}
-                  index
-                  path={`${rootName}${item.path}`}
-                  element={item.component}
-                />
-              );
-            })}
+            <Route path={`${rootName}`} element={<MainLayout />}>
+              {mainRoute?.map((item, idx) => {
+                return (
+                  <Route
+                    key={idx}
+                    index
+                    path={`${rootName}${item.path}`}
+                    element={item.component}
+                  />
+                );
+              })}
+            </Route>
             <Route path={`${rootName}`} index element={<Landing />} />
           </Route>
 
@@ -50,4 +48,4 @@ function App() {
     </>
   );
 }
-export default App
+export default App;

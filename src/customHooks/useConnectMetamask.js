@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Web3 from 'web3';
 import MigratorAndFeeDistributorAbi from '../abi/MigratorAndFeeDistributor.json';
 
 const MigratorAndFeeDistributorABI = MigratorAndFeeDistributorAbi.abi;
+const contractAddress = '0xe3F4D10D1FC71fC4FD93534E0991bD79C63C8C1E';
 
 export const useConnectMetamask = () => {
   const { ethereum } = window;
@@ -11,15 +12,7 @@ export const useConnectMetamask = () => {
   const [contractInstance, setContractInstance] = useState(null);
   const [account, setAccount] = useState(null);
   const [errorMessage, setErrorMessage] = useState('');
-  const [isEthInstanceActive, setIsEthInstanceActive] = useState(false);
 
-  useEffect(() => {
-    if (isEthInstanceActive) {
-      connect();
-    } else if (!isEthInstanceActive) {
-      disconnect();
-    }
-  }, [isEthInstanceActive]);
 
   const connect = async () => {
     if (ethereum) {
@@ -33,12 +26,12 @@ export const useConnectMetamask = () => {
 
         const contractInstance = new web3Instance.eth.Contract(
           MigratorAndFeeDistributorABI,
-          '0x97B537Cc74cb6C00bd7de77fC8f26E2E2E6ca7A9'
+          contractAddress
         );
 
         console.log('contractInstance', contractInstance);
 
-        console.log(await contractInstance.swapTriggerPercentage());
+        console.log(await contractInstance.methods.addTokensToMigrationReserve(10).call());
 
         setContractInstance(contractInstance);
         setEthInstance({
@@ -57,8 +50,12 @@ export const useConnectMetamask = () => {
     }
   };
 
+
+  useEffect(()=>{
+    connect();
+  },[])
+
   const disconnect = async () => {
-    setIsEthInstanceActive(false);
     setEthInstance(null);
     setAccount(null);
     setErrorMessage('');
@@ -68,8 +65,6 @@ export const useConnectMetamask = () => {
     ethInstance,
     account,
     errorMessage,
-    setIsEthInstanceActive,
-    isEthInstanceActive,
     disconnect,
     contractInstance,
   ];

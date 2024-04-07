@@ -1,11 +1,22 @@
-export const rootName = '/'
-export const appRootName='/app'
+export const rootName = '/';
+export const appRootName = '/app';
 
 
 export const APP_NAVBAR_MENU = [
-    'Swap',
-    'Explore',
-    'Migrate',
-    'Pool'
-] 
-
+  {
+    path: '/app/swap',
+    name: 'Swap',
+  },
+  {
+    path: '/app/explore',
+    name: 'Explore',
+  },
+  {
+    path: '/app/migrate',
+    name: 'Migrate',
+  },
+  {
+    path: '/app/pool',
+    name: 'Pool',
+  }
+];

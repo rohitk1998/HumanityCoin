@@ -72,17 +72,14 @@ const Header = () => {
           </a>
           <div className={style.header_rightSideFlex}>
             <div className={`${style.header_links} ${style.navbarfull}`}>
-              <RouterLink to={`${rootName}${publicRouteObj.listing}`}>
+              <RouterLink to={`${rootName}${publicRouteObj.ecosystem}`}>
                 Ecosystem
               </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.whyCoinhub}`}>
+              <RouterLink to={`${rootName}${publicRouteObj.community}`}>
                 Community
               </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.ourToken}`}>
+              <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
                 FAQ's
-              </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.marketupdates}`}>
-                Company
               </RouterLink>
               <button
                 style={launchAppButtonStyle}
@@ -126,19 +123,14 @@ const Header = () => {
                   afterVisibleChange={handleDrawerStateChange}
                 >
                   <div className={style.sidebarHeader}>
-                    <RouterLink to={`${rootName}${publicRouteObj.listing}`}>
+                    <RouterLink to={`${rootName}${publicRouteObj.ecosystem}`}>
                       Ecosystem
                     </RouterLink>
-                    <RouterLink to={`${rootName}${publicRouteObj.whyCoinhub}`}>
+                    <RouterLink to={`${rootName}${publicRouteObj.community}`}>
                       Community
                     </RouterLink>
-                    <RouterLink to={`${rootName}${publicRouteObj.ourToken}`}>
+                    <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
                       FAQ's
-                    </RouterLink>
-                    <RouterLink
-                      to={`${rootName}${publicRouteObj.marketupdates}`}
-                    >
-                      Company
                     </RouterLink>
                     <RouterLink
                       to={`${appRootName}/${publicRouteObj.swap}`}

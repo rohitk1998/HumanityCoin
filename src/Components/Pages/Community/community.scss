@@ -1,0 +1,306 @@
+@import '../../Assets/Styles/_vars.scss';
+@import '../../Assets/Styles/_mixins.scss';
+
+
+.headerMainEx {
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+
+  .header {
+    margin: 0 auto;
+
+    .lghtLogo {
+      display: none;
+    }
+
+    .drkLogo {
+      opacity: unset !important;
+    }
+
+    .navigationLink li a:hover {
+      color: $baseblue !important;
+    }
+
+    .menu .item .text {
+      color: #fff !important;
+
+      &:hover {
+        color: #fff !important;
+      }
+    }
+
+    .topLeft .r-nav li a:hover {
+      color: $baseblue !important;
+    }
+
+    .topLeft .loginSec li a:hover {
+      color: $baseblue;
+    }
+
+    .dropNav .menu .item .text {
+      color: #000 !important;
+    }
+
+    .dropNav .menu .item {
+      &:hover {
+        .text {
+          color: #fff !important;
+        }
+      }
+    }
+
+    .dropNav {
+      .text {
+        color: #a5a5ab !important;
+      }
+    }
+
+    .topLeft .ui.simple.dropdown:hover .text,
+    .topLeft .ui.simple.dropdown:hover .icon {
+      color: $baseblue;
+    }
+  }
+}
+
+.community {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  .communitySec {
+    padding-top: 80px;
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+    .communityText {
+      color: rgba(255, 255, 255, 0.6);
+      @include fluid-type(320px, 1920px, 14px, 18px);
+      font-weight: 200;
+    }
+    h3 {
+      @include fluid-type(320px, 1920px, 25px, 32px);
+      max-width: 810px;
+      font-weight: 600;
+      padding-top: 10px;
+      color: #fff;
+      padding-bottom: 63px;
+      @media (max-width: 767px) {
+        padding-bottom: 25px;
+      }
+      span {
+        font-weight: 400;
+      }
+    }
+    .joinConversation {
+      padding-top: 63px;
+      @media (max-width: 767px) {
+        padding-top: 25px;
+      }
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+      .join {
+        @include fluid-type(320px, 1920px, 18px, 22px);
+        color: #fff;
+        font-weight: 400;
+        padding-bottom: 15px;
+      }
+      .subtitle {
+        color: rgba(255, 255, 255, 0.6);
+        max-width: 600px;
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+    .discordTop {
+      padding-bottom: 63px;
+      .discords {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        padding-top: 20px;
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
+        > div {
+          width: 50%;
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+        .left,
+        .right {
+          cursor: pointer;
+          height: fit-content;
+          outline: none;
+          padding: 24px;
+          width: 100%;
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.13);
+          text-align: left;
+          @media screen and (min-width: 767px) and (max-width: 1366px) {
+            min-height: 140px;
+          }
+          &:hover {
+            background: rgba(255, 255, 255, 0.05);
+          }
+          .leftTop {
+            display: flex;
+            justify-content: space-between;
+            h4 {
+              color: #fff;
+              display: flex;
+              @include fluid-type(320px, 1920px, 18px, 22px);
+              font-weight: 400;
+              gap: 10px;
+              padding-bottom: 8px;
+              width: 100%;
+            }
+            img {
+              width: 26px;
+            }
+          }
+          p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .uniMember {
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      padding-top: 63px;
+      padding-bottom: 60px;
+      h4 {
+        @include fluid-type(320px, 1920px, 18px, 22px);
+        color: #fff;
+        max-width: 680px;
+        padding-bottom: 10px;
+        span {
+          font-weight: 600;
+        }
+      }
+      p {
+        color: rgba(255, 255, 255, 0.6);
+        max-width: 592px;
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .UniswapCommunity {
+        display: flex;
+        gap: 30px;
+        padding-top: 40px;
+        @media (max-width: 991px) {
+          flex-wrap: wrap;
+        }
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
+        .first {
+          max-width: 380px;
+          width: 100%;
+          border-radius: 20px 0 20px 0;
+          overflow: hidden;
+          @media (max-width: 991px) {
+            max-width: 350px;
+          }
+          @media (max-width: 767px) {
+            max-width: 500px;
+          }
+          .unicodeimg {
+            height: 220px;
+            width: 100%;
+          }
+          .unicode {
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 24px;
+            border-radius: 0 0 20px 0;
+            margin-top: 20px;
+            p {
+              max-width: 330px;
+              color: rgba(255, 255, 255, 0.6);
+              padding-bottom: 40px;
+            }
+            a {
+              border: 1px solid rgb(136, 141, 155);
+              border-radius: 10px;
+              padding: 8px 15px;
+              @include fluid-type(320px, 1920px, 14px, 16px);
+              border: 2px solid transparent;
+              background-image: linear-gradient(
+                  rgba(255, 255, 255, 0),
+                  rgba(255, 255, 255, 0)
+                ),
+                linear-gradient(
+                  95.5deg,
+                  rgba(15, 53, 255, 0.3) 12.82%,
+                  rgba(255, 72, 181, 0.3) 41.96%,
+                  rgba(15, 53, 255, 0.08) 75.06%,
+                  rgba(15, 53, 255, 0.11) 107.66%
+                );
+              cursor: pointer;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .brandAssets {
+      padding: 63px 0 70px 0;
+      h4 {
+        @include fluid-type(320px, 1920px, 18px, 22px);
+        color: #fff;
+        max-width: 680px;
+        padding-bottom: 10px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.6);
+        max-width: 592px;
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .inner {
+        display: flex;
+        gap: 30px;
+        padding-top: 40px;
+        @media (max-width: 991px) {
+          flex-wrap: wrap;
+        }
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
+        .first {
+          max-width: 248px;
+          width: 100%;
+          border-radius: 20px 0 20px 0;
+          overflow: hidden;
+          .unicodeimg {
+            height: 130px;
+            width: 100%;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+          .unicode {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 24px;
+            border-radius: 0 0 20px 0;
+            margin-top: 10px;
+            p {
+              max-width: 330px;
+              color: rgba(255, 255, 255, 0.6);
+              padding-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

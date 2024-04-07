@@ -1,0 +1,189 @@
+@import '../../Assets/Styles/_vars.scss';
+@import '../../Assets/Styles/_mixins.scss';
+.configure{
+  background-color: rgb(3, 3, 3);
+  height: 100vh;
+  width: 100%;
+  .configureCenter {
+    padding-top: 70px;
+    width: 50%;
+    margin: auto;
+    .configureheading {
+      color: #ffffff;
+      font-size: 20px !important;
+      @include fluid-type(320px, 1920px, 24px, 42px);
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .youpay {
+      border-radius: 22px;
+      padding: 20px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: transparent;
+      align-items: center;
+      .menuBtn {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        .btn {
+          border-radius: 10px;
+          padding: 10px;
+          background-color: rgb(49, 28, 49);
+          height: 40px;
+          color: rgb(252, 114, 255);
+          @include fluid-type(320px, 1920px, 14px, 16px);
+          margin-top: 5px;
+          font-weight: 600;
+          margin-top: 10px;
+          &:hover,
+          :active,
+          :focus,
+          :focus-within,
+          :focus-visible {
+            background-color: rgb(49, 28, 49) !important;
+            opacity: 0.4;
+            color: rgb(252, 114, 255);
+             
+          }
+        }
+      }
+      .configureForm {
+        background-color: transparent;
+        border: 1px solid grey;
+        border-radius: 20px;
+        padding: 20px;
+        min-width: 500px;
+        width: 70%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .form-container {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        .input-row {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+
+          label {
+            flex: 1;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+          }
+
+          input {
+            flex: 2;
+            padding: 8px;
+            height: 43px;
+            background-color: rgb(19, 19, 19);
+            width: 100%;
+            color: white;
+            border-radius: 10px;
+          }
+        }
+
+        .centered-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          button {
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(49, 28, 49);
+            height: 40px;
+            color: rgb(252, 114, 255);
+            @include fluid-type(320px, 1920px, 14px, 16px);
+            margin-top: 5px;
+            font-weight: 600;
+            margin-top: 10px;
+            &:hover,
+            :active,
+            :focus,
+            :focus-within,
+            :focus-visible {
+              background-color: rgb(49, 28, 49) !important;
+              opacity: 0.4;
+              color: rgb(252, 114, 255);
+               
+            }
+        }
+      }
+      }
+    }
+  }
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: rgb(19, 19, 19);
+  color: #fff;
+  border: 1px solid #242424;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  &:hover {
+    background-color: rgb(27, 27, 27);
+  }
+}
+.ant-select-arrow {
+  span {
+    svg {
+      fill: #fff;
+    }
+  }
+}
+.selectToken {
+  .ant-select-selector {
+    background-color: rgb(252, 114, 255) !important;
+    @include fluid-type(320px, 1920px, 16px, 18px);
+  }
+  .ant-select-single.ant-select-open .ant-select-selection-item {
+    font-weight: bold !important;
+    color: #fff;
+  }
+}
+.connectbtn {
+  border-radius: 10px;
+  background-color: rgb(49, 28, 49);
+  height: 60px;
+  color: rgb(252, 114, 255);
+  @include fluid-type(320px, 1920px, 14px, 16px);
+  margin-top: 5px;
+  font-weight: 600;
+  margin-top: 10px;
+  &:hover,
+  :active,
+  :focus,
+  :focus-within,
+  :focus-visible {
+    background-color: rgb(49, 28, 49) !important;
+    opacity: 0.4;
+    color: rgb(252, 114, 255);
+     
+  }
+}
+.ant-drawer-wrapper-body {
+  background-color: #131313;
+  .ant-drawer-header {
+    border-bottom: 0 !important;
+    .ant-drawer-title {
+      color: #fff;
+    }
+  }
+  .ant-drawer-body {
+    padding: 15px !important;
+  }
+}
+.anticon-close {
+  svg {
+    fill: white;
+  }
+}

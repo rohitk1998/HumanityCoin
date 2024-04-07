@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import "./Components/Assets/Styles/_mixins.scss";
-@import "./Components/Assets/Styles/_vars.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './Components/Assets/Styles/_mixins.scss';
+@import './Components/Assets/Styles/_vars.scss';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-family: $baseFont2 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 * {
@@ -101,7 +103,7 @@ img {
       padding-left: 80px !important;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         left: 60px;
         top: 50%;
@@ -401,7 +403,7 @@ th {
       position: relative;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -424,7 +426,7 @@ th {
       position: relative;
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -481,7 +483,7 @@ th {
   }
 
   .fa {
-    content: "\f105";
+    content: '\f105';
     color: $borderdarkgrey;
   }
 }
@@ -538,7 +540,7 @@ th {
   }
 }
 
-div[class$="card"] {
+div[class$='card'] {
   border: 1px solid $bgderkgrey;
   border-radius: 20px;
   box-shadow: 0px 0px 12px #00000012;
@@ -654,7 +656,7 @@ body {
 
 /*======================comman-text===============*/
 
-h3[class^="text-black-36"] {
+h3[class^='text-black-36'] {
   color: $darktext;
   font-weight: 600;
   @include fluid-type(320px, 1920px, 20px, 36px);
@@ -662,7 +664,7 @@ h3[class^="text-black-36"] {
   font-family: Open Sans;
 }
 
-h4[class^="text-black-20"] {
+h4[class^='text-black-20'] {
   padding: 28px 40px;
   color: $darktext;
   @include fluid-type(320px, 1920px, 14px, 20px);
