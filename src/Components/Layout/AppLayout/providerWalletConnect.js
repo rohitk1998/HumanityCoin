@@ -20,6 +20,7 @@ const metadata = {
 }
 
 const chains = [mainnet, arbitrum , sepolia , bsc];
+
 const config = defaultWagmiConfig({
   chains,
   projectId,
@@ -28,12 +29,13 @@ const config = defaultWagmiConfig({
 })
 
 // 3. Create modal
-createWeb3Modal({
+const web3Modal = createWeb3Modal({
   wagmiConfig: config,
   projectId,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration
   enableOnramp: true // Optional - false as default
 })
+
 
 export function Web3ModalProvider({ children }) {
   return (

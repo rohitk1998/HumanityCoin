@@ -6,11 +6,14 @@ import AppRoute from './routes/AppRoute';
 import { appRoute, mainRoute } from './routes/routingData';
 import { AppLayout, Landing } from './routes/lazyRoute';
 import MainLayout from './Components/Layout/MainLayout/mainLayout';
+import { useConnectMetamask } from "./customHooks/useConnectMetamask"
 
 function App() {
+  const [ contractInstance ] = useConnectMetamask();
+  console.log('contractInstance',contractInstance);
   return (
     <>
-      <Suspense>
+      <Suspense >
         <Routes>
           <Route element={<MainRoute />}>
             <Route path={`${rootName}`} element={<MainLayout />}>

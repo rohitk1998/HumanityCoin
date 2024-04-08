@@ -11,7 +11,7 @@ import { Select, Button, Drawer } from 'antd';
 import './Header.scss';
 import { Dropdown, Menu, Input } from 'antd';
 import { DownOutlined, SearchOutlined } from '@ant-design/icons';
-import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
+// import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
 // import applestore from "../../Assets/Images/applestore.svg";
 // import playstore from "../../Assets/Images/playstor.svg";
 
@@ -31,8 +31,6 @@ const connectAppButtonStyle = {
 };
 
 export default function AppHeader() {
-  const [ethInstance, errorMessage] = useConnectMetamask();
-
   const { Option } = Select;
   const { Search } = Input;
 
@@ -45,8 +43,39 @@ export default function AppHeader() {
     (state) => state.app
   );
 
-  function handleChange(value) {
+
+
+  async function switchNetwork() {
+    // Check if MetaMask is installed and connected
+    if (window.ethereum) {
+        try {
+            // Request to switch network
+            await window.ethereum.request({
+                method: 'wallet_switchEthereumChain',
+                params: [{ chainId: '0x1' }], // Mainnet
+            });
+        } catch (error) {
+            // Handle errors
+            console.error('Error switching network:', error);
+        }
+    } else {
+        // MetaMask not detected
+        console.error('MetaMask is not installed');
+    }
+}
+
+  async function handleChange(value) {
     console.log(`Selected: ${value}`);
+    // await window.ethereum.request({
+    //   method: 'wallet_switchEthereumChain',
+    //   params: [{ chainId: '0x1' }], // Mainnet
+    // }).then((data)=> {
+    //   console.log('result', data);
+    // })
+    // .catch((error)=> {
+    //   console.log('errror', error);
+    // })
+    console.log('window.ethereum',window.ethereum);
   }
 
   const onSearch = (value) => {
