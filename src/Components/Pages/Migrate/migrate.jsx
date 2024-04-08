@@ -8,7 +8,8 @@ import { useWeb3Modal } from '@web3modal/wagmi/react';
 export default function Migrate() {
   const { isConnected } = useSelector((state) => state.app);
   const { open } = useWeb3Modal();
-  const [amount, setAmount] = useState(null);
+  const [oldAmount, setOldAmount] = useState(null);
+  const [newAmount, setNewAmount] = useState(null);
   const [isFormValid, setIsFormValid] = useState(true);
 
   const HandleInputchange = (event) => {
@@ -16,7 +17,10 @@ export default function Migrate() {
     console.log('handle input change', event.target.value);
     let inputVal = addZeroToDecimalinput(event.target.value);
     if (inputVal === '' || regex(10).test(inputVal)) {
-      setAmount(inputVal);
+      setOldAmount(inputVal);
+      // Calculate new amount based on the formula
+      const newTokenAmount = (900000000 * parseFloat(inputVal)) / 1000000000000;
+      setNewAmount(newTokenAmount.toFixed(4)); // Round to 2 decimal places
     }
     if (inputVal === '') {
       isValid = false;
@@ -26,11 +30,13 @@ export default function Migrate() {
 
   const handleMigrateToken = () => {
     console.log('MIGRATE TOKENS');
+    // Here you can perform further actions related to migrating tokens
   };
 
   useEffect(() => {
     return () => {
-      setAmount('');
+      setOldAmount('');
+      setNewAmount('');
       setIsFormValid(true);
     };
   }, []);
@@ -47,18 +53,18 @@ export default function Migrate() {
               <label className='migrateLabel'>Old HMN Token</label>
               <input
                 className="migrateInput"
-                value={amount}
+                value={oldAmount}
                 onChange={HandleInputchange}
                 placeholder="0"
               />
             </div>
             <div className="amountpay" style={{ marginTop: '5px' }}>
-            <label className='migrateLabel'>New HMN Token</label>
+              <label className='migrateLabel'>New HMN Token</label>
               <input
                 className="migrateInput"
-                value={amount}
-                onChange={HandleInputchange}
+                value={newAmount}
                 placeholder="0.00"
+                readOnly
               />
             </div>
           </div>
