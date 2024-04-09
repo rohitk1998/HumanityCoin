@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './configure.scss';
-import { Select, Button, Drawer } from 'antd';
-import CommonDrawer from '../../Common/CommonDrawer';
 import TaxAndSwapForm from './taxAndSwapForm';
 import ConfigureAddressForm from './configureAddressForm';
 import SetHMNTokenForm from './setHMNToken';
@@ -52,7 +50,7 @@ export default function Configure() {
             {selectedForm === CONFIGURE_MENU[0].label ? (
               <TaxAndSwapForm />
             ) : selectedForm === CONFIGURE_MENU[1].label ? (
-              <ConfigureAddressForm />
+              <ConfigureAddressForm isSelected={selectedForm} />
             ) : (
               <SetHMNTokenForm />
             )}

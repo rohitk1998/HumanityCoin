@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { rootName, appRootName } from './utils/constant';
 import MainRoute from './routes/mainRoute';
@@ -9,8 +9,13 @@ import MainLayout from './Components/Layout/MainLayout/mainLayout';
 import { useConnectMetamask } from "./customHooks/useConnectMetamask"
 
 function App() {
-  const [ contractInstance ] = useConnectMetamask();
-  console.log('contractInstance',contractInstance);
+  const { contractInstance  } = useConnectMetamask();
+
+
+  // useEffect(()=> {
+  //   setHookActive(true)
+  // },[])
+
   return (
     <>
       <Suspense >

@@ -2,7 +2,8 @@
 @import '../../Assets/Styles/_mixins.scss';
 .configure{
   background-color: rgb(3, 3, 3);
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   .configureCenter {
     padding-top: 70px;
@@ -25,16 +26,24 @@
       justify-content: space-between;
       background-color: transparent;
       align-items: center;
+      @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+      }
       .menuBtn {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 20px;
         align-items: center;
         .btn {
           border-radius: 10px;
           padding: 10px;
           background-color: rgb(49, 28, 49);
-          height: 40px;
+          min-height: 40px;
+          min-width: 150px;
+          width: 100%;
           color: rgb(252, 114, 255);
           @include fluid-type(320px, 1920px, 14px, 16px);
           margin-top: 5px;
@@ -59,49 +68,84 @@
         padding: 20px;
         min-width: 500px;
         width: 70%;
-        height: 400px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         .form-container {
-          max-width: 400px;
-          margin: 0 auto;
+          min-width: 400px;
+          width: 80%;
+          // background-color: aqua;
         }
+        .editContainer{
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: end;
+          align-items: center;
 
+          button{
+            border-radius: 10px;
+            background-color: rgb(49, 28, 49);
+            height: 36px;
+            min-width:70px;
+            color: rgb(252, 114, 255);
+            font-weight: 600;
+            &:hover,
+            :active,
+            :focus,
+            :focus-within,
+            :focus-visible {
+              background-color: rgb(49, 28, 49) !important;
+              opacity: 0.4;
+              color: rgb(252, 114, 255);
+               
+            }
+        }
+        }
         .input-row {
           display: flex;
-          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          width: 100%;
+          padding-left: 10px;
           margin-bottom: 20px;
-          background-color: #fff;
-          label {
-            flex: 1;
-            font-weight: 500;
-            color: rgb(255, 255, 255);
-            font-size: 16px;
+          border-radius: 20px;
+          label{
+            color: rgb(71, 68, 68);
+            font-size: 16px ;
+            font-weight: 400;  
           }
-
           input {
-            flex: 2;
-            padding: 8px;
-            height: 43px;
-            background-color: rgb(19, 19, 19);
+            height: 60px;
             width: 100%;
-            color: white;
-            border-radius: 10px;
+            background-color: transparent;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid  rgb(61, 61, 61);
+            color: #959595;
+            opacity: 0.8;
+            font-weight: 400;
+            padding-left: 10px;
+            font-size: 14px;
+            outline-width: 0px;
           }
         }
 
         .centered-button {
+          width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
           button {
+            width: 80%;
             border-radius: 10px;
             padding: 10px;
             background-color: rgb(49, 28, 49);
-            height: 40px;
+            height: 60px;
             color: rgb(252, 114, 255);
             @include fluid-type(320px, 1920px, 14px, 16px);
             margin-top: 5px;
