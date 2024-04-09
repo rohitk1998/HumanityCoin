@@ -67,9 +67,9 @@ export default function HMNTokenAddress({ isSelected }) {
     if (contractInstance !== null && contractInstance !== 'null') {
       console.log('contractInstance', contractInstance);
 
-      const _newHMNToken = await contractInstance.oldHMNToken();
+      const _newHMNToken = await contractInstance.newHMNToken();
 
-      const _oldHMNToken = await contractInstance.newHMNToken();
+      const _oldHMNToken = await contractInstance.oldHMNToken();
 
       HMN_Token['_newHMNToken'] = _newHMNToken
 
