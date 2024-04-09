@@ -8,12 +8,14 @@ export default function HMNTokenAddress({ isSelected }) {
   const { contractInstance } = useConnectMetamask();
   const { isConnected } = useSelector((state) => state.app);
   const [HMN_Token, setHMN_Token] = useState({
-    oldTokenAddress: '',
-    newTokenAddress: '',
+    _newHMNToken: '',
+    _oldHMNToken: '',
   });
   const [isFormValid, setIsFormValid] = useState(true);
   const [validationError, setValidationError] = useState('');
   const [isEdit, setIsEdit] = useState(false);
+  const [isSuccess, setSuccess] = useState(false);
+  const [txnHash, setHash] = useState(false);
 
   const handleInputChange = (event) => {
     console.log('event', event.target.value);
@@ -22,9 +24,9 @@ export default function HMNTokenAddress({ isSelected }) {
   };
 
   const handleSubmit = async () => {
-    const { oldTokenAddress, newTokenAddress } = HMN_Token;
+    const { _newHMNToken, _oldHMNToken } = HMN_Token;
 
-    if (oldTokenAddress === '' || newTokenAddress === '') {
+    if (_newHMNToken === '' || _oldHMNToken === '') {
       setIsFormValid(false);
       setValidationError('Enter Address');
     } else {
@@ -34,9 +36,13 @@ export default function HMNTokenAddress({ isSelected }) {
           'DATA ON SUBMISSION',
           HMN_Token
         );
-        const tx = await contractInstance.setHMNTokensAddresses('' , '');
-        console.log('tx', tx);
-        const receipt = await tx.hash();
+        const tx = await contractInstance.setHMNTokensAddresses(HMN_Token._newHMNToken , HMN_Token._oldHMNToken);
+        console.log('TRASACTION ON SET HMN TOKEN', tx);
+        const receipt = await tx.hash;
+        if(receipt){
+          setHash(receipt)
+          setSuccess(true);
+        }
         console.log('set HMN token address transaction receipt:', receipt);
       } catch (error) {
         console.log('error in configuring addresses', error);
@@ -48,8 +54,8 @@ export default function HMNTokenAddress({ isSelected }) {
     setFormData();
     return () => {
       setHMN_Token({
-        oldTokenAddress: '',
-        newTokenAddress: '',
+        _newHMNToken: '',
+        _oldHMNToken: '',
       });
       setIsEdit(false);
       setValidationError('');
@@ -61,19 +67,40 @@ export default function HMNTokenAddress({ isSelected }) {
     if (contractInstance !== null && contractInstance !== 'null') {
       console.log('contractInstance', contractInstance);
 
-      const oldTokenAddress = await contractInstance.oldHMNToken();
+      const _newHMNToken = await contractInstance.oldHMNToken();
 
-      const newTokenAddress = await contractInstance.newHMNToken();
+      const _oldHMNToken = await contractInstance.newHMNToken();
 
-      HMN_Token['oldTokenAddress'] = oldTokenAddress
+      HMN_Token['_newHMNToken'] = _newHMNToken
 
-      HMN_Token['newTokenAddress'] = newTokenAddress
+      HMN_Token['_oldHMNToken'] = _oldHMNToken
 
       console.log('HMN_Token', HMN_Token);
 
       setHMN_Token(HMN_Token);
     }
   };
+
+
+  if (isSuccess) {
+    setTimeout(() => {
+      setSuccess(false);
+    }, 3000);
+    return (
+      <div className="form-container">
+        <div className='success-box'>
+        <p>
+          Successfully initiated the transaction !!
+        </p>
+        <button onClick={()=>{
+          window.open(`https://sepolia.etherscan.io/tx/${txnHash}` , '_blank')
+        }}>
+        {txnHash.slice(0,40)}
+        </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="form-container">
@@ -99,12 +126,12 @@ export default function HMNTokenAddress({ isSelected }) {
         </div>
       )}
       <div className="input-row">
-        <label htmlFor="oldTokenAddress">Old HMN Token</label>
+        <label htmlFor="_newHMNToken">Old HMN Token</label>
         <input
           type="text"
-          id="oldTokenAddress"
+          id="_newHMNToken"
           placeholder="address"
-          value={HMN_Token.oldTokenAddress}
+          value={HMN_Token._newHMNToken}
           onChange={(event) => {
             handleInputChange(event);
           }}
@@ -112,12 +139,12 @@ export default function HMNTokenAddress({ isSelected }) {
         />
       </div>
       <div className="input-row">
-        <label htmlFor="newTokenAddress">New HMN Token</label>
+        <label htmlFor="_oldHMNToken">New HMN Token</label>
         <input
           type="text"
-          id="newTokenAddress"
+          id="_oldHMNToken"
           placeholder="address"
-          value={HMN_Token.newTokenAddress}
+          value={HMN_Token._oldHMNToken}
           onChange={(event) => {
             handleInputChange(event);
           }}

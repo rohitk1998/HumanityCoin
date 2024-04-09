@@ -115,7 +115,7 @@ export default function TaxAndSwapForm({ isSelected }) {
         <input
           type="text"
           id="_swapTrigger"
-          placeholder="address"
+          placeholder="Enter amount"
           value={configureAddress._swapTrigger}
           onChange={(event) => {
             handleInputChange(event);
@@ -128,7 +128,7 @@ export default function TaxAndSwapForm({ isSelected }) {
         <input
           type="text"
           id="_purchaseTax"
-          placeholder="address"
+          placeholder="Enter amount"
           value={configureAddress._purchaseTax}
           onChange={(event) => {
             handleInputChange(event);
@@ -141,7 +141,7 @@ export default function TaxAndSwapForm({ isSelected }) {
         <input
           type="text"
           id="_salesTax"
-          placeholder="address"
+          placeholder="Enter amount"
           value={configureAddress._salesTax}
           onChange={(event) => {
             handleInputChange(event);
