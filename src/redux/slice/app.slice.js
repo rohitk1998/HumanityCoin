@@ -2,7 +2,12 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     isConnected : false , 
-    account : ''
+    account : '',
+    configureAddress : {
+      _swapTrigger: '',
+    _purchaseTax: '',
+    _salesTax: '',
+    }
 };
 
 const appSlice = createSlice({
@@ -14,12 +19,16 @@ const appSlice = createSlice({
     },
     setAccount: (state, action) => {
       state.account = action.payload;
+    },
+    setConfiguredAddress: (state, action) => {
+      state.configureAddress = action.payload;
     }
   },
 });
 
 export const {
   setIsConnected,
-  setAccount
+  setAccount,
+  setConfiguredAddress
 } = appSlice.actions;
 export default appSlice.reducer;

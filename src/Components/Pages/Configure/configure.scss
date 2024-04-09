@@ -72,10 +72,34 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        min-height: 465px;
+        height: 100%;
         .form-container {
           min-width: 400px;
-          width: 80%;
-          // background-color: aqua;
+          width: 90%;
+        }
+        .success-box{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding-left: 10px;
+          margin-bottom: 20px;
+          border-radius: 20px;
+          min-height: 100px;
+          height: 100%;
+          background-color: rgb(28, 49, 36);
+          color: rgb(154, 255, 114);
+          font-weight: 500;
+          button{
+            width: 100%;
+            color: rgb(151, 151, 151);
+            font-size: 14px ;
+            font-weight: 300;  
+            background-color: transparent;
+            border:none;
+          }
         }
         .editContainer{
           display: flex;

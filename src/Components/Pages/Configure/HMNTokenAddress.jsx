@@ -3,31 +3,28 @@ import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
 import { useSelector } from 'react-redux';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
 
-export default function ConfigureAddressForm({ isSelected }) {
+export default function HMNTokenAddress({ isSelected }) {
   const { open } = useWeb3Modal();
   const { contractInstance } = useConnectMetamask();
   const { isConnected } = useSelector((state) => state.app);
-  const [configureAddress, setConfigureAddress] = useState({
-    _swapTrigger: '',
-    _purchaseTax: '',
-    _salesTax: '',
+  const [HMN_Token, setHMN_Token] = useState({
+    oldTokenAddress: '',
+    newTokenAddress: '',
   });
   const [isFormValid, setIsFormValid] = useState(true);
   const [validationError, setValidationError] = useState('');
   const [isEdit, setIsEdit] = useState(false);
-  const [isSuccess, setSuccess] = useState(false);
-  const [txnHash, setHash] = useState(false);
 
   const handleInputChange = (event) => {
     console.log('event', event.target.value);
-    configureAddress[event.target.id] = event.target.value;
-    setConfigureAddress({ ...configureAddress });
+    HMN_Token[event.target.id] = event.target.value;
+    setHMN_Token({ ...HMN_Token });
   };
 
   const handleSubmit = async () => {
-    const { _swapTrigger, _salesTax, _purchaseTax } = configureAddress;
+    const { oldTokenAddress, newTokenAddress } = HMN_Token;
 
-    if (_swapTrigger === '' || _salesTax === '' || _purchaseTax === '') {
+    if (oldTokenAddress === '' || newTokenAddress === '') {
       setIsFormValid(false);
       setValidationError('Enter Address');
     } else {
@@ -35,22 +32,12 @@ export default function ConfigureAddressForm({ isSelected }) {
       try {
         console.log(
           'DATA ON SUBMISSION',
-          configureAddress,
-          'await contractInstance.swapTrigger()',
-          await contractInstance.swapTrigger()
+          HMN_Token
         );
-        const tx = await contractInstance.configureAddresses(
-          _swapTrigger,
-          _purchaseTax,
-          _salesTax
-        );
+        const tx = await contractInstance.setHMNTokensAddresses('' , '');
         console.log('tx', tx);
-        const receipt = tx?.hash;
-        if (receipt) {
-          setHash(receipt)
-          setSuccess(true);
-        }
-        console.log('configureAddresses transaction receipt:', receipt);
+        const receipt = await tx.hash();
+        console.log('set HMN token address transaction receipt:', receipt);
       } catch (error) {
         console.log('error in configuring addresses', error);
       }
@@ -60,10 +47,9 @@ export default function ConfigureAddressForm({ isSelected }) {
   useEffect(() => {
     setFormData();
     return () => {
-      setConfigureAddress({
-        _swapTrigger: '',
-        _purchaseTax: '',
-        _salesTax: '',
+      setHMN_Token({
+        oldTokenAddress: '',
+        newTokenAddress: '',
       });
       setIsEdit(false);
       setValidationError('');
@@ -75,42 +61,19 @@ export default function ConfigureAddressForm({ isSelected }) {
     if (contractInstance !== null && contractInstance !== 'null') {
       console.log('contractInstance', contractInstance);
 
-      const _swapTrigger = await contractInstance.swapTrigger();
+      const oldTokenAddress = await contractInstance.oldHMNToken();
 
-      const _purchaseTax = await contractInstance.purchaseTax();
-      const _salesTax = await contractInstance.salesTax();
+      const newTokenAddress = await contractInstance.newHMNToken();
 
-      configureAddress['_swapTrigger'] = _swapTrigger;
+      HMN_Token['oldTokenAddress'] = oldTokenAddress
 
-      configureAddress['_purchaseTax'] = _purchaseTax;
+      HMN_Token['newTokenAddress'] = newTokenAddress
 
-      configureAddress['_salesTax'] = _salesTax;
+      console.log('HMN_Token', HMN_Token);
 
-      console.log('configureAddress', configureAddress);
-
-      setConfigureAddress(configureAddress);
+      setHMN_Token(HMN_Token);
     }
   };
-
-  if (isSuccess) {
-    setTimeout(() => {
-      setSuccess(false);
-    }, 3000);
-    return (
-      <div className="form-container">
-        <div className='success-box'>
-        <p>
-          Successfully initiated the transaction !!
-        </p>
-        <button onClick={()=>{
-          window.open(`https://sepolia.etherscan.io/tx/${txnHash}` , '_blank')
-        }}>
-        {txnHash.slice(0,40)}
-        </button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="form-container">
@@ -136,12 +99,12 @@ export default function ConfigureAddressForm({ isSelected }) {
         </div>
       )}
       <div className="input-row">
-        <label htmlFor="_swapTrigger">Swap Trigger</label>
+        <label htmlFor="oldTokenAddress">Old HMN Token</label>
         <input
           type="text"
-          id="_swapTrigger"
+          id="oldTokenAddress"
           placeholder="address"
-          value={configureAddress._swapTrigger}
+          value={HMN_Token.oldTokenAddress}
           onChange={(event) => {
             handleInputChange(event);
           }}
@@ -149,25 +112,12 @@ export default function ConfigureAddressForm({ isSelected }) {
         />
       </div>
       <div className="input-row">
-        <label htmlFor="_purchaseTax">Purchase Tax</label>
+        <label htmlFor="newTokenAddress">New HMN Token</label>
         <input
           type="text"
-          id="_purchaseTax"
+          id="newTokenAddress"
           placeholder="address"
-          value={configureAddress._purchaseTax}
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          disabled={!isEdit}
-        />
-      </div>
-      <div className="input-row">
-        <label htmlFor="_salesTax">Sales Tax</label>
-        <input
-          type="text"
-          id="_salesTax"
-          placeholder="address"
-          value={configureAddress._salesTax}
+          value={HMN_Token.newTokenAddress}
           onChange={(event) => {
             handleInputChange(event);
           }}

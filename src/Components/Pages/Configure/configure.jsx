@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './configure.scss';
 import TaxAndSwapForm from './taxAndSwapForm';
 import ConfigureAddressForm from './configureAddressForm';
-import SetHMNTokenForm from './setHMNToken';
+import HMNTokenAddress from './HMNTokenAddress';
 
 const CONFIGURE_MENU = [
   {
@@ -52,7 +52,7 @@ export default function Configure() {
             ) : selectedForm === CONFIGURE_MENU[1].label ? (
               <ConfigureAddressForm isSelected={selectedForm} />
             ) : (
-              <SetHMNTokenForm />
+              <HMNTokenAddress />
             )}
           </div>
         </div>
