@@ -70,7 +70,7 @@ const connect = async () => {
         try {
           // Assuming configureTaxAndSwap is a transaction and not a call
           const tx = await newContractInstance.configureTaxAndSwap(3000, 3000, 4000);
-          const receipt = await tx.wait();
+          const receipt = await tx.hash
           console.log('configureTaxAndSwap transaction receipt:', receipt);
         } catch (error) {
           console.error('Error sending configureTaxAndSwap transaction:', error);
