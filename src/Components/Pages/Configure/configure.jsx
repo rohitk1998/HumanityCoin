@@ -3,6 +3,7 @@ import './configure.scss';
 import TaxAndSwapForm from './taxAndSwapForm';
 import ConfigureAddressForm from './configureAddressForm';
 import HMNTokenAddress from './HMNTokenAddress';
+import AddTokenToMigrateReseve from './addTokenToMigrateReseve';
 
 const CONFIGURE_MENU = [
   {
@@ -20,6 +21,10 @@ const CONFIGURE_MENU = [
   {
     action: 'feeDistributor',
     label: 'Fee Distribution',
+  },
+  {
+    action: 'addTokenToReserve',
+    label: 'Add Tokens',
   },
 ];
 export default function Configure() {
@@ -51,9 +56,14 @@ export default function Configure() {
               <TaxAndSwapForm />
             ) : selectedForm === CONFIGURE_MENU[1].label ? (
               <ConfigureAddressForm isSelected={selectedForm} />
-            ) : (
+            ) : 
+            selectedForm === CONFIGURE_MENU[2].label ?
+            (
               <HMNTokenAddress />
-            )}
+            )
+          :
+              <AddTokenToMigrateReseve/>
+          }
           </div>
         </div>
       </div>

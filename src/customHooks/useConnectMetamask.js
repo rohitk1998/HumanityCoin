@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import MigratorAndFeeDistributorAbi from "../abi/MigratorAndFeeDistributor.json"
+import HumanityCoinABIs from "../abi/HumanityCoin.json"
 
 const MigratorAndFeeDistributorABI = MigratorAndFeeDistributorAbi.abi
+
+const HumanityCoinABI = HumanityCoinABIs.abi
 
 const ethers = require("ethers");
 const { Web3Provider } = require('@ethersproject/providers');
@@ -10,6 +13,7 @@ export const useConnectMetamask = () => {
   const { ethereum } = window;
   const [ethInstance, setEthInstance] = useState(null);
   const [contractInstance, setContractInstance] = useState(null);
+  const [humanityCoinContractInstance, setHumanityCoinContractInstance] = useState(null);
   const [account, setAccount] = useState(null);
   const [errorMessage, setErrorMessage] = useState('');
   const [isEthInstanceActive, setIsEthInstanceActive] = useState(false);
@@ -53,29 +57,27 @@ const connect = async () => {
       // Define the contract address
       const contractAddress = '0xe3F4D10D1FC71fC4FD93534E0991bD79C63C8C1E';
 
+      const humanityCoinContractAddress = '0x2ad5544721E669Fe244158D0EE960E2755c5749b'
+
       // Assuming `MigratorAndFeeDistributorABI` contains the ABI for your contract
       // Create an instance of the contract with ethers.js
       const newContractInstance = new ethers.Contract(contractAddress, MigratorAndFeeDistributorABI , signer);
-
-      // console.log('Contract Instance', newContractInstance);
-
       setContractInstance(newContractInstance)
-
-      if(newContractInstance !== null){
-        const _swapTrigger = await newContractInstance.swapTrigger()
-      }
+      const HumanityCoinContractInstance = new ethers.Contract(humanityCoinContractAddress, HumanityCoinABI, signer)
+      console.log('HUMANITY CONTRACT ',HumanityCoinContractInstance);
+      setHumanityCoinContractInstance(HumanityCoinContractInstance)
 
       // Define the configureTaxAndSwap function
-      const configureTaxAndSwap = async () => {
-        try {
-          // Assuming configureTaxAndSwap is a transaction and not a call
-          const tx = await newContractInstance.configureTaxAndSwap(3000, 3000, 4000);
-          const receipt = await tx.hash
-          console.log('configureTaxAndSwap transaction receipt:', receipt);
-        } catch (error) {
-          console.error('Error sending configureTaxAndSwap transaction:', error);
-        }
-      };
+      // const configureTaxAndSwap = async () => {
+      //   try {
+      //     // Assuming configureTaxAndSwap is a transaction and not a call
+      //     const tx = await newContractInstance.configureTaxAndSwap(3000, 3000, 4000);
+      //     const receipt = await tx.hash
+      //     console.log('configureTaxAndSwap transaction receipt:', receipt);
+      //   } catch (error) {
+      //     console.error('Error sending configureTaxAndSwap transaction:', error);
+      //   }
+      // };
 
       // Call the configureTaxAndSwap function
       // await configureTaxAndSwap();
@@ -195,7 +197,8 @@ useEffect(()=>{
 },[])
 
   return {
-    contractInstance : contractInstance
+    contractInstance : contractInstance , 
+    humanityCoinContractInstance : humanityCoinContractInstance
   }
 };
 
