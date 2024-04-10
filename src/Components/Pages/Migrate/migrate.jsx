@@ -4,23 +4,24 @@ import { Button } from 'antd';
 import { addZeroToDecimalinput, regex } from '../../../helpers/regex';
 import { useSelector } from 'react-redux';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
+import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
+
 
 export default function Migrate() {
   const { isConnected } = useSelector((state) => state.app);
   const { open } = useWeb3Modal();
-  const [oldAmount, setOldAmount] = useState(null);
-  const [newAmount, setNewAmount] = useState(null);
-  const [isFormValid, setIsFormValid] = useState(true);
+  const { contractInstance } = useConnectMetamask();
+  const [oldAmount, setOldAmount] = useState('');
+  const [newAmount, setNewAmount] = useState('0.00');
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const HandleInputchange = (event) => {
     let isValid = true;
-    console.log('handle input change', event.target.value);
     let inputVal = addZeroToDecimalinput(event.target.value);
     if (inputVal === '' || regex(10).test(inputVal)) {
       setOldAmount(inputVal);
-      // Calculate new amount based on the formula
       const newTokenAmount = (900000000 * parseFloat(inputVal)) / 1000000000000;
-      setNewAmount(newTokenAmount.toFixed(4)); // Round to 2 decimal places
+      setNewAmount(newTokenAmount.toFixed(4)); // Round to 4 decimal places
     }
     if (inputVal === '') {
       isValid = false;
@@ -28,16 +29,23 @@ export default function Migrate() {
     setIsFormValid(isValid);
   };
 
-  const handleMigrateToken = () => {
-    console.log('MIGRATE TOKENS');
-    // Here you can perform further actions related to migrating tokens
+  const handleMigrateToken = async () => {
+    try {
+      const tx = await contractInstance.migrate(oldAmount);
+      await tx.wait(); // Wait for the transaction to be mined
+      console.log('Transaction hash:', tx.hash);
+      // You can perform further actions after migration
+    } catch (error) {
+      console.log('Error migrating tokens:', error.message);
+      // Handle error, display message to user, etc.
+    }
   };
 
   useEffect(() => {
     return () => {
       setOldAmount('');
-      setNewAmount('');
-      setIsFormValid(true);
+      setNewAmount('0.00');
+      setIsFormValid(false);
     };
   }, []);
 
@@ -68,7 +76,7 @@ export default function Migrate() {
               />
             </div>
           </div>
-          <Button
+          {/* <Button
             block
             className="connectbtn"
             onClick={() => {
@@ -86,7 +94,24 @@ export default function Migrate() {
               : isConnected && !isFormValid
               ? 'Enter Amount To Migrate'
               : 'Connect Wallet'}
-          </Button>
+          </Button> */}
+          {(
+        <div className="centered-button">
+          {isConnected && isFormValid ? (
+            <button onClick={handleMigrateToken}>Send Transaction</button>
+          ) : isConnected && !isFormValid ? (
+            <button onClick={handleMigrateToken}></button>
+          ) : (
+            <button
+              onClick={() => {
+                open();
+              }}
+            >
+              Connect Wallet
+            </button>
+          )}
+        </div>
+      )}
         </div>
       </div>
       <div className="migrateContext">
