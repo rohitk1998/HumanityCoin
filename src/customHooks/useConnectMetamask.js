@@ -14,6 +14,7 @@ export const useConnectMetamask = () => {
   const [ethInstance, setEthInstance] = useState(null);
   const [contractInstance, setContractInstance] = useState(null);
   const [humanityCoinContractInstance, setHumanityCoinContractInstance] = useState(null);
+  const [tokenAContractInstance, setTokenAContractInstance] = useState(null);
   const [account, setAccount] = useState(null);
   const [errorMessage, setErrorMessage] = useState('');
   const [isEthInstanceActive, setIsEthInstanceActive] = useState(false);
@@ -55,9 +56,11 @@ const connect = async () => {
       // });
 
       // Define the contract address
-      const contractAddress = '0xe3F4D10D1FC71fC4FD93534E0991bD79C63C8C1E';
+      const contractAddress = '0x2b3F91d87D1d173206cB5B96763Cc76F868B63d0';
 
-      const humanityCoinContractAddress = '0x2ad5544721E669Fe244158D0EE960E2755c5749b'
+      const humanityCoinContractAddress = '0x712EE3f1792b6C841b049c35f46B2A49367Bf9E6'
+
+      const tokenAContractAddress = '0xEeA46983aA351759202a5F5f502Df3399e7fd9A1'
 
       // Assuming `MigratorAndFeeDistributorABI` contains the ABI for your contract
       // Create an instance of the contract with ethers.js
@@ -66,6 +69,10 @@ const connect = async () => {
       const HumanityCoinContractInstance = new ethers.Contract(humanityCoinContractAddress, HumanityCoinABI, signer)
       console.log('HUMANITY CONTRACT ',HumanityCoinContractInstance);
       setHumanityCoinContractInstance(HumanityCoinContractInstance)
+
+      const tokenAContractInstance = new ethers.Contract(tokenAContractAddress, HumanityCoinABI, signer)
+      console.log('TOKEN A CONTRACT ',tokenAContractInstance);
+      setTokenAContractInstance(tokenAContractInstance)
 
       // Define the configureTaxAndSwap function
       // const configureTaxAndSwap = async () => {
@@ -198,7 +205,8 @@ useEffect(()=>{
 
   return {
     contractInstance : contractInstance , 
-    humanityCoinContractInstance : humanityCoinContractInstance
+    humanityCoinContractInstance : humanityCoinContractInstance , 
+    tokenAContractInstance : tokenAContractInstance
   }
 };
 

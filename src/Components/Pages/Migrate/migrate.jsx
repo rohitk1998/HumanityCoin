@@ -10,7 +10,7 @@ import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
 export default function Migrate() {
   const { isConnected } = useSelector((state) => state.app);
   const { open } = useWeb3Modal();
-  const { contractInstance } = useConnectMetamask();
+  const { contractInstance , tokenAContractInstance } = useConnectMetamask();
   const [oldAmount, setOldAmount] = useState('');
   const [newAmount, setNewAmount] = useState('0.00');
   const [isFormValid, setIsFormValid] = useState(false);
@@ -31,8 +31,16 @@ export default function Migrate() {
 
   const handleMigrateToken = async () => {
     try {
-      const tx = await contractInstance.migrate(oldAmount);
-      await tx.wait(); // Wait for the transaction to be mined
+      const migrateContractAddress = contractInstance.target;
+      console.log('oldAmount',oldAmount , (Number(oldAmount) * Number(1000000000000000000)).toString());
+      const txAprrove = await tokenAContractInstance.approve(
+        migrateContractAddress,
+        (Number(oldAmount) * Number(1000000000000000000)).toString(),
+        { gasLimit: '2000000' }
+      );
+      console.log('txAprrove',txAprrove);
+      const tx = await contractInstance.migrate((Number(oldAmount) * Number(1000000000000000000)).toString(), { gasLimit: '2000000' });
+      // await tx.wait(); // Wait for the transaction to be mined
       console.log('Transaction hash:', tx.hash);
       // You can perform further actions after migration
     } catch (error) {

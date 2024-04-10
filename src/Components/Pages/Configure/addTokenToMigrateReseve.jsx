@@ -55,9 +55,9 @@ export default function AddTokenToMigrateReseve({ isSelected }) {
     } else {
       setIsFormValid(true);
       try {
-        console.log('DATA ON SUBMISSION', addToken);
+        console.log('DATA ON SUBMISSION', addToken , '100000000000000000000'.length);
         // await approveHumanityCoin();
-        const tx = await contractInstance?.addTokensToMigrationReserve('1000000000000000000000', {
+        const tx = await contractInstance?.addTokensToMigrationReserve('100000000000000000000', {
           gasLimit: '2000000',
         });
         console.log('tx', tx);
