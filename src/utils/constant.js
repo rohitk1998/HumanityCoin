@@ -16,7 +16,7 @@ export const APP_NAVBAR_MENU = [
     name: 'Migrate',
   },
   {
-    path: '/app/pool',
+    path: '/app/pool/v2',
     name: 'Pool',
   }
 ];
