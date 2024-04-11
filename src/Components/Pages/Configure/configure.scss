@@ -66,14 +66,18 @@
         border: 1px solid grey;
         border-radius: 20px;
         padding: 20px;
-        min-width: 500px;
         width: 70%;
+        min-width: 500px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         min-height: 465px;
         height: 100%;
+        @media screen and (max-width: 900px) {
+          min-width: 300px;
+          border:none;
+        }
         .form-container {
           min-width: 400px;
           width: 90%;

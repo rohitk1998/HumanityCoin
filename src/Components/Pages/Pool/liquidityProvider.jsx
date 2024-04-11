@@ -205,9 +205,9 @@ function LiquidyProvider() {
             </Button>
           </div>
         </div>
-        <div className="connectYourLiq">
+        {/* <div className="connectYourLiq">
           Connect to a wallet to view your liquidity.
-        </div>
+        </div> */}
         {isFormActive ? <LiquidityForm /> : null}
       </div>
     </div>

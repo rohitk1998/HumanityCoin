@@ -51,7 +51,8 @@ export const primaryRoutes = {
   community : 'community',
   faq:'faq',
   ecosystem : 'ecosystem' , 
-  migrate:'migrate'
+  migrate:'migrate',
+  explorer:'explore'
 };
 
 const {

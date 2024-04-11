@@ -6,8 +6,9 @@ import { Row, Col } from "antd";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useTranslation } from "react-i18next";
-import unigrant from "../../Assets/Images/unigrants.png"
-
+import uparrow from "../../Assets/Images/uparrows.svg";
+import arrow from "../../Assets/Images/arrow.svg";
+import unigrant from "../../Assets/Images/unigrants.png";
 const Main = () => {
   const { t } = useTranslation();
   const { trustMobileNew } = StoreImages;
@@ -64,9 +65,16 @@ const Main = () => {
         <section>
           <div className={style.unswapEcosystem}>
             <div className="container">
-              <Row className={style.unswapEcosystem__growing}>
-                <Col lg={12} className={style.unswapEcosystem__growing__left}>
-                  <Link>UNISWAP ECOSYSTEM →</Link>
+              <Row className={style.unswapEcosystem__growing} gutter={[0, 30]}>
+                <Col
+                  lg={12}
+                  xs={24}
+                  className={style.unswapEcosystem__growing__left}
+                >
+                  <Link>
+                    UNISWAP ECOSYSTEM{" "}
+                    <img src={arrow} alt="arrow" className="rightArrow" />
+                  </Link>
                   <h2>A growing network of DeFi Apps.</h2>
                   <p>
                     Developers, traders, and liquidity providers participate
@@ -74,8 +82,12 @@ const Main = () => {
                     accessible to all.
                   </p>
                 </Col>
-                <Col lg={12} className={style.unswapEcosystem__growing__right}>
-                  <h2>H</h2>
+                <Col
+                  lg={12}
+                  xs={24}
+                  className={style.unswapEcosystem__growing__right}
+                >
+                  <h2>300+</h2>
                   <p>Integrations</p>
                   {/* <Link>
                     Explore all<span> ↗</span>
@@ -93,9 +105,12 @@ const Main = () => {
         <section>
           <div className={style.funding}>
             <div className="container">
-              <Link className={style.developers}>Developers →</Link>
-              <Row className={style.funding__data} gutter={35}>
-                <Col lg={16} className={style.funding__data__left}>
+              <Link className={style.developers}>
+                Developers{" "}
+                <img src={arrow} alt="arrow" className="rightArrow" />{" "}
+              </Link>
+              <Row className={style.funding__data} gutter={[35, 30]}>
+                <Col lg={16} xs={24} className={style.funding__data__left}>
                   <div className={style.documentation}>
                     <h2>Superpowers for DeFi developers.</h2>
                     <p>
@@ -105,25 +120,36 @@ const Main = () => {
                       code.
                     </p>
                     <Link>
-                      Documentation<span> ↗</span>
+                      Documentation
+                      <span>
+                        {" "}
+                        <img src={uparrow} alt="imgs" />
+                      </span>
                     </Link>
                   </div>
                   <div className={style.whitepaper}>
                     <div className={style.whitepaper__left}>
                       <Link>
                         {" "}
-                        V3 Whitepaper<span> ↗</span>
+                        V3 Whitepaper
+                        <span>
+                          {" "}
+                          <img src={uparrow} alt="imgs" />
+                        </span>
                       </Link>
                     </div>
                     <div className={style.whitepaper__right}>
                       <Link>
                         {" "}
-                        Github<span> ↗</span>
+                        Github
+                        <span>
+                          <img src={uparrow} alt="imgs" />
+                        </span>
                       </Link>
                     </div>
                   </div>
                 </Col>
-                <Col lg={8} className={style.funding__data__right}>
+                <Col lg={8} xs={24} className={style.funding__data__right}>
                   <div className={style.applyFunding}>
                     <img src={unigrant} alt="unigrant" />
                     <h4>Apply for funding from the Uniswap Grants Program </h4>
@@ -133,7 +159,11 @@ const Main = () => {
                       tools, and activities on the Uniswap Protocol.
                     </p>
                     <Link>
-                      Learn More<span> ↗</span>
+                      Learn More
+                      <span>
+                        {" "}
+                        <img src={uparrow} alt="imgs" />
+                      </span>
                     </Link>
                   </div>
                 </Col>
@@ -144,9 +174,12 @@ const Main = () => {
         <section>
           <div className={style.protocol}>
             <div className="container">
-              <Link className={style.developers}>PROTOCOL GOVERNANCE →</Link>
-              <Row className={style.protocol__data} gutter={{ lg: 30 }}>
-                <Col lg={13} className={style.protocol__data__left}>
+              <Link className={style.developers}>
+                PROTOCOL GOVERNANCE{" "}
+                <img src={arrow} alt="arrow" className="rightArrow" />
+              </Link>
+              <Row className={style.protocol__data} gutter={[30, 30]}>
+                <Col lg={13} xs={24} className={style.protocol__data__left}>
                   <div className={style.documentation}>
                     <h2>Governed by the community.</h2>
                     <p>
@@ -154,16 +187,24 @@ const Main = () => {
                       UNI token holders and delegates
                     </p>
                     <Link>
-                      Read More<span> ↗</span>
+                      Read More
+                      <span>
+                        {" "}
+                        <img src={uparrow} alt="imgs" />
+                      </span>
                     </Link>
                   </div>
                 </Col>
-                <Col lg={11} className={style.protocol__data__right}>
+                <Col lg={11} xs={24} className={style.protocol__data__right}>
                   <div className={style.governaceFunding}>
                     <div className={style.governaceFunding__data}>
                       <h2>
                         {" "}
-                        Governance Forum<span> ↗</span>
+                        Governance Forum
+                        <span>
+                          {" "}
+                          <img src={uparrow} alt="imgs" />
+                        </span>
                       </h2>
                       <p>
                         Participate by proposing upgrades and discussing the
@@ -173,7 +214,11 @@ const Main = () => {
                     <div className={style.governaceFunding__data}>
                       <h2>
                         {" "}
-                        Sybil<span> ↗</span>
+                        Sybil
+                        <span>
+                          {" "}
+                          <img src={uparrow} alt="imgs" />
+                        </span>
                       </h2>
                       <p>
                         Vote on offchain proposals with the Snapshot interface.
@@ -183,7 +228,11 @@ const Main = () => {
                     <div className={style.governaceFunding__data}>
                       <h2>
                         {" "}
-                        Governance Portal<span> ↗</span>
+                        Governance Portal
+                        <span>
+                          {" "}
+                          <img src={uparrow} alt="imgs" />
+                        </span>
                       </h2>
                       <p>
                         Vote on official Uniswap governance proposals and view
