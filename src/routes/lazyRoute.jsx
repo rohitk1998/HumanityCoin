@@ -42,3 +42,6 @@ export const Community = lazy(() =>
 export const FAQ = lazy(()=> import('../Components/Pages/Faq/Faq.jsx'))
 
 export const Ecosystem = lazy(()=> import('../Components/Pages/ecosystem/ecosystem.jsx'))
+
+export const Explorer = lazy(()=> import('../Components/Pages/Explorer/Explorer.jsx'))
+

@@ -3,10 +3,10 @@ import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
 import { useSelector } from 'react-redux';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
 
-export default function TaxAndSwapForm({ isSelected }) {
+export default function TaxAndSwapForm() {
   const { open } = useWeb3Modal();
   const { contractInstance } = useConnectMetamask();
-  const { isConnected } = useSelector((state) => state.app);
+  const { isConnected } = useSelector((state) => state?.app);
   const [configureAddress, setConfigureAddress] = useState({
     _swapTrigger: '',
     _purchaseTax: '',
@@ -37,13 +37,12 @@ export default function TaxAndSwapForm({ isSelected }) {
           '(Number(_swapTrigger) * 1000000 )',
           Number(_swapTrigger) * 1000000
         );
-        const tx = await contractInstance.configureTaxAndSwap(3000, 3000, 4000);
+        const tx = await contractInstance?.configureTaxAndSwap(3000, 3000, 4000);
         console.log('tx', tx);
-        const receipt = await tx.hash();
+        const receipt = tx.hash;
         console.log('configureAddresses transaction receipt:', receipt);
       } catch (error) {
         console.log('error in configuring addresses', error);
-        // alert('error');/
       }
     }
   };
@@ -66,10 +65,10 @@ export default function TaxAndSwapForm({ isSelected }) {
     if (contractInstance !== null && contractInstance !== 'null') {
       console.log('contractInstance', contractInstance);
 
-      const _swapTrigger = await contractInstance.swapTriggerPercentage();
+      const _swapTrigger = await contractInstance?.swapTriggerPercentage();
 
-      const _purchaseTax = await contractInstance.purchaseTaxPercentage();
-      const _salesTax = await contractInstance.salesTaxPercentage();
+      const _purchaseTax = await contractInstance?.purchaseTaxPercentage();
+      const _salesTax = await contractInstance?.salesTaxPercentage();
 
       configureAddress['_swapTrigger'] = (
         Number(_swapTrigger) / 1000000
@@ -129,7 +128,7 @@ export default function TaxAndSwapForm({ isSelected }) {
           type="text"
           id="_purchaseTax"
           placeholder="Enter amount"
-          value={configureAddress._purchaseTax}
+          value={configureAddress?._purchaseTax}
           onChange={(event) => {
             handleInputChange(event);
           }}
@@ -142,7 +141,7 @@ export default function TaxAndSwapForm({ isSelected }) {
           type="text"
           id="_salesTax"
           placeholder="Enter amount"
-          value={configureAddress._salesTax}
+          value={configureAddress?._salesTax}
           onChange={(event) => {
             handleInputChange(event);
           }}

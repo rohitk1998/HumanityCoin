@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./style.module.scss";
 import { StoreImages } from "../../Storeimgaes/StoreImages";
+import "./Footer.scss"
 const Footer = () => {
   const { insta, fb, telegram, twitter, linkedIn } = StoreImages;
   return (
     <>
-      <div className={style.footerKazix}>
-        <div className={style.copyRight}>
+      <div className='footerKazix'>
+        <div className='copyRight'>
           <div className="container">
-            <div className={style.copyRight__inner}>
+            <div className='inner'>
               <p>
                 &copy; {new Date().getFullYear()} Humanity Coin | All rights reserved.
               </p>
-              <div className={style.copyRight__inner_links}>
+              <div className='links'>
                 <Link
                   to="https://www.facebook.com/Coinhub.Mongolia/"
                   target="_blank"

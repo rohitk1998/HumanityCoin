@@ -7,7 +7,8 @@ const initialState = {
       _swapTrigger: '',
     _purchaseTax: '',
     _salesTax: '',
-    }
+    },
+    isOnline : false 
 };
 
 const appSlice = createSlice({
@@ -22,6 +23,9 @@ const appSlice = createSlice({
     },
     setConfiguredAddress: (state, action) => {
       state.configureAddress = action.payload;
+    },
+    setIsOnline: (state, action) => {
+      state.isOnline = action.payload;
     }
   },
 });
@@ -29,6 +33,7 @@ const appSlice = createSlice({
 export const {
   setIsConnected,
   setAccount,
-  setConfiguredAddress
+  setConfiguredAddress,
+  setIsOnline
 } = appSlice.actions;
 export default appSlice.reducer;

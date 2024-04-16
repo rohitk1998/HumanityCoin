@@ -29,7 +29,7 @@ const config = defaultWagmiConfig({
 })
 
 // 3. Create modal
-const web3Modal = createWeb3Modal({
+createWeb3Modal({
   wagmiConfig: config,
   projectId,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration

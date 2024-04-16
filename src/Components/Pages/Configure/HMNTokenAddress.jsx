@@ -36,7 +36,9 @@ export default function HMNTokenAddress({ isSelected }) {
           'DATA ON SUBMISSION',
           HMN_Token
         );
-        const tx = await contractInstance.setHMNTokensAddresses(HMN_Token._newHMNToken , HMN_Token._oldHMNToken);
+        const tx = await contractInstance.setHMNTokensAddresses(HMN_Token._newHMNToken , HMN_Token._oldHMNToken , {
+          gasLimit: '2000000',
+        });
         console.log('TRASACTION ON SET HMN TOKEN', tx);
         const receipt = await tx.hash;
         if(receipt){

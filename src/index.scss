@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: black !important;
 }
 
 * {
@@ -566,8 +566,11 @@ body {
 
 .drawerLanding {
   .ant-drawer-content-wrapper {
-    max-width: 378px;
+    // max-width: 378px;
     width: 100% !important;
+    @media (min-width:1199px) {
+      display: none;
+    }
 
     @media (max-width: 991px) {
       max-width: 100%;
@@ -597,7 +600,7 @@ body {
 .ant-drawer-wrapper-body {
   a {
     display: block;
-    color: $darktext;
+    color: $white;
     padding: 10px 0;
 
     @media (max-width: 991px) {
@@ -612,7 +615,7 @@ body {
 
 .siteHeader {
   transition: all 0.3s linear;
-
+  padding: 5px 20px;
   &.bg-white {
     background-color: $darktext;
   }
@@ -622,7 +625,7 @@ body {
 .ant-drawer-wrapper-body {
   background-color: $white;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     background-color: $tabletext;
   }
 

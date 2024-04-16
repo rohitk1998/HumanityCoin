@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Drawer } from 'antd';
 import { Link as RouterLink } from 'react-router-dom';
 import style from './style.module.scss';
-import { rootName, appRootName } from '../../../utils/constant';
+import { rootName, appRootName, logoIcon } from '../../../utils/constant';
 import { publicRouteObj } from '../../../staticObjects';
 import { useNavigate } from 'react-router-dom';
 import { StoreImages } from '../../Storeimgaes/StoreImages';
@@ -12,7 +12,7 @@ const launchAppButtonStyle = {
   minWidth: '150px',
   padding: '5px',
   height: '40px',
-  backgroundColor: '#169E93',
+  backgroundColor: "rgba(226, 128, 1, 0.808)",
   color: 'white',
   borderRadius: '20px',
   alignItems: 'center',
@@ -20,7 +20,7 @@ const launchAppButtonStyle = {
   justifyContent: 'center',
   fontWeight: '600',
   cursor: 'pointer',
-  border:"none"
+  border: 'none',
 };
 
 const Header = () => {
@@ -52,24 +52,7 @@ const Header = () => {
     <>
       <header className={` ${color ? 'bg-white' : ''} siteHeader`}>
         <div className={style.header}>
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              navigate(appRootName);
-            }}
-          >
-            <h2 className="logo-white">
-              <img
-                src={Logo}
-                alt="logo"
-                style={{
-                  width: 34,
-                  height: 34,
-                  filter: 'grayscale(1) invert(1)',
-                }}
-              />
-            </h2>
-          </a>
+          <img src={logoIcon} width={95} height={95} />
           <div className={style.header_rightSideFlex}>
             <div className={`${style.header_links} ${style.navbarfull}`}>
               <RouterLink to={`${rootName}${publicRouteObj.ecosystem}`}>
