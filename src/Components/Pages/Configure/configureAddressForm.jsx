@@ -47,7 +47,7 @@ export default function ConfigureAddressForm({ isSelected }) {
         console.log('tx', tx);
         const receipt = tx?.hash;
         if (receipt) {
-          setHash(receipt)
+          setHash(receipt);
           setSuccess(true);
         }
         console.log('configureAddresses transaction receipt:', receipt);
@@ -98,99 +98,122 @@ export default function ConfigureAddressForm({ isSelected }) {
     }, 3000);
     return (
       <div className="form-container">
-        <div className='success-box'>
-        <p>
-          Successfully initiated the transaction !!
-        </p>
-        <button onClick={()=>{
-          window.open(`https://sepolia.etherscan.io/tx/${txnHash}` , '_blank')
-        }}>
-        {txnHash.slice(0,40)}
-        </button>
+        <div className="success-box">
+          <p>Successfully initiated the transaction !!</p>
+          <button
+            onClick={() => {
+              window.open(
+                `https://sepolia.etherscan.io/tx/${txnHash}`,
+                '_blank'
+              );
+            }}
+          >
+            {txnHash.slice(0, 40)}
+          </button>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="form-container">
-      {!isEdit ? (
-        <div className="editContainer">
-          <button
-            onClick={() => {
-              setIsEdit(true);
-            }}
-          >
-            edit
-          </button>
+    <div className="containerAdLiq">
+      <div className="addLiqbottomSec">
+        <div className="leftdata">
+          <h4>Configure Swap Purchase Sales Settings</h4>
+          <p>Configure your swap, purchase, sales tax addresses</p>
         </div>
-      ) : (
-        <div className="editContainer">
-          <button
-            onClick={() => {
-              setIsEdit(false);
-            }}
-          >
-            cancel
-          </button>
+      </div>
+      <br />
+      <hr />
+      <div className="addLiqbottomSec">
+        <div className="leftdata">
+          <h4>Configure Address</h4>
+          <p>
+            Enter three address to configure Swap Tax, Purchase Tax,Sales Tax
+          </p>
         </div>
-      )}
-      <div className="input-row">
-        <label htmlFor="_swapTrigger">Swap Trigger</label>
-        <input
-          type="text"
-          id="_swapTrigger"
-          placeholder="address"
-          value={configureAddress._swapTrigger}
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          disabled={!isEdit}
-        />
-      </div>
-      <div className="input-row">
-        <label htmlFor="_purchaseTax">Purchase Tax</label>
-        <input
-          type="text"
-          id="_purchaseTax"
-          placeholder="address"
-          value={configureAddress._purchaseTax}
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          disabled={!isEdit}
-        />
-      </div>
-      <div className="input-row">
-        <label htmlFor="_salesTax">Sales Tax</label>
-        <input
-          type="text"
-          id="_salesTax"
-          placeholder="address"
-          value={configureAddress._salesTax}
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          disabled={!isEdit}
-        />
-      </div>
-      {isEdit && (
-        <div className="centered-button">
-          {isConnected && isFormValid ? (
-            <button onClick={handleSubmit}>Send Transaction</button>
-          ) : isConnected && !isFormValid ? (
-            <button onClick={handleSubmit}>{validationError}</button>
-          ) : (
-            <button
-              onClick={() => {
-                open();
-              }}
-            >
-              Connect Wallet
-            </button>
-          )}
+        <div className="right">
+          <div className="form-container">
+            {!isEdit ? (
+              <div className="editContainer">
+                <button
+                  onClick={() => {
+                    setIsEdit(true);
+                  }}
+                >
+                  edit
+                </button>
+              </div>
+            ) : (
+              <div className="editContainer">
+                <button
+                  onClick={() => {
+                    setIsEdit(false);
+                  }}
+                >
+                  cancel
+                </button>
+              </div>
+            )}
+            <div className="input-row">
+              <label htmlFor="_swapTrigger">Swap Trigger</label>
+              <input
+                type="text"
+                id="_swapTrigger"
+                placeholder="address"
+                value={configureAddress._swapTrigger}
+                onChange={(event) => {
+                  handleInputChange(event);
+                }}
+                disabled={!isEdit}
+              />
+            </div>
+            <div className="input-row">
+              <label htmlFor="_purchaseTax">Purchase Tax</label>
+              <input
+                type="text"
+                id="_purchaseTax"
+                placeholder="address"
+                value={configureAddress._purchaseTax}
+                onChange={(event) => {
+                  handleInputChange(event);
+                }}
+                disabled={!isEdit}
+              />
+            </div>
+            <div className="input-row">
+              <label htmlFor="_salesTax">Sales Tax</label>
+              <input
+                type="text"
+                id="_salesTax"
+                placeholder="address"
+                value={configureAddress._salesTax}
+                onChange={(event) => {
+                  handleInputChange(event);
+                }}
+                disabled={!isEdit}
+              />
+            </div>
+            {isEdit && (
+              <div className="centered-button">
+                {isConnected && isFormValid ? (
+                  <button onClick={handleSubmit}>Send Transaction</button>
+                ) : isConnected && !isFormValid ? (
+                  <button onClick={handleSubmit}>{validationError}</button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      open();
+                    }}
+                  >
+                    Connect Wallet
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

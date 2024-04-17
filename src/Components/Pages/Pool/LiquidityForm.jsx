@@ -15,11 +15,8 @@ export const LiquidityForm = () => {
   const [selectedOption2, setSelectedOption2] = useState(null);
   const { isConnected } = useSelector((state) => state.app);
   const { open } = useWeb3Modal();
-  const {
-    tokenAContractInstance,
-    routerInstance,
-    tokenBContractInstance,
-  } = useConnectMetamask();
+  const { tokenAContractInstance, routerInstance, tokenBContractInstance } =
+    useConnectMetamask();
 
   const [amountTokenA, setAmountTokenA] = useState('');
   const [amountTokenB, setAmountTokenB] = useState('');
@@ -153,15 +150,12 @@ export const LiquidityForm = () => {
   return (
     <div className="AddLeqSec">
       <div className="addLiq">
-        <div className="containerAdLiq">
+      <div className="containerAdLiq">
           <div className="createNewPool">
             {/* <img src={backicon} alt="imgs" /> */}
             <div>
               <h3>Add Liquidity</h3>
-              <p>
-                Create a new pool or create a liquidity position on an existing
-                pool.
-              </p>
+              <p>Add liquidity to create pools.</p>
             </div>
           </div>
         </div>

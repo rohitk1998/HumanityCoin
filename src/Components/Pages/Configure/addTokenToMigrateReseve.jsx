@@ -9,8 +9,9 @@ export default function AddTokenToMigrateReseve({ isSelected }) {
     useConnectMetamask();
   const { isConnected } = useSelector((state) => state.app);
   const [addToken, setAddToken] = useState({
-    amount: '',
+    amount: ''
   });
+  const [bal, setBal] = useState('');
   const [isFormValid, setIsFormValid] = useState(true);
   const [validationError, setValidationError] = useState('');
   const [isEdit, setIsEdit] = useState(false);
@@ -26,21 +27,25 @@ export default function AddTokenToMigrateReseve({ isSelected }) {
   async function approveHumanityCoin() {
     try {
       const migrateContractAddress = contractInstance.target;
-      console.log('migrateContractAddress', migrateContractAddress, humanityCoinContractInstance);
+      console.log(
+        'migrateContractAddress',
+        migrateContractAddress,
+        humanityCoinContractInstance
+      );
       // Approve pair contract to spend LP tokens
-    //   const txMint = await humanityCoinContractInstance.mint(
-    //     '0x511c4d2B9FFF5431dd1Bc2Af336C74431c1668ba',
-    //     '10000000000000000000000',
-    //     { gasLimit: '2000000' }
-    //   );
-    //   console.log('txMint',txMint);
+      //   const txMint = await humanityCoinContractInstance.mint(
+      //     '0x511c4d2B9FFF5431dd1Bc2Af336C74431c1668ba',
+      //     '10000000000000000000000',
+      //     { gasLimit: '2000000' }
+      //   );
+      //   console.log('txMint',txMint);
       const txApprove = await humanityCoinContractInstance?.approve(
         migrateContractAddress,
         (Number(addToken.amount) * Number(1000000000000000000)).toString(),
         { gasLimit: '2000000' }
       );
-      console.log('txApprove',txApprove);
-    //   console.log('MIGRATE contract approved for spending Humanity Coins.');
+      console.log('txApprove', txApprove);
+      //   console.log('MIGRATE contract approved for spending Humanity Coins.');
     } catch (error) {
       console.error('Error approving pair contract:', error);
     }
@@ -55,11 +60,14 @@ export default function AddTokenToMigrateReseve({ isSelected }) {
     } else {
       setIsFormValid(true);
       try {
-        console.log('DATA ON SUBMISSION', addToken );
+        console.log('DATA ON SUBMISSION', addToken);
         await approveHumanityCoin();
-        const tx = await contractInstance?.addTokensToMigrationReserve((Number(addToken.amount) * Number(1000000000000000000)).toString(), {
-          gasLimit: '2000000',
-        });
+        const tx = await contractInstance?.addTokensToMigrationReserve(
+          (Number(addToken.amount) * Number(1000000000000000000)).toString(),
+          {
+            gasLimit: '2000000',
+          }
+        );
         console.log('tx', tx);
         if (tx !== null && tx !== undefined) {
           receipt = tx.hash;
@@ -102,11 +110,7 @@ export default function AddTokenToMigrateReseve({ isSelected }) {
 
       const amount = await contractInstance.migrationReserve();
 
-      addToken['amount'] = amount.toString();
-
-      console.log('addToken', addToken);
-
-      setAddToken(addToken);
+      setBal(amount.toString());
     }
   };
 
@@ -134,58 +138,80 @@ export default function AddTokenToMigrateReseve({ isSelected }) {
   }
 
   return (
-    <div className="form-container">
-      {!isEdit ? (
-        <div className="editContainer">
-          <button
-            onClick={() => {
-              setIsEdit(true);
-            }}
-          >
-            edit
-          </button>
+    <div className="containerAdLiq">
+      <div className="addLiqbottomSec">
+        <div className="leftdata">
+          <h4>Add Token</h4>
+          <p>You can add tokens to Migrate Reserve</p>
         </div>
-      ) : (
-        <div className="editContainer">
-          <button
-            onClick={() => {
-              setIsEdit(false);
-            }}
-          >
-            cancel
-          </button>
-        </div>
-      )}
-      <div className="input-row">
-        <label htmlFor="amount">Migrate Reserve Amount</label>
-        <input
-          type="text"
-          id="amount"
-          placeholder="Enter amount"
-          value={addToken.amount}
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          disabled={!isEdit}
-        />
       </div>
-      {isEdit && (
-        <div className="centered-button">
-          {isConnected && isFormValid ? (
-            <button onClick={handleSubmit}>Send Transaction</button>
-          ) : isConnected && !isFormValid ? (
-            <button onClick={handleSubmit}>{validationError}</button>
-          ) : (
-            <button
-              onClick={() => {
-                open();
-              }}
-            >
-              Connect Wallet
-            </button>
-          )}
+      <br/>
+        <hr/>
+      <div className="addLiqbottomSec">
+        <div className="leftdata">
+          <h4>Enter Amount</h4>
+          <p>Enter the amount you can want to add in Migrate Reserve</p>
         </div>
-      )}
+        <div className="right">
+          <div className="form-container">
+            {!isEdit ? (
+              <div className="editContainer">
+                <button
+                  onClick={() => {
+                    setIsEdit(true);
+                  }}
+                >
+                  edit
+                </button>
+              </div>
+            ) : (
+              <div className="editContainer">
+                <button
+                  onClick={() => {
+                    setIsEdit(false);
+                    setAddToken({
+                      amount:''
+                    })
+                  }}
+                >
+                  cancel
+                </button>
+              </div>
+            )}
+            <div className="input-row">
+            <br/>
+              <input
+                type="text"
+                id="amount"
+                placeholder="Enter amount"
+                value={addToken.amount}
+                onChange={(event) => {
+                  handleInputChange(event);
+                }}
+                disabled={!isEdit}
+              />
+              <label htmlFor="amount">Balance : {bal} HMN</label>
+            </div>
+            {isEdit && (
+              <div className="centered-button">
+                {isConnected && isFormValid ? (
+                  <button onClick={handleSubmit}>Send Transaction</button>
+                ) : isConnected && !isFormValid ? (
+                  <button onClick={handleSubmit}>{validationError}</button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      open();
+                    }}
+                  >
+                    Connect Wallet
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -37,7 +37,11 @@ export default function TaxAndSwapForm() {
           '(Number(_swapTrigger) * 1000000 )',
           Number(_swapTrigger) * 1000000
         );
-        const tx = await contractInstance?.configureTaxAndSwap(3000, 3000, 4000);
+        const tx = await contractInstance?.configureTaxAndSwap(
+          3000,
+          3000,
+          4000
+        );
         console.log('tx', tx);
         const receipt = tx.hash;
         console.log('configureAddresses transaction receipt:', receipt);
@@ -87,84 +91,104 @@ export default function TaxAndSwapForm() {
   };
 
   return (
-    <div className="form-container">
-      {!isEdit ? (
-        <div className="editContainer">
-          <button
-            onClick={() => {
-              setIsEdit(true);
-            }}
-          >
-            edit
-          </button>
+    <>
+      <div className="containerAdLiq">
+        <div className="addLiqbottomSec">
+          <div className="leftdata">
+            <h4>Configure Swap Purchase Sales Settings</h4>
+            <p>Configure your swap amount, purchase amount, sales amount</p>
+          </div>
         </div>
-      ) : (
-        <div className="editContainer">
-          <button
-            onClick={() => {
-              setIsEdit(false);
-            }}
-          >
-            cancel
-          </button>
+        <br/>
+        <hr/>
+        <div className="addLiqbottomSec">
+          <div className="leftdata">
+            <h4>Configure Amount</h4>
+            <p>Enter three amount to configure Swap Tax, Purchase Tax,Sales Tax</p>
+          </div>
+          <div className="right">
+            <div className="form-container">
+              {!isEdit ? (
+                <div className="editContainer">
+                  <button
+                    onClick={() => {
+                      setIsEdit(true);
+                    }}
+                  >
+                    edit
+                  </button>
+                </div>
+              ) : (
+                <div className="editContainer">
+                  <button
+                    onClick={() => {
+                      setIsEdit(false);
+                    }}
+                  >
+                    cancel
+                  </button>
+                </div>
+              )}
+              <div className="input-row">
+                <label htmlFor="_swapTrigger">Swap Trigger</label>
+                <input
+                  type="text"
+                  id="_swapTrigger"
+                  placeholder="Enter amount"
+                  value={configureAddress._swapTrigger}
+                  onChange={(event) => {
+                    handleInputChange(event);
+                  }}
+                  disabled={!isEdit}
+                />
+              </div>
+              <div className="input-row">
+                <label htmlFor="_purchaseTax">Purchase Tax</label>
+                <input
+                  type="text"
+                  id="_purchaseTax"
+                  placeholder="Enter amount"
+                  value={configureAddress?._purchaseTax}
+                  onChange={(event) => {
+                    handleInputChange(event);
+                  }}
+                  disabled={!isEdit}
+                />
+              </div>
+              <div className="input-row">
+                <label htmlFor="_salesTax">Sales Tax</label>
+                <input
+                  type="text"
+                  id="_salesTax"
+                  placeholder="Enter amount"
+                  value={configureAddress?._salesTax}
+                  onChange={(event) => {
+                    handleInputChange(event);
+                  }}
+                  disabled={!isEdit}
+                />
+              </div>
+              {isEdit && (
+                <div className="centered-button">
+                  {isConnected && isFormValid ? (
+                    <button onClick={handleSubmit}>Send Transaction</button>
+                  ) : isConnected && !isFormValid ? (
+                    <button onClick={handleSubmit}>{validationError}</button>
+                  ) : (
+                    <button
+                      onClick={() => {
+                        open();
+                      }}
+                    >
+                      Connect Wallet
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
-      )}
-      <div className="input-row">
-        <label htmlFor="_swapTrigger">Swap Trigger</label>
-        <input
-          type="text"
-          id="_swapTrigger"
-          placeholder="Enter amount"
-          value={configureAddress._swapTrigger}
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          disabled={!isEdit}
-        />
       </div>
-      <div className="input-row">
-        <label htmlFor="_purchaseTax">Purchase Tax</label>
-        <input
-          type="text"
-          id="_purchaseTax"
-          placeholder="Enter amount"
-          value={configureAddress?._purchaseTax}
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          disabled={!isEdit}
-        />
-      </div>
-      <div className="input-row">
-        <label htmlFor="_salesTax">Sales Tax</label>
-        <input
-          type="text"
-          id="_salesTax"
-          placeholder="Enter amount"
-          value={configureAddress?._salesTax}
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          disabled={!isEdit}
-        />
-      </div>
-      {isEdit && (
-        <div className="centered-button">
-          {isConnected && isFormValid ? (
-            <button onClick={handleSubmit}>Send Transaction</button>
-          ) : isConnected && !isFormValid ? (
-            <button onClick={handleSubmit}>{validationError}</button>
-          ) : (
-            <button
-              onClick={() => {
-                open();
-              }}
-            >
-              Connect Wallet
-            </button>
-          )}
-        </div>
-      )}
-    </div>
+    </>
   );
 }

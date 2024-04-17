@@ -9,6 +9,9 @@ import { useTranslation } from "react-i18next";
 import uparrow from "../../Assets/Images/uparrows.svg";
 import arrow from "../../Assets/Images/arrow.svg";
 import unigrant from "../../Assets/Images/unigrants.png";
+import humanityTitle from "../../Assets/Images/humanityTitle.svg";
+
+
 const Main = () => {
   const { t } = useTranslation();
   const { trustMobileNew } = StoreImages;
@@ -26,7 +29,9 @@ const Main = () => {
                 >
                   <p className={style.uniswap}>
                     {" "}
-                    <span>HUMANITY COIN</span>
+                    <span>
+                      <img src={humanityTitle} width={200} height={100} />
+                       COIN</span>
                   </p>
                   <p>
                     Swap, earn, and build on the leading decentralized crypto

@@ -8,63 +8,63 @@ import AddTokenToMigrateReseve from './addTokenToMigrateReseve';
 const CONFIGURE_MENU = [
   {
     action: 'ConfigureTaxAndSwap',
-    label: 'Configure Tax And Swap',
+    label: 'Tax And Swap',
+    id: 0,
   },
   {
     action: 'ConfigureAddresses',
-    label: 'Configure Addresses',
+    label: 'Configure Address',
+    id: 1,
   },
   {
     action: 'SetHMNTokenAddresses',
-    label: 'Set HMN Token Address',
+    label: 'HMN Token Address',
+    id: 2,
   },
-  // {
-  //   action: 'feeDistributor',
-  //   label: 'Fee Distribution',
-  // },
   {
     action: 'addTokenToReserve',
-    label: 'Add Tokens',
+    label: 'Add Token',
+    id: 3,
   },
 ];
+
 export default function Configure() {
-  const [selectedForm, setSelectedForm] = useState(CONFIGURE_MENU[0].label);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   return (
-    <div className="configure">
-      <div className="configureCenter">
-        <h2 className="configureheading">Configure Token And Address</h2>
-        <div className="youpay">
-          <div className="payItems">
+    <div className="Configure">
+      <div className="liquidityCenter">
+        <div className="liquidBanner">
+          <h4>Configure Settings</h4>
+          <p>
+            Here the assets you have and the volumn.The swap tax, purchase tax,
+            sales tax.
+          </p>
+        </div>
+        <div className="createPairSec">
             {CONFIGURE_MENU?.map((item) => {
               return (
-                <div className="menuBtn">
-                  <button
-                    className="btn"
-                    onClick={() => {
-                      setSelectedForm(item.label);
-                    }}
-                  >
-                    {item.label}
-                  </button>
-                </div>
+                <button
+                  className="btn"
+                  onClick={() => {
+                    setSelectedTab(item.id);
+                  }}
+                >
+                  {item.label}
+                </button>
               );
             })}
-          </div>
-          <div className="configureForm">
-            {selectedForm === CONFIGURE_MENU[0].label ? (
-              <TaxAndSwapForm />
-            ) : selectedForm === CONFIGURE_MENU[1].label ? (
-              <ConfigureAddressForm isSelected={selectedForm} />
-            ) : 
-            selectedForm === CONFIGURE_MENU[2].label ?
-            (
-              <HMNTokenAddress />
-            )
-          :
-              <AddTokenToMigrateReseve/>
-          }
-          </div>
+        </div>
+        <div className="configureForm">
+          {selectedTab === CONFIGURE_MENU[0].id ? (
+            <TaxAndSwapForm />
+          ) : selectedTab === CONFIGURE_MENU[1].id ? (
+            <ConfigureAddressForm isSelected={selectedTab} />
+          ) : selectedTab === CONFIGURE_MENU[2].id ? (
+            <HMNTokenAddress />
+          ) : (
+            <AddTokenToMigrateReseve />
+          )}
         </div>
       </div>
     </div>

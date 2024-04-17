@@ -105,7 +105,22 @@ export default function HMNTokenAddress({ isSelected }) {
   }
 
   return (
-    <div className="form-container">
+    <div className="containerAdLiq">
+    <div className="addLiqbottomSec">
+      <div className="leftdata">
+        <h4>Change Token Address</h4>
+        <p>Here change your old HMN to New One.</p>
+      </div>
+    </div>
+    <br/>
+        <hr/>
+    <div className="addLiqbottomSec">
+      <div className="leftdata">
+        <h4>Enter Address To Change</h4>
+        <p>Enter the new address and old address to change.</p>
+      </div>
+      <div className="right">
+      <div className="form-container">
       {!isEdit ? (
         <div className="editContainer">
           <button
@@ -171,5 +186,8 @@ export default function HMNTokenAddress({ isSelected }) {
         </div>
       )}
     </div>
+      </div>
+    </div>
+  </div>
   );
 }
