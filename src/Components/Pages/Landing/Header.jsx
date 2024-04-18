@@ -6,13 +6,12 @@ import { rootName, appRootName, logoIcon } from '../../../utils/constant';
 import { publicRouteObj } from '../../../staticObjects';
 import { useNavigate } from 'react-router-dom';
 import { StoreImages } from '../../Storeimgaes/StoreImages';
-import Logo from '../../Assets/Images/uniswap.svg';
 
 const launchAppButtonStyle = {
   minWidth: '150px',
   padding: '5px',
   height: '40px',
-  backgroundColor: "rgba(226, 128, 1, 0.808)",
+  backgroundColor: 'rgba(226, 128, 1, 0.808)',
   color: 'white',
   borderRadius: '20px',
   alignItems: 'center',
@@ -20,7 +19,7 @@ const launchAppButtonStyle = {
   justifyContent: 'center',
   fontWeight: '600',
   cursor: 'pointer',
-  border: 'none',
+  border: 'none'
 };
 
 const Header = () => {
@@ -115,12 +114,17 @@ const Header = () => {
                     <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
                       FAQ's
                     </RouterLink>
-                    <RouterLink
-                      to={`${appRootName}/${publicRouteObj.swap}`}
-                      target="_blank"
+                    <button
+                      style={launchAppButtonStyle}
+                      onClick={() => {
+                        window.open(
+                          `${appRootName}/${publicRouteObj.swap}`,
+                          '_blank'
+                        );
+                      }}
                     >
                       Launch App
-                    </RouterLink>
+                    </button>
                   </div>
                 </Drawer>
               </div>

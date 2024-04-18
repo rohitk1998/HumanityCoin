@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import MigratorAndFeeDistributorAbi from '../abi/MigratorAndFeeDistributor.json';
 import HumanityCoinABIs from '../abi/HumanityCoin.json';
 import RouterABIs from '../abi/Router.json';
-import FactoryABI from "../abi/Factory.json";
+import FactoryABI from '../abi/Factory.json';
 
 const MigratorAndFeeDistributorABI = MigratorAndFeeDistributorAbi.abi;
 
@@ -10,20 +10,20 @@ const HumanityCoinABI = HumanityCoinABIs.abi;
 
 const Router = RouterABIs.abi;
 
-const Factory = FactoryABI.abi
+const Factory = FactoryABI.abi;
 
-const contractAddress = '0x2b3F91d87D1d173206cB5B96763Cc76F868B63d0';
+const contractAddress = '0xfb7B2834e60cEFa405B4FaaaF7eA53dCD8502dfB';
 
 const humanityCoinContractAddress =
-  '0x712EE3f1792b6C841b049c35f46B2A49367Bf9E6';
+  '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
 
-const routerAddress = '0xc4124f18D6cAfC6cE4D4A5c414216D6D3B28f0a6';
+const routerAddress = '0x27666673fBEff1F2cdbF43bB9161C4e632A67d5f';
 
-const uniswapFactoryAddress = '0xF5e0eAfC58a167A25C15eb300c160c055e3761EF'
+const uniswapFactoryAddress = '0xB660dfc03C3387Bffc8F57dE88C697EbAbBD8D7C';
 
- // // Token addresses
- const tokenA = '0xEeA46983aA351759202a5F5f502Df3399e7fd9A1';
- const tokenB = '0x712EE3f1792b6C841b049c35f46B2A49367Bf9E6';
+// // Token addresses
+const tokenA = '0x2F1412b1003c353FcB95e9657135993f768FE7dA';
+const tokenB = '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
 
 const ethers = require('ethers');
 const { Web3Provider } = require('@ethersproject/providers');
@@ -40,14 +40,14 @@ export const useConnectMetamask = () => {
   const [factoryContractInstance, setFactoryContractInstance] = useState(null);
 
   const connect = async () => {
-    console.log('CONNECT FUNCTION IS WORKING' );
+    console.log('CONNECT FUNCTION IS WORKING');
     if (ethereum) {
       try {
         // Connect to the Ethereum network using ethers.js
         const web3Instance = new Web3Provider(ethereum);
         const signer = web3Instance.getSigner();
 
-        // etherjs intance to intract with the contract 
+        // etherjs intance to intract with the contract
         const newContractInstance = new ethers.Contract(
           contractAddress,
           MigratorAndFeeDistributorABI,
@@ -64,7 +64,6 @@ export const useConnectMetamask = () => {
         // console.log('HUMANITY CONTRACT ', HumanityCoinContractInstance);
         setHumanityCoinContractInstance(HumanityCoinContractInstance);
 
-
         const tokenAContractInstance = new ethers.Contract(
           tokenA,
           HumanityCoinABI,
@@ -74,11 +73,13 @@ export const useConnectMetamask = () => {
         setTokenAContractInstance(tokenAContractInstance);
 
         // Create a contract instance
-        const routerContract = new ethers.Contract(routerAddress, Router, signer);
+        const routerContract = new ethers.Contract(
+          routerAddress,
+          Router,
+          signer
+        );
 
         setRouterContractInstance(routerContract);
-
-
 
         const tokenBContractInstance = new ethers.Contract(
           tokenB,
@@ -88,11 +89,13 @@ export const useConnectMetamask = () => {
         console.log('TOKEN B CONTRACT ', tokenBContractInstance);
         setTokenBContractInstance(tokenBContractInstance);
 
+        const factoryContractInstance = new ethers.Contract(
+          uniswapFactoryAddress,
+          Factory,
+          signer
+        );
 
-        const factoryContractInstance = new ethers.Contract(uniswapFactoryAddress ,Factory ,signer);
-
-        setFactoryContractInstance(factoryContractInstance)
-
+        setFactoryContractInstance(factoryContractInstance);
 
         // Define the configureTaxAndSwap function
         // const configureTaxAndSwap = async () => {
@@ -221,15 +224,15 @@ export const useConnectMetamask = () => {
   };
 
   useEffect(() => {
-    connect()
+    connect();
   }, []);
 
   return {
     contractInstance: contractInstance,
     humanityCoinContractInstance: humanityCoinContractInstance,
     tokenAContractInstance: tokenAContractInstance,
-    routerInstance : routerContractInstance,
-    tokenBContractInstance:tokenBContractInstance,
-    factoryContractInstance : factoryContractInstance
+    routerInstance: routerContractInstance,
+    tokenBContractInstance: tokenBContractInstance,
+    factoryContractInstance: factoryContractInstance,
   };
 };

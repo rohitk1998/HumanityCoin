@@ -30,7 +30,8 @@ const Main = () => {
                   <p className={style.uniswap}>
                     {" "}
                     <span>
-                      <img src={humanityTitle} width={200} height={100} />
+                      {/* <img src={humanityTitle} width={200} height={100} /> */}
+                      HUMANITY
                        COIN</span>
                   </p>
                   <p>
