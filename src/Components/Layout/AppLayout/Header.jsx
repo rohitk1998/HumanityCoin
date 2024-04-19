@@ -150,16 +150,6 @@ export default function AppHeader() {
                   Configure
                 </RouterLink>
               </div>
-              {/* <div className="dropdownheader">
-                <Dropdown overlay={menu} className="commDropdown">
-                  <a
-                    className="ant-dropdown-link"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <DownOutlined />
-                  </a>
-                </Dropdown>
-              </div> */}
             </div>
           </div>
         </div>
@@ -198,14 +188,11 @@ export default function AppHeader() {
               border: ' 1px solid #716C6C',
             }}
           >
-            {/* Get the app <img src={applestore} alt="imgs" />{" "} */}
-            {/* <img src={playstore} alt="imgs" /> */}
           </Button>
           <Button
             onClick={() => {
               open();
             }}
-            // style={connectAppButtonStyle}
             className="connectBtn"
           >
             {isWalletConnected ? account?.slice(0, 14) + '...' : 'Connect App'}
@@ -214,7 +201,7 @@ export default function AppHeader() {
       </div>
       <div>
         <div className='resHeader'>
-          <img src={swapicon}alt="imgs"className='uniswapIcons'/>
+        <img src={logoIcon} width={120} height={120} className='uniswapIcons' />
           <div className="resSearch">
           <Search
             placeholder="Search tokens and NFT collections"
@@ -249,26 +236,20 @@ export default function AppHeader() {
             }}
           >
             <div>
-              <RouterLink to={`${rootName}${publicRouteObj.ecosystem}`}>
+              <RouterLink to={`${appRootName}${publicRouteObj.swap}`}>
                Swap
               </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.community}`}>
+              <RouterLink to={`${appRootName}${publicRouteObj.explorer}`}>
                 Explore
               </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
+              <RouterLink to={`${appRootName}${publicRouteObj.migrate}`}>
                 Migrate
               </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
+              <RouterLink to={`${appRootName}${publicRouteObj.pool}`}>
                 Pool
               </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
+              <RouterLink to={`${appRootName}${publicRouteObj.configure}`}>
                 Configure
-              </RouterLink>
-              <RouterLink
-                to={`${appRootName}/${publicRouteObj.swap}`}
-                target="_blank"
-              >
-                Launch App
               </RouterLink>
             </div>
           </Drawer>

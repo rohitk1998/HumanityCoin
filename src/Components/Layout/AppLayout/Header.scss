@@ -6,12 +6,9 @@
   justify-content: space-between;
   align-items: center;
   height: 82px;
-  padding: 5px 40px;
+  padding: 10px !important;
   @media (max-width: 1199px) {
     display: none;
-  }
-  .uniswapIcons {
-    // filter: invert(1);
   }
   .rightsec {
     display: flex;
@@ -163,7 +160,8 @@
   }
 }
 .resSearch {
-  max-width: 480px;
+  max-width: 260px;
+  min-width: 120px;
   width: 100%;
   margin-right: 13px;
 }

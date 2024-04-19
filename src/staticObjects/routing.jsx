@@ -2,7 +2,11 @@ export const publicRouteObj = {
   community : 'community',
   faq:'faq',
   ecosystem:'ecosystem',
-  swap:'swap'
+  swap:'swap',
+  migrate:'migrate',
+  explorer:'explore',
+  configure:'configure',
+  pool:'pool',
 };
 
 // Sidebar obj
