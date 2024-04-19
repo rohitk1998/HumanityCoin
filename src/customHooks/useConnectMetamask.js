@@ -14,6 +14,8 @@ const Factory = FactoryABI.abi;
 
 const contractAddress = '0xfb7B2834e60cEFa405B4FaaaF7eA53dCD8502dfB';
 
+// const humanityCoinContractAddress =
+//   '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
 const humanityCoinContractAddress =
   '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
 
@@ -43,11 +45,9 @@ export const useConnectMetamask = () => {
     console.log('CONNECT FUNCTION IS WORKING');
     if (ethereum) {
       try {
-        // Connect to the Ethereum network using ethers.js
         const web3Instance = new Web3Provider(ethereum);
         const signer = web3Instance.getSigner();
 
-        // etherjs intance to intract with the contract
         const newContractInstance = new ethers.Contract(
           contractAddress,
           MigratorAndFeeDistributorABI,
@@ -55,13 +55,11 @@ export const useConnectMetamask = () => {
         );
         setContractInstance(newContractInstance);
 
-        // humanity coin contract instance
         const HumanityCoinContractInstance = new ethers.Contract(
           humanityCoinContractAddress,
           HumanityCoinABI,
           signer
         );
-        // console.log('HUMANITY CONTRACT ', HumanityCoinContractInstance);
         setHumanityCoinContractInstance(HumanityCoinContractInstance);
 
         const tokenAContractInstance = new ethers.Contract(
@@ -69,10 +67,8 @@ export const useConnectMetamask = () => {
           HumanityCoinABI,
           signer
         );
-        // console.log('TOKEN A CONTRACT ', tokenAContractInstance);
         setTokenAContractInstance(tokenAContractInstance);
 
-        // Create a contract instance
         const routerContract = new ethers.Contract(
           routerAddress,
           Router,
@@ -86,7 +82,6 @@ export const useConnectMetamask = () => {
           HumanityCoinABI,
           signer
         );
-        console.log('TOKEN B CONTRACT ', tokenBContractInstance);
         setTokenBContractInstance(tokenBContractInstance);
 
         const factoryContractInstance = new ethers.Contract(
@@ -96,123 +91,6 @@ export const useConnectMetamask = () => {
         );
 
         setFactoryContractInstance(factoryContractInstance);
-
-        // Define the configureTaxAndSwap function
-        // const configureTaxAndSwap = async () => {
-        //   try {
-        //     // Assuming configureTaxAndSwap is a transaction and not a call
-        //     const tx = await newContractInstance.configureTaxAndSwap(3000, 3000, 4000);
-        //     const receipt = await tx.hash
-        //     console.log('configureTaxAndSwap transaction receipt:', receipt);
-        //   } catch (error) {
-        //     console.error('Error sending configureTaxAndSwap transaction:', error);
-        //   }
-        // };
-
-        // Call the configureTaxAndSwap function
-        // await configureTaxAndSwap();
-
-        // Define the swapTriggerPercentage function
-        const getSwapTriggerPercentage = async () => {
-          try {
-            // Assuming swapTriggerPercentage is a call and not a transaction
-            const result = await newContractInstance.swapTriggerPercentage();
-            console.log('swapTriggerPercentage:', Number(result));
-          } catch (error) {
-            console.error('Error calling swapTriggerPercentage:', error);
-          }
-        };
-
-        // Call the swapTriggerPercentage function
-        // await getSwapTriggerPercentage();
-
-        const getPurchaseTaxPercentage = async () => {
-          try {
-            // Assuming swapTriggerPercentage is a call and not a transaction
-            const result = await newContractInstance.purchaseTaxPercentage();
-            console.log('purchaseTaxPercentage:', Number(result));
-          } catch (error) {
-            console.error('Error calling purchaseTaxPercentage:', error);
-          }
-        };
-
-        // Call the swapTriggerPercentage function
-        // await getPurchaseTaxPercentage();
-
-        const getSalesTaxPercentage = async () => {
-          try {
-            // Assuming swapTriggerPercentage is a call and not a transaction
-            const result = await newContractInstance.salesTaxPercentage();
-            console.log('salesTaxPercentage:', Number(result));
-          } catch (error) {
-            console.error('Error calling salesTaxPercentage', error);
-          }
-        };
-
-        // Call the swapTriggerPercentage function
-        // await getSalesTaxPercentage();
-
-        // Define the configureAddresses function
-        const configureAddresses = async () => {
-          try {
-            // Assuming configureAddresses is a transaction and not a call
-            const tx = await newContractInstance.configureAddresses(
-              '0x166C8C7Add5Fd70bbd1Eaf1E811f362CA726470A',
-              '0x18ad99E72501baaEa6d6170ee02F451B158DCE68',
-              '0xe3242844a25CB909db3f4eBb99Bd6BFBA2f61B94'
-            );
-            const receipt = await tx.wait();
-            console.log('configureAddresses transaction receipt:', receipt);
-          } catch (error) {
-            console.error(
-              'Error sending configureAddresses transaction:',
-              error
-            );
-          }
-        };
-
-        // Call the configureAddresses function
-        // await configureAddresses();
-
-        // Define the swapTriggerPercentage function
-        const getSwapTrigger = async () => {
-          try {
-            // Assuming swapTriggerPercentage is a call and not a transaction
-            const result = await newContractInstance.swapTrigger();
-            console.log('swapTrigger:', result);
-          } catch (error) {
-            console.error('Error calling swapTrigger:', error);
-          }
-        };
-
-        // Call the swapTriggerPercentage function
-        // await getSwapTrigger();
-
-        const getPurchaseTax = async () => {
-          try {
-            // Assuming swapTriggerPercentage is a call and not a transaction
-            const result = await newContractInstance.purchaseTax();
-            console.log('purchaseTax:', result);
-          } catch (error) {
-            console.error('Error calling purchaseTax:', error);
-          }
-        };
-
-        // Call the swapTriggerPercentage function
-        // await getPurchaseTax();
-
-        const getSalesTax = async () => {
-          try {
-            // Assuming swapTriggerPercentage is a call and not a transaction
-            const result = await newContractInstance.salesTax();
-            console.log('salesTax:', result);
-          } catch (error) {
-            console.error('Error calling salesTax', error);
-          }
-        };
-
-        // Call the swapTriggerPercentage function
-        // await getSalesTax();
       } catch (error) {
         console.error('Connection error:', error);
       }
