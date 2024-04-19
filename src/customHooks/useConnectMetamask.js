@@ -12,20 +12,21 @@ const Router = RouterABIs.abi;
 
 const Factory = FactoryABI.abi;
 
-const contractAddress = '0xfb7B2834e60cEFa405B4FaaaF7eA53dCD8502dfB';
+// vivek addresses
+// const contractAddress = '0xfb7B2834e60cEFa405B4FaaaF7eA53dCD8502dfB';
+// const humanityCoinContractAddress ='0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
+// const routerAddress = '0x27666673fBEff1F2cdbF43bB9161C4e632A67d5f';
+// const uniswapFactoryAddress = '0xB660dfc03C3387Bffc8F57dE88C697EbAbBD8D7C';
+// const tokenA = '0x2F1412b1003c353FcB95e9657135993f768FE7dA';
+// const tokenB = '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
 
-// const humanityCoinContractAddress =
-//   '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
-const humanityCoinContractAddress =
-  '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
-
-const routerAddress = '0x27666673fBEff1F2cdbF43bB9161C4e632A67d5f';
-
-const uniswapFactoryAddress = '0xB660dfc03C3387Bffc8F57dE88C697EbAbBD8D7C';
-
-// // Token addresses
-const tokenA = '0x2F1412b1003c353FcB95e9657135993f768FE7dA';
-const tokenB = '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
+//mine addresses
+const contractAddress = '0xe3F4D10D1FC71fC4FD93534E0991bD79C63C8C1E';
+const humanityCoinContractAddress ='0x63F7ef35cBB61390C3eD12D66CF3DF8E0A8f3F2e';
+const routerAddress = '0x2704b2c3F0AF48EF36cB26B622E16A2436Fc595f';
+const uniswapFactoryAddress = '0xfd46f5068eF9e74150Ea2653f64D64cB029Fa8E7';
+const tokenA = '0x17102168C2Fc61A0b66D22A2Ab30d38c975218cb';
+const tokenB = '0x63F7ef35cBB61390C3eD12D66CF3DF8E0A8f3F2e';
 
 const ethers = require('ethers');
 const { Web3Provider } = require('@ethersproject/providers');
