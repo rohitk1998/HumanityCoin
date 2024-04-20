@@ -1,0 +1,92 @@
+@import '../../Assets/Styles/_vars.scss';
+@import '../../Assets/Styles/_mixins.scss';
+.migrate {
+  background-color: rgb(3, 3, 3);
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  .migrateCenter {
+    padding-top: 40px;
+    width: 30%;
+    min-width: 250px;
+    margin: auto;
+    .migrateHeading {
+      color: #fff;
+      @include fluid-type(320px, 1920px, 24px, 42px);
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 20px;
+      font-size: 60px !important;
+    }
+    .youpay {
+      border-radius: 22px;
+      padding: 0px;
+      .amountpay {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: transparent;
+        border: 1px solid #3f3f3f;
+        border-radius: 22px;
+        align-items: start;
+        padding-left: 15px;
+        padding-top: 13px;
+        overflow: hidden;
+        .migrateLabel{
+          color: rgb(71, 68, 68);
+          font-size: 16px ;
+          font-weight: 400;  
+        }
+        input {
+          height: 70px;
+          width: 100%;
+          background-color: transparent;
+          border-radius: 22px;
+          display: flex;
+          flex-direction: column;
+          color: #959595;
+          opacity: 0.4;
+          font-weight: 600;
+          font-size: 29px;
+          outline-width: 0px;
+        }
+      }
+
+      Button{
+        border-radius: 10px;
+        background-color: rgb(49, 28, 49);
+        height: 60px;
+        width: 100%;
+        color: rgb(252, 114, 255);
+        @include fluid-type(320px, 1920px, 14px, 16px);
+        margin-top: 15px;
+        font-weight: 600;
+        &:hover,
+        :active,
+        :focus,
+        :focus-within,
+        :focus-visible {
+          background-color: rgb(49, 28, 49) !important;
+          opacity: 0.4;
+          color: rgb(252, 114, 255);
+        }
+      }
+    }
+  }
+  .migrateContext {
+    width: 45%;
+    padding: 20px;
+    margin-top: 20px;
+    min-width: 300px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto  ;
+    background-color: rgba(98, 84, 50, 0.16);
+    margin-bottom: 20px;
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      color: rgb(141, 134, 104);
+    }
+  }
+}

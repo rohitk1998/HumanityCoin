@@ -1,0 +1,87 @@
+@import "../../Assets/Styles/_mixins.scss";
+@import "../../Assets/Styles/_vars.scss";
+
+.inputpayment {
+  &__cardpayment {}
+
+  .inputpayment__card {
+    opacity: 1;
+    width: 100%;
+    height: 45px;
+    box-shadow: none;
+    position: relative !important;
+    background-color: transparent !important;
+    border-radius: 5px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 15px;
+    cursor: pointer;
+
+    border: 1px solid $staticBorder;
+
+    span {
+      display: none;
+    }
+
+    &:hover {
+      border: 2px solid $CommonButton;
+
+      // background: url("../../Assets/Images/checkinputhov.svg");
+      // background-repeat: no-repeat;
+      // background-size: 10px;
+      // background-position: right 5px top 5px;
+      span {
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid #fcd535;
+        transform: rotate(138deg);
+        position: absolute;
+        top: -13px;
+        right: -4px;
+
+        svg {
+          transform: rotate(220deg);
+          top: -3px;
+          right: -16px;
+          position: absolute;
+        }
+      }
+    }
+
+    .left_imgetext {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 5px;
+        height: 15px;
+        width: 15px;
+      }
+
+      p {
+        margin-bottom: 0px;
+        color: $checkboxparagraph;
+        @include fluid-type(320px, 1920px, 12px, 14px);
+      }
+    }
+
+    .right_imgetext {
+      display: flex;
+      white-space: nowrap;
+      align-items: center;
+
+      p {
+        margin-bottom: 0px;
+      }
+
+      img {
+        margin: 0px 5px;
+      }
+    }
+  }
+}

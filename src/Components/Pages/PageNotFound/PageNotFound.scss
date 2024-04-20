@@ -1,0 +1,13 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+.pagenotfound {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  // color: $whiteblackBase;
+  font-size: 14px;
+  font-weight: 500;
+}

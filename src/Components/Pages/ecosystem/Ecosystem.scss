@@ -1,0 +1,146 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+    .ecosystem {
+        background: rgba(0, 0, 0);
+        width: 100% !important;
+        .globalSecInner {
+          width: 100%;
+          display: flex;
+          padding: 24px;
+          flex-direction: column;
+          border-radius: 20px;
+          transition: 0.5s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            background-image: linear-gradient(
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0)
+              ),
+              linear-gradient(
+                95.5deg,
+                rgba(15, 53, 255, 0.3) 12.82%,
+                rgba(255, 72, 181, 0.3) 41.96%,
+                rgba(15, 53, 255, 0.08) 75.06%,
+                rgba(15, 53, 255, 0.11) 107.66%
+              );
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+          }
+          @media (max-width: 767px) {
+            max-width: 100%;
+            padding: 20px;
+            height: auto;
+            gap: 0;
+          }
+          &:hover {
+            box-shadow: 0px 0px 20px #0000001a;
+            border-radius: 20px;
+            opacity: 1;
+          }
+      
+          .imgDiv {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            img {
+              width: 96px;
+              height: 96px;
+              border-radius: 10px;
+            }
+            span {
+              background-color: black;
+              padding: 6px 10px;
+              border-radius: 5px;
+              font-size: 12px;
+              color: #fff;
+            }
+          }
+      
+          h4 {
+            text-align: left;
+            width: 100%;
+            opacity: 1;
+            @include fluid-type(320px, 1920px, 14px, 16px);
+          }
+      
+          p {
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 200;
+            padding-top: 4px;
+            @include fluid-type(320px, 1920px, 13px, 14px);
+          }
+        }
+        .innerContent {
+          text-align: center;
+          max-width: 697px;
+          width: 100%;
+          padding: 50px 0 100px 0;
+          margin: auto;
+          color: rgba(255, 255, 255, 0.6);
+        }
+        .exPloreTop {
+            background: rgba(0, 0, 0);
+          padding-top: 80px;
+          .explore {
+            background: rgba(0, 0, 0);
+            background: linear-gradient(
+            95.5deg,
+            rgba(15, 53, 255, 0.3) 12.82%,
+            rgba(21, 163, 151, 0.3) 41.96%,
+            rgba(15, 53, 255, 0.08) 75.06%,
+            rgba(15, 53, 255, 0.11) 107.66%
+          );
+            h3 {
+              @include fluid-type(320px, 1920px, 25px, 32px);
+              color: #fff;
+              font-weight: 500;
+              padding-bottom: 12px;
+            }
+            p {
+              color: rgba(255, 255, 255, 0.6);
+              @include fluid-type(320px, 1920px, 14px, 16px);
+              max-width: 600px;
+            }
+          }
+          .browseEco {
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 500px;
+            @include fluid-type(320px, 1920px, 14px, 16px);
+            font-weight: 400;
+            span {
+              font-style: italic;
+              a {
+                text-decoration: underline;
+                color: rgba(255, 255, 255, 0.6);
+              }
+            }
+          }
+        }
+        .inputeco {
+          max-width: 355px;
+          background: linear-gradient(
+            95.5deg,
+            rgba(15, 53, 255, 0.3) 12.82%,
+            rgba(255, 72, 181, 0.3) 41.96%,
+            rgba(15, 53, 255, 0.08) 75.06%,
+            rgba(15, 53, 255, 0.11) 107.66%
+          );
+          padding: 2px;
+          margin: 40px 0 50px 0;
+          border-radius: 10px;
+          .ant-input {
+            text-overflow: ellipsis;
+            backdrop-filter: blur(4px);
+            background-color: rgb(35, 36, 38);
+            outline: none;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            height: 48px;
+            color: #fff;
+            &:hover{
+              opacity: 0.7;
+            }
+          }
+        }
+      }

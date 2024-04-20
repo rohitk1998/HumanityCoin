@@ -1,0 +1,15 @@
+.controlHeight {
+    input {
+        height: 40px !important;
+        margin-bottom: 0 !important;
+    }
+    .input_custum {
+        height: 40px !important;
+        input {
+            height: initial !important;
+        }
+    }
+}
+.captcha{
+    width: 100%;
+}

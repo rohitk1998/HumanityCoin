@@ -1,0 +1,1957 @@
+{
+  "sidebar": {
+    "home": "Нүүр",
+    "portfolio": "Хэтэвч",
+    "swap": "Хөрвүүлэх",
+    "advanceTrading": "Арилжаа",
+    "earn": "Стейк",
+    "p2p": "P2P",
+    "coinListing": "Койн лист",
+    "referral": "Урилга",
+    "listedCoin": "Койнууд",
+    "applications": "Хүсэлт",
+    "transactions": "Гүйлгээ",
+    "spot": "Спот",
+    "margin": "Маржин",
+    "future": "Фючерс"
+  },
+  "table": {
+    "name": "Нэр",
+    "price": "Үнэ",
+    "last": "Сүүлийн",
+    "marketcap":"Зах зээлийн үнэлгээ",
+    "action":"Үйлдэл",
+    "last_price":"Сүүлийн үнэ",
+    "change":"Өөрчлөх",
+    "high":"Өндөр",
+    "low":"бага",
+    "volume":"Эзлэхүүн",
+    "yield_Rate":"Үр өгөөжийн хувь",
+    "staked_Amount":"Бооцооны дүн",
+    "total_Duration":"Нийт үргэлжлэх хугацаа",
+    "duration_Left":"Хугацаа үлдсэн",
+    "earnings":"Орлого"
+
+
+  },
+  "buttons": {
+    "place_buy_order":"ХУДАЛДАН АВАХ ЗАХИАЛГА АВААРАЙ",
+    "depositWithdraw":"Хадгаламж авах",
+    "buy&sell": "Авах & Зарах",
+    "inviteFriend": "Найзаа урих",
+    "gotospot": "Спот дансаа харах",
+    "update": "Шинэчлэх",
+    "redeem": "Зарцуулах",
+    "filter": "Шүүлтүүр",
+    "order": "Захиалга",
+    "reset": "Нууц үг шинэчлэх",
+    "send&receive": "Шилжүүлэх & Хүлээн авах",
+    "continue": "Үргэлжлүүлэх",
+    "Back": "Буцах",
+    "verify": "Баталгаажуулах",
+    "submit": "Илгээх",
+    "resend": "Код дахин авах",
+    "resend_code": "{{seconds}} секундийн дараа дахин авна уу",
+    "create_an_account": "Бүртгүүлэх",
+    "yes_trust": "Зөвшөөрч байна",
+    "don't_trust": "Зөвшөөрөхгүй",
+    "create_account": "Бүртгүүлэх",
+    "email_didn't_arrive": "Имэйл ирээгүй байна уу?",
+    "sign_out": "Гарах",
+    "send_code": "Код авах",
+    "use_another_phone_no": "Өөр дугаар ашиглана уу",
+    "transfer_crypto": "Шилжүүлгийг хийх",
+    "skip_for_now": "Алгасах",
+    "deposit": "Хүлээн авах",
+    "withdraw": "Илгээх",
+    "buy": "Авах",
+    "stake": "Стейк",
+    "stake_now": "Стейклэх",
+    "add_New_Address": "Шинэ хаяг бүртгэх",
+    "enable": "Идэвхжүүлэх",
+    "disable": "Идэвхгүй болгох",
+    "verified": "Баталгаажсан",
+    "change_password": "Өөрчлөх",
+    "manage": "Тохируулах",
+    "more": "Цааш үзэх",
+    "start_application": "Мэдээлэл бөглөх",
+    "add_asset": "Хөрөнгө нэмэх",
+    "get_started": "Эхлэх",
+    "agree_continue": "Зөвшөөрөөд үргэлжлүүлэх",
+    "submit_your_application": "Мэдээллээ илгээх",
+    "view": "Харах",
+    "convert_all": "Бүгдийг нь хувиргах",
+    "submit_id": "Регистрийн дугаар илгээх",
+    "cancel": "Цуцлах",
+    "transfer": "Шилжүүлэх",
+    "ok": "Ok",
+    "goToHome": "Нүүр хуудас руу буцах",
+    "readAll": "Бүгдийг унших",
+    "deleteAll": "Бүгдийг устагх",
+    "confirm": "Баталгаажуулах"
+  },
+  "getCodeFirst": "Эхлээд баталгаажуулах кодоо авна уу",
+  "login": {
+    "sign_in_to": "Койнхаб руу нэвтрэх",
+    "not_your_device": "Та өөрөө нэвтэрсэн үү? Үгүй бол аюулгүй интернэт хөтчөөс хандана уу.",
+    "enter_phone_text": "{{phoneNo}} дугаарт илгээсэн баталгаажуулах кодыг оруулна уу",
+    "enter_email_text": "{{email}} хаягаар илгээсэн 5 оронтой кодыг оруулна уу",
+    "enter_the_digit": "2FA кодоо оруулна уу",
+    "this_help_us_keep": "Харилцагчийг таньж, баталгаажуулснаар харилцагчийн бүртгэл илүү аюулгүй, найдвартай болдог.",
+    "resend_code": "{{seconds}} секундийн дараа дахин оролдоно уу",
+    "try_another_way": "Өөрөөр орлдоод үзнэ үү.",
+    "cancel_signing_in": "Цуцлах",
+    "trust_this_device": "Уг төхөөрөмжийг {{days}} өдөр сануулах уу?",
+    "if_you_choose_to_trust": "Та уг төхөөрөмжийг сануулвал {{days}} өдрийн турш 2FA код оруулах шаардлагагүйгээр нэвтрэх боломжтой болно. Тохиргоо цэснээс өөрчлөлт хийнэ үү.",
+    "not_now": "Түр алгасах",
+    "account_secure": "Харилцагчийг таньж мэдэн, баталгаажуулснаар харилцагчийн бүртгэл илүү аюулгүй, найдвартай болдог.",
+    "title": "Нэвтрэх",
+    "visiting": "Та өөрөө хандалт хийсэн эсэхээ нягтлана уу",
+    "button": "Нэвтрэх",
+    "forgot_password": "Нууц үг мартсан",
+    "not_on": "Идэвхгүй байна"
+  },
+  "signup": {
+    "do_more_with_crypto": "Койнхабтай хамт <br /> хөрөнгөө бүтээе",
+    "set_up_your_account": "Хувийн мэдээлэл болон баримт бичгээ баталгаажуулаад <br /> арилжаа хийх боломжтой болно.",
+    "create_an_account": "Бүртгүүлэх",
+    "email": "Имэйл",
+    "password": "нууц үг",
+    "referral_Code_(Optional)": "лавлагааны код (заавал биш)",
+    "phon_number": "Утасны дугаар",
+    "forgot_password": "нууц үгээ мартсан ",
+    "required_field": "Заавал бөглөх шаардлагатай",
+    "term": "Би 18 насанд хүрсэн бөгөөд  <0> үйлчилгээний нөхцөл </0> <1> нууцлалын бодлоготой </1> танилцаж зөвшөөрсөн болно.",
+    "concent": "Үйлчилгээний нөхцөлийг зөвшөөрч байна"
+  },
+
+  "emailVerify": {
+    "verify_email": "Имэйл хаягаа баталгаажуулна уу",
+    "verification_email": "Баталгаажуулах кодыг <0>{{email}}</0> хаягаар илгээсэн бөгөөд ирсэн линкээр орно уу."
+  },
+  "twoStepVerification": {
+    "two_step": "2 алхамт баталгаажуулалт тохируулах",
+    "mobile_number_associated": "Бүртгэлтэй утасны дугаараа оруулна уу. Нэвтрэх үед <br /> бүртгэлтэй дугаарт баталгаажуулах код илгээнэ.",
+    "security_term": "Таны аюулгүй байдлыг хангахын тулд бид  <br /> бүртгэлгүй төхөөрөмжөөс хандах бүрт <br /> баталгаажуулах код илгээнэ.",
+    "enter_verification_code": "Баталгаажуулах кодоо оруулна уу",
+    "text_message_with_digit": "{{digit}}-оронтой код бүхий мессеж таны {{phoneNo}} дугаарт илгээгдлээ. Харилцагчийг таньж мэдэн, баталгаажуулснаар харилцагчийн бүртгэл илүү аюулгүй, найдвартай болдог."
+  },
+  "policies": {
+    "privacyPolicy": "Нууцлалын бодлого"
+  },
+  "overivew": {
+    "tips1": "Биткойн нь хамгийн түгээмэл танигдсан криптовалют бөгөөд Биткойныг дундын оролцогчгүйгээр, найдвартайгаар өөр хоорондоо шууд шилжүүлэх боломжтой.",
+    "tips2": "Уламжлалт санхүүгийн систем нь дундын оролцогч болон түүний зөвшөөрлийн тусламжтай шилжүүлэг хийгддэг бол Биткойны тусламжтай төвлөрсөн бус байдлаар, хэн нэгнээс хараат бусаар хүссэн газраасаа, хүссэн үедээ өөр хоорондоо шилжүүлэг хийх боломжтой",
+    "Market_cap": "Market Cap гэдэн нь зах зээлд эргэлтэнд орсон буюу нийт зах зээлд нийлүүлэгдсэн хөрөнгийн үнэлгээ юм. Market Cap = Одоогийн ханш * Эргэлтэнд орсон хэмжээ.",
+    "Volume_(24h)": "24 цагт арилжаалагдсан криптовалютын хэмжээ.",
+    "Circulating_supply": "зах зээлд эргэлтэнд орсон буюу нийт зах зээлд нийлүүлэгдсэн хөрөнгийн хэмжээ юм.",
+    "Popularity": "Танигдсан байдлыг COINBASE дахь зах зээлийн хэмжээгээр тодорхойлдог. Бусдаас илүү танигдсан криптовалютууд нь илүү том зах зээлийн хэмжээтэй байх хандлагатай байдаг."
+  },
+  "home": {
+    "my_balance": "Хэтэвч",
+    "price": "Ханш",
+    "top_mover": "Илүү өөрчлөлт орсон",
+    "sell_all": "Бүгдийг харах",
+    "top_losers": "Шилдэг ялагдагчид",
+    "top_gainers": "Шилдэг олзууд",
+    "price_chart":"Үнийн график",
+    "trading_view":"Арилжаа харах",
+    "depth_view":"Гүн харах",
+    "order_book":"Захиалгын ном",
+    "trade_history":"Худалдааны түүх"
+
+  },
+  "portfolio": {
+    "spot_balance": "Спот хэтэвч",
+    "funding_balance": "Фандинг хэтэвч",
+    "total_balance": "нийт_үлдэгдэл",
+    "assets": "Хөрөнгө",
+    "rewards": "Урамшуулал",
+    "balance": "Үлэгдэл",
+    "coin": "Койн",
+    "name": "Нэр",
+    "wallet_overview": "Нийт үлдэгдэл",
+    "p2p_Balance": "P2P хэтэвч",
+    "in_Order": "Захиалганд буй",
+    "action": "Үйлдэл",
+    "fiat&Spot": "Фиат, спот",
+    "p2p": "P2P",
+    "asset": "Хөрөнгө",
+    "available_balance": "Боломжит үлдэгдэл",
+    "estimated_balance": "Тооцоолсон үлдэгдэл :",
+    "walletview": "Түрийвч харах",
+    "coinview": "Зоос харах",
+    "walletBalance":"Түрийвчний үлдэгдэл",
+    "amount":"Дүн",
+    "order_Form":"Захиалгын маягт",
+    "convert_to":"руу хөрвүүлэх ",
+    "convert_History":"Түүхийг хөрвүүлэх",
+    "value":"USDT Үнэ цэнэ"
+  },
+  "coinDetail": {
+    "watchlist": "Жагсаалт",
+    "market_Stats": "Төлөв",
+    "overview": "Тойм",
+    "resources": "Эх сурвалж",
+    "whitepaper": "Танилцуулга",
+    "official_Website": "Вебсайт",
+    "primary_balance": "Үлдэгдэл",
+    "empty_data_contant": "Үлдэгдэл байхгүй",
+    "spot": "Толбо"
+  },
+  "earn": {
+    "my_earning": "Миний стэйк",
+    "history": "Түүх",
+    "cosmos": "Cosmos",
+    "enter_staking_amount": "Хэмжээ оруулна уу",
+    "min_limit": "Доод хэмжээ:",
+    "1m": "1Сар",
+    "3m": "3Сар",
+    "6m": "6Сар",
+    "1y": "1Жил",
+    "you_will_earn": "Бодогдох өгөөж:",
+    "cosmos_bal": "COSMOS үлдэгдэл",
+    "1cosmos": "1 Cosmos"
+  },
+  "coinlisting": {
+    "welcome_hub": "Тавтай морилоно уу",
+    "asset_Coinhub": "Цөөн үйлдлээр COINHUB-д лист хийх боломжтой",
+    "first_asset": "Хөрөнгөө шилжүүлэх",
+    "listed_Coinhub": "COINHUB-д койноо листлэх хүсэлт илгээх",
+    "intro": "Танилцуулга",
+    "listing-agreement": "Листингийн гэрээ",
+    "asset": "Хөрөнгө",
+    "compliance": "Бодлого",
+    "prepare_submit": "Хүсэлт илгээх",
+    "submitting_review": "Хүсэлт илгээх",
+    "submitting_Adres1": "COINHUB-ийг сонгон үйлчлүүлсэнд баярлалаа. Та койн листлэх заавар зөвлөмжүүдтэй сайтар танилцана уу.",
+    "submitting_Adres2": "Та үнэн зөв, бодитой мэдээллийг оруулснаар таны хүсэлтийг судлах явц илүү хурдан, үр дүнтэй болж чадах юм.",
+    "listing_Text": "By signing this agreement, you agree that the information you provide is truthful. you agree to abide by the terms of the agreement (including but not limited to the non-disclosure provision, the restriction on market manipulation, and the obligation not to use any of the information you receive for or allow a third party to engage in market manipulation). Please read this document over carefully",
+    "download_listing": "Листингийн гэрээ татах",
+    "existing_asset": "Койн нэмэх",
+    "network": "Сүлжээ",
+    "network_token": "Тус токен нь ямар сүлжээнд суурилсан бэ?",
+    "asset_name": "Койны нэр",
+    "digital_asset": "Койны нэр юу вэ?",
+    "asset_ticker": "Товчилсон нэр",
+    "asset_tickerText": " Койны товчилсон нэр юу вэ? 2-5 үсэгтэй байна.",
+    "asset_icon": "Койны лого",
+    "upload_text": "PNG,JPEG,JPG өргөтгөлтэй, 500KB-аас ихгүй багтаамжтай логоны зураг оруулна уу.",
+    "uploadIcon": "Лого оруулах",
+    "company_name": "Компанийн нэр",
+    "provide_company": "Хуулийн этгээдийн оноосон нэр.",
+    "address_incorporation": "Одоогоо үйл ажиллагаа явуулж буй хаяг",
+    "provide_incorporation": "Хуулийн этгээдийн албан ёсны бүртгэлтэй хаяг",
+    "executives": "Удирдлагууд",
+    "executives_text": "Компанийн удирдах албан тушаалтан бүрийн мэдээлийг оруулна уу. Овог, нэр, төрсөн огноо, албан тушаалын нэр.",
+    "plus_executive": "email : skill.trainings@antiersolutions.com",
+    "beneficial_owners": "Хувьцаа эзэмшигчид",
+    "beneficial_text": "Хувьцаа эзэмшигч болон ТУЗ хараат болон хараат бус гишүүдийн мэдээлэл. Овог, нэр, төрсөн огноо",
+    "plus_beneficial_owners": "+ Add beneficial owners",
+    "asset_trading": "Арилжаалж буй койнууд",
+    "asset_trading_text": "Танай хуулийн этгээд болон түүнтэй холбоотой компаниудын оролцоотой альваа койны төслүүд, арилжаалж буй койнууд байгаа эсэх?",
+    "yes": "Тийм",
+    "no": "Үгүй",
+    "government_connections": "Улс төрд холбоо хамааралтай эсэх",
+    "government_connections_text": "Танай хуулийн этгээдтэй холбоотой альваа улс төрч болон улс төрд нөлөө бүхий этгээдэд байгаа эсэх?",
+    "ticker": "Койны товчилсон нэр",
+    "delet_asset": "Устгах",
+    "list_desc": ""
+  },
+  "Phone number is required": "Дугаар оруулна уу",
+  "Please enter valid phone number": "Хүчинтэй дугаар оруулна уу",
+  "Password is requried": "Нууц үгээ оруулна уу",
+  "Password must be a minimum of 8 characters including number, upper, lower and one special character": "Нууц үг нь тоо, үсэг орсон, хамгийн багадаа 1 тусгай тэмдэгт болон том үсгээс бүрдсэн, 8-аас доошгүй тэмдэгттэй байна.",
+  "Captcha is required": "Captcha is required",
+  "Email is required": "Имэйл хаяг оруулна уу",
+  "Please enter valid email": "Хүчинтэй имэйл хаяг оруулна уу",
+  "email": {
+    "taken": "Бүртгэлтэй имэйл байна",
+    "undisposable": "Хүчинтэй имэйл хаяг оруулна уу",
+    "invalid": "Имэйл хаягаа зөв оруулна уу"
+  },
+  "coin_listing.invalid_address": "Буруу хаяг байна",
+  "jwt": {
+    "decode_and_verify": {
+      "segments": "Хүчинтэй хугацаа дууссан байна",
+      "expired": "Хүчинтэй хугацаа дууссан байна. Дахин хүсэлт илгээнэ үү."
+    }
+  },
+  "totp": {
+    "error": "2FA код буруу эсвэл хүчинтэй хугацаа нь дууссан байна."
+  },
+  "session": {
+    "code_not_match": "OTP код буруу байна.",
+    "code_expired_at_be_expire": "OTP кодны хүчинтэй хугацаа дууссан байна."
+  },
+  "send&Receive": {
+    "note1": "Доод хэмжээ {{value}}",
+    "note2": "Шимтгэл {{value}}",
+    "note3": "Тус хаяг руу зөвхөн {{currency}} шилжүүлнэ үү. Өөр койн, токен шилжүүлсэн тохиолдолд буцаан олж авах боломжгүйг анхаарна уу.",
+    "note4": "Шилжүүлэг доод хэмжээ {{value}}",
+    "note5": "<0>KYC</0>баталгаажуулна уу",
+    "note6": "Аливаа урамшуулал, эйрдроп санал болгох хаягууд руу шилжүүлэг хийж болохгүйг анхаарна уу.",
+    "note7": "Хүлээн авах дүн нь шилжүүлгийн шимтгэл хасагдсан дүн байхыг анхаарна уу.",
+    "note8": "Жишээ нь: Та 100 ширхэг {{currency}} хүлээн авах ёстой бөгөөд шимтгэл хүлээн авах дүнгийн 2% гэж тооцвол хамгийн багадаа 102 ширхэг {{currency}} байх шаардлагатай.",
+    "note9": "Хялбар шилжүүлэг ашигласнаар 3-дагч этгээдийн шимтгэл нэмж бодогдохгүй."
+  },
+  "addressBook": {
+    "head": "Хадгалсан хаягнаас хаяг сонгож оруулах",
+    "desc": "Зарлага гаргахдаа хадгалсан хаягнаасаа хялбараар сонгон оруулах боломжтой."
+  },
+  "google_enable": "Гүүгл баталгаажуулалтыг идэвхжүүлэх",
+  "google_enable2": "Гүүгл баталгаажуулалтыг идэвхжүүлэх",
+  "google_disable": "Гүүгл баталгаажуулалтыг унтраах",
+  "6_dizits": "2 алхамт баталгаажуулах копоо оруулна уу.",
+  "install_authenticator": "Хэрэв танд баталжуулагч апликэйшн байхгүй бол заавал суулгана уу.",
+  "scan_authenticator": " Тус QR кодыг баталгаажуулагч апликэйшнээр уншуулна уу. ",
+  "authenticator_secret_code": "Баталгаажуулагч аппликэйшний нууц код",
+  "change": "Нууц үг солих",
+  "settingsVeri": {
+    "email_verification": {
+      "heading": "Имэйл баталгаажуулах",
+      "title": "Өөрчлөх",
+      "description": "Таны имэйл амжилттай баталгаажлаа. Имэйл хаягаа бусдад огт ашиглуулахгүй, дамжуулахгүй байхыг сайтар анхаарна уу."
+    },
+    "phone_verification": {
+      "heading": "Дугаар баталгаажуулах",
+      "title": "Өөрчлөх",
+      "description": "Таны дугаар амжилттай баталгаажлаа. Өөрийн дугаараа бусдад огт ашиглуулахгүй, дамжуулахгүй байхыг сайтар анхаарна уу."
+    },
+    "google_verification": {
+      "heading": "Гүүгл баталгаажуулалт",
+      "title": "Өөрчлөх",
+      "description": "Зарлага гаргах болон аюулгүй байдлыг хангахад тогтмол ашиглана."
+    },
+    "device_activity": "Төхөөрөмж болон үйлдлүүд",
+    "device_management": {
+      "heading": "Төхөөрөмжийн тохиргоо",
+      "title": "Өөрчлөх",
+      "description": "Аль төхөөрөмжөөр нэвтэрч болох эсэхийг тохируулах"
+    },
+    "account_activity": {
+      "heading": "Хийсэн үйлдлүүд",
+      "title": "Цааш үзэх",
+      "description": "Сүүлд нэвтэрсэн"
+    },
+    "verify_account": {
+      "heading": "Бүртгэл баталгаажуулах",
+      "title": "Өөрчлөх",
+      "description": "Их дүнгээр шилжүүлэг хийхийн тулд нэмэлт баримт бичиг баталжуулах шаардлагатай."
+    },
+    "change_password": {
+      "heading": "Нууц үг",
+      "title": "Өөрчлөх",
+      "description": "Нэвтрэх үед ашиглах учир цээжлэх шаардлагатай."
+    }
+  },
+  "successMessage": {
+    "2fa_enabled": "2FA идэвхжлээ."
+  },
+  "validations": {
+    "fromDate": "Эхлэх өдөр нь дуусах өдрөөс өмнө байх шаардлагатай"
+  },
+  "referral": {
+    "welcome_referral": "Крипто урамшууллын хөтөлбөрт тавтай морилоно уу.",
+    "invite_friends": "Найзаа уриад урамшуулал аваарай.",
+    "rules": "Дүрэм: COINHUB-д бүртгэлгүй найзаа өөрийн ID эсвэл ликнээр урина.",
+    "rule_sub_contant": " COINHUB-д бүртгэлгүй найзаа өөрийн ID эсвэл ликнээр уриад, доорх даалгаврыг биелүүлэн урамшуулал авах боломжтой:",
+    "rule": "Дүрэм",
+    "kyc_completed": "Санамж: Урамшуулал авахын тулд харилцагч KYC баталгаажуулсан байх шаардлагатай. Урамшууллын нийт дүн <0>{{minRedemptionAmount}}</0> болон түүнээс их болсон тохиолдолд урамшууллаа өөрийн хэтэвчинд авах боломжтой.",
+    "verify": "Бүртгэлгүй назаа уриад таны найз KYC баталгаажуулалт хийснээр <0>{{reward}}</0> дүнг амжилттай бүртгэл бүрээс авах боломжтой.",
+    "deposit": " Урьсан найз тань <0>{{deposit}}</0> болон түүнээс дээс дүнгээр орлого хийсэн тохиодолд та болон таны найз  <0>{{depositCurr}}</0> дүн бүхий урамшууллыг 2-уулаа авна.",
+    "trade": "Урьсан найз тань <0>{{trade}}</0> болон түүнээс дүнгээр арилжаа хийсэн тохиолдолд та болон танц найз <0>{{tradeCurr}}</0> бүхий урамшууллыг 2-уулаа авна.",
+    "referral_id": "Найзаа урих ID",
+    "referral_link": "Найзаа урих линк",
+    "overview": "Тойм",
+    "referral": "Урилга",
+    "rewards": "Урамшуулал"
+  },
+  "device_management_page": {
+    "heading": "Төхөөрөмжийн тохиргоо",
+    "desc": "Эдгээр төхөөрөмжөөс хандах боломжтой байна"
+  },
+  "account_activity_page": {
+    "heading": "Хийсэн үйлдлүүд",
+    "desc": "Эдгээр төхөөрөмжөөс хандах боломжтой байна"
+  },
+  "rewards": {
+    "reward_content": "Шинээр бүртгүүлсэн харилцагчид нь доорх даалгавруудыг биелүүлж урамшуулал авах боломжтой.",
+    "identity": " Бүртгүүлээд, KYC баталгаажуулснаар урамшуулал авах боломжтой",
+    "deposit": " Анхны удаа <0>{{deposit}}</0> болон дүүнээс дээш дүнгээр орлого хийгээд <0>{{depositCurr}}</0> хүтэлх үнийн дүн бүхий урамшууллаас хожих боломжтой.",
+    "depositlast": ", ",
+    "trade": " Анхны удаа <0>{{trade}}</0> болон түүнээс дээш дүнгээр арилжаа хийгээд <0>{{tradeCurr}}</0> хүртэлх үнийн дүн бүхий урамшууллаас хожих боломжтой."
+  },
+  "overview": {
+    "total_earning": "Нийт өгөөж",
+    "pending_claims": "Хүлээгдэж буй",
+    "no_of_friends": "Амжилттай бүртгүүлсэн найзууд",
+    "redeem_modal_heading": "Урамшууллаа хэтэвчинд авах хүсэлт илгээгдлээ",
+    "redeem_modal_par": "Урамшуулал таны хэтэвчинд удахгүй шилжих болно."
+  },
+  "rewardRefHis": {
+    "start_date": "Эхлэх өдөр ",
+    "end_date": " Дуусах өдөр",
+    "reward_type": "Урамшууллын төрөл",
+    "status": "Төлөв",
+    "reward_history": "Урамшууллын түүх",
+    "referral_history": " Түүх",
+    "id": "ID",
+    "date_time": " Огноо",
+    "amount": "Дүн",
+    "currency": "Валют",
+    "email": "Имэйл",
+    "history": "Түүх"
+  },
+  "download": {
+    "start_date": "Эхлэх өдөр",
+    "end_date": "Дуусах өдөр"
+  },
+  "statusState": {
+    "collected": "Цуглуулсан",
+    "collecting": "Цуглуулсан",
+    "fee_processing": "Цуглуулсан",
+    "fee_processed": "Цуглуулсан",
+    "fee_collecting": "Цуглуулсан",
+    "fee_collected": "Цуглуулсан",
+    "failed": "Цуглуулсан",
+    "errored": "Цуглуулсан",
+    "deposited": "Орлого хийгдсэн",
+    "prepared": "Хүлээгдэж буй",
+    "submitted": "Хүсэлт илгээгдсэн",
+    "canceled": "Цуцлагдсан",
+    "accepted": "Баталгаажсан",
+    "skipped": "Хийгдэж буй",
+    "rejected": "Татгалзсан",
+    "processing": "Хийгдэж буй",
+    "succeed": "Амжилттай",
+    "confirming": "Баталгаажуулж байна",
+    "pending": "Хүлээгдэж буй",
+    "wait": "Шинэ",
+    "done": "Дууссан",
+    "cancel": "Цуцлагдсан",
+    "reject": "Татгалзсан",
+    "completed": "Бүрэн дууссан"
+  },
+  "password": {
+    "weak": "Хүчтэй нууц үг оруулна уу."
+  },
+  "landing": {
+    "title": "Боломжит хослолууд",
+    "coin": "Койн",
+    "last_price": "Хаалтын ханш",
+    "24h_change": "24 цагийн өөрчлөлт",
+    "24h_high": "24 цагийн дээд ханш",
+    "24h_low": "24 цагийн доод ханш",
+    "24h_vol": "24 цагийн арилжааны хэмжээ",
+    "crypto_headline": "Криптовалют авах, зарах",
+    "crypto_headline2": "Криптовалют шилжүүлэх аюулгүй хэтэвч",
+    "get_startedtop": "Криптовалют авах ",
+    "get_startedCenter": " Анх удаа Биткойн авах гэж байна уу?",
+    "new_to_bitcointop": " Койнхабын тусламжтай төвөггүйхэн арилжаа хийх боломжтой.",
+    "get_started": "Бид таны хөрөнгийн аюулгүй хадгалах блокчэйн технологийг олон улсын стандартын дагуу ашиглаж буй болно.",
+    "new_to_bitcoin": "Анх удаа Биткойн авах гэж байна уу? Койнхабын тусламжтай та төвөггүйхэн арилжаа хийх боломжтой",
+    "markets": "Хослолууд",
+    "markets_desc": " BTC, ETH, USDT, CHB зэрэг бүх төрлийн койн, токенуудаас сонгон өөрийн багцаа бүрдүүлэх боломжтой.",
+    "wallet": "Найдвартай хэтэвч",
+    "wallet_desc": "Та бүр төрлийн криптовалютыг Койнхаб хэтэвчийн тусламжтай хадгалах мөн шилжүүлэх боломжтой.",
+    "engine": "Арилжааны цогц систем",
+    "engine_desc": " Койнхаб биржийн арилжааны систем нь BTC, ETH, BNB зэрэг алдартай койнуудыг олон улсын ханшаар арилжаалах боломжийг олгоно.",
+    "two_factor": "2 алхамт баталгаажуулалт",
+    "two_factor_desc": "Хандалт болон шилжүүлэг хийхэд ашиглах 2 алхамт баталгаажуулалтын тусламжтай өөрийн хөрөнгийг аюулгүй, найдвартайгаар удирдах боломжтой.",
+    "graph": "Арилжааны график",
+    "graph_desc": "Ханшийн мэдээллийг цаг алдалгүй минут, цаг, өдрөөр нарийвчлан график байдлаар харах боломжтой.",
+    "referral": "Sign-up and referral bonus",
+    "referral_desc": "Has a good deed brought you any money? This will! Refer Evo Europe Exchange to your friends and family and get referral rewards without investing a dime.",
+    "about": " Evo Europe Exchange is a platform for everyone who wants to simply buy and sell Bitcoins. Instant buy/sell of Bitcoins at fair price is guaranteed.",
+    "secure": "Secure, Fast and Reliable",
+    "finance": "Evo Europe TRADING PLATFORM",
+    "platform": "",
+    "volume": "24h Trading Volume is",
+    "trade": " Register",
+    "available": "Available on the",
+    "store": "App Store",
+    "get": " Get it on",
+    "play": "Google Play",
+    "maintext": "COINHUB-ТАЙ ХАМТ ХӨРӨНГӨӨ БҮТЭЭЕ",
+    "maintextSub": "Олон улсын жишигт нийцсэн криптовалтын үйлчилгээг хормын дотор аваарай.",
+    "getStart": " Нэвтрэх",
+    "advantage": {
+      "easeConvenience": {
+        "easeConvenienceBold": "Хялбар хэрэглээ",
+        "easeConvenienceDetail": "Гар утас, компьютерээ ашиглаад л арилжаанд оролцох боломжтой."
+      },
+      "signupProcess": {
+        "signupProcessBold": "Хялбар бүртгэл",
+        "signupProcessDetail": "Цөөн үйлдэл хийгээд л бүртгэл үүсгэн харилцагч болно."
+      },
+
+      "cryptoPortfolia": {
+        "cryptoPortfoliaBold": "Цогц үйлчилгээ",
+        "cryptoPortfoliaDetail": "Криптовалют арилжих, хадгалах, шилжүүлэх бүх үйлчилгээ нэг дор."
+      },
+      "secure": {
+        "secureBold": "Аюулгүй байдал",
+        "secureDetail": "Харилцагчийн хөрөнгийг аюулгүй хадгалах найдвартай системтэй."
+      }
+    },
+    "aboutUs": {
+      "title": "Бидний түүх",
+      "detail": "Бүхий л хэрэглээ цахим хэлбэрт шилжиж хөрөнгийг блокчэйн технологийн тусламжтай илгээх, зарцуулах, хадгалах боломжтой болоод байна. Энэхүү цахимжилт, виртуал хөрөнгө хэрэглээнд хурдацтай нэвтэрч буй цаг үед КОЙНХАБ-ын баг хамт олон ижил боломжийг Монголчууддаа хүртээхийг зорьсон болно."
+    },
+    "services": {
+      "mainTitle": "Бүтээгдэхүүн, Үйлчилгээ",
+      "spotTrading": {
+        "title": "Спот арилжаа",
+        "detail": "Төгрөг болон USDT хослол бүхий криптовалютуудыг арилжаалах боломжтой."
+      },
+      "cryptoDerivatives": {
+        "title": "Фьючерс арилжаа",
+        "detail": "Өөрийн арга барилдаа тааруулан хөшүүрэгтэй арилжаа хийх сонголттой."
+      },
+      "quickTransfer": {
+        "title": "Хялбар шилжүүлэг",
+        "detail": "Coinhub-ийн харилцагч хооронд хялбар байдлаар шилжүүлэг хийнэ."
+      },
+      "coinhubEarn": {
+        "title": "Coinhub Стейкинг",
+        "detail": "Өөрийн эзэмшиж буй хөрөнгөө ашиглаад тогтмол орлоготой болоорой."
+      },
+      "coinhubWallet": {
+        "title": "Coinhub хэтэвч",
+        "detail": "Coinhub хэтэвч нь крипто шилжүүлгийг сүлжээний сонголтуудтайгаар хийх боломж олгоно."
+      },
+      "chbToken": {
+        "title": "CHB токен",
+        "detail": "CHB токенийг эзэмшигч хүн бүр 7 хоног бүр урамшуулал авна."
+      }
+    },
+    "coinhubApp": {
+      "title": "COINHUB аппликэйшн",
+      "detail": "COINHUB гар утасны аппликэйшний тусламжтай Bitcoin, Ethereum, BNB зэрэг олон төрлийн криптовалютуудыг хялбархан арилжаалах боломжтой. Та цөөхөн үйлдлээр өөрийн хүссэн криптовалютаа худалдан авч чадахаас гадна зах зээлийн болон ханшийн мэдээлэл харах, хэтэвчний үлдэгдлээ шалгах, шилжүүлэг хийх зэрэг бүх үйлдлийг COINHUB аппликэйшнээр хийж чадах юм."
+    },
+    "coinhubEcosystem": {
+      "mainTitle": "COINHUB экосистем",
+      "tradingPlatform": {
+        "title": "Арилжааны платформ",
+        "detail": "Бид анхлан суралцагсад болон мэргэжлийн арилжаачдын түвшинд зориулсан арилжааны платформыг санал болгодог."
+      },
+      "Chbtoken": {
+        "title": "CHB токен",
+        "detail": "CHB токенийг эзэмшигч хүн бүр 7 хоног бүр урамшуулал авна."
+      },
+      "launchpad": {
+        "title": "Төсөл хөтөлбөрүүд",
+        "detail": "Шинээр төрөн гарч буй, ирээдүйтэй крипто төслүүдийн хөрөнгө босгох ажлыг хөнгөвчилнө."
+      },
+      "businessPartners": {
+        "title": "Бизнес түншлэл",
+        "detail": "Арилжаагч тасалдалгүй, олон улсын жишигт нийцсэн байдлаар зохион байгуулах зорилгоор олон улсын байгууллагуудтай хамтран ажилладаг."
+      },
+      "supportCenter": {
+        "title": "Харилцагчийн үйлчилгээ",
+        "detail": "Харилцагчдад хялбар байдлаар, шуурхай үйлчлэх зорилгоор 100% цахимжсан харилцагчийн үйлчилгээний төв ажиллаж байна."
+      },
+      "community": {
+        "title": "Комьюнити",
+        "detail": "COINHUB комьюнити нь суралцах, хамтаа хөгжих, үзэл бодлоо бусадтай хуваалцахад хамгийн тохиромжтой бүлгэм юм."
+      }
+    }
+  },
+  "forgot_password": {
+    "title": "Нууц үг шинэчлэх",
+    "submit": "Илгээх",
+    "email": "Имэйл",
+    "withdrawals": "*Нууц үг сольсны дараа 24 цаг зарлага гаргах боломжгүй."
+  },
+  "open_order": {
+    "date": "Өдөр/Цаг",
+    "pair": "Хослол",
+    "type": "Төрөл",
+    "side": "Чиглэл",
+    "price": "Ханш",
+    "stop": "Стоп лимит",
+    "amount": "Хэмжээ",
+    "filled": "Биелэсэн",
+    "total": "Нийт",
+    "remaining_amt": "Үлдэгдэл"
+  },
+  "all_order": {
+    "date": "Өдөр/Цаг",
+    "pair": "Хөслөл",
+    "type": "Төрөл",
+    "side": "Чиглэл",
+    "avg": "Дундаж",
+    "price": "Ханш",
+    "filled": "Биелэсэн",
+    "fees": "Шимтгэл",
+    "remaining_amt": "Үлдэгдэл",
+    "total": "Нийт",
+    "status": "Төлөв",
+    "view": "Бүгдийг үзэх"
+  },
+  "reward": {
+    "earnings": {
+      "not_enrolled": "Майнинг хөтөлбөрт оролцоогүй байна"
+    },
+    "mining_pool": {
+      "failed_to_create": "Оролцох боломжгүй байна",
+      "already_enrolled": "Өмнө орсон байна",
+      "pending_admin_approval": "Хүсэлт шалгагдаж байна "
+    }
+  },
+  "logout": {
+    "title": "Гарах"
+  },
+  "about_footer": {
+    "title": "Тухай {{title}}",
+    "safety": "Найдвартай байдал",
+    "multi_tier": "Аюулгүй ажиллагаа",
+    "performance": "Шуурхай байдал",
+    "processing": "Олон хүсэлтийг зэрэг биелүүлэх боломж",
+    "liquidity": "Хөрвөх чадвар",
+    "resources": "Хамтын ажиллагаа",
+    "devices": "Төхөөрөмж харгалзахгүй ажиллана",
+    "web": "Web, Android, iOS, Mobile Web, Windows, Mac",
+    "language": "Тусламж үйлчилгээ",
+    "support": "Both left to right and right to left languages",
+    "multi_coin": "Multiple-Coin Support",
+    "advantages": "Our Advantages",
+    "team": "Solid Team",
+    "team_record": "Evo Europe Exchange is backed by an expert team with rich experience and in-depth knowledge of cryptocurrency and finance industries.",
+    "products": "Proven Products",
+    "products_record": "Evo Europe Exchange has been rigorously tested with a large user base on parameters like security, speed, performance, and user experience.",
+    "superior": "Superior Technology",
+    "superior_record": "Our robust matching engine is powered to process multiple transactions in a second, making Evo Europe Exchange one of the fastest exchange platforms.",
+    "partners": "Abundant resources and partners",
+    "partners_record": "We have solid relationships with industry leaders, simply look at the list of investors and advisors who are willing to stand behind our platform.",
+    "security": "Multi-layer security",
+    "multilayer_security": "Evo Europe Exchange has security built right in with advanced technologies that work together in harmony to deliver world-class security."
+  },
+  "terms_footer": {
+    "title": "TERMS & CONDITIONS",
+    "last_revised": "This agreement is between you and the service operator, Evo Europe. By using any services made available through the Evo Europe website (https://app-stage.Evo Europe.org), API (https://app-stage.Evo Europe.org),  Evo Europe affiliates, you agree that you have read, understood and accepted all of the terms and conditions contained in this Terms of Use agreement, as well as our Privacy Policy and Consent Form which have incorporated the GDPR regulation. As this is a legally binding contract, please carefully read through this agreement and related notices before using any of our Services. By registering, accessing or using Evo Europe, you have agreed to the terms and conditions as laid out in this User Agreement. Should you disagree to this User Agreement, please proceed to initiate the account lock function (for existing users) and stop the usage of Evo Europex and any of its services.",
+    "title_second": "For more information on Evo Europex, you can refer to the company and license information found on the website. If you have questions regarding this agreement, please feel free to contact Evo Europex for clarification via our Customer Support team.",
+    "last_reviseddd": " PREAMBLE",
+    "agreement_title": "Evo Europe AG is a company duly incorporated under the laws of Switzerland with company registration number CHE-195-195.664 and official address at Dammstrasse 16, CH-6300, Zug, Switzerland (â€œEvo Europeâ€, â€œWeâ€, â€œUsâ€, â€œOurâ€ or â€œXMâ€). Evo Europe is a Swiss regulated financial intermediary, providing services in the area of Digital Assets, and is subject to the rules set out by the Financial Services Standards Association (â€œVQFâ€). ",
+    "agreement_title2": "The following terms and conditions (the â€œTermsâ€) incorporated herein, set forth the rights and obligations of the business relationship between Evo Europe and the Client (â€œClientâ€, â€œYouâ€ or â€œYourâ€) (the â€œBusiness Relationshipâ€), subject to any special agreements between the Client and Evo Europe.",
+    "restrictions_title": "DEFINITIONS",
+    "title_one": "By registering to use a Evo Europex Account, you have affirmed that you are at least 18 years old and are an individual, legal person or other organization with full legal capacity to enter into this User Agreement between you and Evo Europex. If you are not, you and your guardian shall undertake all consequences resulting from your actions and Evo Europex shall have the right to cancel or freeze your account in addition to filing claims against you and your guardian for compensation.",
+    "PROHIBITION": "PROHIBITION OF USE",
+    "title_2": "By accessing and using Evo Europex and any of its services, you acknowledge and declare that you are not on any trade or economic sanctions lists, such as the United Nations Security Council Sanctions List and its equivalent. Evo Europex maintains the right to select its markets and jurisdictions to operate and may restrict or deny its services to certain countries. The content of this Agreement shall not be excluded from the laws of the country under which the user belongs. Evo Europex maintains its stance that prohibited users are not to use or access Evo Europex and any of its services.",
+    "title_3": "DESCRIPTION OF SERVICES",
+    "title_4": "Evo Europex provides an online digital asset trading platform (crypto to crypto) for products commonly known as cryptographic tokens, digital tokens or cryptographic currency. Evo Europex does not provide fiat trading capabilities on its platform and as such is not subjected to the stringent regulations that come with it. Evo Europex functions as a trading platform provider and is not a buyer or seller in trades made between traders. Evo Europex is also not a market maker. Traders must register and open an account with Evo Europex and deposit digital assets prior to commencement of trading. Traders may request the withdrawal of their digital assets, subject to the limitations as stated in the Terms and Conditions.",
+    "title_5": "Evo Europex strives to maintain the accuracy of information posted on its website however it cannot guarantee the accuracy, suitability, reliability, completeness, performance or fitness for purpose of the content through the website, and will not accept liability for any loss or damage that may arise directly or indirectly from the content. Information on Evo Europex website can be subjected to change without notice and is provided for the primary purpose of facilitating users to arrive at independent decisions. Evo Europex does not provide investment or advisory advice and will have no liability for the use or interpretation of information as stated in its website or other communication mediums. All users of Evo Europex must understand that there are risks involved in trading. Evo Europex encourages all users to exercise prudence and trade responsibly within their own means.",
+    "title_6": "While Evo Europex emphasises platform security to ensure the continuity and security of its services (announcements will be made in event of downtime/maintenance), it will be non-accountable to Act of God, malicious targeted hacking, terrorist attacks and other unforeseen circumstances. Evo Europex reserves the right to cancel, rollback or block transactions of all type on its platform in event of abnormal transactions. Evo Europex will not ask for any password from its users nor ask users to transfer funds that are not listed on its trading platform. Users are encouraged to exercise prudence in dealing with discounts or promotions that could lead to them getting scammed. While the list is non-exhaustive, you agree that Evo Europex will not be held responsible for any losses arising from the situations stated above.",
+    "title_7": "By using Evo Europex and any of its services, you declare that all information to Evo Europex in connection with these Terms are true, accurate and complete.",
+    "title_8": "Evo Europex ACCOUNT REGISTRATION & REQUIREMENTS",
+    "title_9": "REGISTRATION",
+    "title_10": "All users must register (https://app-stage.Evo Europe.org/user-registration) for a Evo Europex Account before using the site. To register for an account, you must provide your real name, email address and password, as well as accept the Terms of Use, Privacy Policy and Consent Form. Depending on certain conditions and in our sole discretion, we may refuse to open an account for you.",
+    "title_11": "USER IDENTITY VERIFICATION",
+    "title_12": "With registration of an account on Evo Europex, you agree to share personal information requested for the purposes of identity verification. This information is used specifically for the detection of money laundering, terrorist financing, fraud and other financial crimes on the Evo Europex platform. In addition to providing this information, to facilitate compliance with global industry standards for data retention, you agree to permit us to keep a record of such information for the lifetime of your account plus 5 years beyond account closing. You also authorise us to make inquiries, either directly or through third parties, that are deemed necessary to verify your identity or to protect you and/or us against financial crimes such as fraud.",
+    "title_13": "The Identity Verification information we request may include, but is not limited to, your: Name, Email Address, Contact Information, Telephone Number, Username, Government Issued ID. In providing this required information, you confirm that it is accurate and authentic. Post-registration, you must guarantee that the information is truthful, complete and updated in a timely manner with any changes. If there is any reasonable doubt that any information provided by you is wrong, untruthful, outdated or incomplete, Evo Europex shall have the right to send you a notice to demand corrections, remove relevant information directly and, as the case may be, terminate all or part of Evo Europex Service to you. You shall be solely and fully responsible for any loss or expenses incurred during the use of Evo Europex Service if you cannot be reached through the contact information provided. You hereby acknowledge and agree that you have the obligation to keep all information provided up to date if there are any changes.",
+    "title_14": "ACCOUNT USAGE REQUIREMENTS",
+    "title_15": "Evo Europex accounts can only be used by the person whose name they are registered under. Evo Europex reserves the right to suspend, freeze or cancel accounts that are used by persons other than the persons whose names they are registered under. Accordingly, Evo Europex will not take legal responsibility for these accounts.",
+    "title_16": "ACCOUNT SECURITY",
+    "title_17": "Evo Europex prioritizes maintaining the safety of those user funds entrusted to us and has implemented industry standard protections for our platform. With that said, there are account-level risks that are created by individual user actions. We request that you understand the need to independently take safety precautions to protect your own account and personal information.",
+    "title_18": "You shall be solely responsible for the safekeeping of your Evo Europex account and password on your own, and you shall be responsible for all activities under your log-in email, Evo Europex account and password (including but not limited to information disclosure, information posting, consent to or submission of various rules and agreements by clicking on the website, online renewal of agreement, etc.).",
+    "title_19": "You hereby agree that:",
+    "title_20": "(a). you will notify Evo Europex immediately if you are aware of any unauthorized use of your Evo Europex account and password by any person or any other violations to the security rules;",
+    "title_21": "(b). you will strictly observe the security, authentication, dealing, charging, withdrawal mechanism or procedures of the website/service; and",
+    "title_22": "(c). you will log out from the website by taking proper steps at the end of every visit.",
+    "title_23": "Evo Europex will not be responsible for any loss or consequences caused by your failure to comply with the above Account Security provision.",
+    "title_24": "DISPUTE RESOLUTION",
+    "title_25": "Evo Europex reserves the right to resolve issues and disputes at its sole discretion. Some issues include infringement of othersâ€™ rights, violation of laws and regulations, abnormal trades and others not explicitly mentioned in the Terms. Users agree to bear the costs arising from the process of dispute resolution.",
+    "title_26": "GUIDELINES FOR USAGE OF SERVICES ON Evo Europex",
+    "title_27": "You hereby agree to observe the following covenants during your use of services on Evo Europex:",
+    "listing_1": "All the activities that you carry out during the use of Evo Europex Service will be in compliance with the requirements of applicable laws, regulations, as well as the various guidelines of Evo Europex,",
+    "listing_2": "will not be in violation of public interests, public ethics or otherâ€™s legitimate interests,",
+    "listing_3": "will not constitute evasion of payable taxes or fees and will not violate this agreement or relevant rules. If you violate the foregoing promises and thereby cause any legal consequence, you shall independently undertake all of the legal liabilities in your own name and indemnify Evo Europex from all actions, claims, or costs arising from such violation. You will not use any data or information displayed on the site for commercial purposes without the prior written consent of Evo Europex. You will use the site in accordance with the Terms of Use and Privacy Policy, without taking acts of unfair competition nor attempting to intervene with the normal operation of Evo Europex. Examples of such malicious acts include, but are not limited to",
+    "listing_4": "using a device, software or subroutine to interfere with the site",
+    "listing_5": "overloading network equipments with unreasonable data loading requests",
+    "listing_6": "executing malicious sales or purchases on the market By accessing the Evo Europex Service, you agree that Evo Europex shall have the right to unilaterally determine whether you have violated any of the above covenants and take actions to apply relevant rules without receiving your consent or giving prior notice to you. Examples of such actions include, but are not limited to",
+    "listing_7": "block and close order requests",
+    "listing_8": "freezing your account",
+    "listing_9": "reporting the incident to authorities\n",
+    "listing_10": "publishing the alleged violations and actions that have been taken",
+    "listing_11": "deleting any information you published that is in violation",
+    "title_28": "If your alleged violation causes any losses to a third party, you shall solely undertake all the legal liabilities in your own name and hold Evo Europex harmless from any loss, fine or extra expenses. If, due to any alleged violation Evo Europex incurs any losses, is claimed by any third party for compensation or suffers any punishment imposed by any administrative authorities, you shall indemnify Evo Europex against any losses and expense caused thereby, including reasonable attorneyâ€™s fee.",
+    "title_29": "SERVICE FEES",
+    "title_30": "Evo Europex reserves the rights to levy service fees on users who use its services. It is in the discretion of Evo Europex to adjust the servce fees charged to users using its services.",
+    "title_31": "LIABILITY",
+    "title_32": "PROVISION OF SERVICE",
+    "title_33": "Evo Europex will provide Evo Europex Service at an â€œas isâ€ and â€œcommercially availableâ€ condition, and does not offer any form of warranty with regards to the Serviceâ€™s reliability, stability, accuracy and completeness of the technology involved. Evo Europex serves merely as a venue of transactions where coin-related information can be acquired and coin-related transactions can be conducted. Evo Europex cannot control the quality, security or legality of the coin involved in any transaction, truthfulness of the transaction information, or capacity of the parties to any transaction to perform their obligations under the rules. You must carefully consider the associated investment risks, legal status and validity of the transaction information and investment decisions prior to your use of the Evo Europex Services provided.",
+    "title_34": "LIMITATION OF LIABILITY",
+    "title_35": "You acknowledge and agree, Evo Europex shall not be liable for any of your losses caused by any of the following events, including but not limited to:",
+    "listing1_1": "Losses of profits, goodwill, usage or data or any other intangible losses",
+    "listing2_1": "Use or failure to use Evo Europex Service",
+    "listing3_1": "Unauthorized use of your account or unauthorized alteration of your data by third parties",
+    "listing4_1": "Your misunderstanding of Evo Europex Service",
+    "listing5_1": "Any other losses related to Evo Europex Service which are not directly attributable to Evo Europex",
+    "title_36": "In no event shall Evo Europex be liable for any failure or delay of service resulting from regular network maintenance or external factors such as power failure, natural disaster, service provider-side problems or governmental acts.",
+    "title_37": "INDEMNIFICATION",
+    "title_38": "You agree to indemnify and hold harmless Evo Europex, its affiliates, contractors, licensors, and their respective directors, officers, employees and agents from and against any claims and damages (including attorneysâ€™ fees, fines or penalties imposed by any regulatory authority) arising out of your breach or our enforcement of this Agreement. This shall also apply to your violation of any applicable law, regulation, or rights of any third party during your use of the Evo Europex Service.",
+    "title_39": "ANNOUNCEMENTS",
+    "title_40": "Please be aware that all official announcements, news, promotions, competitions and airdrops will be listed on our website where we urge all users to refer to regularly. Evo Europex will not be held liable or responsible in any manner of compensation should users incur personal losses arising from ignorance or negligence of the announcements.",
+    "title_41": "TERMINATION OF AGREEMENT",
+    "title_42": "You agree that we have the right to immediately suspend your account (and any accounts beneficially owned by related entities or affiliates), freeze or lock the funds in all such accounts, and suspend your access to Evo Europex if we suspect any such accounts to be in violation of the Terms of Service, Privacy Policy, AML/CTF acts or any applicable laws & regulations. Evo Europex shall have the right to keep and use the transaction data or other information related to such accounts. The above account controls may also be applied in the following cases:",
+    "title_43": "The account is subject to a governmental proceeding, criminal investigation or other pending litigation",
+    "title_44": "We detect unusual activity in the account",
+    "title_45": "We detect unauthorized access to the account",
+    "title_46": "We are required to do so by a court order or command by a regulatory/government authority",
+    "title_47": "In case of any of the following events, Evo Europex shall have the right to directly terminate this agreement by cancelling your account, and shall have the right to permanently freeze (cancel) the authorizations of your account on Evo Europex and withdraw the corresponding Evo Europex account thereof",
+    "title_48": "after Evo Europex terminates services to you,",
+    "title_49": "you allegedly register or register in any other person's name as Evo Europex user again, directly or indirectly;",
+    "title_50": "the main content of userâ€™s information that you have provided is untruthful, inaccurate, outdated or incomplete;",
+    "title_51": "when this agreement (including the rules) is amended, you expressly state and notify Evo Europex of your unwillingness to accept the amended service agreement;",
+    "title_52": "any other circumstances where Evo Europex deems it should terminate the services.",
+    "title_53": "Should the account be terminated, the account & transactional information required for meeting data retention standards will be securely stored for five years. In addition, if a transaction is unfinished during the account termination process, Evo Europex shall have the right to notify your counterparty of the situation at that time.",
+    "title_55": "REMAINING FUNDS AFTER ACCOUNT TERMINATION (NORMAL)",
+    "title_56": "Once the account is closed/withdrawn, all remaining balance (which includes charges and liabilities owed to Evo Europex) on the account will be payable at once to Evo Europex. Upon payment of all outstanding charges to Evo Europex (if any), the user will have 5 working days to withdraw all funds from the account.",
+    "title_57": "REMAINING FUNDS AFTER ACCOUNT TERMINATION (FRAUD/AML/VIOLATION OF TERMS)",
+    "title_58": "Evo Europex maintains full custody of the funds and user data/information which may be turned over to the authorities in event of account suspension/closure arising from fraud investigations, AML investigations or violation of Evo Europex's Terms (eg. trading on Evo Europex from a sanctioned country).",
+    "title_59": "COMPLIANCE WITH LOCAL LAWS",
+    "title_60": "It is the responsibility of the user to abide by local laws in relation to the legal usage of Evo Europex in their local jurisdiction. Users must also factor, to the extent of their local law all aspects of taxation, the withholding, collection, reporting and remittance to their appropriate tax authorities. All users of Evo Europex and any of its services acknowledge and declare that the source of their funds come from a legitimate manner and are not derived from illegal activities. Evo Europex maintains a stance of cooperation with law enforcement authorities globally and will not hesitate to seize, freeze, terminate the account and funds of users which are flagged out or investigated by legal mandate.",
+    "title_61": "PRIVACY POLICY",
+    "title_62": "Evo Europex may announce and amend its privacy policy on the platform of Evo Europex from time to time and the privacy policy shall be an integral part of this Usage Agreement. The latest version of the Privacy Policy which has included the GDPR can always be found here on this page (https://app-stage.Evo Europe.org/privacy_policies).",
+    "title_63": "INDEMNITY AND DISCLAIMER",
+    "title_64": "You agree to indemnify Evo Europex and its entirety of affiliates and hold them harmless from and against all third party claims except from Evo Europexâ€™s breach of these Terms. As mentioned in description of services, Evo Europex strives its best to maintain the data integrity on its site but does not guarantee the information and services provided in its platform. Evo Europex will not be liable for errors arising from the use of its services.",
+    "title_65": "COMPLAINTS",
+    "title_66": "If you have any complaints, feedback or questions, kindly contact https://app-stage.Evo Europe.org/contact and we will in our best efforts try to resolve it for you."
+  },
+  "privacy_footer": {
+    "title": "Privacy Policy",
+    "title1": "This Privacy Policy explains how Evo Europex Holdings Limited (â€œEvo Europexâ€) collects, uses, shares, and protects user information obtained through the Evo Europe.org website. The terms â€œwe,â€ â€œus,â€ and â€œourâ€ refer to Evo Europex Holdings Limited and its affiliates. When we ask for certain personal information from users it is because we are required by law to collect this information or it is relevant for specified purposes. Any non-required information you provide to us is done so voluntarily. You decided whether to provide us with these non-required information; you may not be able to access or utilize all of our Services if you choose not to.",
+    "title2": "By using the Site, you consent to the data practices described in this Privacy Policy. On occasion, Evo Europex may revise this Privacy Policy to reflect changes in law or our personal data collection and use practices. If material changes are made to this Privacy Policy, the changes will be announced by posting on the site. We will ask for your consent before using your information for any purpose that is not covered in this Privacy Policy.",
+    "title3": "The latest privacy policy has incorporated elements from the General Data Protection Regulation (GDPR) as we act in accordance to its personal information processing rules within the European Economic Area (EEA).",
+    "title4": "INFORMATION Evo Europe COLLECTS",
+    "title5": "We want you to understand the types of information we collect when you register for and use Evo Europex's services",
+    "title6": "1. Information you provide to us at registration",
+    "title7": "When you create a Evo Europex Account, you provide us with personal information that includes your contact information (Email Address, name, and a password). You can also choose to add a phone number for SMS or Google Authenticator account to be used for 2FA verification for improved security.",
+    "title8": "2. Information we collect when authenticating user identity",
+    "title9": "To comply with global industry regulatory standards including Anti-Money Laundering (AML), Know-Your-Customer (KYC), and Counter Terrorist Financing (CTF), Evo Europex requires user accounts to undergo user identity authentication for both Personal & Enterprise-level accounts. This entails collecting formal identification.",
+    "title10": "3. Information we collect as you use our services",
+    "title11": "(a). Service Usage Information",
+    "information_title": "Through your use of the Evo Europex platform, we also monitor and collect tracking information related to usage such as access date & time, device identification, operating system, browser type and IP address. This information may be directly obtained by Evo Europex or through third party services. This service usage data helps us our systems to ensure that our interface is accessible for users across all platforms and can aid during criminal investigations.",
+    "information": "(b). Transaction Information ",
+    "information_title2": "For all personal and enterprise user accounts, we collect transaction information including deposit snapshots, account balances, trade history, withdrawals, order activity and distribution history. This transaction data is monitored for suspicious trading activity for user fraud protection, and legal case resolution.",
+    "information2": "WHY DOES Evo Europex COLLECT THIS INFORMATION.",
+    "info_collects_title": "1. To provide and maintain our services",
+    "new_one": "We use the information collected to deliver our services and verify user identity. We use the IP address and unique identifiers stored in your deviceâ€™s cookies to help us authenticate your identity and provide our service. Given our legal obligations and system requirements, we cannot provide you with services without data like identification, contact information and transaction-related information.",
+    "info_collects_your_title": "2. To protect our users",
+    "info_collects_your": "We use the information collected to protect our platform, usersâ€™ accounts and archives. We use IP addresses and cookie data to protect against automated abuse such as spam, phishing and Distributed Denial of Service (DDoS) attacks..",
+    "info_collects_your_one": "We analyse trading activity with the goal of detecting suspicious behavior early to prevent potential fraud and loss of funds to bad actors..",
+    "protect_collects_title": "3. To comply with legal and regulatory requirements",
+    "protect_collects": "Respect for the privacy and security of data you store with Evo Europex informs our approach to complying with regulations, governmental requests and user-generated inquiries. We will not disclose or provide any personal information to third party sources without review from our legal case team and/or prior consent from the user.",
+    "cookies_collects_title": "4. To measure site performance",
+    "cookies_collects": "We actively measure and analyse data to understand how our services are used. This review activity is conducted by our operations team to continually improve our platformâ€™s performance and to resolve issues with the user experience. We continuously monitor our systemsâ€™ activity information and communications with users to look for and quickly fix problems.",
+    "use_cookies_title": "5. To communicate with you",
+    "use_cookies": "We use personal information collected, like an email address to interact with users directly when providing customer support on a ticket or to keep you informed on log ins, transations, and security. Without processing your personal information for confirming each communication, we will not be able to respond to your submitted requests, questions and inquiries. All direct communications are kept confidential and reviewed internally for accuracy.",
+    "third_party_title": "6. To enforce our Terms of Use and other agreements",
+    "third_party": "It is very important for us and our customers that we continually review, investigate and prevent any potentially prohibited or illegal activities that violate our Terms of Service. For the benefit of our entire user base, we carefully enforce our agreements with third parties and actively investigate violations of our posted Terms of Use. Evo Europex reserves the right to terminate the provision of service to any user found engaging in activities that violate our Terms of Use.",
+    "third_party_link_title": "HOW DOES Evo Europex PROTECT USER DATA",
+    "third_party_link": "Evo Europex has implemented a number of security measures to ensure that your information is not lost, abused, or altered. Our data security measures include, but are not limited to: PCI Scanning, Secured Sockets Layered encryption technology, pseudonymisation, internal data access restrictions, and strict physical access controls to buildings & files. Please note that it is impossible to guarantee 100% secure transmission of data over the Internet nor method of electronic storage. As such, we request that you understand the responsibility to independently take safety precautions to protect your own personal information.",
+    "google_title": "If you suspect that your personal information has been compromised, especially account and/or password information, please lock your account and contact Evo Europex customer service immediately.",
+    "google": "CONTACT US",
+    "california_title": "We are committed to respecting the freedoms and rights of all our Evo Europex users who have placed their trust in our service. If you should have any questions or concerns regarding this Privacy Policy, or if you would like to file a Data Protection request, please refer to our FAQ and contact us on our Support Page."
+  },
+  "contact_footer": {
+    "title": "Холбоо барих",
+    "contact": "Хүсэлт илгээх",
+    "fill_form": "Fill up the form. Your e-mail will not be published. Required fields are marked by ",
+    "name": "Name*",
+    "country_code": "Country code - Phone number*",
+    "website": "Website*",
+    "message": "Message*",
+    "submit": "Submit"
+  },
+  "orders": {
+    "title": "Захиалгын түүх"
+  },
+  "open_orders": {
+    "title": "Нээлттэй захиалга",
+    "date": "Өдөр/Цаг",
+    "pair": "Хослол",
+    "type": "Төрөл",
+    "order": "Захиалгын төрөл",
+    "state": "Төлөв",
+    "price": "Ханш",
+    "vol": "Арилжааны хэмжээ",
+    "avg": "Дундаж ханш",
+    "fulfilled": "Бүрэн биелэсэн",
+    "remaining_amt": "Үлдэгдэл"
+  },
+  "trade_history": {
+    "title": "Арилжааны түүх",
+    "date": "Огноо",
+    "pair": "Хослол",
+    "side": "Чиглэл",
+    "price": "Ханш",
+    "amount": "Хэмжээ",
+    "total": "Нийт",
+    "fee": "Шимтгэл",
+    "from": "Эхлэх",
+    "todate": "Дуусах",
+    "request": "Хүсэлтийн төлөв:",
+    "valid": "Хүчинтэй хугацаа:",
+    "transaction": "Гүйлгээний Id:",
+    "reward": "Урамшуулал",
+    "currency": "Валют:",
+    "description": "Тайлбар",
+    "trade": "Арилжаа байхгүй",
+    "trades": "Арилжаа",
+    "your": "Таны арилжаанууд",
+    "view": "Үзэх",
+    "rewards": "Нийт урамшуулал",
+    "rewarded": "Урамшуулал олгосон",
+    "previous": "Өмнөх урамшууллын түүх",
+    "last": "Сүүлд өөрчлөгдсөн огноо",
+    "reward_": "Урамшуулал",
+    "tillnow": " Өнөөдрийг хүртэлх урамшууллууд"
+  },
+  "pl_statement": {
+    "title": "Ашиг & Алдагдлын тайлан",
+    "date": "Огноо",
+    "pair": "Хослол",
+    "order_type": "Захиалгын төрөл",
+    "order_price": "Захиалгын ханш",
+    "order_amount": "Захиалгын хэмжээ",
+    "prev_avg_price": "Өмнөх дундаж ханш",
+    "prev_net_pos": "Өмнөх ашиг, алдагдал",
+    "avg_price": "Одоогийн дундаж ханш",
+    "net_pos": "Одоогийн ашиг, алдагдал",
+    "wallet_bal": "${currency} Үлдэгдэл (${bal})",
+    "from": "Эхлэх өдөр",
+    "todate": "Дуусах өдөр",
+    "profit": "Ашиг/Алдагдал"
+  },
+  "mining_pool": {
+    "rewards": "Урамшуулал:",
+    "send": "ХҮСЭЛТ ИЛГЭЭХ",
+    "address": "USDT хүлээн авах хаяг",
+    "title": "МАЙНИНГ ХӨТӨЛБӨР",
+    "enroll": "Оролцох",
+    "valid": "Хүчинтэй хугацаа: ",
+    "rebate": "Урамшуулал олголт:",
+    "hold": "Hold Token Volume:",
+    "buy": "Авах хэмжээ:",
+    "fee": "Бүртгэлийн шимтгэл:",
+    "min_buy_volume": "Доод авах хэмжээ",
+    "max_buy_volume": "Дээд авах хэмжээ"
+  },
+  "pool_details": {
+    "title": "МАЙНИНГИЙН МЭДЭЭЛЭЛ ",
+    "status": "Хүсэлтийн төлөв:",
+    "valid": "Хүчинтэй хугацаа:",
+    "rebate": "Урамшуулал олголт: ",
+    "token": "Hold Token Volume:",
+    "buy": "Авах хэмжээ:",
+    "fee": "Бүртгэлийн шимтгэл:",
+    "max": "Дээд урамшуулал: ",
+    "min": "Доод урамшуулал:",
+    "pool": "Нэр:",
+    "description": "Тайлбар",
+    "view": "Харах",
+    "detail": "Дэлгэрэнгүй мэдээлэл ",
+    "signup": "Бүртгэлийн шимтгэл",
+    "name": "Нэр",
+    "pool_id": "Pool ID",
+    "account": "Бүртгэл",
+    "mining_status": "Майнинг төлөв",
+    "community_sponser_id": "Community Sponser ID",
+    "valid_till": "Хүчинтэй хугацаа",
+    "current_progress": "Явц",
+    "estimate_release": " Сулрах хугацаа",
+    "task1": "Task 1:Авах захиалгын дүн (19:00-23:00)",
+    "task2": "Task 2: RST Үлдэгдэл (7:00-11:00)",
+    "mining_pool_package": "Майнинг багц",
+    "total_mining_release": "Нийт Майнингаас сулрах",
+    "total_community_release": "Total Community Release",
+    "mining_transaction_record": "Майниниг шилжүүлгийн бүртгэл",
+    "community_reward_history": "Дундын урамшууллын түүх",
+    "date": "Огноо",
+    "community_members": "Гишүүд",
+    "community_total_usdt": "Community Total USDT",
+    "community_reward_tier": "Community Reward Tier",
+    "usdt_release": "USDT сулрах",
+    "release_reference_no": "Сулрах дугаар.",
+    "total_avail_for_withdraw": "Шилжүүлэх боломжтой дүн",
+    "reward_transfer": "Урамшуулал шилжүүлэг",
+    "amount": "Хэмжээ",
+    "withdraw": "Зарлага",
+    "state": "Төлөв"
+  },
+  "register": {
+    "title": "Бүртгэл",
+    "email": "Имэйл",
+    "password": "Нууц үг оруулах",
+    "confirm_password": "Нууц үгээ давтах",
+    "mandatory": "Урилгын дугаар (заавал)",
+    "exchange_name": "Зөвшөөрч байна",
+    "termsuse": "Үйлчилгээний нөхцөл",
+    "already_register": "Бүртгэлтэй харилцагч",
+    "referal": "Урилга шаардлагатай",
+    "terms": "Үйлчилгээний нөхцөлийг зөвшөөрнө үү",
+    "referral_id": "Урилгын дугаар байхгүй?",
+    "optional": "Урилгын дугаар (сонголтоор)"
+  },
+  "phone_tab": {
+    "country": "Улсын код",
+    "phone_no": "Утасны дугаар",
+    "save_no": "Код авах",
+    "country_error": "Улсаа заавал сонгоно уу",
+    "title": "Дугаараа баталгаажуулах",
+    "phone_step": "Дугаар",
+    "title_profile": "Хувийн мэдээлэл",
+    "update_no": "Шинэчлэх"
+  },
+  "phone_otp": {
+    "title": "Утасны код",
+    "resend": "Код дахин авах",
+    "verify": "Баталгаажуулах",
+    "code": "Баталгаажуулах кодоо оруулна уу"
+  },
+  "email_otp": {
+    "title": "Имэйл код",
+    "resend": "Код дахин авах"
+  },
+  "kyc_tab": {
+    "kyc_verification": "KYC баталгаажуулах",
+    "document": "Баримт бичгийн төрөл*",
+    "document_no": "*Регистрийн дугаар",
+    "selfie": "Сэлфи оруулах*",
+    "document_date": "Баримт бичгийн хүчинтэй хугацаа",
+    "upload": "Баримт бичгээ оруулна уу",
+    "upload_front": "Баримт бичгээ оруулна уу*",
+    "upload_front_desc": "Баримт бичгээ бариад селфи оруулна уу",
+    "upload_back": "Баримт бичгийн ар талыг оруулна уу",
+    "upload_back_desc": "Баримт бичгээ бариад /ар тал/ селфи оруулна уу ",
+    "upload_cardid": "*Баримт бичгээ оруулна уу (заавар харах**)",
+    "upload_cardid_desc": "Баримт бичгээ бариад селфи оруулна уу",
+    "button": "Илгээх",
+    "title": "Харилцагчийг танин баталгаажуулах",
+    "title_phone": "Дугаар",
+    "title_profile": "Хувийн мэдээлэл",
+    "kyc": "KYC",
+    "photo": "** Цаасан дээр Койнхаб ХХК-д Он/сар/өдөртэй бичээд Иргэний үнэмлэхийн хамт урдаа барьж сэлфи хийн илгээнэ'",
+    "attach": "** Жишээ үзэх",
+    "file_size": "** Зураг нь jpeg, jpg, png форматтай, 2 MB-аас хэтрэхгүй хэмжээтэй байх шаардлагатай",
+    "file_direction": "** Баримт бичгээ оруулахын өмнө зургаа зөв байрлуулж дарсан эсэхийг сайн нягтлаарай.",
+    "allowed_extensions": "** Зөвхөн jpeg, jpg, png форматтай зураг оруулах ёстойг анхаарна уу.",
+    "message_try_again": "Таны KYC баталгаажуулалт амжилтгүй болсон байна. Мэдээллээ дахин нягтлана уу.",
+    "text": "* Заавал бөглөх хэсэг",
+    "kyc_number": "* KYC ID-аа оруулна уу *",
+    "kyc_id": "KYC ID",
+    "register_kyc": "KYC ID байхгүй бол энд дарж бүртгүүлнэ үү.",
+    "forgot_kyc": "KYC ID-аа мартсан уу? Энд дарна уу",
+    "click_forgot": "Харилцагчийн ID мартсан хэсэгт дарна уу.",
+    "info_kyc": "KYC баталгаажуулалт, бүртгэлтэй холбоотой дэлгэрэнгүй мэдээлэл харахыг хүсвэл энд дарна уу.",
+    "register_kyc_link": "https://firstkudi.com/kyc/register",
+    "kyc_customer_link": "https://firstkudi.com/kyc/customer",
+    "info_link": "https://firstkudi.com/know-your-customer",
+    "document_type": "** Passport is acceptable.",
+    "all_document_type": "** Aadhar card, Driving license, Voter ID or Passport are acceptable."
+  },
+  "profile_tab": {
+    "title": "Хувийн мэдээлэл",
+    "title_phone": "Дугаар",
+    "title_profile": "Хувийн мэдээлэл",
+    "first_name": "Нэр*",
+    "last_name": "Овог*",
+    "middle_name": "Middle Name",
+    "dob": "Төрсөн огноо*",
+    "address": "Хаяг",
+    "city": "Хот",
+    "country": "Улс*",
+    "code": "Улсын код",
+    "button": "Илгээх",
+    "country_error": "Заавал бөглөх хэсэг"
+  },
+  "change_password": {
+    "title": "Нууц үг өөрчлөх",
+    "old_password": "Хуучин нууц үгээ оруулна уу",
+    "password": "Нууц үг оруулах",
+    "confirm_password": "Нууц үгээ давтах",
+    "button": "Илгээх"
+  },
+  "reset_password": {
+    "title": "Нууц үг шинэчлэх",
+    "characters": "Нууц үг нь тоо, үсэг орсон, хамгийн багадаа 1 тусгай тэмдэгт болон том үсгээс бүрдсэн, 8-аас доошгүй тэмдэгттэй байна.",
+    "new_password": "Шинэ нууц үг",
+    "password": "Нууц үг",
+    "confirm_password": "Нууц үг баталгаажуулах",
+    "button": "Нууц үг солих",
+    "account": " Бүртгэлгүй харилцагч уу?",
+    "signup": "Шинээр бүртгүүлэх",
+    "validationPassMess": "Нууц үг нь тоо, үсэг орсон, хамгийн багадаа 1 тусгай тэмдэгт болон том үсгээс бүрдсэн, 8-аас доошгүй тэмдэгттэй байна.",
+    "heading": "Нууц үг шинэчлэх",
+    "head_requirement": "Доорх шаардлагыг хангасан байх шаардлагатай:",
+    "description": "*Нууц үг сольсны дараа 24 цаг зарлага гаргах боломжгүй."
+  },
+  "setting": {
+    "title_tier_2": "анхан шатны KYC",
+    "title_tier_3": "ахисан түвшний KYC",
+    "title_tier_4": "KYC EDD",
+    "title": "KYC шаардахгүй : Имэйл, дугаар баталгаажуулалт",
+    "description-activated": "Таны имэйл, дугаар амжилттай баталгаажсан байна. Аюулгүй байдлаа сайтар хангаж имэйл болон дугаараа бусдад ашиглуулахгүй, дамжуулахгүй байхыг анхаарна уу.",
+    "activated": "Баталгаажуулах",
+    "title_google": "Гүүгл Баталгаажуулалт",
+    "description": "Зарлага гаргах, аюулгүй байдлаа хангахад ашиглана.",
+    "enable": "Идэвхжүүлэх",
+    "account_description": "Их дүнгээр шилжүүлэг хийхийн тулд нэмэлт баримт бичиг баталжуулах шаардлагатай.",
+    "title_account": "Бүртгэл баталгаажуулах",
+    "title_sms": "МСЖ баталгаажуулалт",
+    "description_sms": "Зарлага гаргах, аюулгүй байдлаа хангахад ашиглана.",
+    "enable_sms": "Идэвхтэй",
+    "title_password": "Нууц үг",
+    "description_password": "Нэвтрэх үед ашиглах учир цээжлэх шаардлагатай.",
+    "go": "Нууц үг өөрчлөх",
+    "panel": "API Токен",
+    "description_panel": "API Токен үүсгэж ашиглах.",
+    "enable_panel": "Идэвхжүүлэх",
+    "disable": "Идэвхгүй болгох",
+    "verified": "Баталгаажсан",
+    "account": "Бүртгэлийн төлөв",
+    "last": "Сүүлд нэвтэрсэн хугацаа",
+    "invite": "Найзаа урих линк",
+    "progress": "Хийгдэж байна...",
+    "uid": "UID",
+    "email": "Имэйл хаяг",
+    "account_info": "Бүртгэлийн мэдээлэл ",
+    "pool": "MINING POOL PROGRAM",
+    "refferal_program1": "Evo Europex Exchange Referral Program",
+    "refferal_program2": "It pays to have friends",
+    "trading_fee_enable": "Pay fees using Evo Europe",
+    "description_trading_fee": "Enabling this feature will result in an automatic deduction of trading fees from your Evo Europe holdings applying a 35% trading fees discount on every trade you make.",
+    "trading_level": "Арилжааны түвшин"
+  },
+  "balance": {
+    "title": "Үлдэгдэл",
+    "estimated": "Хөрөнгийн үнэлгээ 0.18168671 BTC 24 цагт гаргах зарлагын лимит 2BTC үүнээс ашигласан 0.00461913 BTC",
+    "coin": "Койн ",
+    "name": "Нэр",
+    "total_bal": "Нийт үлдэгдэл",
+    "avail_bal": "Боломжит үлдэгдэл ",
+    "inorder": "Захиалганд буй ",
+    "value": "BTC үнэлгээ",
+    "deposit_withdraw": "Орлого/Зарлага",
+    "deposit": "Орлого",
+    "withdraw": "Зарлага",
+    "trade": "Арилжаа",
+    "actions": "Үйлдлүүд"
+  },
+  "document_list": {
+    "title": "Баримт шинээр нэмэх",
+    "upload": "Оруулсан мэдээлэл",
+    "doc": "Баримтын төрөл",
+    "number": "Баримтын дугаар",
+    "date": "Баримтын хүчинтэй хугацаа",
+    "data": "Мэдээлэл олдсонгүй",
+    "list": "Баримтын жагсаалт"
+  },
+  "index": {
+    "security": " Security Recommendations: confirm URL; enable 2FA; never disclose password or make any transactions to anyone claiming to be Evo Europex Exchange support.",
+    "visiting": "Make sure you are visiting",
+    "netcraft": "to prevent any phishing attacks , We recommend that you install the Netcraft Anti-Phishing Extension (offered by www.netcraft.com) .",
+    "browser": " Never install any browser plug-ins that claim to be associated with Evo Europex Exchange.(Except Netcraft Anti-Phishing Extension).",
+    "phone_calls": " Never make any phone calls to anyone that claims to be a Evo Europex Exchange Support Representative.",
+    "password": "Never tell your password or 2FA codes/keys to anyone, including Evo Europex Exchange Support.",
+    "funds": "Never send funds to anyone claiming to be a member of Evo Europex Exchange Support"
+  },
+  "deposit": {
+    "title": "Орлого",
+    "total_bal": "Нийт үлдэгдэл",
+    "in_order": "Захиалганд буй",
+    "aval_bal": "Боломжит үлдэгдэл",
+    "important": "Чухал",
+    "least": "Орлого хийх доод хэмжээ",
+    "fee_precentage": "Орлого хийх шимтгэл",
+    "to_address": "Өөрийн хаяг руу.",
+    "send": "Зөвхөн шилжүүлэх",
+    "fiat_sending": " Тус хаяг руу өөр койн, токен шилжүүлсэн тохиолдолд буцаан олж авах боломжгүйг анхаарна уу..",
+    "sending": "Тус хаяг руу өөр койн, токен шилжүүлсэн тохиолдолд буцаан олж авах боломжгүйг анхаарна уу..",
+    "address": "Орлого хийх хаяг",
+    "qr_code": "QR кодыг харуулах",
+    "copy_address": "Хаяг хуулах",
+    "only_dt": "Утга",
+    "dt": "Тус утгыг хуулах",
+    "note": "Анхаарна уу",
+    "coins": "Сүлжээний баталгаажилт хийгдэж дуусмагц орлого орохыг анхаарна уу.",
+    "coins_first": "Coins will be deposited immediately after",
+    "xrp_warning_first": "Орлого хийхдээ гүйлгээний утга, Таагийг заавал оруулах ёстойг анхаарна уу.",
+    "xrp_warning_last": "to your Evo Europex account successfully.",
+    "coins_last": "Сүлжээний баталгаажилт.",
+    "progress": "Орлого хийгдсэний дараа явцыг шалгах боломжтой ",
+    "trade": "Арилжаа хэсэгт очих",
+    "history": "Орлогын түүх",
+    "history_address": "Хаяг",
+    "view": "Бүгдийг үзэх",
+    "history_page": "Түүх харах хуудас",
+    "bank_title": "Банкны шилжүүлгээр орлого хийнэ үү",
+    "bank_description": "Дараах мэдээллийн дагуу шилжүүлэг хийнэ үү. Сүлжээ болон системийн ачааллаас хамаарч орлого хүлээн авах хугацаа харилцан адилгүй байна. Орлого 24 цагийн дотор хийгдээгүй тохиолдолд таны гүйлгээ автомат буцаалт хийгдэх болно.",
+    "bank_name": "Банк",
+    "account_number": "Дансны дугаар",
+    "account_name": "Дансны нэр",
+    "phone_number": "Утасны дугаар",
+    "reference_code": "Таны урилгын код",
+    "date": "Огноо",
+    "amount": "Хэмжээ",
+    "currency": "Валют",
+    "status": "Төлөв",
+    "info": "Бүгдийг үзэх",
+    "deposit": " Орлогын түүх хоосон байна.",
+    "network": "Сүлжээ",
+    "aasm_state": {
+      "collected": "Цуглуулсан",
+      "collecting": "Цуглуулсан",
+      "canceled": "Цуцласан",
+      "submitted": "Хүсэлт илгээгдсэн",
+      "accepted": "Цуглуулсан",
+      "skipped": "Цуглуулсан",
+      "fee_processing": "Цуглуулсан",
+      "fee_processed": "Цуглуулсан",
+      "fee_collecting": "Цуглуулсан",
+      "fee_collected": "Цуглуулсан",
+      "rejected": "Цуцлагдсан",
+      "prepared": "Хүлээгдэж буй",
+      "processing": "Цуглуулсан",
+      "succeed": "Амжилттай",
+      "failed": "Цуглуулсан",
+      "errored": "Цуглуулсан",
+      "confirming": "Баталгаажуулж байна"
+    }
+  },
+  "withdraw": {
+    "title": "Зарлага",
+    "total_bal": "Нийт үлдэгдэл",
+    "in_order": "Захиалганд буй",
+    "aval_bal": "Боломжит үлдэгдэл",
+    "important": "Чухал",
+    "least": "Зарлага гаргах доод хэмжээ",
+    "most": "Хамгийн ихдээ",
+    "sales": "Аливаа урамшуулал, эйрдроп санал болгох хаягууд руу шилжүүлэг хийж болохгүйг анхаарна уу..",
+    "address": "Шилжүүлэх хаяг ",
+    "manage": "Хаяг удирдах",
+    "amount": "Хэмжээ",
+    "limit": "24 цагийн зарлагын лимит",
+    "available": "Боломжит",
+    "fee": "Зарлагын шимтгэл",
+    "will_get": "Хүлээн авах хэмжээ",
+    "note": "Утга",
+    "coins": "Сүлжээний баталгаажилт хийгдэж дуусмагц зарлага гарахыг анхаарна уу.",
+    "coins_first": "Дуусмагц зарлага гарахыг анхаарна уу",
+    "coins_last": "Сүлжээний баталгаажилт.",
+    "history_page": "Түүх харах хуудас.",
+    "progress": "Зарлага гарсны дараа зарлагын явцыг шалгах боломжтой.",
+    "trade": "Арилжаа хэсэгт очих",
+    "history": "Зарлагын түүх",
+    "view": "Бүгдийг үзэх",
+    "no_history": "Зарлагын түүх хоосон.",
+    "history_address": "Хаяг",
+    "date": "Огноо",
+    "currency": "Валют",
+    "state": "Төлөв",
+    "info": "Бүгдийг үзэх",
+    "withdraw": "Зарлага гаргахын тулд 2FA идэвхжүүлсэн байх шаардлагатай.",
+    "enable": "2FA идэвхжүүлэх",
+    "beneficiary": {
+      "resend_pin": "Пин код дахин авах",
+      "add_beneficiary": "Данс нэмэх",
+      "manage_beneficiary": "Данс удирдах"
+    },
+    "daily_limit": "Зарлага хийх өдрийн лимит",
+    "limit_exceeded": "24 цагт хийх зарлагын лимитээс их байна.",
+    "24_daliy_limit": "Өдрийн зарлагын лимит тулсан байна.",
+    "aasm_state": {
+      "deposited": "Орлого орлоо",
+      "prepared": "Хүлээгдэж буй",
+      "submitted": "Хүсэлт илгээгдсэн",
+      "canceled": "Цуцлагдсан",
+      "accepted": "Баталгаажсан",
+      "skipped": "Хийгдэж буй",
+      "rejected": "Цуцлагдсан",
+      "processing": "Хийгдэж буй",
+      "succeed": "Амжилттай",
+      "failed": "Амжилтгүй",
+      "errored": "Амжилтгүй",
+      "confirming": "Баталгаажуулж байна"
+    },
+    "network": "Сүлжээ"
+  },
+  "adjustment": {
+    "aasm_state": {
+      "accepted": "Баталгаажсан",
+      "rejected": "Цуцлагдсан",
+      "pending": "Хүлээгдэж буй"
+    }
+  },
+  "history_account": {
+    "title": "Түүх",
+    "deposit": "Орлого",
+    "withdraw": "Зарлага",
+    "status": "Төлөв",
+    "coin": "Койн",
+    "amount": "Хэмжээ",
+    "date": "Огноо",
+    "info": "Мэдээлэл",
+    "fiat_deposit": "Төгрөгийн орлого",
+    "no_history": "Орлогын түүх хоосон.",
+    "address": "Хаяг",
+    "txid": "Txid",
+    "currency": "Валют",
+    "network": "Сүлжээ",
+    "adjustment": "Тохиргоо"
+  },
+  "header": {
+    "title": "Дүн",
+    "order": "Захиалга",
+    "contact": "Холбоо барих",
+    "balance": "Үлдэгдэл",
+    "deposit": "Орлого",
+    "withdraw": "Зарлага",
+    "tran_history": "Шилжүүлгийн түүх",
+    "open_order": "Захиалгын түүх",
+    "open_history": "Нээлттэй захиалга",
+    "trade_history": "Арилжааны түүх",
+    "pl_statement": "Ашиг/Алдагдал",
+    "reward_history": "Урамшууллын түүх",
+    "pools": "Майнинг сан",
+    "rewards": "Урамшуулал",
+    "referral": "Урилга",
+    "payment_crypto": "Крипто авах"
+  },
+  "footer": {
+    "home": "Нүүр хуудас",
+    "language": "Хэл солих",
+    "about": "Бидний тухай",
+    "term": "Үйлчилгээний нөхцөл ",
+    "privacy": "Нууцлалын бодлого",
+    "contact": "Холбоо барих",
+    "rights": "Зохиогчийн эрхээр хамгаалагдсан",
+    "currency_details": "Дэлгэрэнгүй",
+
+    "Products": {
+      "Products": "Бүтээгдэхүүн",
+      "Trade": "Арилжаа",
+      "CHBtoken": "CHB токен",
+      "Earn": "Стейк"
+    },
+    "aboutUs": {
+      "aboutUs": "Бидний тухай",
+      "aboutCOINUB": " Биржийн тухай",
+      "marketNews": "Нийтлэл",
+      "socialresponsibility": "Нийгмийн хариуцлага"
+    },
+    "Contacts": {
+      "Contacts": "Холбоо барих",
+      "supportCenter": " Зөвлөх",
+      "sendRequest": "Хүсэлт илгээх"
+    },
+    "address": "Хаяг: Улаанбаатар хот, Хан-Уул дүүрэг, 15-р хороо, Стадион Оргил, Чингисийн өргөн чөлөө, 6в, 2 давхарт 1б тоот ",
+    "termsConditions": "Үйлчилгээний нөхцөл",
+    "fee": "Шимтгэл",
+    "privacyPolicy": "Нууцлалын бодлого",
+    "policiesVASP": "ВХҮҮ-ийн бодлого журам"
+  },
+  "exchange": {
+    "trade": "Арилжаа",
+    "charts": "График",
+    "limit": "Лимит",
+    "market": "Хослол",
+    "history": "Захиалгын түүх",
+    "open": "Нээлттэй захиалга"
+  },
+  "email_verify": {
+    "title": "ИМЭЙЛ ХАЯГАА БАТАЛГААЖУУЛНА УУ",
+    "registration": "Бүртгэл баталгаажуулахын тулд имэйлээр ирсэн заавартай танилцана уу. Имэйл ирээгүй байвал SPAM хэсэгт шалгана уу.",
+    "resend": "Имэйлээр дахин авах",
+    "email": "Имэйл"
+  },
+  "invite": {
+    "no1": "No.1",
+    "no2": "No.2",
+    "no3": "No.3",
+    "level1": "Түвшин 1: 5%",
+    "level2": "Түвшин 2: 3%",
+    "level3": "Түвшин 3: 1%",
+    "levelnd": "2-4-р түвшин: 15% ",
+    "levelth": "5-8-р түвшин: 7%",
+    "levelel": "9-12 дахь түвшин: 3% ",
+    "id": "Урилга илгээх ID:",
+    "link": "Урилгын холбоос:",
+    "friends": "Найзаа урих ",
+    "value": "Урамшууллын үнэлгээ ",
+    "imc": "IMC",
+    "send": "Илгээх",
+    "details": "Дэлгэрэнгүй",
+    "levelupto": "Арилжаа болон найзаа уриад урамшуулал авах 12 түвшин",
+    "terms": "Referral will be in terms of Evo Europex Exchange",
+    "amount": "Total referral reward distributed amount is subject to a maximum of 8 crore Token.",
+    "currency": "Валют",
+    "actions": "Үйлдэл",
+    "total rewards": "Нийт урамшуулал"
+  },
+  "success": {
+    "documents": {
+      "accepted": "Бичиг баримт амжилттай хуулагдлаа"
+    },
+    "withdraw": {
+      "action": "Зарлага гаргах хүсэлт амжилттай"
+    },
+    "otp": {
+      "enabled": "2FA идэвхжлээ"
+    },
+    "password": {
+      "changed": "Нууц үг солигдлоо",
+      "forgot": "Нууц үг солих холбоосыг имэйлээр илгээлээ",
+      "successfuly": "Нууц үг солигдлоо"
+    },
+    "order": {
+      "canceled": "Захиалгаа цуцлагдлаа",
+      "all": "Бүх захиалга цуцлагдлаа",
+      "created": "Захиалга хийгдлээ"
+    },
+    "message": {
+      "sent": "Мессеж илгээлээ"
+    },
+    "email": {
+      "confirmed": "Мэйл хаяг баталгаажлаа"
+    }
+  },
+  "resource": {
+    "labels": {
+      "private": "Өөрчлөх боломжгүй байна",
+      "missing_key": "Түлхүүр хоосон байна",
+      "empty_key": "Түлхүүр хоосон эсвэл буруу байна",
+      "missing_value": "Мэдээлэл дутуу байна",
+      "empty_value": "Мэдээлэл дутуу эсвэл хоосон байна"
+    },
+    "otp.missing_code": "Код дутуу байна",
+    "otp.empty_code": "Код хоосон байна",
+    "otp.invalid": "Хүчингүй код байна",
+    "profile": {
+      "not_exist": "Харилцагчийн мэдээлэл хоосон",
+      "doesnt_exist_or_not_editable": "KYC баталгаажсан тохиолдолд мэдээлэл өөрчлөх боломжгүй болно ",
+      "exist": "Бүртгэлтэй харилцагч байна",
+      "missing_first_name": "Нэр хоосон байна",
+      "missing_last_name": "Овог хоосон байна",
+      "missing_dob": "Төрсөн огноо хоосон байна",
+      "missing_address": "Хаяг хоосон байна",
+      "missing_postcode": "Улсын код хоосон байна",
+      "missing_city": "Хот хоосон байна",
+      "missing_country": "Улс хоосон байна"
+    },
+    "phone": {
+      "verification": {
+        "send": "Таны дугаарт баталгаажуулах код илгээлээ"
+      },
+      "otp": {
+        "expired": "Кодын хүчинтэй хугацаа дууссан байна"
+      },
+      "confirmed": "Дугаар баталгаажлаа",
+      "twillio": "Something wrong with Twilio Client",
+      "invalid_num": "Хүчингүй дугаар байна",
+      "exists": "Бүртгэлтэй дугаар байна",
+      "number_exist": "Бүртгэлтэй дугаар байна",
+      "verification_invalid": "1 удаагийн код хүчингүй байна",
+      "missing_phone_number": "Дугаар оруулна уу",
+      "empty_phone_number": "Дугаар дутуу эсвэл хоосон байна",
+      "missing_verification_code": "Баталгаажуулах код оруулна уу",
+      "empty_verification_code": "Баталгаажуулах код дутуу эсвэл хоосон байна",
+      "login_in_multiple_deivce": "3 төхөөрөмж бүртгэлтэй байна. Аль нэг холбоосоо салгасан дтохиолдолд төхөөрөмж нэмэх боломжтой."
+    },
+    "api_key": {
+      "2fa_disabled": "2FA идэвхжүүлсэн харилцагч боломжтой.",
+      "missing_otp": "Тус хаяг 2FA идэвхжүүлсэн боловч нэг удаагийн код дутуу байна.",
+      "invalid_otp": "2FA код хүчингүй байна",
+      "missing_algorithm": "Алгоритм дутуу байна",
+      "empty_algorithm": "Алгоритм дутуу эсвэл хоосон байна",
+      "empty_kid": "KID хоосон байна",
+      "empty_scope": "Scope is missing or empty",
+      "missing_totp": "TOTP код дутуу байна",
+      "empty_totp": "TOTP код хоосон эсвэл дутуу байна",
+      "missing_kid": "KID дутуу байна",
+      "empty_state": "Улс дутуу байна"
+    },
+    "documents": {
+      "limit_reached": "Баримт бичгийн тоо гүйцсэн байна",
+      "limit_will_be_reached": "Баримт бичгийг оруулснаар бүрэн болно",
+      "missing_doc_expire": "Баримт бичгийн хүчинтэй хугацааг дутуу оруулсан байна",
+      "empty_doc_expire": "Баримт бичгийн хүчинтэй хугацаа хоосон эсвэл дутуу байна",
+      "missing_doc_type": "Баримт бичгийн төрөл дутуу байна",
+      "empty_doc_type": "Баримт бичгийн төрөл хоосон эсвэл дутуу байна",
+      "missing_doc_number": "Баримт бичгийн дугаар дутуу байна",
+      "empty_doc_number": "Баримт бичгийн дугаар дутуу эсвэл хоосон байна",
+      "missing_upload": "Хавсралт дутуу байна"
+    },
+    "otp": {
+      "already_enabled": "Тус хаяг 2FA идэвхжүүлсэн байна",
+      "invalid": "2FA код хүчингүй байна",
+      "missing_code": "Нэг удаагийн код дутуу байна",
+      "empty_code": "Нэг удаагийн код дутуу эсвэл хоосон байна"
+    },
+    "password": {
+      "doesnt_match": "Нууц үг таарахгүй байна",
+      "prev_pass_not_correct": "Өмнөх нууц үг буруу байна",
+      "no_change_provided": "Шинэ нууц үг нь өмнөхтэй ижил байж болохгүй",
+      "requirements": "Нууц үг шаардлага хангахгүй байна",
+      "user_doesnt_exist": "бүртгэлгүй харилцагч байна",
+      "password_strength": "Нууц үг хэт амархан байна"
+    },
+    "document": {
+      "empty_doc_expire": "Хүчинтэй хугацаа буруу байна"
+    },
+    "user": {
+      "code_not_match": "Нэг удаагийн код хүчингүй ",
+      "captcha": {
+        "required": "captcha_response заавал байх шаардлагатай",
+        "mandatory_fields": "Заавал бөглөх хэсгүүдийг гүйцээнэ үү"
+      },
+      "first_name": {
+        "invalid": "Нэр буруу байна",
+        "blank": "Нэр дутуу оруулсан эсвэл хоосон байна"
+      },
+      "last_name": {
+        "invalid": "Овог буруу байна",
+        "blank": "Овог дутуу оруулсан эсвэл хоосон байна"
+      },
+      "middle_name": {
+        "invalid": "middle name is invalid"
+      },
+      "city": {
+        "invalid": "Хот буруу байна",
+        "blank": "Хот дутуу оруулсан эсвэл хоосон байна"
+      },
+      "postcode": {
+        "invalid": "Улсын код буруу байна"
+      },
+      "address": {
+        "invalid": "Хаяг буруу байна",
+        "blank": "Хаяг дутуу оруулсан эсвэл хоосон байна"
+      },
+      "dob": {
+        "blank": "Төрсөн огноо буруу байна"
+      },
+      "country": {
+        "blank": "Улс дутуу оруулсан эсвэл хоосон байна"
+      },
+      "Postcode": "Дутуу оруулсан эсвэл хоосон байна",
+      "must have alpha2 or alpha3 format": "Country must have alpha2 or alpha3 format"
+    },
+    "record": {
+      "not_found": "Мэдээлэл олдсонгүй"
+    },
+    "authz": {
+      "invalid_session": "Идэвхтэй хугацаа дууссан байна",
+      "user_not_active": "Бүртгэл идэвхгүй байна",
+      "invalid_signature": "API Key header 'signature' is invalid",
+      "apikey_not_active": "API түлхүүр идэвхгүй төлөвт байна",
+      "disabled_2fa": "API түлхүүр эзэмшигч нь 2FA идэвхжүүлээгүй байна",
+      "invalid_api_key_headers": "Blank or missing API Key headers",
+      "permission_denied": "Path is blacklisted",
+      "unexistent_apikey": "X-Auth-Apikey header is invalid",
+      "client_session_mismatch": "Идэвхтэй хугацаа дууссан байна"
+    }
+  },
+  "authz": {
+    "invalid_session": "Идэвхтэй хугацаа дууссан байна",
+    "user_not_active": "Бүртгэл идэвхгүй байна",
+    "invalid_signature": "API Key header 'signature' is invalid",
+    "apikey_not_active": "API түлхүүр идэвхгүй төлөвт байна",
+    "disabled_2fa": "API түлхүүр эзэмшигч нь 2FA идэвхжүүлээгүй байна",
+    "invalid_api_key_headers": "Blank or missing API Key headers",
+    "permission_denied": "Path is blacklisted",
+    "unexistent_apikey": "X-Auth-Apikey header is invalid",
+    "client_session_mismatch": "Идэвхтэй хугацаа дууссан байна",
+    "csrf_token_mismatch": "Хэсэг хугацааны дараа дахин оролдоно уу",
+    "csrf_token_in_valid": "Идэвхтэй хугацаа дууссан байна"
+  },
+  "identity": {
+    "password": {
+      "user_doesnt_exist": "Бүртгэлгүй харилцагч байна"
+    },
+    "session": {
+      "invalid_login_params": "Имэйл хаяг эсвэл нууц үг буруу байна",
+      "invalid": "Идэвхгүй байна",
+      "not_active": "Таны бүртгэл идэвхгүй төлөвтэй байна",
+      "banned": "Таны бүртгэлийг түтгэлзүүлсэн байна",
+      "invalid_params": "Имэйл хаяг эсвэл нууц үг буруу байна",
+      "invalid_otp": "2FA код хүчингүй",
+      "invalid_captcha_format": "Invalid captcha format",
+      "invalid_phone_number": "Дугаар эсвэл нууц үг буруу байна",
+      "invalid_email_id": "Имэйл ID эсвэл нууц үг буруу байна",
+      "user_blocked": "Амжилтгүй оролдлогууд хийсэн учир түгжигдлээ",
+      "resend_limit": "Хэсэг хугацааны дараа дахин оролдоно уу",
+      "phone_resend_limit": "Нэг удаагийн код авах лимит тулсан байна",
+      "email_resend_limit": "Нэг удаагийн код авах лимит тулсан байна"
+    },
+    "captcha": {
+      "required": "Captcha шаардлагатай",
+      "verification_failed": "Captcha баталгаажуулалт амжилтгүй"
+    },
+    "user": {
+      "token_expiry": "Токен хүчингүй, имэйлээр дахин авна уу.",
+      "missing_email": "Имэйл дутуу оруулсан байна",
+      "empty_email": "Имэйл дутуу оруулсан эсвэл хоосон байна",
+      "missing_password": "Нууц үг дутуу байна",
+      "empty_password": "Нууц үг дутуу оруулсан эсвэл хоосон байна",
+      "missing_token": "Токен дутуу оруулсан байна",
+      "empty_token": "Токен дутуу оруулсан эсвэл хоосон",
+      "missing_reset_password_token": "Нууц үг солих токенийг дутуу оруулсан байна",
+      "empty_reset_password_token": "Нууц үг солих токенийг дутуу оруулсан эсвэл хоосон байна",
+      "missing_confirm_password": "Баталгаажуулах нууц үг дутуу оруулсан байна",
+      "empty_confirm_password": "Баталгаажуулах нууц үг дутуу оруулсан эсвэл хоосон байна",
+      "missing_emai": "Имэйл дутуу оруулсан байна",
+      "invalid_captcha_format": "Captcha формат буруу байна",
+      "passwords_doesnt_match": "Нууц үг таарахгүй байна",
+      "utilized_token": "Ашигласан холбоос байна",
+      "invalid_referral_format": "Урилгын ID формат буруу байна",
+      "referral_doesnt_exist": "Ийм урилга байхгүй байна",
+      "active_or_doesnt_exist": "Бүртгэлгүй эсвэл өмнө бүртгүүлсэн харилцагч байна",
+      "no_activity": "Мэдээлэл байхгүй байна",
+      "missing_topic": "Бүлэг дутуу оруулсан байна",
+      "empty_topic": "Бүлэг дутуу оруулсан эсвэл хоосон байна",
+      "missing_old_password": "Хуучин нууц үг дутуу оруулсан байна",
+      "empty_old_password": "Хуучийн нууц үг дутуу оруулсан эсвэл хоосон байна",
+      "missing_new_password": "Шинэ нууц үг дутуу оруулсан байна",
+      "empty_new_password": "Шинэ нууц үг дутуу оруулсан эсвэл хоосон байна",
+      "incorrect_email_otp": "Имэйлээр илгээсэн кодыг буруу оруулсан байна",
+      "incorrect_phone_otp": "Имэйлээр илгээсэн кодыг буруу оруулсан байна",
+      "phone": {
+        "limit": "Дугаар солих боломжгүй учир тусламжийн төвд хандана уу"
+      }
+    },
+    "verify_identity": "Мэдээллээ баталгаажуулна уу",
+    "verify_info": "Мэдээллийн шалгаж байна",
+    "would_you_like": "Та Койнхаб руу <br /> крипто шилжүүлэх үү?",
+    "protect_your_crypto": "Өөр бирж эсвэл хэтэвчнээс шилжүүлэг хийн <br /> өөрийн хөрөнгөө хамгаална уу."
+  },
+  "account": {
+    "transactions.limit_exceeded": "Лимит хэтэрсэн",
+    "currency.invalid_amount": "Хэмжээ буруу байна",
+    "swap": {
+      "temporary_stop": "Хөрвүүлэг түр хугацаанд хийх боломжгүй байна"
+    },
+    "user": {
+      "incomplete_kyc": "KYC дутуу байна"
+    },
+    "trading": {
+      "temporary_stop": "Тус койны захиалгыг түр хугацаанд гүйцэтгэх боломжгүй байна"
+    },
+    "currency": {
+      "doesnt_exist": "Буруу валют байна",
+      "invalid_amount": "Хэмжээ буруу байна",
+      "withdrawal_disabled": "Тус койны зарлага түр хугацаанд хийгдэх боломжгүй байна.",
+      "deposit_disabled": "Тус койны орлого түр хугацаанд хийгдэх боломжгүй байна."
+    },
+    "transactions": {
+      "limit_exceeded": "Шилжүүлгийн лимит хэтэрсэн байна"
+    },
+    "deposit": {
+      "invalid_state": "Орлого хийх боломжгүй байна",
+      "non_integer_limit": "Value you send could not be parsed into integer type",
+      "invalid_limit": "Лимит буруу байна",
+      "non_positive_page": "Эерэг утга байх ёстой",
+      "empty_txid": "Txid дутуу эсвэл хоосон байна",
+      "not_permitted": "Дугаар баталгаажуулсны дараа орлого хийх боломжтой",
+      "deposit_disabled": "Тус койны орлого түр хугацаанд хийгдэх боломжгүй байна.",
+      "blockchain_key_doesnt_exist": "Боломжтой сүлжээг сонгоно уу"
+    },
+    "deposit_address": {
+      "invalid_address_format": "Орлого хийх хаягийн формат буруу байна",
+      "doesnt_support_cash_address_format": "Хаягийн форматийг дэмжихгүй"
+    },
+    "withdraw": {
+      "invalid_state": "Төлөв буруу байна",
+      "non_integer_limit": "Limit Value you send could not be parsed into integer type",
+      "invalid_limit": "Лимит буруу байна",
+      "non_positive_page": "0-с их байх ёстой",
+      "non_integer_otp": "OTP утгыг бүхэл тоонд задлан шинжилж чадсангүй",
+      "empty_otp": "Нэг удаагийн код дутуу оруулсан, хоосон байна",
+      "empty_rid": "Rid дутуу оруулсан, хоосон байна",
+      "non_decimal_amount": "Amount value you send could not be parsed into decimal type",
+      "non_positive_amount": "Хэмжээ 0-с их байх ёстой",
+      "not_permitted": "Зарлага гаргахын тулд дугаар болон KYC баталгаажуулна уу",
+      "insufficient_balance": "Үлдэгдэл хүрэлцэхгүй байна",
+      "invalid_amount": "Зарлагын хэмжээ буруу байна",
+      "create_error": "Зарлага хийхэд алдаа гарлаа",
+      "invalid_otp": "2FA код буруу байна",
+      "invalid_2fa": "2FA буруу байна",
+      "disabled_api": "Зарлагын API идэвхжүүлээгүй байна",
+      "limit_exceeded": "24 цагийн лимитээс илүү дүнгээр зарлага гаргах боломжгүй",
+      "temporary_stop": "Түр хугацаанд зарлага хийх боломжгүй байна",
+      "withdraw_disbale_24_hour": "Аюулгүй байдлыг хангах зорилгоор 24 цагийн хугацаанд зарлага хийх боломжгүй байна.",
+      "invalid_withdraw_otp": "Хүчинтэй нэг удаагийн код оруулна уу",
+      "expire_withdraw_otp_time": "Нэг удаагийн кодын хүчинтэй хугацаа",
+      "multiple_otp": "Хэт олон ордлого хийсэн байна, дараа дахин орлдоно уу"
+    },
+    "beneficiary": {
+      "missing_name": "Хүлээн авагчийн нэр дутуу байна",
+      "empty_name": "Хүлээн авагчийн нэр хоосон байна",
+      "too_long_name": "Хүлээн авагчийн нэр 64 тэмдэгтээс урт байж болохгүй.",
+      "duplicate_address": "Бүртгэлтэй хаяг байна",
+      "invalid_pin": "Хүчинтэй нэг удаагийн код оруулна уу",
+      "invalid_address": "Хаяг буруу байна",
+      "missing_address_in_data": "Блокчэйн хаяг хоосон байна",
+      "cant_activate": "Хүлээн авагч бүртгэгдсэн байна",
+      "pin_expired": "Нэг удаагийн кодын хүчинтэй хугацаа",
+      "invalid_otp": "2FA код хүчингүй байна",
+      "blockchain_key_doesnt_exist": "Блокчэйний түлхүүр байхгүй",
+      "cant_delete": "Устгах боломжгүй",
+      "failed_to_create": "Буруу хаяг байна"
+    },
+    "card": {
+      "empty_card_details": "Хариу хүлээж байна. Түр хүлээнэ үү.",
+      "invalid_zipcode": "Улсын код буруу байна"
+    }
+  },
+  "market": {
+    "doesnt_exist": "Хослол байхгүй",
+    "trade.not_permitted": "Арилжаа хийх боломжгүй",
+    "order.binance.filter_failure": "Захиалга шаардлага хангахгүй байна.",
+    "order.insufficient_market_liquidity": "Үлдэгдэл хүрэлцэхгүй байна",
+    "market": {
+      "doesnt_exist": "Хослол байхгүй"
+    },
+    "order": {
+      "invalid_state": "Орлогын төлөв буруу байна",
+      "invalid_limit": "Лимит уруу байна",
+      "non_integer_limit": "Limit value you send could not be parsed into integer type",
+      "empty_page": "Хуудас дутуу эсвэл хоосон байна",
+      "invalid_order_by": "Буруу захиалга",
+      "invalid_side": "Захиалга буруу байна",
+      "non_decimal_volume": "Volume value you send could not be parsed into decimal type",
+      "non_positive_volume": "Дүн 0-ээс их байх ёстой",
+      "invalid_type": "Захиалгын төрөл буруу",
+      "non_decimal_price": "Price value you send could not be parsed into decimal type",
+      "non_positive_price": "Ханш 0-ээс их байх ёстой",
+      "non_integer_id": "Id value  you send could not be parsed into integer type",
+      "empty_id": "Id буруу эсвэл хоосон байна",
+      "insufficient_market_liquidity": "Түр хугацаанд арилжаа хийх боломжгүй байна. Дараа дахин оролдоно уу",
+      "invalid_volume_or_price": "Арилжааны хэмжээ эсвэл ханш буруу байна",
+      "create_error": "Амжилтгүй боллоо",
+      "cancel_error": "Захиалга биелүүлж байна. Түр хүлээнэ үү",
+      "temporary_stop": "Арилжаа хийх боломжгүй байна",
+      "market_order_price": "Зах зээлийн ханш нь тогтсон ханшгүй болно",
+      "binance": {
+        "server_error": "Түр хугацаанд арилжаа хийх боломжгүй байна. Дараа дахин оролдоно уу",
+        "filter_failure": "Захиалга шаардлага хангахгүй байна.",
+        "price_failure": "Зөвшөөрөгдөх ханшаас доогуур захиалга хийх боломжгүй.",
+        "usdt_10_$": "Захиалгын доод хэмжээ 10 USDT"
+      }
+    },
+    "trade": {
+      "non_integer_limit": "Limit value you send could not be parsed into Integer type",
+      "invalid_limit": "Лимит буруу байна",
+      "non_integer_timestamp": "Timestamp value you send could not be parsed into Integer type",
+      "empty_timestamp": "Хугацааны мэдээлэл дутуу эсвэл хоосон байна.",
+      "invalid_order_by": "Буруу захиалга",
+      "not_permitted": "КYC баталаагжуулсны дараа арилжаа хийх боломжтой"
+    },
+    "account": {
+      "insufficient_balance": "Түр хугацаанд арилжаа хийх боломжгүй байна. Дараа дахин оролдоно уу"
+    },
+    "referral": {
+      "failed_to_transfer": "Шилжүүлэг амжилтгүй"
+    }
+  },
+  "public": {
+    "currency": {
+      "doesnt_exist": "Буруу валют байна",
+      "invalid_type": "Валютын төрөл буруу байна"
+    },
+    "market": {
+      "doesnt_exist": "Хослол байхгүй"
+    },
+    "order_book": {
+      "non_integer_ask_limit": "Лимитээр зарах захиалгын дүнг бүхэлчлэх боломжгүй байна",
+      "invalid_ask_limit": "Лимитээр зарах захиалга буруу",
+      "non_integer_bid_limit": "Лимитээр авах захиалгын дүнг бүхэлчлэх боломжгүй байна",
+      "invalid_bid_limit": "Лимитээр авах захиалга буруу"
+    },
+    "trade": {
+      "non_integer_limit": "Лимит захиалгын дүнг бүхэлчлэх боломжгүй байна",
+      "invalid_limit": "Лимит захиалга буруу",
+      "non_positive_page": "Утга 0-ээс их байх ёстой",
+      "non_integer_timestamp": "Хугацааны утгыг бүхэлчлэх боломжгүй байна",
+      "invalid_order_by": "Захиалга буруу"
+    },
+    "market_depth": {
+      "non_integer_limit": "Лимит захиалгын дүнг бүхэлчлэх боломжгүй байна",
+      "invalid_limit": "Лимит буруу"
+    },
+    "k_line": {
+      "non_integer_period": "Лимит захиалгын дүнг бүхэлчлэх боломжгүй байна",
+      "invalid_period": "Хугацаа буруу",
+      "non_integer_time_from": "Лимит захиалгын дүнг бүхэлчлэх боломжгүй байна",
+      "empty_time_from": "Хугацааны өгөгдөл дутуу эсвэл хоосон байна",
+      "non_integer_time_to": "Лимит захиалгын дүнг бүхэлчлэх боломжгүй байна",
+      "empty_time_to": "Хугацааны өгөгдөл дутуу эсвэл хоосон байна",
+      "non_integer_limit": "Лимит захиалгын дүнг бүхэлчлэх боломжгүй байна",
+      "invalid_limit": "Лимит буруу"
+    }
+  },
+  "server": {
+    "internal_error": "Сүлжээний алдаа",
+    "method_not_allowed": "Боломжгүй байна"
+  },
+  "withdraw_coin": {
+    "name": "Нэр",
+    "address": "Хаяг",
+    "description": "Тайлбар",
+    "status": "Төлөв",
+    "actions": "Үйлдэл",
+    "destination_tag": "Мемо"
+  },
+  "withdraw_fiat": {
+    "desc": "Тайлбар",
+    "full_name": "Бүтэн нэр",
+    "account_no": "Дансны дугаар",
+    "bank_name": "Банкны нэр",
+    "bank_swift_code": "Свифт код (заавал биш)",
+    "intermediary_bank_name": "Шилжүүлэгч Банкны нэр (заавал биш)",
+    "intermediary_bank_swift_code": "Шилжүүлэг Банкны свифт код (заавал биш)",
+    "status": "Төлөв",
+    "actions": "Үйлдэл",
+    "bank_code": "Банкны код",
+    "bank_type": "Банкны төрөд",
+    "country_code": "Улсын код"
+  },
+  "payment_gateway": {
+    "title": "QR кодыг уншуулж төлбөр төлнө үү",
+    "success_msg": "Төлбөр төлөлт амжилттай",
+    "link_expire": "Төлбөр гүйцэтгэх хугацаа дууслаа.",
+    "warning": "Санамж: Төлбөр гүйцэтгэхэд шимтгэлийн хэмжээг тооцоолно уу."
+  },
+  "reward_history": {
+    "no_history": "Түүх хоосон байна.",
+    "currency": "Валют",
+    "reward": "Урамшуулал",
+    "email": "Имэйл",
+    "date": "Огноо",
+    "level": "Түвшин"
+  },
+  "symbol_detail": {
+    "btc_currency": {
+      "currency": "BTC (Bitcoin)",
+      "date": "2018-01-08",
+      "product_description": "1. Бүтээгдэхүүний тайлбар",
+      "project_name": " Төслийн нэр: Bitcoin",
+      "token": "Койны нэр: BTC",
+      "introduction": "2. Төслийн танилцуулга",
+      "detail": "Bitcoin is a cryptocurrency and a digital payment system invented by an unknown programmer, or a group of programmers, under the name Satoshi Nakamoto.It was released as open-source software in 2009.The system is peer-to-peer, and transactions take place between users directly, without an intermediary. These transactions are verified by network nodes and recorded in a public distributed ledger called a blockchain. Since the system works without a central repository or single administrator, bitcoin is called the first decentralized digital currency.Besides being created as a reward for mining, bitcoin can be exchanged for other currencies, products, and services in legal or black markets.As of February 2015, over 100,000 merchants and vendors accepted bitcoin as payment. According to research produced by Cambridge University in 2017, there are 2.9 to 5.8 million unique users using a cryptocurrency wallet, most of them using bitcoin.",
+      "overview": " 3. Токений тухай",
+      "total_supply": "Нийт нийлүүлэлт: 21 сая ",
+      "circulation": "Эргэлтэнд буй: 18,491,550",
+      "link": "4. Холбоос",
+      "website": "Албан ёсны вебсайт:",
+      "white_paper": "Танилцуулга:",
+      "site_link": "https://bitcoin.org/zh_CN/ ",
+      "pdf_link": "https:https://bitcoin.org/bitcoin.pdf"
+    },
+    "eth_currency": {
+      "currency": "ETH (Ethereum)",
+      "date": "2018-01-08",
+      "product_description": "1. Бүтээгдэхүүний тайлбар",
+      "project_name": " Төслийн нэр: Ethereum",
+      "token": "Койний нэр: ETH",
+      "introduction": "2. Төслийн танилцуулга",
+      "detail": " Ethereum (ETH) is an open-source, public, blockchain-based distributed computing platform featuring smart contract (scripting) functionality, which facilitates online contractual agreements. Ethereum also provides a cryptocurrency token called \"ether\", which can be transferred between accounts and used to compensate participant nodes for computations performed. \"Gas\", an internal transaction pricing mechanism, is used to mitigate spamand allocate resources on the network.The value token of the Ethereum blockchain is called ether. It is listed under the diminutive ETH and traded on cryptocurrency exchanges. It is also used to pay for transaction fees and computational services on the Ethereum network.",
+      "overview": " 3. Токений тухай",
+      "total_supply": "  Нийт нийлүүлэлт: 107,100,935 ",
+      "circulation": "Эргэлтэнд буй: 107,100,935",
+      "link": "4. Холбоос",
+      "website": "Албан ёсны вебсайт:",
+      "white_paper": "Танилцуулга:",
+      "site_link": "https://www.ethereum.org/ ",
+      "pdf_link": "https://github.com/ethereum/wiki/wiki/White-Paper"
+    },
+    "usdt_currency": {
+      "currency": "USDT (TetherUS)",
+      "date": "2018-01-08",
+      "product_description": "1. Бүтээгдэхүүний тайлбар",
+      "project_name": "  Төслийн нэр: TetherUS",
+      "token": "Койний нэр: USDT",
+      "introduction": " 2. Төслийн танилцуулга ",
+      "detail": "USDT is a crypto-currency asset issued on the Bitcoin blockchain via the Omni Layer Protocol. Each USDT unit is backed by a U.S Dollar held in the reserves of the Tether Limited and can be redeemed through the Tether Platform. USDT can be transferred, stored, spent, just like Bitcoins or any other crypto-currency.USDT and other Tether currencies were created to facilitate the transfer of national currencies, to provide users with a stable alternative to Bitcoin and to provide an alternative for exchange and wallet audits which are currently unreliable. USDT provides an alternative to Proof of Solvency methods by introducing a Proof of Reserves Process. In the Tether Proof of Reserves system, the amount of USDT in circulations can be easily checked on the Bitcoin blockchain via the tools provided at Omnichest.info, while the corresponding total amount of USD held reserves is proved by publishing the bank balance and undergoing periodic audits by professionals.",
+      "overview": " 3. Койний тухай",
+      "total_supply": "Нийт нийлүүлэлт: 2.83 billion ",
+      "circulation": " Эргэлтэнд буй: 2.507 billion",
+      "link": "4. Холбоос",
+      "website": "Албан ёсны вебсайт:",
+      "white_paper": "Танилцуулга:",
+      "site_link": " https://tether.to/ ",
+      "pdf_link": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
+    },
+    "zfl_currency": {
+      "currency": "ZFL (Zuflo)",
+      "date": "2018-01-08",
+      "product_description": "1. Бүтээгдэхүүний тайлбар",
+      "project_name": "  Төслийн нэр: Zuflo",
+      "token": "Койний нэр: ZFL",
+      "introduction": "2. Төслийн танилцуулга",
+      "detail": " Launched on 08/01/2018 by a team based in Estonia and Asia, ZFL aims to address Trading and Finance under One Platform in several regions. ZFL will allow Zedxe.com platform users to improve efficiency, error reduction, time savings, and straight-through processing without any intermediaries, and with AI (Artificial Intelligence) Management tools.",
+      "overview": " 3. Койний тухай",
+      "total_supply": " Нийт нийлүүлэлт: 500,000,000 ",
+      "circulation": " Эргэлтэнд буй: 64,944,573",
+      "link": "4. Холбоос",
+      "website": "Албан ёсны вебсайт:",
+      "white_paper": "Танилцуулга:",
+      "site_link": " https://www.zedxe.com ",
+      "pdf_link": " https://www.zedxe.com/wp-content/uploads/2020/07/zufloCoin_ZFL_whitePaper.pdf"
+    }
+  },
+  "about": {
+    "title": "Койнхаб биржийн тухай "
+  },
+  "kyc_id": {
+    "taken": "Зөв KYC ID оруулна уу"
+  },
+  "user": {
+    "sumsub": {
+      "kyc": {
+        "tier2_not_verified": "Өмнөх KYC баталгаажуулах хүсэлт шалгагдаж байна",
+        "already_verified": "KYC баталгаажсэн",
+        "in_progress": "KYC батлагаажуулах хүсэлт шалгагдаж байна",
+        "something_went_wrong": "Дараа дахин оролдоно уу.",
+        "initiated_for_tier3": "Ахисан шатны KYC хүсэлт илгээгдсэн тохиолдолд өмнөх KYC-г хүчингүй.",
+        "phone_mismatch": "Бүртгүүлсэн болон KYC баталгаажуулахад ашигласан дугаарууд таарахгүй байна.",
+        "current_residence": "Бүртгэлтэй хаяг, түр оршин суугаа хаягтай адил уу?",
+        "unemployed": "Ажил эрхлээгүй байгаа юу?",
+        "account_someone_else": "Та бусдын өмнөөс хаягийг нээж арилжаа хийх гэж байгаа юу?",
+        "politically_exposed": "Улс төрд нөлөө бүхий этгээд үү?",
+        "politically_exposed_relatives": "Та улс төр нөлөө бүхий этгээдтэй холбоо хамараалатай юу?",
+        "politically_exposed_associates": "Та улс төрд нөлөө бүхий этгээдтэй ойр ажилладаг уу?",
+        "legal_entity": "Та хуулийн этгээдийн өмнөөс хаяг нээж арилжаа хийх гэж байгаа юу?",
+        "shareholders_politically": "Танай байгууллагын удирдах албан тушаалтан, эздүүд дунд улс төрд нөлөө бүхий этгээд бий юу?",
+        "shareholders_politically_relatives": "Танай байгууллагын удирдах албан тушаалтан, эздүүд дунд улс төрд нөлөө бүхий этгээдтэй холбоо хамааралтай хүн бий юу?",
+        "shareholders_politically_associates": "Танай байгууллагын удирдах албан тушаалтан, эздүүд дунд улс төрд нөлөө бүхий этгээдтэй ойр ажилладаг хүн бий юу?"
+      }
+    }
+  },
+  "apiTokens": {
+    "tip1": "Тус мэдээлэл нь энэ удаад л харагдах учир сайтар хадгалж авна уу. Алдагдсан тохиолдолд дахин сэргээх боломжгүй.",
+    "tip2": "Аюулгүй байдлаа хангах зорилгоор Нууц түлхүүр, Хувийн түлхүүрээ бусдад бүү дамжуулаарай. Алдсан тохиолдолд устгаад дахин шинээр авна уу."
+  },
+  "investment": {
+    "invalid": {
+      "amount_value": "Хэмжээ буруу"
+    }
+  },
+  "Currency.not.found": "Валют олдсонгүй",
+  "don't have to convert": "Танд хөрвүүлэг хийх {{currency}} байхгүй байна. Худалдан аваад дахин оролдоно уу.",
+  "identity_vefification": "Бүртгэлээ баталгаажуулна уу",
+  "identity_description": "Та бүртгэлээ баталгаажуулна уу. <br /> Бүртгэл баталгаажуулснаар аюулгүй, найдвартайгаар системийг ашиглана.",
+  "crypto": {
+    "currency": {
+      "doesnt_exist": "Валют хоосон"
+    },
+    "setting": {
+      "create_error": "Convert setting not enable",
+      "invalid_state": "Төлөв буруу"
+    }
+  },
+  "convert_disclaimer": "Тайлбар - Хөрвүүлэг зах зээлийн ханшаар хийгдэнэ.",
+  "member": {
+    "coin_listing": {
+      "not_found": "Мэдээлэл олдсонгүй"
+    },
+    "code_not_match": "Имэйл код таарахгүй байна"
+  },
+  "Data.Not.found": "Дараа дахин оролдоно уу.",
+  "submission": {
+    "head": "Амжилттай илгээгдлээ",
+    "desc": "Таны хүсэлтийг хүлээн авч шалгаад имэйлээр эргэн мэдэгдэх болно."
+  },
+  "kyc": {
+    "note1": "Бүртгэлийн төрлөө сонгоод үргэлжлүүлнэ үү"
+  },
+  "notification": {
+    "deposit": {
+      "collected": "{{currency}} койны {{amount}} дүнтэй орлогын хүсэлт амжилттай.",
+      "rejected": "{{currency}} койны {{amount}} дүнтэй орлого амжилтгүй боллоо.",
+      "processed": "{{currency}} койны {{amount}} дүнтэй орлого амжилттай хийгдлээ."
+    },
+    "withdraw": {
+      "succeed": "{{amount}} дүнтэй {{currency}} койны зарлагын хүсэлт амжилттай.",
+      "failed": "{{amount}} дүнтэй {{currency}} койны зарлага амжилтгүй.",
+      "processed": "{{amount}} дүнтэй {{currency}} койны зарлага амжилттай."
+    },
+    "order": {
+      "done": "{{pair}} хослол {{price}} ханшаар {{amount}} хэмжээтэйгээр амжилттай биелэгдлээ.",
+      "processed": "{{pair}} хослол {{price}} ханшаар {{amount}} хэмжээтэйгээр захиалганд байна."
+    },
+    "member": {
+      "initiated": "KYC баталгаажуулах хүсэлт илгээгдлээ.",
+      "under_review": "Таны KYC баталгаажуулах хүсэлт шалгагдаж байна.",
+      "rejected": "Таны бүртгэл баталгаажуулалт амжилтгүй боллоо. Шалтгааныг ирсэн имэйлээр шалгана уу.",
+      "verified": "Бүртгэл баталгаажуулалт амжилттай."
+    }
+  },
+  "future": {
+    "margin_mode": {
+      "note1": "Switching the margin mode will only apply it to the selected contract.",
+      "note2": "All cross positions under the same margin asset share the same asset cross margin balance. In the event of liquidation, your assets full margin balance along with any remaining open positions under the asset may be forfeited.",
+      "note3": "Manage your risk on individual positions by restricting the amount of margin allocated to each. If the margin ratio of a position reached 100%, the position will be liquidated. Margin can be added or removed to positions using this mode.",
+      "note4": "The margin mode cannot be changed while you have an open order/position"
+    },
+    "leverage": {
+      "note1": "Maximum position at current leverage: 40,000,000 USDT",
+      "note2": "Please note that leverage changing will also apply for open positions and open orders.",
+      "note3": "Selecting higher leverage such as [10x] increases your liquidation risk. Always manage your risk levels. See our help article for more information.",
+      "note4": "Leverage reduction is not supported with open positions in Isolated Margin Mode."
+    }
+  },
+
+  "BankDeposit": {
+    "head": "Банкны хадгаламж",
+    "btnText": "Крипто хадгаламж",
+    "fq": {
+      "title": "Түгээмэл асуултууд",
+      "Q1": "Q1. Блокчейнийг нэвтрүүлэх (эсвэл хэсэг рүү шилжүүлэх) бизнесийн тохиолдол юу вэ?",
+      "ans1": "Аудитын зардал багассан, маркетингийн төсөв багассан (ихэнх нь хуурамч тоо гаргахад зарцуулагддаг), нягтлан бодох бүртгэлийн зардал багассан, дагаж мөрдөх зардал багассан, бизнесийн хурдацтай өсөлт, санхүүгийн эвлэрэл сайжирсан.",
+      "Q2": "Q2. Блокчэйн үргэлж олон нийтэд нээлттэй байх ёстой юу?",
+      "ans2": "Үгүй. Энэ нь хандалтыг хянах боломжтой.",
+      "Q3": "Q3. Бид түрийвчийг хакердахаас хэрхэн сэргийлэх вэ?",
+      "ans3": "Та олон хүчин зүйлийн баталгаажуулалтыг хэрэгжүүлж болно. Эцсийн эцэст, хэрэв хэрэглэгч өөрийн кредит картын кодыг нийгмийн сүлжээнд нийтэлвэл яах вэ? Энэ нь ижил зүйл юм."
+    },
+    "maintabs": {
+      "deposite": "Хадгаламж",
+      "Withdraw": "Татаж авах",
+      "Currency": "Валют",
+      "ChooseBankAccountlabel": "Банкны дансыг сонгоно уу",
+      "BankAccount": "Банкны данс",
+      "AccountName": "Дансны нэр",
+      "personName": "Мөнх-Эрдэнэ",
+      "ReceiverBank": "Хүлээн авагч банк",
+      "KhanBank": "Хаан банк",
+      "TransactionValue": "Гүйлгээний үнэ цэнэ",
+      "note": "Та утасны дугаар болон бүртгэлээ заавал бичих ёстойг анхаарна уугүйлгээний үнийн дүнгийн дугаар",
+      "dbtn": "Сангийг шилжүүлсэн. Шалгана уу",
+      "Wbtn": "Татгалзах хүсэлтийг илгээсэн."
+    },
+    "addBankmodal": {
+      "AddBankAccount": "Банкны данс нэмэх"
+    }
+  },
+  "Fund": {
+    "head": "Түрийвчээ санхүүжүүл",
+    "subheading1": "Би крипто хөрөнгөтэй",
+    "subheading2": "Надад крипто хөрөнгө байхгүй",
+    "subheadingtitle1": "Надад крипто хөрөнгө байхгүй",
+    "subheadingtitle2": "Банкны хадгаламж",
+    "detail1": "BTC, ETH эсвэл бусад крипто мөнгөний хадгаламжийн хаягийг аваад блокчэйнээр дамжуулан хадгалаарай.",
+    "detail2": "Банкны данснаасаа мөнгө байршуулж, дараа нь бэлэн мөнгөний үлдэгдэлтэй крипто худалдаж аваарай"
+  },
+  "CryptoDeposit": {
+    "BTCaddress": "BTC хаяг",
+    "important": "Чухал",
+    "point1": "Хамгийн бага мөнгө авах 85 BTC",
+    "point2": "Хадгаламжийн хураамж 10.0%",
+    "point3": "Энэ хаяг руу зөвхөн BTC илгээнэ үү. Энэ хаяг руу өөр зоос эсвэл жетон илгээх нь таны хөрөнгийг алдахад хүргэж болзошгүй."
+
+  },
+  "tables": {
+    "nores": "Бичлэг олдсонгүй"
+   }
+}

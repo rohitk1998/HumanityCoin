@@ -1,0 +1,76 @@
+@import "../Assets/Styles/_mixins.scss";
+@import "../Assets/Styles/_vars.scss";
+
+.upload-container {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px dashed #bcbcbc;
+  border-radius: 30px;
+  opacity: 1;
+  max-width: 485px;
+  width: 100%;
+  height: 211px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &:not(.uploaded){
+    background-image: url("../Assets/Images/bgUpload.svg");
+
+  }
+  input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 9;
+  }
+  label {
+    color: $darktext;
+    @include fluid-type(320px, 1920px, 14px, 16px);
+    padding-bottom: 8px;
+    display: flex;
+  }
+  .ant-upload-drag-icon {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    // z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 29px;
+    margin-bottom: 0 !important;
+  }
+}
+.pos-delete {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  z-index: 22;
+  height: 20px;
+  width: 20px;
+  * {
+    font-size: 20px;
+  }
+}
+
+.upload-prev {
+  max-height: 204px;
+}
+
+  .formatText {
+    color: #80838e;
+    @include fluid-type(320px, 1920px, 14px, 16px);
+    padding-top: 12px;
+    margin-bottom: 0 !important;
+    b{
+      display: inline-block;
+      margin-right:8px;
+      color: #000;
+    }
+  }
+

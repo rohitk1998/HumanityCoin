@@ -1,0 +1,161 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+.question {
+  padding: 80px 0;
+  background-color: #000000;
+  height: 100vh;
+  .faqContainer {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+  }
+  h3 {
+    color: white;
+    @include fluid-type(320px, 1920px, 25px, 32px);
+    margin-top: 10px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-bottom: 50px;
+  }
+  .questioInner {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    .faqleft {
+      max-width: 600px;
+      width: 100%;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+      .ant-collapse {
+        background-color: transparent !important;
+        border: 0;
+        .ant-collapse-item {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+          .ant-collapse-header-text {
+            text-align: left;
+            color: white;
+          }
+          .ant-collapse-expand-icon {
+            width: 0;
+            height: 0;
+            span {
+              display: none;
+            }
+            &::after {
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              content: "+";
+              transform: translate(-90%, -20%);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: contain;
+              z-index: 1;
+              font-weight: 600;
+              transform: translateY(-50%);
+              font-size: 35px;
+              line-height: 19px;
+              border-radius: 20px;
+              padding: 1px 0px 0px 8px;
+              @media (max-width: 575px) {
+                font-size: 25px;
+              }
+              color: white;
+            }
+          }
+          &-active {
+            .ant-collapse-expand-icon::after {
+              color: blue;
+            }
+          }
+        }
+        .ant-collapse-item-active {
+          .ant-collapse-expand-icon {
+            &::after {
+              position: absolute;
+              content: "-";
+              padding: 3px 0px 0px 5px;
+              z-index: 1;
+
+              color: white;
+            }
+
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+      .ant-collapse-item {
+        box-shadow: none;
+        margin: 20px 0px;
+        padding-bottom: 10px;
+        .ant-collapse-header {
+          padding: 0px 40px 0px 0;
+          @include fluid-type(320px, 1920px, 18px, 24px);
+          color: #000000;
+          font-weight: 500;
+          padding-right: 40px;
+          line-height: 61px;
+        }
+        .ant-collapse-content {
+          background-color: transparent;
+          color: rgba(255, 255, 255, 0.6);
+          p {
+            padding-bottom: 20px;
+            @include fluid-type(320px, 1920px, 14px, 16px);
+
+            &:last-child {
+              padding-bottom: 0;
+            }
+            span {
+              color: #fff;
+              font-weight: 500;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+    .faqright {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 281px;
+      padding-top: 20px;
+      width: 100%;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+      .faqRightInner {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 20px;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        &:hover {
+          background: rgba(255, 255, 255, 0.05);
+          cursor: pointer;
+        }
+        h4 {
+          @include fluid-type(320px, 1920px, 18px, 22px);
+          color: #fff;
+          display: flex;
+          gap: 12px;
+        }
+        .upwardArrow {
+          width: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,683 @@
+@import '../../Assets/Styles/_vars.scss';
+@import '../../Assets/Styles/_mixins.scss';
+.Configure {
+  background-color: rgb(3, 3, 3);
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  .liquidityCenter {
+    padding-top: 70px;
+    width: 50%;
+    @media (max-width: 1440px) {
+      width: 65%;
+    }
+    @media (max-width: 991px) {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .liquidBanner {
+      background: url('../../Assets/Images/banner.png') 0% 0% / cover;
+      padding: 20px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      h4 {
+        color: #fff;
+        @include fluid-type(320px, 1920px, 14px, 16px);
+        padding-bottom: 10px;
+      }
+      p {
+        color: #fff;
+        padding-bottom: 10px;
+      }
+      a {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+    .createPairSec {
+      background-color: #000000;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      
+        button {
+          border-radius: 20px;
+          background-color: rgb(49, 28, 49);
+          color: rgb(252, 114, 255);
+          min-height: 40px;
+          height: 100%;
+          @include fluid-type(320px, 1920px, 14px, 16px);
+          min-width: 120px;
+          width: fit-content;
+          padding: 10px;
+          font-weight: 600;
+          margin-right: 10px;
+          &:hover,
+          :active,
+          :focus,
+          :focus-within,
+          :focus-visible {
+            background-color: rgb(49, 28, 49) !important;
+            opacity: 0.4;
+            color: rgb(252, 114, 255);
+          }
+        }
+      }
+
+    .configureForm {
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%;
+      min-width: 500px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-height: 465px;
+      height: 100%;
+      @media screen and (max-width: 900px) {
+        min-width: 300px;
+        border: none;
+      }
+      .addLiqbottomSec {
+        padding-top: 30px;
+        display: flex;
+        @media (max-width: 991px) {
+          flex-direction: column;
+          gap: 12px;
+        }
+        // gap: 40px;
+        .leftdata {
+          max-width: 350px;
+          width: 100%;
+          h4 {
+            font-weight: 600;
+            color: #fff;
+            @include fluid-type(320px, 1920px, 14px, 16px);
+            padding-bottom: 8px;
+          }
+          p {
+            color: rgba(255, 255, 255, 0.6);
+            @include fluid-type(320px, 1920px, 12px, 14px);
+            font-weight: 300;
+            max-width: 293px;
+          }
+        }
+        .right {
+          position: relative;
+          width: 100%;
+          .topSelect {
+            min-width: 140px;
+            width: 100%;
+          }
+          .centered-button {
+            button {
+              width: 100%;
+              border-radius: 10px;
+              background-color: rgb(49, 28, 49);
+              height: 60px;
+              color: rgb(252, 114, 255);
+              @include fluid-type(320px, 1920px, 14px, 16px);
+              margin-top: 5px;
+              font-weight: 600;
+              margin-top: 10px;
+              &:hover,
+              :active,
+              :focus,
+              :focus-within,
+              :focus-visible {
+                background-color: rgb(49, 28, 49) !important;
+                opacity: 0.4;
+                color: rgb(252, 114, 255);
+              }
+            }
+          }
+          .ethDiv {
+            background-color: rgba(1, 1, 1, 0.3);
+            border-radius: 20px;
+            margin-bottom: 15px;
+            border: 1px solid #3f3f3f;
+            padding: 15px 20px;
+            .ethfirst,
+            .ethsecond {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              h4 {
+                color: rgb(155, 155, 155);
+                @include fluid-type(320px, 1920px, 20px, 26px);
+              }
+            }
+            .ethsecond {
+              padding-top: 20px;
+              h4 {
+                @include fluid-type(320px, 1920px, 16px, 18px);
+                span {
+                  color: #fff;
+                  @include fluid-type(320px, 1920px, 13px, 14px);
+                }
+                svg {
+                  margin-right: 8px;
+                }
+              }
+              input {
+                height: 60px;
+                width: 90%;
+                background-color: transparent;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                color: #959595;
+                opacity: 0.8;
+                font-weight: 400;
+                padding-left: 10px;
+                font-size: 18px;
+                outline-width: 0px;
+              }
+            }
+            .css-13cymwt-control {
+              border-radius: 30px !important;
+              padding: 3px 5px !important;
+            }
+            .css-t3ipsp-control {
+              border-radius: 30px !important;
+              padding: 3px 5px !important;
+            }
+          }
+          .addressDiv {
+            margin-bottom: 15px;
+  
+            input {
+              width: 100%;
+              color: white;
+              height: 60px;
+              padding-left: 10px;
+              background-color: rgba(1, 1, 1, 0.3);
+              border-radius: 10px;
+              border: 1px solid #3f3f3f;
+              outline-width: 0px;
+            }
+          }
+          .pairDiv {
+            background-color: rgba(1, 1, 1, 0.3);
+            border-radius: 20px;
+            margin-bottom: 15px;
+            border: 1px solid #3f3f3f;
+            padding: 15px 20px;
+            .ethfirst,
+            .ethsecond {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              h4 {
+                color: rgb(155, 155, 155);
+                @include fluid-type(320px, 1920px, 20px, 26px);
+              }
+            }
+            .ethsecond {
+              padding-top: 2px;
+              h4 {
+                @include fluid-type(320px, 1920px, 16px, 18px);
+                span {
+                  color: #fff;
+                  @include fluid-type(320px, 1920px, 13px, 14px);
+                }
+                svg {
+                  margin-right: 8px;
+                }
+              }
+              input {
+                height: 60px;
+                width: 90%;
+                background-color: transparent;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                color: #959595;
+                opacity: 0.8;
+                font-weight: 400;
+                padding-left: 10px;
+                font-size: 18px;
+                outline-width: 0px;
+              }
+            }
+            .css-13cymwt-control {
+              border-radius: 30px !important;
+              padding: 3px 5px !important;
+            }
+            .css-t3ipsp-control {
+              border-radius: 30px !important;
+              padding: 3px 5px !important;
+            }
+          }
+        }
+      }
+      .form-container {
+        min-width: 400px;
+        width: 90%;
+      }
+      .success-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        min-height: 100px;
+        height: 100%;
+        background-color: rgb(28, 49, 36);
+        color: rgb(154, 255, 114);
+        font-weight: 500;
+        button {
+          width: 100%;
+          color: rgb(151, 151, 151);
+          font-size: 14px;
+          font-weight: 300;
+          background-color: transparent;
+          border: none;
+        }
+      }
+      .editContainer {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+
+        button {
+          border-radius: 10px;
+          background-color: rgb(49, 28, 49);
+          height: 36px;
+          min-width: 70px;
+          color: rgb(252, 114, 255);
+          font-weight: 600;
+          &:hover,
+          :active,
+          :focus,
+          :focus-within,
+          :focus-visible {
+            background-color: rgb(49, 28, 49) !important;
+            opacity: 0.4;
+            color: rgb(252, 114, 255);
+          }
+        }
+      }
+      .input-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        label {
+          color: rgb(71, 68, 68);
+          font-size: 16px;
+          font-weight: 400;
+        }
+        input {
+          height: 60px;
+          width: 100%;
+          background-color: transparent;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid rgb(61, 61, 61);
+          color: #959595;
+          opacity: 0.8;
+          font-weight: 400;
+          padding-left: 10px;
+          font-size: 14px;
+          outline-width: 0px;
+        }
+      }
+
+      .centered-button {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        button {
+          width: 100%;
+          border-radius: 10px;
+          padding: 10px;
+          background-color: rgb(49, 28, 49);
+          height: 60px;
+          color: rgb(252, 114, 255);
+          @include fluid-type(320px, 1920px, 14px, 16px);
+          margin-top: 5px;
+          font-weight: 600;
+          margin-top: 10px;
+          &:hover,
+          :active,
+          :focus,
+          :focus-within,
+          :focus-visible {
+            background-color: rgb(49, 28, 49) !important;
+            opacity: 0.4;
+            color: rgb(252, 114, 255);
+          }
+        }
+      }
+    }
+    .connectYourLiq {
+      color: #fff;
+      text-align: center;
+      padding-top: 40px;
+    }
+    .AddLeqSec {
+      padding-bottom: 60px;
+    }
+    .addLiq {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+      .createNewPool {
+        padding: 35px 0;
+        display: flex;
+        gap: 20px;
+        align-items: baseline;
+        h3 {
+          font-weight: 600;
+          color: #fff;
+          @include fluid-type(320px, 1920px, 18px, 24px);
+        }
+        p {
+          color: rgba(255, 255, 255, 0.6);
+          @include fluid-type(320px, 1920px, 14px, 16px);
+          font-weight: 300;
+        }
+      }
+    }
+    .addLiqbottomSec {
+      padding-top: 30px;
+      display: flex;
+      @media (max-width: 991px) {
+        flex-direction: column;
+        gap: 12px;
+      }
+      // gap: 40px;
+      .leftdata {
+        max-width: 350px;
+        width: 100%;
+        h4 {
+          font-weight: 600;
+          color: #fff;
+          @include fluid-type(320px, 1920px, 14px, 16px);
+          padding-bottom: 8px;
+        }
+        p {
+          color: rgba(255, 255, 255, 0.6);
+          @include fluid-type(320px, 1920px, 12px, 14px);
+          font-weight: 300;
+          max-width: 293px;
+        }
+      }
+      .right {
+        position: relative;
+        width: 100%;
+        .btn {
+          border-radius: 10px;
+          padding: 10px;
+          background-color: rgb(49, 28, 49);
+          min-height: 40px;
+          min-width: 200px;
+          width: 100%;
+          color: rgb(252, 114, 255);
+          @include fluid-type(320px, 1920px, 14px, 16px);
+          margin-top: 5px;
+          font-weight: 600;
+          margin-top: 10px;
+          &:hover,
+          :active,
+          :focus,
+          :focus-within,
+          :focus-visible {
+            background-color: rgb(49, 28, 49) !important;
+            opacity: 0.4;
+            color: rgb(252, 114, 255);
+          }
+        }
+        .topSelect {
+          min-width: 140px;
+          width: 100%;
+        }
+        .centered-button {
+          button {
+            width: 100%;
+            border-radius: 10px;
+            background-color: rgb(49, 28, 49);
+            height: 60px;
+            color: rgb(252, 114, 255);
+            @include fluid-type(320px, 1920px, 14px, 16px);
+            margin-top: 5px;
+            font-weight: 600;
+            margin-top: 10px;
+            &:hover,
+            :active,
+            :focus,
+            :focus-within,
+            :focus-visible {
+              background-color: rgb(49, 28, 49) !important;
+              opacity: 0.4;
+              color: rgb(252, 114, 255);
+            }
+          }
+        }
+        .ethDiv {
+          background-color: rgba(1, 1, 1, 0.3);
+          border-radius: 20px;
+          margin-bottom: 15px;
+          border: 1px solid #3f3f3f;
+          padding: 15px 20px;
+          .ethfirst,
+          .ethsecond {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h4 {
+              color: rgb(155, 155, 155);
+              @include fluid-type(320px, 1920px, 20px, 26px);
+            }
+          }
+          .ethsecond {
+            padding-top: 20px;
+            h4 {
+              @include fluid-type(320px, 1920px, 16px, 18px);
+              span {
+                color: #fff;
+                @include fluid-type(320px, 1920px, 13px, 14px);
+              }
+              svg {
+                margin-right: 8px;
+              }
+            }
+            input {
+              height: 60px;
+              width: 90%;
+              background-color: transparent;
+              border-radius: 15px;
+              display: flex;
+              flex-direction: column;
+              color: #959595;
+              opacity: 0.8;
+              font-weight: 400;
+              padding-left: 10px;
+              font-size: 18px;
+              outline-width: 0px;
+            }
+          }
+          .css-13cymwt-control {
+            border-radius: 30px !important;
+            padding: 3px 5px !important;
+          }
+          .css-t3ipsp-control {
+            border-radius: 30px !important;
+            padding: 3px 5px !important;
+          }
+        }
+        .addressDiv {
+          margin-bottom: 15px;
+
+          input {
+            width: 100%;
+            color: white;
+            height: 60px;
+            padding-left: 10px;
+            background-color: rgba(1, 1, 1, 0.3);
+            border-radius: 10px;
+            border: 1px solid #3f3f3f;
+            outline-width: 0px;
+          }
+        }
+        .pairDiv {
+          background-color: rgba(1, 1, 1, 0.3);
+          border-radius: 20px;
+          margin-bottom: 15px;
+          border: 1px solid #3f3f3f;
+          padding: 15px 20px;
+          .ethfirst,
+          .ethsecond {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h4 {
+              color: rgb(155, 155, 155);
+              @include fluid-type(320px, 1920px, 20px, 26px);
+            }
+          }
+          .ethsecond {
+            padding-top: 2px;
+            h4 {
+              @include fluid-type(320px, 1920px, 16px, 18px);
+              span {
+                color: #fff;
+                @include fluid-type(320px, 1920px, 13px, 14px);
+              }
+              svg {
+                margin-right: 8px;
+              }
+            }
+            input {
+              height: 60px;
+              width: 90%;
+              background-color: transparent;
+              border-radius: 15px;
+              display: flex;
+              flex-direction: column;
+              color: #959595;
+              opacity: 0.8;
+              font-weight: 400;
+              padding-left: 10px;
+              font-size: 18px;
+              outline-width: 0px;
+            }
+          }
+          .css-13cymwt-control {
+            border-radius: 30px !important;
+            padding: 3px 5px !important;
+          }
+          .css-t3ipsp-control {
+            border-radius: 30px !important;
+            padding: 3px 5px !important;
+          }
+        }
+      }
+    }
+    .selectIcon {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .css-13cymwt-control {
+      background-color: transparent !important;
+      border-radius: 10px !important;
+      border-color: rgb(41, 42, 41) !important;
+      min-width: 138px !important;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+    .css-1jqq78o-placeholder {
+      color: #fff !important;
+    }
+    .containerAdLiq {
+      max-width: 1000px;
+      width: 100%;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    .css-t3ipsp-control {
+      background-color: transparent !important;
+      border: 1px solid rgb(41, 42, 41) !important;
+      border-radius: 10px !important;
+      outline: none !important;
+      min-width: 138px !important;
+      box-shadow: none !important;
+    }
+    .css-1nmdiq5-menu {
+      background-color: rgb(41, 42, 41) !important;
+      color: rgb(113, 109, 109) !important;
+      li {
+        background-color: red !important;
+        &:hover {
+          background-color: green !important;
+        }
+      }
+    }
+    .css-1u9des2-indicatorSeparator {
+      width: unset !important;
+      background-color: unset !important;
+    }
+    .plusBtn {
+      background-color: black;
+      border-radius: 50%;
+      color: $white;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: 20px;
+      position: absolute;
+      top: 34.6%;
+      right: 50%;
+      @media (max-width: 1880px) {
+        right: 48%;
+      }
+      &:hover,
+      :active,
+      :target,
+      :focus,
+      :focus-within {
+        background-color: black;
+        color: $white;
+      }
+    }
+    .selectItm {
+      @media (max-width: 991px) {
+        width: 306px;
+      }
+    }
+  }
+}
+.pinkbtn {
+  border-radius: 10px;
+  background-color: rgb(49, 28, 49);
+  height: 50px;
+  color: rgb(252, 114, 255);
+  font-weight: 600;
+  &:hover {
+    background-color: rgb(49, 28, 49);
+    opacity: 0.7;
+    color: rgb(252, 114, 255) !important;
+  }
+}

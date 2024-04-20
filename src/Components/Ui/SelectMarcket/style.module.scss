@@ -1,0 +1,184 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+.selectMarket {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  gap: 25px;
+  padding: 0px 18px;
+  // max-width: 323px;
+  width: 100%;
+  border-right: 1px solid $bordergrey;
+  @media (max-width: 1780px) {
+    padding: 0px 16px;
+    gap: 18px;
+  }
+  @media (max-width: 1366px) {
+    border-top: 1px solid $bordergrey;
+  }
+  @media (max-width: 585px) {
+    padding: 0 16px;
+    z-index: 999;
+    height: 60px;
+    border-bottom: 1px solid $bordergrey;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: 10px;
+  }
+  &__currency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 585px) {
+      gap: 5px;
+    }
+
+    p {
+      white-space: nowrap;
+      margin: 0px;
+      font-weight: 600;
+      @include fluid-type(320px, 1920px, 14px, 16px);
+    }
+  }
+
+  &__select {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    @media (max-width: 585px) {
+      white-space: nowrap;
+      gap: 5px;
+    }
+
+    p {
+      margin: 0px;
+      color: $darktext;
+    }
+  }
+}
+
+.priceVolume {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  width: 100%;
+  // overflow-x: auto;
+  background: #E6F7F5;
+  // box-shadow: inset 0px 0px 12px #00000030;
+  opacity: 1;
+  padding: 5px 6px;
+
+  @media (max-width: 991px) {
+    padding: 15px;
+  }
+  @media (max-width: 767px) {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    justify-content: space-around;
+    @media only screen and (max-width: 1700px) and (min-width: 1367px) {
+      gap: 12px;
+    }
+    @media (max-width: 1366px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 1200px) {
+      gap: 20px 25px;
+      padding: 0;
+      overflow: hidden;
+    }
+    @media (max-width: 991px) {
+      justify-content: flex-start;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    li {
+      @media (max-width: 991px) {
+        max-width: 20.33%;
+        width: 100%;
+      }
+      @media (max-width: 767px) {
+        max-width: initial;
+        width: initial;
+      }
+      // @media (max-width: 575px) {
+      //   max-width: 40.33%;
+      //   width: 100%;
+      // }
+      h4 {
+        @include fluid-type(320px, 1920px, 12px, 14px);
+        margin-bottom: 0px;
+        white-space: nowrap;
+        font-weight: 600;
+        @media only screen and (max-width: 1700px) and (min-width: 1367px) {
+          @include fluid-type(1367px, 1700px, 10px, 13px);
+
+          strong {
+            @include fluid-type(1367px, 1700px, 10px, 13px);
+          }
+        }
+      }
+
+      p {
+        margin: 0px;
+        @include fluid-type(320px, 1920px, 10px, 12px);
+        white-space: nowrap;
+        color: $borderdarkgrey;
+      }
+    }
+  }
+}
+
+// Drawer
+
+.marketdrop {
+  background-color: $white;
+  width: 100%;
+  // min-width: 525px;
+  overflow: auto;
+  padding: 20px 20px 20px 20px;
+  margin: 0 auto;
+
+  // box-shadow: 0px 6px 10px #00000029;
+  border-radius: 10px;
+  @media (max-width: 585px) {
+    padding: 15px;
+    background-color: $bg-light-gray-F3F3F3;
+    box-shadow: 0px 6px 10px #f3f3f329;
+  }
+  .input_custum {
+    padding-left: 50px !important;
+  }
+  .ant-dropdown {
+    min-width: 500px !important;
+    width: 100%;
+  }
+  h2 {
+    max-width: 400px;
+    width: 100%;
+  }
+  .marketdropInnerdrop {
+    // @media (max-width:480px) {
+    //   width: 500px;
+    //   overflow: auto;
+    //   padding: 12px;
+    // }
+  }
+}
+.tezt {
+  max-width: 600px;
+  width: 100%;
+}

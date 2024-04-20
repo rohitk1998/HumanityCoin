@@ -1,0 +1,193 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+.inputLayout {
+  position: relative;
+  // margin-bottom: 10px;
+
+  .input_custum {
+    border: 1px solid;
+    border-radius: 40px;
+    opacity: 1;
+    width: 100%;
+    height: 40px;
+    box-shadow: none;
+    position: relative !important;
+    background-color: transparent;
+    padding-left: 16px;
+    border-color: $bordergrey;
+
+    // color: $whiteblackBase;
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      // border-color: $CommonButton !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    &.innerTxtInput {
+      padding-right: 60px;
+    }
+
+    &.currencyInput {
+      padding-right: 60px;
+      height: 40px;
+      background-color: $bgderkgrey;
+
+      @media (max-width:585px) {
+        height: 35px;
+
+      }
+    }
+
+    &.referralInput {
+      padding-right: 60px;
+      height: 40px;
+      background-color: $white;
+      color: $borderdarkgrey;
+      margin-bottom: 24px;
+      &:hover{
+        border-color: #00a79e;
+      }
+
+      &::placeholder {
+        color: $borderdarkgrey;
+      }
+
+      @media (max-width:585px) {
+        height: 40px;
+
+      }
+    }
+  }
+
+  .inputInnerTxt {
+    padding-right: 100px;
+  }
+
+  .eyeIcon {
+    input {
+      background: transparent;
+      // color: $whiteblackBase;
+    }
+
+    svg path {
+      fill: #8d8d8d;
+    }
+  }
+
+  .innerTxt {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fcd535;
+    cursor: pointer;
+  }
+
+  .currency {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    height: 38px;
+    width: 60px;
+    text-align: center;
+    transform: translateY(-50%);
+    color: $borderdarkgrey;
+    cursor: pointer;
+    background-color: $bgderkgrey;
+    border-radius: 0px 20px 20px 0px;
+    padding-top: 7px;
+    border-left: 1px solid $borderdarkgrey;
+
+    @media (max-width:585px) {
+      top: 22px;
+      height: 32.5px;
+
+    }
+
+  }
+
+  .inputInnerLargeTxt {
+    padding-right: 185px;
+  }
+
+  .innerTxtImg {
+    position: absolute;
+    right: 16px;
+    top: 55%;
+    // transform: translateY(-50%);
+    color: #555863;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+
+  .inputsearch_ryt {
+    padding-right: 45px;
+    border: 0;
+    background-color: #f5f5f5;
+    border-radius: 24px;
+  }
+
+  .searchImg {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .searchimgryt {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .referralimgryt {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .label {
+    letter-spacing: 0px;
+    // color: $titlehead;
+    opacity: 1;
+    width: 100%;
+    text-align: left;
+    // font-weight: 500;
+    @include fluid-type(320px, 1920px, 14px, 16px);
+    display: flex;
+    padding-bottom: 8px;
+  }
+
+  .ant-input-affix-wrapper {
+
+    &:focus,
+    &:hover {
+      border: 1px solid $baseblue !important;
+
+    }
+  }
+}
+
+.inputLayout {
+
+
+  .inputSearch {
+    padding-left: 59px;
+    height: 40px;
+  }
+}

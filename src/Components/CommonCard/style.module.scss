@@ -1,0 +1,46 @@
+@import "../Assets/Styles/_vars.scss";
+@import "../Assets/Styles/_mixins.scss";
+
+.profileCardSec {
+  box-shadow: 0px 0px 12px #00000012;
+  padding: 28px 50px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__heading {
+    margin-bottom: 10px;
+
+    h2 {
+      color: $darktext;
+      @include fluid-type(320px, 1920px, 16px, 18px);
+    }
+  }
+
+  &__profileInnerSec {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      color: $text-80838E;
+      @include fluid-type(320px, 1920px, 14px, 16px);
+    }
+
+    p {
+      color: $darktext;
+      @include fluid-type(320px, 1920px, 14px, 16px);
+      img {
+        border: 1px solid $bordergrey;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+.docImg {
+  width: 120px;
+  height: 70px;
+  object-fit: contain;
+  padding: 6px;
+}

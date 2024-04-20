@@ -1,0 +1,44 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+.inputSelect {
+  position: relative;
+  .input_custum {
+    z-index: 1;
+    border: 1px solid;
+    border-radius: 5px;
+    opacity: 1;
+    width: 100%;
+    height: 45px;
+    box-shadow: none;
+    position: relative !important;
+    background-color: transparent;
+    cursor: pointer;
+    border-color: $staticBorder;
+    // color: $whiteblackBase;
+    &:focus {
+      box-shadow: none;
+    }
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      border-color: $CommonButton !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+  .innerTxt {
+    position: absolute;
+    right: 16px;
+    top: 55%;
+    // transform: translateY(-50%);
+    color: #555863;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+.btnCustom.ant-btn {
+  width: 100%;
+  font-family: $baseFontBold;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  // margin: 16px 0px;
+  @include fluid-type(320px, 1920px, 14px, 14px);
+  // color: $checkboxparagraph;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.25s;
+  border: 0px;
+  box-shadow: none;
+  &:hover {
+    opacity: 0.9;
+
+  }
+
+  &.lessPadding {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &.garyBtn {
+    background-color: $bgderkgrey;
+    border: 0px !important;
+  }
+
+  &.black {
+    background-color: $darktext;
+    border: 0px !important;
+  }
+
+  &.lytgaryBtn {
+    background-color: $bgderkgrey!important;
+    color: $darktext;
+    height: 40px;
+    border: 0px !important;
+    padding: 10px 20px;
+    border-radius: 40px;
+
+  }
+  &.whitebackRed {
+    background-color: #fff;
+    color: $red;
+    height: 60px;
+    border: 1px solid $bordergrey !important;
+    padding: 20px;
+    border-radius: 40px;
+  }
+  &.custmgren {
+    color: #fff;
+    border: 0px !important;
+  }
+
+  &.greenbtn {
+    background-color: #00a79e;
+    border-radius: 50px;
+    padding:  25px 10px;
+    color:#fff;
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  &.redbtn {
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  &.notstylebtn {
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  &.yelloborderbgnone {
+    background-color: #fff;
+  }
+
+  &.lytgarydffr {
+    color: $borderdarkgrey;
+  }
+
+  &.medium {
+    height: 29px;
+  }
+
+  &.large {
+    height: 45px;
+  }
+}
+.sellRed{
+  background-color: $baseblue;
+}

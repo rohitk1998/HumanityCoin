@@ -1,0 +1,186 @@
+@import url('../../Assets/Styles/_vars.scss');
+@import url('../../Assets/Styles/_mixins.scss');
+.swapHeader {
+  background-color: rgb(0 0 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+  padding: 10px !important;
+  @media (max-width: 1199px) {
+    display: none;
+  }
+  .rightsec {
+    display: flex;
+    gap: 30px;
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      height: 40px;
+    }
+    .ant-select-selection-item {
+      display: flex !important;
+      align-items: center !important;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background: rgb(19, 19, 19) !important;
+      color: #fff;
+      border: 1px solid rgb(28, 29, 28) !important;
+      border-radius: 20px;
+    }
+    .ant-select-arrow {
+      span {
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  .dropdownheader {
+    margin-right: 10px;
+    .dropdownItems {
+      .ant-dropdown-menu {
+        background-color: black;
+      }
+    }
+    padding: 20px;
+    &:hover {
+      padding: 10px 20px;
+      background-color: rgba(75, 71, 71, 0.3);
+      border-radius: 4px;
+    }
+    .ant-dropdown-link {
+      span {
+        svg {
+          fill: rgb(200, 192, 192);
+        }
+      }
+    }
+  }
+  .connectBtn {
+    border-radius: 10px;
+    background-color: rgb(49, 28, 49);
+    height: 36px;
+    color: rgb(252, 114, 255);
+    font-weight: 600;
+    &:hover,
+    :active,
+    :focus,
+    :focus-within,
+    :focus-visible {
+      background-color: rgb(49, 28, 49) !important;
+      opacity: 0.4;
+      color: rgb(252, 114, 255);
+    }
+  }
+}
+.layout {
+  display: flex;
+  background-color: #191b1f !important;
+  flex-direction: column;
+  min-height: 100vh;
+  .main {
+    flex-grow: 1;
+    height: 100%;
+    // background-color: red;
+  }
+}
+.ant-dropdown {
+  .ant-dropdown-menu {
+    background-color: #111316;
+    min-width: 150px;
+    border: 1px solid #242424;
+    display: block;
+    border-radius: 10px;
+    li {
+      background-color: #111316;
+      color: #ffff;
+    }
+  }
+}
+.ant-input-group {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(19, 19, 19);
+  .ant-input {
+    background-color: rgb(19, 19, 19);
+    color: rgb(200, 192, 192);
+    height: 40px;
+    border: 1px solid rgb(113, 108, 108);
+    &::placeholder {
+      color: gray;
+    }
+  }
+}
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child {
+  display: none;
+}
+.ant-input-affix-wrapper {
+  background-color: rgb(19, 19, 19);
+  border: none !important;
+  span {
+    svg {
+      fill: #fff;
+      font-size: 20px;
+    }
+  }
+}
+.ant-input-search .ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+.ant-input-group > .ant-input-affix-wrapper:not(:last-child) .ant-input {
+  border: 0;
+  padding-left: 15px;
+}
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: aquamarine;
+}
+.ant-btn {
+  border: 1px solid rgb(54 55 54) !important;
+  &:hover,
+  :active {
+    border-color: aquamarine;
+    border: 1px solid transparent;
+  }
+}
+.ant-select-dropdown {
+  background-color: #111316 !important;
+  border: 1px solid #242424;
+  width: 160px !important;
+  border-radius: 10px;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #242424;
+  color: #fff;
+}
+.ant-select-item {
+  color: #fff;
+  &:hover {
+    background-color: #242424;
+  }
+}
+.resSearch {
+  max-width: 260px;
+  min-width: 120px;
+  width: 100%;
+  margin-right: 13px;
+}
+.resHeader {
+  display: none;
+  .uniswapIcons{
+    // filter:invert(1);
+    width: 35px;
+  }
+  @media (max-width: 1199px) {
+    display: block;
+    height: 82px;
+    padding: 5px 40px;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0 0 0);
+    padding: 20px;
+    border-bottom: 1px solid rgb(36, 34, 34);
+  }
+}
