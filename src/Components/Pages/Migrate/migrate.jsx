@@ -46,6 +46,7 @@ export default function Migrate() {
     } catch (error) {
       console.log('Error migrating tokens:', error.message);
       // Handle error, display message to user, etc.
+      //done
     }
   };
 
