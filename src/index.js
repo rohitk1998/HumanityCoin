@@ -20,6 +20,7 @@ root.render(
       <PersistGate loading={null} persistor={persister}>
           <Web3ModalProvider>
             <App />
+            
           </Web3ModalProvider>
       </PersistGate>
       </Provider>
