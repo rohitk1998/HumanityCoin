@@ -166,7 +166,7 @@ const tokenImagesArray = [
     image_link: "https://s2.coinmarketcap.com/static/img/coins/64x64/11840.png",
   },
   {
-    name: "Arbitum",
+    name: "Arbitrum",
     image_link: "https://s2.coinmarketcap.com/static/img/coins/64x64/11841.png",
   },
   {
