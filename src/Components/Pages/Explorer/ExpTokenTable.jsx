@@ -110,12 +110,73 @@ const tokenImagesArray=
             {   "name": "Render",
                 "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/5690.png"
             },
-            {   "name": "Pepe",
-                "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/24478.png"
-            },
             {   "name": "Cosmos",
+                "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/3794.png"
+            },
+            {   "name": "Cronos",
                 "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/3635.png"
-            }
+            },
+            {    "name": "Pepe",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/24478.png"
+        },
+        {    "name": "Mantle",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/27075.png"
+        },
+        {   "name": "Filecoin",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/2280.png"
+        },
+        {   "name": "Stacks",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/4847.png"
+        },
+        {   "name": "Immutable",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/10603.png"
+        },
+        {   "name": "dogwifhat",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/28752.png"
+        },
+        {   "name": "Stellar",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/512.png"
+        },
+        {   "name": "Bittensor",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/22974.png"
+        },
+        {   "name": "OKB",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/3897.png"
+        },
+        {   "name": "Optimism",
+            "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/11840.png"
+        },
+        {    "name": "Arbitum",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/11841.png"
+    },
+    {    "name": "The Graph",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/6719.png"
+    },
+    {   "name": "VeChain",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/3077.png"
+    },
+    {   "name": "Maker",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/1518.png"
+    },
+    {   "name": "Arweave",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/5632.png"
+    },
+    {   "name": "Sui",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/20947.png"
+    },
+    {   "name": "Kaspa",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/20396.png"
+    },
+    {   "name": "Monero",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/328.png"
+    },
+    {   "name": "Injective",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/7226.png"
+    },
+    {   "name": "Theta Network",
+        "image_link": "https://s2.coinmarketcap.com/static/img/coins/64x64/2416.png"
+    },
+        
         
     
     
@@ -154,7 +215,7 @@ const ExpTokenTable = () => {
                     const bMarketCap = b.quote && b.quote.USD ? b.quote.USD.market_cap : 0;
                     return bMarketCap - aMarketCap;
                 });
-                const topN = 30;
+                const topN = 50;
                 const topCryptos = sortedCryptos.slice(0, topN);
                 setTokenData(topCryptos);
                 console.log(topCryptos); // Log the sorted and sliced data
@@ -164,8 +225,8 @@ const ExpTokenTable = () => {
         };
 
         fetchData();
-        const interval = setInterval(fetchData, 2000); // Call every 5 seconds
-      return () => clearInterval(interval); // Cleanup
+    //     const interval = setInterval(fetchData, 2000); // Call every 5 seconds
+    //   return () => clearInterval(interval); // Cleanup
 
     }, [apikey]); // Depend on apikey to re-fetch if it changes
 
@@ -242,6 +303,26 @@ const ExpTokenTable = () => {
                 </p>
             ),
         },
+        {
+            title: "Market Cap",
+            dataIndex: "market_cap",
+            key: "market_cap",
+            render: (text, record) => (
+                <p className="hashdata">
+                    ${(record.market_cap / 1000000).toFixed(2)}M
+                </p>
+            ),
+        },
+        {
+            title: "Circulating Supply",
+            dataIndex: "circulating_supply ",
+            key: "circulating_supply ",
+            render: (text, record) => (
+                <p className="hashdata">
+                    ${(record.circulating_supply / 1000000).toFixed(2)}M
+                </p>
+            ),
+        },
     ];
 
     const mappedData = tokenData.map((item, index) => ({
@@ -254,6 +335,8 @@ const ExpTokenTable = () => {
         hourChange: item.quote.USD.percent_change_1h, // Assuming you want the 1-hour percentage change
         dayChange: item.quote.USD.percent_change_24h, // Assuming you want the 24-hour percentage change
         fdv: item.quote.USD.fully_diluted_market_cap, // Assuming 'circulating_supply' is what you mean by 'FDV'
+        market_cap: item.quote.USD.market_cap,
+        circulating_supply: item.circulating_supply,
         volume: item.quote.USD.volume_24h, // Assuming you want the 24-hour trading volume
         status: item.status, // Assuming 'status' is a valid property
     }));
