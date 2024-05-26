@@ -3,6 +3,7 @@ import MigratorAndFeeDistributorAbi from '../abi/MigratorAndFeeDistributor.json'
 import HumanityCoinABIs from '../abi/HumanityCoin.json';
 import RouterABIs from '../abi/Router.json';
 import FactoryABI from '../abi/Factory.json';
+import { useSelector } from 'react-redux';
 
 const MigratorAndFeeDistributorABI = MigratorAndFeeDistributorAbi.abi;
 
@@ -40,6 +41,7 @@ const ethers = require('ethers');
 const { Web3Provider } = require('@ethersproject/providers');
 
 export const useConnectMetamask = () => {
+  const { isConnected } = useSelector((state)=> state.app)
   const { ethereum } = window;
 
   const [contractInstance, setContractInstance] = useState(null);
@@ -51,8 +53,10 @@ export const useConnectMetamask = () => {
   const [factoryContractInstance, setFactoryContractInstance] = useState(null);
 
   const connect = async () => {
-    console.log('CONNECT FUNCTION IS WORKING');
-    if (ethereum) {
+    console.log('CONNECT FUNCTION IS WORKING',ethereum);
+    if (ethereum && isConnected) {
+      const accounts = await ethereum.request({method: "eth_requestAccounts"})
+      console.log('accounts',accounts);
       try {
         const web3Instance = new Web3Provider(ethereum);
         const signer = web3Instance.getSigner();

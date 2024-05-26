@@ -4,19 +4,22 @@ import { useSelector } from 'react-redux';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
 
 export default function TaxAndSwapForm() {
+
   const { open } = useWeb3Modal();
   const { contractInstance } = useConnectMetamask();
+
   const { isConnected } = useSelector((state) => state?.app);
+  const [isFormValid, setIsFormValid] = useState(true);
+  const [validationError, setValidationError] = useState('');
+  const [isEdit, setIsEdit] = useState(false);
   const [configureAddress, setConfigureAddress] = useState({
     _swapTrigger: '',
     _purchaseTax: '',
     _salesTax: '',
   });
-  const [isFormValid, setIsFormValid] = useState(true);
-  const [validationError, setValidationError] = useState('');
-  const [isEdit, setIsEdit] = useState(false);
 
-  const handleInputChange = (event) => {
+
+  const setFormInput = (event) => {
     console.log('event', event.target.value);
     configureAddress[event.target.id] = event.target.value;
     setConfigureAddress({ ...configureAddress });
@@ -64,7 +67,7 @@ export default function TaxAndSwapForm() {
       setValidationError('');
       setIsFormValid(true);
     };
-  }, [contractInstance]);
+  }, [contractInstance , isConnected]);
 
   const setFormData = async () => {
     if (contractInstance !== null && contractInstance !== 'null') {
@@ -138,7 +141,7 @@ export default function TaxAndSwapForm() {
                   placeholder="Enter amount"
                   value={configureAddress._swapTrigger}
                   onChange={(event) => {
-                    handleInputChange(event);
+                    setFormInput(event);
                   }}
                   disabled={!isEdit}
                 />
@@ -151,7 +154,7 @@ export default function TaxAndSwapForm() {
                   placeholder="Enter amount"
                   value={configureAddress?._purchaseTax}
                   onChange={(event) => {
-                    handleInputChange(event);
+                    setFormInput(event);
                   }}
                   disabled={!isEdit}
                 />
@@ -164,7 +167,7 @@ export default function TaxAndSwapForm() {
                   placeholder="Enter amount"
                   value={configureAddress?._salesTax}
                   onChange={(event) => {
-                    handleInputChange(event);
+                    setFormInput(event);
                   }}
                   disabled={!isEdit}
                 />

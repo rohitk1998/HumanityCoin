@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link as RouterLink,useNavigate } from 'react-router-dom';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { APP_NAVBAR_MENU, CHAIN_LIST, logoIcon } from '../../../utils/constant';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
 import { useAccount } from 'wagmi';
@@ -12,13 +12,12 @@ import './Header.scss';
 import { Menu, Input } from 'antd';
 import { rootName, appRootName } from '../../../utils/constant';
 import { publicRouteObj } from '../../../staticObjects';
-import swapicon from "../../Assets/Images/uniswap.svg";
+import swapicon from '../../Assets/Images/uniswap.svg';
 import { SearchOutlined } from '@ant-design/icons';
 import { StoreImages } from '../../Storeimgaes/StoreImages';
 // import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
 // import applestore from "../../Assets/Images/applestore.svg";
 // import playstore from "../../Assets/Images/playstor.svg";
-
 
 const connectAppButtonStyle = {
   minWidth: '150px',
@@ -43,38 +42,42 @@ export default function AppHeader() {
   const { open } = useWeb3Modal();
 
   const { address, isConnected } = useAccount();
-  const [ selectedChain, setSelectedChain ] = useState(CHAIN_LIST[0]);
+  const [selectedChain, setSelectedChain] = useState(CHAIN_LIST[0]);
 
   const { account, isConnected: isWalletConnected } = useSelector(
     (state) => state.app
   );
 
-  async function switchNetwork() {
-    // Check if MetaMask is installed and connected
-    if (window.ethereum) {
-      try {
-        // Request to switch network
-        await window.ethereum.request({
-          method: 'wallet_switchEthereumChain',
-          params: [{ chainId: '0x1' }], // Mainnet
-        });
-      } catch (error) {
-        // Handle errors
-        console.error('Error switching network:', error);
-      }
-    } else {
-      // MetaMask not detected
-      console.error('MetaMask is not installed');
-    }
-  }
+  // async function switchNetwork(chain_id) {
+  //   // Check if MetaMask is installed and connected
+  //   if (window.ethereum) {
+  //     try {
+  //       // Request to switch network
+  //       await window.ethereum
+  //         .request({
+  //           method: 'wallet_switchEthereumChain',
+  //           params: [{ chainId: '0x38' }], // Mainnet
+  //         })
+  //         .then((response) => console.log(response))
+  //         .catch((error) => console.log(error));
+  //     } catch (error) {
+  //       // Handle errors
+  //       console.error('Error switching network:', error);
+  //     }
+  //   } else {
+  //     // MetaMask not detected
+  //     console.error('MetaMask is not installed');
+  //   }
+  // }
 
   async function handleChange(value) {
     console.log(`Selected: ${value}`);
-     CHAIN_LIST.map((item)=> {
-      if(value === item.chainId){
-        setSelectedChain(item)
+    CHAIN_LIST.map((item) => {
+      if (value === item.chainId) {
+        // switchNetwork(item.chainId);
+        setSelectedChain(item);
       }
-     })
+    });
   }
 
   const onSearch = (value) => {
@@ -121,7 +124,12 @@ export default function AppHeader() {
                 color: '#747373',
               }}
             >
-              <img src={logoIcon} width={95} height={95} className='uniswapIcons' />
+              <img
+                src={logoIcon}
+                width={95}
+                height={95}
+                className="uniswapIcons"
+              />
               {APP_NAVBAR_MENU.map((menuItem) => {
                 return (
                   <div>
@@ -164,14 +172,12 @@ export default function AppHeader() {
           <div>
             <Select
               value={selectedChain}
-              style={{ minWidth: 120 , width:'100%' }}
+              style={{ minWidth: 120, width: '100%' }}
               onChange={handleChange}
             >
-           {
-            CHAIN_LIST.map((option)=> (
-              <Option value={option.chainId}>{option.key}</Option>
-            ))
-           }
+              {CHAIN_LIST.map((option) => (
+                <Option value={option.chainId}>{option.key}</Option>
+              ))}
             </Select>
           </div>
           <Button
@@ -187,8 +193,7 @@ export default function AppHeader() {
               height: '40px',
               border: ' 1px solid #716C6C',
             }}
-          >
-          </Button>
+          ></Button>
           <Button
             onClick={() => {
               open();
@@ -200,14 +205,19 @@ export default function AppHeader() {
         </div>
       </div>
       <div>
-        <div className='resHeader'>
-        <img src={logoIcon} width={120} height={120} className='uniswapIcons' />
-          <div className="resSearch">
-          <Search
-            placeholder="Search tokens and NFT collections"
-            onSearch={onSearch}
-            prefix={<SearchOutlined />}
+        <div className="resHeader">
+          <img
+            src={logoIcon}
+            width={120}
+            height={120}
+            className="uniswapIcons"
           />
+          <div className="resSearch">
+            <Search
+              placeholder="Search tokens and NFT collections"
+              onSearch={onSearch}
+              prefix={<SearchOutlined />}
+            />
           </div>
           <img
             src={ToggleIcon}
@@ -237,7 +247,7 @@ export default function AppHeader() {
           >
             <div>
               <RouterLink to={`${appRootName}${publicRouteObj.swap}`}>
-               Swap
+                Swap
               </RouterLink>
               <RouterLink to={`${appRootName}${publicRouteObj.explorer}`}>
                 Explore

@@ -17,13 +17,15 @@ export default function Migrate() {
   const HandleInputchange = (event) => {
     let isValid = true;
     let inputVal = addZeroToDecimalinput(event.target.value);
-    if (inputVal === '' || regex(10).test(inputVal)) {
+    if(inputVal == '0' || inputVal == ''){
+      setOldAmount('');
+      isValid = false;
+      setNewAmount('0.00');
+    }
+    else if (regex(10).test(inputVal)) {
       setOldAmount(inputVal);
       const newTokenAmount = (900000000 * parseFloat(inputVal)) / 1000000000000;
       setNewAmount(newTokenAmount.toFixed(4)); // Round to 4 decimal places
-    }
-    if (inputVal === '') {
-      isValid = false;
     }
     setIsFormValid(isValid);
   };
@@ -31,7 +33,7 @@ export default function Migrate() {
   const handleMigrateToken = async () => {
     try {
       const migrateContractAddress = contractInstance.target;
-      console.log('oldAmount',oldAmount , (Number(oldAmount) * Number(1000000000000000000)).toString());
+      console.log('oldAmount',oldAmount , (Number(oldAmount) * Number(1000000000000000000)).toString(),tokenAContractInstance);
       const txAprrove = await tokenAContractInstance.approve(
         migrateContractAddress,
         (Number(oldAmount) * Number(1000000000000000000)).toString(),
@@ -48,6 +50,13 @@ export default function Migrate() {
     }
   };
 
+  const formatBalance = async ()=>{
+    if(tokenAContractInstance !== null){
+      const _oldTokenBalance = await tokenAContractInstance.balanceOf('0x511c4d2B9FFF5431dd1Bc2Af336C74431c1668ba')
+      console.log('_oldTokenBalance',(Number(_oldTokenBalance) / 1000000000000000000).toString());
+    }
+  }
+
   useEffect(() => {
     return () => {
       setOldAmount('');
@@ -55,6 +64,14 @@ export default function Migrate() {
       setIsFormValid(false);
     };
   }, []);
+
+
+  useEffect(()=> {
+   if(tokenAContractInstance !== null ){
+   console.log('tokenAContractInstance',tokenAContractInstance);
+    formatBalance();
+   }
+  },[tokenAContractInstance])
 
   return (
     <div className="migrate">
@@ -83,25 +100,6 @@ export default function Migrate() {
               />
             </div>
           </div>
-          {/* <Button
-            block
-            className="connectbtn"
-            onClick={() => {
-              if (isConnected && isFormValid) {
-                handleMigrateToken();
-              } else if (isConnected && !isFormValid) {
-                console.log('NOTHING TO DO');
-              } else {
-                open();
-              }
-            }}
-          >
-            {isConnected && isFormValid
-              ? 'Migrate'
-              : isConnected && !isFormValid
-              ? 'Enter Amount To Migrate'
-              : 'Connect Wallet'}
-          </Button> */}
           {(
         <div className="centered-button">
           {isConnected && isFormValid ? (
