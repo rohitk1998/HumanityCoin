@@ -20,7 +20,7 @@ const Factory = FactoryABI.abi;
 // const tokenA = '0x2F1412b1003c353FcB95e9657135993f768FE7dA';
 // const tokenB = '0xd1A1fb1f2793692ce3FedDb3c52BA8Ec28DF06B3';
 
-// mine addresses
+//mine addresses
 // const contractAddress = '0xe3F4D10D1FC71fC4FD93534E0991bD79C63C8C1E';
 // const humanityCoinContractAddress ='0x63F7ef35cBB61390C3eD12D66CF3DF8E0A8f3F2e';
 // const routerAddress = '0x2704b2c3F0AF48EF36cB26B622E16A2436Fc595f';

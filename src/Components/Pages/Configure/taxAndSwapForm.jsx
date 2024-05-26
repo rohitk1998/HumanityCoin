@@ -40,8 +40,7 @@ export default function TaxAndSwapForm() {
         const tx = await contractInstance?.configureTaxAndSwap(
           3000,
           3000,
-          4000,
-          { gasLimit : '2000000' }
+          4000
         );
         console.log('tx', tx);
         const receipt = tx.hash;

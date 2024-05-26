@@ -143,7 +143,7 @@ export default function HMNTokenAddress({ isSelected }) {
         </div>
       )}
       <div className="input-row">
-        <label htmlFor="_newHMNToken">Old Token Address</label>
+        <label htmlFor="_newHMNToken">Old HMN Token</label>
         <input
           type="text"
           id="_newHMNToken"
@@ -156,7 +156,7 @@ export default function HMNTokenAddress({ isSelected }) {
         />
       </div>
       <div className="input-row">
-        <label htmlFor="_oldHMNToken">New Token Address</label>
+        <label htmlFor="_oldHMNToken">New HMN Token</label>
         <input
           type="text"
           id="_oldHMNToken"
