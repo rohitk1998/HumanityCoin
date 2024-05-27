@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
 import { useSelector } from 'react-redux';
 import { useWeb3Modal } from '@web3modal/wagmi/react';
-import { setAmountPrecision } from '../../../helpers/setAmountPrecision';
 
 export default function AddTokenToMigrateReseve({ isSelected }) {
   const { open } = useWeb3Modal();
@@ -111,9 +110,7 @@ export default function AddTokenToMigrateReseve({ isSelected }) {
 
       const amount = await contractInstance.migrationReserve();
 
-      const formattedAmount = setAmountPrecision(amount)
-
-      setBal(formattedAmount.toString());
+      setBal(amount.toString());
     }
   };
 
@@ -193,7 +190,7 @@ export default function AddTokenToMigrateReseve({ isSelected }) {
                 }}
                 disabled={!isEdit}
               />
-              <label htmlFor="amount">Migrate Reserve Balance : {bal} HMN</label>
+              <label htmlFor="amount">Balance : {bal} HMN</label>
             </div>
             {isEdit && (
               <div className="centered-button">

@@ -18,10 +18,15 @@ export default function Send() {
   const [txnHash, setHash] = useState(false);
 
   const handleFiatAmountInput = (event) => {
+    let isValid = true;
     let inputVal = addZeroToDecimalinput(event.target.value);
     if (inputVal === '' || regex(10).test(inputVal)) {
       setFiatAmount(inputVal);
     }
+    if (inputVal === '') {
+      isValid = false;
+    }
+    setIsFormValid(isValid);
   };
 
   function handleAddressToPay(e) {
@@ -30,28 +35,16 @@ export default function Send() {
   }
 
   const handleSubmit = async () => {
-    console.log('handle submit');
-    if (hmnAmount === '0' || hmnAmount === '') {
-      setIsFormValid(false);
-      setValidationError('Enter amount');
-    } 
-    else if (addressToPay === ''){
-      setIsFormValid(false);
-      setValidationError('Enter address');
-    }
-    else if (Number(balance) <= Number(hmnAmount)) {
-      setIsFormValid(false);
-      setValidationError('Insufficient Fund !!');
-    } 
-    else {
+    if (hmnAmount === '' || addressToPay === '') {
       setIsFormValid(true);
+      setValidationError('Enter amount to send');
+    } else {
       try {
         const tx = await humanityCoinContractInstance.transfer(
           addressToPay,
           (Number(hmnAmount) * Number(1000000000000000000)).toString(),
           { gasLimit: '2000000' }
         );
-        console.log('tx',tx);
         if (tx) {
           console.log('tx hash', tx.hash);
           setHash(tx.hash);
@@ -70,6 +63,10 @@ export default function Send() {
   const balOfHMN = async () => {
     if (humanityCoinContractInstance !== null) {
       const hmnBal = await humanityCoinContractInstance?.balanceOf(account);
+<<<<<<< HEAD
+=======
+      console.log('hmnBal', hmnBal);
+>>>>>>> 8764c64b15d6c523778ed723d321ea236fdea7d1
       const formattedBal = setAmountPrecision(hmnBal);
       setBalance(formattedBal);
     }
@@ -126,9 +123,15 @@ export default function Send() {
         </div>
       </div>
       {isConnected && isFormValid ? (
+<<<<<<< HEAD
         <button onClick={()=> { handleSubmit() }}>Send</button>
       ) : isConnected && !isFormValid ? (
         <button onClick={()=> { handleSubmit() }}>{validationError}</button>
+=======
+        <button onClick={handleSubmit}>Send HMN</button>
+      ) : isConnected && !isFormValid ? (
+        <button onClick={handleSubmit}></button>
+>>>>>>> 8764c64b15d6c523778ed723d321ea236fdea7d1
       ) : (
         <button
           onClick={() => {

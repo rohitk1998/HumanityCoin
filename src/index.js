@@ -12,7 +12,6 @@ import { Provider } from 'react-redux';
 import { persister, store } from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-//open
 root.render(
   <BrowserRouter>
     <InternetConnectionWraper>
