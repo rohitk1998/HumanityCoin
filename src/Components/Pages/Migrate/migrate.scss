@@ -21,6 +21,62 @@
     .youpay {
       border-radius: 22px;
       padding: 0px;
+      .amountpay0{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        background-color: transparent;
+        border: 1px solid #3f3f3f;
+        border-radius: 22px;
+        align-items: start;
+        overflow: hidden;
+        width: 100%;
+        .inputBox{
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          background-color: transparent;
+          border-radius: 22px;
+          align-items: start;
+          padding-left: 15px;
+          padding-top: 13px;
+          overflow: hidden;
+          width: 75%;
+          .migrateLabel{
+            color: rgb(71, 68, 68);
+            font-size: 16px ;
+            font-weight: 400;  
+          }
+          input {
+            height: 70px;
+            width: 100%;
+            background-color: transparent;
+            border-radius: 22px;
+            display: flex;
+            flex-direction: column;
+            color: #959595;
+            opacity: 0.4;
+            font-weight: 600;
+            font-size: 29px;
+            outline-width: 0px;
+          }
+        }
+        .walletBox{
+          width: 25%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          height: 110px;
+          p{
+            margin-top: 10px;
+            color: rgb(158, 158, 158);
+            font-size: 15px ;
+            font-weight: 500;  
+          }
+        }
+      }
       .amountpay {
         display: flex;
         flex-direction: column;
@@ -81,12 +137,13 @@
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto  ;
-    background-color: rgba(98, 84, 50, 0.16);
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid rgb(190, 236, 252);
     margin-bottom: 20px;
     p {
       font-weight: 500;
       font-size: 20px;
-      color: rgb(141, 134, 104);
+      color: rgb(202, 202, 202);
     }
   }
 }

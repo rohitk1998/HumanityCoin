@@ -253,7 +253,7 @@ const ExpTokenTable = () => {
         });
     };
 
-    fetchData();
+    // fetchData();
     //     const interval = setInterval(fetchData, 2000); // Call every 5 seconds
     //   return () => clearInterval(interval); // Cleanup
   }, [apikey]); // Depend on apikey to re-fetch if it changes

@@ -55,8 +55,8 @@ export const useConnectMetamask = () => {
   const connect = async () => {
     console.log('CONNECT FUNCTION IS WORKING',ethereum);
     if (ethereum && isConnected) {
-      const accounts = await ethereum.request({method: "eth_requestAccounts"})
-      console.log('accounts',accounts);
+      // const accounts = await ethereum.request({method: "eth_requestAccounts"})
+      // console.log('accounts',accounts);
       try {
         const web3Instance = new Web3Provider(ethereum);
         const signer = web3Instance.getSigner();

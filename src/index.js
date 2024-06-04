@@ -10,11 +10,13 @@ import { Web3ModalProvider } from './Components/Layout/AppLayout/providerWalletC
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 import { persister, store } from './redux/store';
+import { StatusProvider } from './customHooks/useStatus';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <InternetConnectionWraper>
+      <StatusProvider>
       <Provider store={store}>
       <PersistGate loading={null} persistor={persister}>
           <Web3ModalProvider>
@@ -23,6 +25,7 @@ root.render(
           </Web3ModalProvider>
       </PersistGate>
       </Provider>
+      </StatusProvider>
     </InternetConnectionWraper>
   </BrowserRouter>
 );

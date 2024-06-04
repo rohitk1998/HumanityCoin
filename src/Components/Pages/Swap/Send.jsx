@@ -63,10 +63,7 @@ export default function Send() {
   const balOfHMN = async () => {
     if (humanityCoinContractInstance !== null) {
       const hmnBal = await humanityCoinContractInstance?.balanceOf(account);
-<<<<<<< HEAD
-=======
       console.log('hmnBal', hmnBal);
->>>>>>> 8764c64b15d6c523778ed723d321ea236fdea7d1
       const formattedBal = setAmountPrecision(hmnBal);
       setBalance(formattedBal);
     }
@@ -123,15 +120,9 @@ export default function Send() {
         </div>
       </div>
       {isConnected && isFormValid ? (
-<<<<<<< HEAD
         <button onClick={()=> { handleSubmit() }}>Send</button>
       ) : isConnected && !isFormValid ? (
         <button onClick={()=> { handleSubmit() }}>{validationError}</button>
-=======
-        <button onClick={handleSubmit}>Send HMN</button>
-      ) : isConnected && !isFormValid ? (
-        <button onClick={handleSubmit}></button>
->>>>>>> 8764c64b15d6c523778ed723d321ea236fdea7d1
       ) : (
         <button
           onClick={() => {

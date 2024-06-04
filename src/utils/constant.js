@@ -21,6 +21,16 @@ export const CHAIN_LIST = [
     currencySymbol : 'ETH'
   },
   {
+    name : 'Sepolia Testnet' , 
+    key : 'Ethereum' , 
+    value : '11155111',
+    image : EthereumMainnet, 
+    chainId : '11155111',
+    rpcUrl : 'https://rpc.sepolia.org',
+    explorerLink : 'https://sepolia.etherscan.io',
+    currencySymbol : 'ETH'
+  },
+  {
     name : 'BNB Smart Chain' , 
     key : 'Binance' , 
     value : '56',
@@ -51,3 +61,17 @@ export const APP_NAVBAR_MENU = [
     name: 'Pool',
   }
 ];
+
+export const TRANSACTION_STATUS = {
+  IN_PROGRESS : 'Transaction in progress . . .',
+  PENDING : 'Pending . . .',
+  SENDING : 'Sending . . .',
+  WAITING_FOR_APPROVAL : 'Waiting for Approval . . .',
+  APPROVED : 'Approved !!',
+  COMPLETED : 'Completed !!',
+  INITIATED:'Initiating Transaction . . .',
+  CANCELLED:'Transaction Cancelled !!',
+  NONE:'NONE',
+  FAILED:'Transaction Failed !!',
+  INITIATED_APPROVAL_PROCESS: 'Initiating Approval . . .'
+}
