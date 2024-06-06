@@ -16,6 +16,7 @@ export default function Migrate() {
   const { contractInstance, tokenAContractInstance } = useConnectMetamask();
   const { isCompleted, setTxnHash, setIsCompleted } = useTransactionResult();
   const { transactionStatus, updateTransactionStatus } = useStatus();
+  const [isApproved,setIsApproved] = useState(false);
 
   const [oldAmount, setOldAmount] = useState('');
   const [newAmount, setNewAmount] = useState('0.00');
@@ -60,7 +61,7 @@ export default function Migrate() {
         if (txResult.hash) {
           updateTransactionStatus(TRANSACTION_STATUS.WAITING_FOR_APPROVAL)
           console.log('txResult.hash', txResult.hash);
-          setTimeout(() => setTxnHash(txResult.hash), 20000);
+          setTimeout(() => setTxnHash(txResult.hash), 16000);
         }
       }
       // You can perform further actions after migration
@@ -72,9 +73,15 @@ export default function Migrate() {
   };
 
   useEffect(() => {
-    if (isCompleted) {
+    if (isCompleted && !isApproved) {
+      setIsApproved(true)
       updateTransactionStatus(TRANSACTION_STATUS.APPROVED)
-      setTimeout(()=>  migrateToken(), 5000)
+      setTimeout(()=>  migrateToken(), 2000)
+      setIsCompleted(false);
+    }
+    if(isCompleted && isApproved){
+      setIsApproved(false)
+      updateTransactionStatus(TRANSACTION_STATUS.SUCCESSFUL)
       setIsCompleted(false);
     }
   }, [isCompleted]);
@@ -89,9 +96,11 @@ export default function Migrate() {
           { gasLimit: '2000000' }
         );
         console.log('transaction on migration', tx.hash);
-        if(tx.hash){
-          updateTransactionStatus(TRANSACTION_STATUS.COMPLETED)
-        }
+          if (tx.hash) {
+            updateTransactionStatus(TRANSACTION_STATUS.IN_PROGRESS)
+            console.log('hash', tx.hash);
+            setTimeout(() => setTxnHash(tx.hash), 16000);
+          }
         else{
           updateTransactionStatus(TRANSACTION_STATUS.FAILED)
         }

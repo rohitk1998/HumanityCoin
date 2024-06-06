@@ -67,11 +67,12 @@ export const TRANSACTION_STATUS = {
   PENDING : 'Pending . . .',
   SENDING : 'Sending . . .',
   WAITING_FOR_APPROVAL : 'Waiting for Approval . . .',
-  APPROVED : 'Approved !!',
-  COMPLETED : 'Completed !!',
+  APPROVED : 'Transaction Approved',
+  COMPLETED : 'Transaction Completed',
+  SUCCESSFUL: 'Transaction Successful',
   INITIATED:'Initiating Transaction . . .',
-  CANCELLED:'Transaction Cancelled !!',
+  CANCELLED:'Transaction Cancelled',
   NONE:'NONE',
-  FAILED:'Transaction Failed !!',
-  INITIATED_APPROVAL_PROCESS: 'Initiating Approval . . .'
+  FAILED:'Transaction Failed',
+  INITIATED_APPROVAL_PROCESS: 'Initiating Approval . . .',
 }
