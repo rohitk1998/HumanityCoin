@@ -117,14 +117,12 @@
         font-weight: 800;
         padding-bottom: 30px;
         span {
-          text-transform: capitalize;
           // background: linear-gradient(to right, #f85100, #fab70a);
           background: linear-gradient(to right, #F85100, #a35229);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           text-fill-color: transparent;
-          text-transform: capitalize;
         }
         opacity: 1;
 
