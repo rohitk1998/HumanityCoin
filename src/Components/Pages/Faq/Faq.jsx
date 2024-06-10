@@ -5,10 +5,10 @@ import "./faq.scss";
 import uparrow from "../../Assets/Images/uparrows.svg";
 import discord from "../../Assets/Images/discord-icon.svg";
 import { FAQ } from "../../../utils/constant";
-//change
+
 function Faq() {
   const { Panel } = Collapse;
-  //change
+
   return (
     <div className="question">
       <div className="faqContainer">
