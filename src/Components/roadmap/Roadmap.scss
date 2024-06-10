@@ -1,0 +1,34 @@
+@import "../Assets/Styles/_mixins.scss";
+@import "../Assets/Styles/_vars.scss";
+
+
+.roadmap {
+    h2 {
+            color: #fff;
+            @include fluid-type(320px, 1920px, 30px, 60px);
+            font-weight: bold;
+            text-align: center;
+          }
+
+          p {
+            color: #79799a;
+            @include fluid-type(320px, 1920px, 14px, 20px);
+            text-align: center;
+          }
+          span {
+            color: #fff;
+          }
+  .roadmapinner {
+    background-image: url("../Assets/Images/roadmapbg.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    img{
+        padding-top: 50px;
+    }
+  }
+}
+

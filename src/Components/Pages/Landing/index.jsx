@@ -2,15 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { StoreImages } from "../../Storeimgaes/StoreImages";
 import style from "./style.module.scss";
+import Faq from "../Faq/Faq.jsx";
 import { Row, Col } from "antd";
+import globe from "../../Assets/Images/globe.png";
+import hero from "../../Assets/Images/Herosection-vid.mp4";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useTranslation } from "react-i18next";
-import uparrow from "../../Assets/Images/uparrows.svg";
-import arrow from "../../Assets/Images/arrow.svg";
-import unigrant from "../../Assets/Images/unigrants.png";
-import humanityTitle from "../../Assets/Images/humanityTitle.svg";
-
+import aboutbg from "../../Assets/Images/block.mp4";
+import aboutTop from "../../Assets/Images/abouttopsec.mp4";
+import Tokenmics from "../Faq/Tokenmics/Tokenmics";
+import video from "../../Assets/Images/Second section.mp4";
+import Roadmap from "../../roadmap/Roadmap";
 
 const Main = () => {
   const { t } = useTranslation();
@@ -24,231 +27,75 @@ const Main = () => {
             <div className="container">
               <Row className={style.euroMultiCurrency__Everything}>
                 <Col
-                  lg={24}
+                  lg={12}
                   className={style.euroMultiCurrency__Everything__left}
                 >
-                  <p className={style.uniswap}>
-                    {" "}
-                    <span>
-                      {/* <img src={humanityTitle} width={200} height={100} /> */}
-                      HUMANITY
-                       COIN</span>
-                  </p>
+                  <h2>
+                    To Make <span>the world a Better place!</span>
+                  </h2>
                   <p>
-                    Swap, earn, and build on the leading decentralized crypto
-                    trading protocol.
+                    Generating a Daily return on investment, and then seamlessly
+                    convert them into USDT
                   </p>
-                  {/* <div className={style.socialIcons}>
-                    <Link to="#" className={style.getStarted}>
-                      <img src={twitter} alt="twitter" />
-                    </Link>
-                    <Link to="#" className={style.getStarted}>
-                      <img src={twitter} alt="twitter" />
-                    </Link>
-                    <Link to="#" className={style.getStarted}>
-                      <img src={twitter} alt="twitter" />
-                    </Link>
-                  </div> */}
-                </Col>
-              </Row>
-            </div>
-          </div>
-        </section>
-        <div className={style.alltimetrade}>
-          <h2>
-            $1.8T+<p>Trade Volume</p>
-          </h2>
-          <h2>
-            224M+<p>All Time Trades</p>
-          </h2>
-          <h2>
-            300+<p>Integrations</p>
-          </h2>
-          <h2>
-            4,400+<p>Community Delegates</p>
-          </h2>
-        </div>
-        <section>
-          <div className={style.unswapEcosystem}>
-            <div className="container">
-              <Row className={style.unswapEcosystem__growing} gutter={[0, 30]}>
-                <Col
-                  lg={12}
-                  xs={24}
-                  className={style.unswapEcosystem__growing__left}
-                >
-                  <Link>
-                    UNISWAP ECOSYSTEM{" "}
-                    <img src={arrow} alt="arrow" className="rightArrow" />
-                  </Link>
-                  <h2>A growing network of DeFi Apps.</h2>
-                  <p>
-                    Developers, traders, and liquidity providers participate
-                    together in a financial marketplace that is open and
-                    accessible to all.
-                  </p>
+                  <button>Connect Wallet</button>
                 </Col>
                 <Col
                   lg={12}
-                  xs={24}
-                  className={style.unswapEcosystem__growing__right}
+                  style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <h2>300+</h2>
-                  <p>Integrations</p>
-                  {/* <Link>
-                    Explore all<span> ↗</span>
-                  </Link> */}
-                  {/* <img
-                    src={trustMobileNew}
-                    className={style.fundADDImg}
-                    alt="img"
-                  /> */}
+                  <video src={hero} muted autoPlay loop />
                 </Col>
               </Row>
             </div>
           </div>
         </section>
-        <section>
-          <div className={style.funding}>
-            <div className="container">
-              <Link className={style.developers}>
-                Developers{" "}
-                <img src={arrow} alt="arrow" className="rightArrow" />{" "}
-              </Link>
-              <Row className={style.funding__data} gutter={[35, 30]}>
-                <Col lg={16} xs={24} className={style.funding__data__left}>
-                  <div className={style.documentation}>
-                    <h2>Superpowers for DeFi developers.</h2>
-                    <p>
-                      Build Defi apps and tools on the largest crypto project on
-                      Ethereum. Get started with quick start guides, protocol
-                      documentation, a Javascript SDK, and fully open source
-                      code.
-                    </p>
-                    <Link>
-                      Documentation
-                      <span>
-                        {" "}
-                        <img src={uparrow} alt="imgs" />
-                      </span>
-                    </Link>
-                  </div>
-                  <div className={style.whitepaper}>
-                    <div className={style.whitepaper__left}>
-                      <Link>
-                        {" "}
-                        V3 Whitepaper
-                        <span>
-                          {" "}
-                          <img src={uparrow} alt="imgs" />
-                        </span>
-                      </Link>
-                    </div>
-                    <div className={style.whitepaper__right}>
-                      <Link>
-                        {" "}
-                        Github
-                        <span>
-                          <img src={uparrow} alt="imgs" />
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={8} xs={24} className={style.funding__data__right}>
-                  <div className={style.applyFunding}>
-                    <img src={unigrant} alt="unigrant" />
-                    <h4>Apply for funding from the Uniswap Grants Program </h4>
-                    <p>
-                      Get paid to build the future of finance. Uniswap
-                      Governance offers grant funding for people building apps,
-                      tools, and activities on the Uniswap Protocol.
-                    </p>
-                    <Link>
-                      Learn More
-                      <span>
-                        {" "}
-                        <img src={uparrow} alt="imgs" />
-                      </span>
-                    </Link>
-                  </div>
-                </Col>
-              </Row>
+        <section className={style.secondSec}>
+          <div className={style.futureHumaity}>
+            <video src={video} muted autoPlay loop />
+            <div className={style.heading}>
+              <h2>
+                The future of
+                <br />
+                humanity with <br />
+                Humanty Coin
+              </h2>
             </div>
           </div>
         </section>
+        <section className={style.aboutTopSec}>
+          <div className={style.aboutTop}>
+            <video src={aboutTop} muted autoPlay loop />
+          </div>
+        </section>
+        <section id="aboutus">
+          <div className={style.aboutUs}>
+            <h2> About Us!</h2>
+            <p>
+              Humanity Coin uses technology to solve pressing social, economic
+              and environmental problems, including improving access to
+              education, health and clean water, among others, in disadvantaged
+              regions of the world. Digital inclusion and bridging the digital
+              divide are also key objectives. In short, Humanity Coin is
+              dedicated to using technology and science to positively transform
+              the world and make it better, more pleasant to live in…
+            </p>
+            <video src={aboutbg} muted autoPlay loop />
+          </div>
+        </section>
+        <section id='tokenmics'>
+          <Tokenmics />
+        </section>
+        <section id="roadmap">
+          <Roadmap/>
+        </section>
         <section>
-          <div className={style.protocol}>
-            <div className="container">
-              <Link className={style.developers}>
-                PROTOCOL GOVERNANCE{" "}
-                <img src={arrow} alt="arrow" className="rightArrow" />
-              </Link>
-              <Row className={style.protocol__data} gutter={[30, 30]}>
-                <Col lg={13} xs={24} className={style.protocol__data__left}>
-                  <div className={style.documentation}>
-                    <h2>Governed by the community.</h2>
-                    <p>
-                      The Uniswap Protocol is managed by a global community of
-                      UNI token holders and delegates
-                    </p>
-                    <Link>
-                      Read More
-                      <span>
-                        {" "}
-                        <img src={uparrow} alt="imgs" />
-                      </span>
-                    </Link>
-                  </div>
-                </Col>
-                <Col lg={11} xs={24} className={style.protocol__data__right}>
-                  <div className={style.governaceFunding}>
-                    <div className={style.governaceFunding__data}>
-                      <h2>
-                        {" "}
-                        Governance Forum
-                        <span>
-                          {" "}
-                          <img src={uparrow} alt="imgs" />
-                        </span>
-                      </h2>
-                      <p>
-                        Participate by proposing upgrades and discussing the
-                        future of the protocol with the Uniswap community.
-                      </p>
-                    </div>
-                    <div className={style.governaceFunding__data}>
-                      <h2>
-                        {" "}
-                        Sybil
-                        <span>
-                          {" "}
-                          <img src={uparrow} alt="imgs" />
-                        </span>
-                      </h2>
-                      <p>
-                        Vote on offchain proposals with the Snapshot interface.
-                        Votes are weighted by the number of UNI delegates.
-                      </p>
-                    </div>
-                    <div className={style.governaceFunding__data}>
-                      <h2>
-                        {" "}
-                        Governance Portal
-                        <span>
-                          {" "}
-                          <img src={uparrow} alt="imgs" />
-                        </span>
-                      </h2>
-                      <p>
-                        Vote on official Uniswap governance proposals and view
-                        past proposals.
-                      </p>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </div>
+          <div className={style.globecontainer}>
+            <img src={globe} alt="globetype" className={style.globe} />
+          </div>
+        </section>
+        <section id="faq">
+          <div className={style.faq}>
+            <Faq />
           </div>
         </section>
         <div className={style.linearBg}></div>

@@ -1,58 +1,70 @@
 @import "../../Assets/Styles/_vars.scss";
 @import "../../Assets/Styles/_mixins.scss";
-.footerKazix {
-    background-color: transparent;
-    @media (max-width: 767px) {
-      padding-top: 50px;
-
-      @media (max-width: 585px) {
-        padding-top: 0px;
+.footer {
+  max-width: 1459px;
+  width: 100%;
+  padding: 20px 15px;
+  margin: auto;
+  .footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #252832;
+    padding-bottom: 40px;
+    .footerTopLeft {
+      p {
+        color: #79799a;
+        margin-top: 43px;
+        @include fluid-type(320px, 1920px, 14px, 18px);
       }
     }
-    .copyRight {
-      border-top: 1px solid rgba(112, 112, 112, 0.3);
-      background-color: #000000;
-
-      .inner {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: center;
-        padding: 20px 0px 20px 0px;
-        color: black;
-        @include fluid-type(320px, 1920px, 12px, 13px);
-
-        @media (max-width: 500px) {
-          justify-content: center;
-          gap: 20px;
-        }
-
-        p {
-          color: rgba(255, 255, 255, 1);
-          @include fluid-type(320px, 1920px, 12px, 16px);
-        }
-
-        .links {
-          display: flex;
-          gap: 60px;
-
-          @media (max-width: 767px) {
-            gap: 30px;
-          }
-
-          a {
-            padding: 0 30px;
-            padding: 0;
-          }
-        }
-      }
-    }
-
-    .right {
-      align-items: baseline;
-      display: inline-flex;
-      margin-left: auto;
+    .footerTopRight {
+      max-width: 520px;
       width: 100%;
+      .input-container {
+        position: relative;
+        .input-field {
+          width: 100%;
+          padding: 28px; /* Adjust padding to make room for the icon */
+          box-sizing: border-box;
+          border: 0;
+          border-radius: 20px;
+          font-size: 16px;
+          width: 100%;
+          background: linear-gradient(to right, #11131b 20%, #0c0f16);
+          outline: none;
+          color: #9aa2b7;
+        }
+
+        .icon {
+          position: absolute;
+          top: 50%;
+          right: 30px;
+          transform: translateY(-50%);
+          font-size: 20px;
+        }
+      }
     }
   }
+  .footerBottom {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    .footerBottomLeft {
+      display: flex;
+      gap: 40px;
+      .socialLink{
+        cursor: pointer;
+      }
+    }
+    .footerBottomRight {
+      @include fluid-type(320px, 1920px, 14px, 18px);
+      display: flex;
+      gap: 30px;
+      a {
+        color: #9aa2b7;
+      }
+    }
+  }
+}
