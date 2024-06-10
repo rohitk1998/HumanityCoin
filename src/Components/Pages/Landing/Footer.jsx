@@ -1,54 +1,65 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { StoreImages } from "../../Storeimgaes/StoreImages";
-// import youtubeIcon from ".";
+import logo from "../../Assets/Images/logo.svg";
+import {
+  FacebookGrp,
+  InstaGrp,
+  LinkedInGrp,
+  NextArrow,
+  TwitterGrp,
+} from "../../Assets/Svg/Svg.jsx";
+import { SOCIAL_LINK } from "../../../utils/constant.js";
 
-import "./Footer.scss"
+import "./Footer.scss";
 const Footer = () => {
-  const { insta, fb, telegram, twitter, linkedIn } = StoreImages;
+
+  const navigateTo = (url)=>{
+    window.open(url, '_blank')
+  }
   return (
-    <>
-      <div className='footerKazix'>
-        <div className='copyRight'>
-          <div className="container">
-            <div className='inner'>
-              <p>
-                &copy; {new Date().getFullYear()} Humanity Coin | All rights reserved.
-              </p>
-              <div className='links'>
-                <Link
-                  to="https://www.fb.me/hmncrypto"
-                  target="_blank"
-                >
-                  <img src={fb} alt="img" />
-                </Link>
-                <Link to="https://x.com/Humanityhmn" target="_blank">
-                  <img src={twitter} alt="img" />
-                </Link>
-                <Link
-                  to="https://instagram.com/humanity_hmn?igshid=NGVhN2U2NjQ0Yg=="
-                  target="_blank"
-                >
-                  <img src={insta} alt="img" />
-                </Link>
-                <Link
-                  to="https://www.linkedin.com/humanityhmn"
-                  target="_blank"
-                >
-                  <img src={linkedIn} alt="img" />
-                </Link>
-                <Link to="https://t.me./HMNtoken" target="_blank">
-                  <img src={telegram} alt="img" />
-                </Link>
-                {/* <Link to="https://t.me./HMNtoken" target="_blank">
-                  <img src={youtubeIcon} alt="youtube"/>
-                </Link> */}
-              </div>
-            </div>
+    <div className="footer">
+      <div className="footerTop">
+        <div className="footerTopLeft">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="footerTopRight">
+          <div className="input-container">
+            <input
+              type="text"
+              placeholder="Your Email ID"
+              className="input-field"
+            />
+            <span className="icon">
+              <NextArrow />
+            </span>
           </div>
         </div>
       </div>
-    </>
+      <div className="footerBottom">
+        <div className="footerBottomLeft">
+          <div className="socialLink" onClick={()=>  navigateTo(SOCIAL_LINK.FACEBOOK)}>
+          <FacebookGrp />
+          </div>
+          <div className="socialLink" onClick={()=>  navigateTo(SOCIAL_LINK.INSTAGRAM)}>
+          <InstaGrp />
+          </div>
+          <div className="socialLink" onClick={()=>  navigateTo(SOCIAL_LINK.TWITTER)}>
+          <TwitterGrp />
+          </div>
+          <div className="socialLink" onClick={()=>  navigateTo(SOCIAL_LINK.LINKEDIN)}>
+          <LinkedInGrp />
+          </div>
+        </div>
+        <div className="footerBottomRight">
+          <Link to="#" target="_blank">
+            Terms & Condition
+          </Link>
+          <Link to="#" target="_blank">
+            Privacy Policy
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 

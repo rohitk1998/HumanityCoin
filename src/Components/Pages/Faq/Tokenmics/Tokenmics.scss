@@ -1,0 +1,176 @@
+@import "../../../Assets/Styles/_vars.scss";
+@import "../../../Assets/Styles/_mixins.scss";
+
+.tokenomics {
+  padding-bottom: 80px;
+  @media (max-width: 575px) {
+    padding-bottom: 25px;
+  }
+  h2 {
+    color: #fff;
+    @include fluid-type(320px, 1920px, 30px, 60px);
+    font-weight: bold;
+    text-align: center;
+  }
+  &_inner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-top: 30px;
+    @media (max-width: 1599px) {
+      gap: 30px;
+    }
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &_left {
+      max-width: 769px;
+      width: 100%;
+      .top {
+        display: flex;
+        gap: 30px;
+        background: linear-gradient(45deg, #0f121a, #0c0f13);
+        border-radius: 20px;
+        padding: 12px 53px;
+        justify-content: space-between;
+        &_inner {
+          display: flex;
+          flex-direction: column;
+
+          h4 {
+            color: $white;
+            font-weight: 500;
+            @include fluid-type(320px, 1920px, 20px, 24px);
+          }
+          p {
+            padding-top: 10px;
+            color: #79799a;
+            @include fluid-type(320px, 1920px, 14px, 20px);
+          }
+        }
+      }
+    }
+    &_right {
+      h3 {
+        color: #fff;
+        @include fluid-type(320px, 1920px, 20px, 30px);
+        font-weight: bold;
+        span {
+          background: linear-gradient(45deg, #f1aa00, #eb5305);
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      p {
+        color: #79799a;
+        @include fluid-type(320px, 1920px, 16px, 20px);
+      }
+    }
+  }
+  .centerImages {
+    padding-top: 50px;
+    position: relative;
+    h4 {
+      background: linear-gradient(45deg, #f1aa00, #eb5305);
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      @include fluid-type(320px, 1920px, 20px, 24px);
+      font-weight: 700;
+    }
+    p {
+      color: #fff;
+      font-weight: 500;
+    }
+    .firstText {
+      content: "";
+      position: relative;
+      text-align: right;
+      left: -5px;
+      top: 0px;
+      color: white;
+      border-right: 3px solid #31b0fb;
+      height: 58px;
+      padding-right: 15px;
+      &::after {
+        content: url("../../../Assets/Images/firstline.svg");
+        top: 22px;
+        position: absolute;
+        left: 249px;
+      }
+    }
+    .secondText {
+      content: "";
+      position: absolute;
+      text-align: right;
+      left: 3%;
+      bottom: 137px;
+      color: white;
+      border-right: 3px solid #4e4d6d;
+      height: 58px;
+      padding-right: 15px;
+      &:before {
+        content: url("../../../Assets/Images/secondline.svg");
+        position: absolute;
+        right: -113px;
+        top: 14px;
+      }
+    }
+    .thirdText {
+      content: "";
+      position: absolute;
+      text-align: left;
+      right: 11%;
+      top: 51px;
+      color: white;
+      border-left: 3px solid #9b39f9;
+      height: 58px;
+      padding-left: 15px;
+      &:before {
+        content: url("../../../Assets/Images/thirdline.svg");
+        top: 39px;
+        position: absolute;
+        left: -164px;
+      }
+    }
+    .fourthText {
+      content: "";
+      position: absolute;
+      text-align: left;
+      border-left: 3px solid #fa6142;
+      height: 58px;
+      padding-left: 15px;
+      right: 10%;
+      top: 50%;
+      color: white;
+      &:before {
+        content: url("../../../Assets/Images/fourthline.svg");
+        top: 16px;
+        position: absolute;
+        left: -42px;
+      }
+    }
+    .fifthText {
+      content: "";
+      position: absolute;
+      border-left: 3px solid #fba242;
+      height: 58px;
+      padding-left: 15px;
+      text-align: left;
+      right: 10%;
+      bottom: 33px;
+      color: white;
+      &:before {
+        content: url("../../../Assets/Images/fifthline.svg");
+        top: 17px;
+        position: absolute;
+        left: -168px;
+      }
+    }
+    .innerImages {
+      display: flex;
+    }
+  }
+}

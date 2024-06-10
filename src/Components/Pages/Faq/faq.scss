@@ -2,21 +2,22 @@
 @import "../../Assets/Styles/_mixins.scss";
 .question {
   padding: 80px 0;
-  background-color: #000000;
-  height: 100vh;
   .faqContainer {
-    max-width: 1024px;
+    max-width: 1196px;
     width: 100%;
     margin: auto;
     padding: 0 15px;
   }
-  h3 {
-    color: white;
-    @include fluid-type(320px, 1920px, 25px, 32px);
-    margin-top: 10px;
-    line-height: 30px;
-    font-weight: 600;
-    padding-bottom: 50px;
+  h2 {
+    color: #fff;
+    @include fluid-type(320px, 1920px, 30px, 60px);
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    color: #79799a;
+    @include fluid-type(320px, 1920px, 14px, 20px);
+    text-align: center;
   }
   .questioInner {
     display: flex;
@@ -25,19 +26,17 @@
       flex-direction: column;
     }
     .faqleft {
-      max-width: 600px;
       width: 100%;
-      @media (max-width: 991px) {
-        max-width: 100%;
-      }
       .ant-collapse {
         background-color: transparent !important;
         border: 0;
         .ant-collapse-item {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+          border-bottom: 0;
           .ant-collapse-header-text {
             text-align: left;
             color: white;
+            padding: 16px 60px;
+            @include fluid-type(320px, 1920px, 16px, 24px);
           }
           .ant-collapse-expand-icon {
             width: 0;
@@ -56,16 +55,20 @@
               background-repeat: no-repeat;
               background-size: contain;
               z-index: 1;
-              font-weight: 600;
+              font-weight: 300;
               transform: translateY(-50%);
-              font-size: 35px;
-              line-height: 19px;
+              font-size: 60px;
+              line-height: 40px;
               border-radius: 20px;
               padding: 1px 0px 0px 8px;
               @media (max-width: 575px) {
                 font-size: 25px;
               }
-              color: white;
+              background: linear-gradient(to right, #fab70a, #f85100);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;
             }
           }
           &-active {
@@ -81,7 +84,9 @@
               content: "-";
               padding: 3px 0px 0px 5px;
               z-index: 1;
-
+              font-size: 70px;
+              line-height: 15px;
+              font-weight: 300;
               color: white;
             }
 
@@ -95,65 +100,27 @@
         box-shadow: none;
         margin: 20px 0px;
         padding-bottom: 10px;
+        background: linear-gradient(to right, #11131b 20%, #0c0f16);
+        border-radius: 20px;
         .ant-collapse-header {
           padding: 0px 40px 0px 0;
           @include fluid-type(320px, 1920px, 18px, 24px);
           color: #000000;
           font-weight: 500;
           padding-right: 40px;
-          line-height: 61px;
+          line-height: 41px;
         }
         .ant-collapse-content {
           background-color: transparent;
-          color: rgba(255, 255, 255, 0.6);
-          p {
-            padding-bottom: 20px;
-            @include fluid-type(320px, 1920px, 14px, 16px);
-
-            &:last-child {
-              padding-bottom: 0;
-            }
-            span {
-              color: #fff;
-              font-weight: 500;
-              cursor: pointer;
-              &:hover {
-                opacity: 0.8;
-              }
-            }
-          }
+          color: #79799a;
+          border-top: 0;
+          @include fluid-type(320px, 1920px, 14px, 20px);
         }
-      }
-    }
-    .faqright {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 281px;
-      padding-top: 20px;
-      width: 100%;
-      @media (max-width: 991px) {
-        max-width: 100%;
-      }
-      .faqRightInner {
-        background: rgba(255, 255, 255, 0.02);
-        border: 1px solid rgba(255, 255, 255, 0.13);
-        border-radius: 20px;
-        padding: 16px;
-        display: flex;
-        justify-content: space-between;
-        &:hover {
-          background: rgba(255, 255, 255, 0.05);
-          cursor: pointer;
-        }
-        h4 {
-          @include fluid-type(320px, 1920px, 18px, 22px);
-          color: #fff;
-          display: flex;
-          gap: 12px;
-        }
-        .upwardArrow {
-          width: 20px;
+        .ant-collapse-content > .ant-collapse-content-box {
+          padding: 16px 60px;
+          color: #79799a;
+          font-weight: 500;
+          padding-top: 0;
         }
       }
     }
