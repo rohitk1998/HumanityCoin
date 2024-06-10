@@ -15,6 +15,8 @@ import aboutTop from "../../Assets/Images/abouttopsec.mp4";
 import Tokenmics from "../Faq/Tokenmics/Tokenmics";
 import video from "../../Assets/Images/Second section.mp4";
 import Roadmap from "../../roadmap/Roadmap";
+import { appRootName } from "../../../utils/constant.js";
+import { publicRouteObj } from "../../../staticObjects/routing.jsx";
 
 const Main = () => {
   const { t } = useTranslation();
@@ -32,13 +34,17 @@ const Main = () => {
                   className={style.euroMultiCurrency__Everything__left}
                 >
                   <h2>
-                    To Make <span>the world a Better place!</span>
+                    To Make <span>the World a Better Place!</span>
                   </h2>
                   <p>
                     Generating a Daily return on investment, and then seamlessly
                     convert them into USDT
                   </p>
-                  {/* <button>Connect Wallet</button> */}
+                  <button
+                  onClick={() => {
+                    window.open(`${appRootName}/${publicRouteObj.swap}`, '_blank');
+                  }}
+                  >Connect Wallet</button>
                 </Col>
                 <Col
                   lg={12}
