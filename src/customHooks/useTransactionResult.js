@@ -9,8 +9,10 @@ const provider = new ethers.JsonRpcProvider(
   'https://rpc.sepolia.org'
 );
 
+const txResult = ['success','failed','none'] ; 
+
 export const useTransactionResult = () => {
-  const [transactionResult, setTransactionResult] = useState(false);
+  const [transactionResult, setTransactionResult] = useState(txResult[2]);
   const [txnHash, setTxnHash] = useState(undefined);
 
   const fetchResult = async () => {
@@ -25,15 +27,17 @@ export const useTransactionResult = () => {
         
             if (isSuccessful) {
               console.log('Transaction succeeded');
-              setTransactionResult(true)
+              setTransactionResult(txResult[0])
             } else {
               console.log('Transaction failed');
-              setTransactionResult(false);
+              setTransactionResult(txResult[1]);
             }
             setTxnHash(undefined);
       }
     } catch (error) {
       console.log('Error while finding txn reciept:',error);
+      console.log('Transaction failed');
+      setTransactionResult(txResult[1]);
     }
   };
 
