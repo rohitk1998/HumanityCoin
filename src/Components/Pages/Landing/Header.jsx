@@ -134,7 +134,7 @@ const Header = () => {
                       <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
                         FAQ's
                       </RouterLink>
-                      <button
+                      {/* <button
                         style={launchAppButtonStyle}
                         onClick={() => {
                           window.open(
@@ -144,12 +144,15 @@ const Header = () => {
                         }}
                       >
                         Launch App
-                      </button>
+                      </button> */}
                       <img
                         src={btn}
                         alt="btn"
                         style={{ cursor: 'pointer' }}
                         className={style.resjoin}
+                        onClick={() => {
+                          window.open(`${appRootName}/${publicRouteObj.swap}`, '_blank');
+                        }}
                       />
                     </div>
                   </Drawer>

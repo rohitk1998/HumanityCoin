@@ -6,6 +6,7 @@ import Faq from "../Faq/Faq.jsx";
 import { Row, Col } from "antd";
 import globe from "../../Assets/Images/globe.png";
 import hero from "../../Assets/Images/Herosection-vid.mp4";
+import bubbleGif from "../../Assets/Images/bubble-animation.mp4";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useTranslation } from "react-i18next";
@@ -37,7 +38,7 @@ const Main = () => {
                     Generating a Daily return on investment, and then seamlessly
                     convert them into USDT
                   </p>
-                  <button>Connect Wallet</button>
+                  {/* <button>Connect Wallet</button> */}
                 </Col>
                 <Col
                   lg={12}
@@ -86,11 +87,11 @@ const Main = () => {
           <Tokenmics />
         </section>
         <section id="roadmap">
-          <Roadmap/>
+          <Roadmap/> 
         </section>
         <section>
           <div className={style.globecontainer}>
-            <img src={globe} alt="globetype" className={style.globe} />
+          <video style={{minWidth:"200px",width:"100%",maxWidth:"500px",minHeight:"200px",height:"100%",maxHeight:"500px",display:"block"}} src={bubbleGif} muted autoPlay loop />
           </div>
         </section>
         <section id="faq">
