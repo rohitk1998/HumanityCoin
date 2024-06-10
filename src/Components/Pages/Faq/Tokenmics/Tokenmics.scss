@@ -14,7 +14,9 @@
   }
   &_inner {
     display: flex;
+    // background-color: #f1aa00;
     align-items: center;
+    justify-content: center;
     gap: 50px;
     padding-top: 30px;
     @media (max-width: 1599px) {
@@ -70,8 +72,12 @@
     }
   }
   .centerImages {
+    // background-color: #f1aa00;
     padding-top: 50px;
     position: relative;
+    @media (min-width: 1100px) {
+      margin-left: 50px;
+    }
     h4 {
       background: linear-gradient(45deg, #f1aa00, #eb5305);
       -webkit-background-clip: text;
