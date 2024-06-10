@@ -13,7 +13,7 @@ import { TRANSACTION_STATUS } from '../../../utils/constant.js';
 export default function Migrate() {
   const { isConnected } = useSelector((state) => state.app);
   const { open } = useWeb3Modal();
-  const { contractInstance, tokenAContractInstance } = useConnectMetamask();
+  const { contractInstance, tokenAContractInstance , tokenBContractInstance } = useConnectMetamask();
   const { isCompleted, setTxnHash, setIsCompleted } = useTransactionResult();
   const { transactionStatus, updateTransactionStatus } = useStatus();
   const [isApproved,setIsApproved] = useState(false);
@@ -22,6 +22,7 @@ export default function Migrate() {
   const [newAmount, setNewAmount] = useState('0.00');
   const [isFormValid, setIsFormValid] = useState(true);
   const [balance, setBalance] = useState(undefined);
+  const [balance1, setBalance1] = useState(undefined);
 
   const HandleInputchange = (event) => {
     let isValid = true;
@@ -73,23 +74,28 @@ export default function Migrate() {
   };
 
   useEffect(() => {
-    if (isCompleted && !isApproved) {
+    if (isCompleted == 'success' && !isApproved) {
       setIsApproved(true)
       updateTransactionStatus(TRANSACTION_STATUS.APPROVED)
       setTimeout(()=>  migrateToken(), 2000)
-      setIsCompleted(false);
     }
-    if(isCompleted && isApproved){
+    if(isCompleted == 'success' && isApproved){
       setIsApproved(false)
       updateTransactionStatus(TRANSACTION_STATUS.SUCCESSFUL)
-      setIsCompleted(false);
+      formatBalance();
     }
+    if(isCompleted == 'failed'){
+      updateTransactionStatus(TRANSACTION_STATUS.FAILED)
+    }
+    setTimeout(()=>{
+      setIsCompleted('none');
+    },3000)
   }, [isCompleted]);
 
   const migrateToken = async () => {
     try {
       updateTransactionStatus(TRANSACTION_STATUS.SENDING)
-      if (isCompleted) {
+      if (isCompleted == 'success') {
         console.log('done approval', isCompleted);
         const tx = await contractInstance.migrate(
           (Number(oldAmount) * Number(1000000000000000000)).toString(),
@@ -125,11 +131,14 @@ export default function Migrate() {
       formatBalance();
       updateTransactionStatus(TRANSACTION_STATUS.NONE)
     }
-  }, [tokenAContractInstance,isConnected,balance]);
+  }, [tokenAContractInstance,isConnected,balance,tokenBContractInstance]);
 
 
   const formatBalance = async () => {
       const _oldTokenBalance = await tokenAContractInstance.balanceOf(
+        '0x511c4d2B9FFF5431dd1Bc2Af336C74431c1668ba'
+      );
+      const _newTokenBalance = await tokenBContractInstance.balanceOf(
         '0x511c4d2B9FFF5431dd1Bc2Af336C74431c1668ba'
       );
       console.log(
@@ -139,7 +148,11 @@ export default function Migrate() {
       const balance = (
         Number(_oldTokenBalance) / 1000000000000000000
       ).toString();
+      const balance1 = (
+        Number(_newTokenBalance) / 1000000000000000000
+      ).toString();
       setBalance(balance);
+      setBalance1(balance1);
   };
 
 
@@ -161,12 +174,12 @@ export default function Migrate() {
           <div className="payItems">
             <div className="amountpay0">
               <div className="inputBox">
-                <label className="migrateLabel">Old HMN Token</label>
+                <label className="migrateLabel">Old Token</label>
                 <input
                   className="migrateInput"
                   value={oldAmount}
                   onChange={HandleInputchange}
-                  placeholder="0"
+                  placeholder="0.00"
                 />
               </div>
               <div className="walletBox">
@@ -174,7 +187,7 @@ export default function Migrate() {
                 <p>{balance !== undefined ? Number(balance).toFixed(5) : '0'}</p>
               </div>
             </div>
-            <div className="amountpay" style={{ marginTop: '5px' }}>
+            {/* <div className="amountpay" style={{ marginTop: '5px' }}>
               <label className="migrateLabel">New HMN Token</label>
               <input
                 className="migrateInput"
@@ -182,6 +195,21 @@ export default function Migrate() {
                 placeholder="0.00"
                 readOnly
               />
+            </div> */}
+            <div className="amountpay0" style={{ marginTop: '5px' }}>
+              <div className="inputBox">
+                <label className="migrateLabel">New Token</label>
+                <input
+                  className="migrateInput"
+                  value={newAmount}
+                  placeholder="0.00"
+                readOnly
+                />
+              </div>
+              <div className="walletBox">
+                <WalletIcon />
+                <p>{balance1 !== undefined ? Number(balance1).toFixed(5) : '0'}</p>
+              </div>
             </div>
           </div>
           {
