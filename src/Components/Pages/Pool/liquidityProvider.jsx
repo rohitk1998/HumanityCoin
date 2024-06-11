@@ -49,7 +49,7 @@ function LiquidyProvider() {
           </Dropdown> */}
           </div>
           <div className="right">
-            <Button className="transBtn"
+            <Button className={selectedForm === 1 ? "transBtn active" : "transBtn"}
             
             onClick={() => {
               if (selectedForm === 2 ) {
@@ -61,7 +61,7 @@ function LiquidyProvider() {
             >Get Pair</Button>
           {/* <Button className="menuBtn">Import pool</Button> */}
             <Button
-              className="menuBtn"
+              className={selectedForm === 2 ? "menuBtn active" : "menuBtn"}
               onClick={() => {
                 if (selectedForm === 1 ) {
                   setSelectedForm(2);

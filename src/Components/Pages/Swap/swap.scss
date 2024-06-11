@@ -1,14 +1,17 @@
 @import '../../Assets/Styles/_vars.scss';
 @import '../../Assets/Styles/_mixins.scss';
+
 .swap {
   background-color: rgb(3, 3, 3);
   min-height: 100vh;
   height: 100%;
+
   .swapCenter {
     padding-top: 70px;
     max-width: 500px;
     width: 100%;
     margin: auto;
+
     .swapheading {
       color: #fff;
       @include fluid-type(320px, 1920px, 24px, 42px);
@@ -17,49 +20,53 @@
       padding-bottom: 20px;
       font-size: 60px !important;
     }
+
     .swapTab {
       display: flex;
       width: 100%;
       min-width: 150px;
       color: white;
-      // background-color: grey;
       height: 60px;
       padding-left: 10px;
+
       button {
         width: 100%;
         min-width: 70px;
         max-width: 150px;
         border-radius: 20px;
         margin-left: 10px;
-        background-color: rgb(49, 28, 49);
+        background-color: transparent;
         height: 40px;
-        color: rgb(252, 114, 255);
+        color: white;
         @include fluid-type(320px, 1920px, 14px, 16px);
         margin-top: 5px;
         font-weight: 600;
         margin-top: 10px;
+
         &:hover,
         :active,
         :focus,
         :focus-within,
         :focus-visible {
-          background-color: rgb(49, 28, 49) !important;
-          opacity: 0.4;
-          color: rgb(252, 114, 255);
+          background-color: transparent;
+          color: #f98906;
         }
       }
+
       .active {
         margin-top: 5px;
         font-weight: 600;
         margin-top: 10px;
-        background-color: rgb(49, 28, 49) !important;
-        opacity: 0.4;
-        color: rgb(252, 114, 255);
+        background-color: transparent;
+        border: 1px solid #faaf59;
+        color: #f98906;
       }
     }
+
     .youpay {
       border-radius: 22px;
       padding: 15px;
+
       .amountpay {
         display: flex;
         justify-content: space-between;
@@ -69,10 +76,12 @@
         border: 1px solid #252628;
         border-radius: 22px;
         align-items: center;
+
         p {
           color: #959595;
           display: flex;
           flex-direction: column;
+
           span {
             @include fluid-type(320px, 1920px, 24px, 32px);
             opacity: 0.4;
@@ -80,11 +89,13 @@
           }
         }
       }
+
       .sendSelectContainer {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 80px;
+
         .sendSelect {
           width: 70%;
           height: 60px;
@@ -102,10 +113,12 @@
         }
       }
     }
+
     .sendPay {
       border-radius: 22px;
       padding: 15px;
       width: 100%;
+
       .amountpay {
         width: 100%;
         display: flex;
@@ -118,17 +131,20 @@
         border: 1px solid #252628;
         border-radius: 22px;
         align-items: start;
+
         p {
           color: #959595;
           display: flex;
           flex-direction: column;
           font-weight: 600;
+
           span {
             @include fluid-type(320px, 1920px, 24px, 32px);
             opacity: 0.4;
             font-weight: 600;
           }
         }
+
         .fiatInputContainer {
           width: 100%;
           display: flex;
@@ -138,11 +154,13 @@
           padding: 20px;
           border-radius: 22px;
           align-items: center;
+
           h1 {
-            color: rgba(226, 128, 1, 0.808);
+            color: rgba(255, 145, 0, 0.808);
             font-weight: 500;
             font-size: 26px;
           }
+
           input {
             height: 30px;
             width: 100%;
@@ -157,17 +175,20 @@
             outline-width: 0px;
           }
         }
+
         .cryptoValueToSend {
           display: flex;
           flex-direction: column;
           justify-content: start;
           align-items: start;
+
           h6 {
             color: #4b4b4b;
             font-weight: 500;
             font-size: 16px;
           }
         }
+
         .addressInput {
           width: 100%;
           height: 60px;
@@ -183,16 +204,19 @@
           font-size: 15px;
           font-weight: 400;
         }
+
         input::placeholder {
           color: rgb(99, 99, 99);
         }
-      
+
       }
+
       .sendSelectContainer {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 80px;
+
         .sendSelect {
           width: 70%;
           height: 60px;
@@ -209,28 +233,30 @@
           font-weight: 600;
         }
       }
+
       button {
-        min-width:200px;
-        width: 100%;
-        border-radius: 10px;
-        background-color: rgb(49, 28, 49);
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 60px;
+        color: #fff;
+        background: linear-gradient(to right, #f85101, #f98906);
+        border: none;
+        border-radius: 30px;
         height: 60px;
-        color: rgb(252, 114, 255);
-        @include fluid-type(320px, 1920px, 14px, 16px);
-        margin-top: 5px;
-        font-weight: 600;
-        margin-top: 13px;
-        &:hover,
-        :active,
-        :focus,
-        :focus-within,
-        :focus-visible {
-          background-color: rgb(49, 28, 49) !important;
-          opacity: 0.4;
-          color: rgb(252, 114, 255);
+        min-width: 200px;
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background: linear-gradient(to right, #f98906, #f85101);
+          color: #fff;
         }
       }
-      .success-box{
+
+      .success-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -244,28 +270,32 @@
         background-color: rgb(28, 49, 36);
         color: rgb(154, 255, 114);
         font-weight: 500;
-        button{
+
+        button {
           width: 100%;
           color: rgb(151, 151, 151);
-          font-size: 14px ;
-          font-weight: 300;  
+          font-size: 14px;
+          font-weight: 300;
           background-color: transparent;
-          border:none;
+          border: none;
         }
       }
     }
   }
 }
+
 .ant-select:not(.ant-select-customize-input) .ant-select-selector {
   background-color: rgb(19, 19, 19);
   color: #fff;
   border: 1px solid #242424;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.07);
+
   &:hover {
     background-color: rgb(27, 27, 27);
   }
 }
+
 .ant-select-arrow {
   span {
     svg {
@@ -273,47 +303,61 @@
     }
   }
 }
+
 .selectToken {
   .ant-select-selector {
     background-color: rgb(252, 114, 255) !important;
     @include fluid-type(320px, 1920px, 16px, 18px);
   }
+
   .ant-select-single.ant-select-open .ant-select-selection-item {
     font-weight: bold !important;
     color: #fff;
   }
 }
+
 .connectbtn {
-  border-radius: 10px;
-  background-color: rgb(49, 28, 49);
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 60px;
+  color: #fff !important;
+  background: linear-gradient(to right, #f85101, #f98906) !important;
+  border: none;
+  border-radius: 30px;
+  min-width: 200px;
   height: 60px;
-  color: rgb(252, 114, 255);
-  @include fluid-type(320px, 1920px, 14px, 16px);
-  margin-top: 5px;
-  font-weight: 600;
-  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+
   &:hover,
   :active,
   :focus,
   :focus-within,
   :focus-visible {
-    background-color: rgb(49, 28, 49) !important;
-    opacity: 0.4;
-    color: rgb(252, 114, 255);
+    background: linear-gradient(to right, #f98906, #f85101) !important;
+    color: #fff !important;
   }
 }
+
 .ant-drawer-wrapper-body {
   background-color: #131313;
+
   .ant-drawer-header {
     border-bottom: 0 !important;
+
     .ant-drawer-title {
       color: #fff;
     }
   }
+
   .ant-drawer-body {
     padding: 15px !important;
   }
 }
+
 .anticon-close {
   svg {
     fill: white;

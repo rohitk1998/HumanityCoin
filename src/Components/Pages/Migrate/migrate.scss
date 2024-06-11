@@ -109,22 +109,40 @@
       }
 
       Button{
-        border-radius: 10px;
-        background-color: rgb(49, 28, 49);
-        height: 60px;
-        width: 100%;
-        color: rgb(252, 114, 255);
-        @include fluid-type(320px, 1920px, 14px, 16px);
+        // border-radius: 10px;
+        // background-color: rgb(49, 28, 49);
+        // height: 60px;
+        // width: 100%;
+        // color: rgb(252, 114, 255);
+        // @include fluid-type(320px, 1920px, 14px, 16px);
+        // margin-top: 15px;
+        // font-weight: 600;
+        // &:hover,
+        // :active,
+        // :focus,
+        // :focus-within,
+        // :focus-visible {
+        //   background-color: rgb(49, 28, 49) !important;
+        //   opacity: 0.4;
+        //   color: rgb(252, 114, 255);
+        // }
+        font-size: 16px;
         margin-top: 15px;
-        font-weight: 600;
-        &:hover,
-        :active,
-        :focus,
-        :focus-within,
-        :focus-visible {
-          background-color: rgb(49, 28, 49) !important;
-          opacity: 0.4;
-          color: rgb(252, 114, 255);
+        height: 60px;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(to right, #f85101, #f98906);
+        border: none;
+        border-radius: 30px;
+        min-width: 200px;
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s, color 0.3s;
+    
+        &:hover {
+          background: linear-gradient(to right, #f98906, #f85101);
+          color: #fff;
         }
       }
     }
