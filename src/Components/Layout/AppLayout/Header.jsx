@@ -7,7 +7,6 @@ import { setAccount, setIsConnected } from '../../../redux/slice/app.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import React from 'react';
 import { Select, Button, Drawer } from 'antd';
-// import swapicon from "../../Assets/Images/horsepink.png";
 import './Header.scss';
 import { Menu, Input } from 'antd';
 import { rootName, appRootName } from '../../../utils/constant';
@@ -15,9 +14,6 @@ import { publicRouteObj } from '../../../staticObjects';
 import swapicon from '../../Assets/Images/uniswap.svg';
 import { SearchOutlined } from '@ant-design/icons';
 import { StoreImages } from '../../Storeimgaes/StoreImages';
-// import { useConnectMetamask } from '../../../customHooks/useConnectMetamask';
-// import applestore from "../../Assets/Images/applestore.svg";
-// import playstore from "../../Assets/Images/playstor.svg";
 
 const connectAppButtonStyle = {
   minWidth: '150px',

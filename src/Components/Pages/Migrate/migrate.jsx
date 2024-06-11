@@ -62,7 +62,7 @@ export default function Migrate() {
         if (txResult.hash) {
           updateTransactionStatus(TRANSACTION_STATUS.WAITING_FOR_APPROVAL)
           console.log('txResult.hash', txResult.hash);
-          setTimeout(() => setTxnHash(txResult.hash), 20000);
+          setTimeout(() => setTxnHash(txResult.hash), 40000);
         }
       }
       // You can perform further actions after migration
@@ -105,7 +105,7 @@ export default function Migrate() {
           if (tx.hash) {
             updateTransactionStatus(TRANSACTION_STATUS.IN_PROGRESS)
             console.log('hash', tx.hash);
-            setTimeout(() => setTxnHash(tx.hash), 20000);
+            setTimeout(() => setTxnHash(tx.hash), 40000);
           }
         else{
           updateTransactionStatus(TRANSACTION_STATUS.FAILED)

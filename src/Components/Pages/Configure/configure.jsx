@@ -42,10 +42,10 @@ export default function Configure() {
           </p>
         </div>
         <div className="createPairSec">
-            {CONFIGURE_MENU?.map((item) => {
+            {CONFIGURE_MENU?.map((item , index) => {
               return (
                 <button
-                  className="btn"
+                  className={selectedTab === index ? "btn active" : "btn"}
                   onClick={() => {
                     setSelectedTab(item.id);
                   }}

@@ -1,5 +1,6 @@
 @import '../../Assets/Styles/_vars.scss';
 @import '../../Assets/Styles/_mixins.scss';
+
 .liquidyDiv {
   background-color: rgb(3, 3, 3);
   width: 100%;
@@ -9,12 +10,15 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+
   .liquidityCenter {
     padding-top: 70px;
     width: 50%;
+
     @media (max-width: 1440px) {
       width: 65%;
     }
+
     @media (max-width: 991px) {
       width: 100%;
       padding: 20px;
@@ -25,89 +29,156 @@
       padding: 20px;
       border-radius: 20px;
       margin-bottom: 30px;
+
       h4 {
         color: #fff;
         @include fluid-type(320px, 1920px, 14px, 16px);
         padding-bottom: 10px;
       }
+
       p {
         color: #fff;
         padding-bottom: 10px;
       }
+
       a {
         text-decoration: underline;
         color: #fff;
       }
     }
+
     .createPairSec {
       display: flex;
       gap: 20px;
       justify-content: space-between;
+
       .left,
       .right {
         display: flex;
         align-items: center;
         gap: 7px;
+
         h3 {
           color: #fff;
           font-weight: 600;
           @include fluid-type(320px, 1920px, 14px, 16px);
         }
+
         .transBtn {
-          border: 1px solid rgb(22, 158, 147) !important;
+          // border: 1px solid rgb(22, 158, 147) !important;
+          // background-color: transparent;
+          // color: #fff;
+          // border-radius: 10px;
+          // font-weight: 600;
+          // height: 42px;
+          // &:hover,
+          // :focus,
+          // :active {
+          //   background-color: rgb(22, 158, 147);
+          //   color: #fff;
+          // }
+          border: none !important;
+          width: 100%;
+          max-width: 150px;
+          border-radius: 20px;
+          margin-left: 10px;
           background-color: transparent;
-          color: #fff;
-          border-radius: 10px;
-          font-weight: 600;
-          height: 42px;
-          &:hover,
-          :focus,
-          :active {
-            background-color: rgb(22, 158, 147);
-            color: #fff;
-          }
-        }
-        button {
-          border-radius: 10px;
-          background-color: rgb(49, 28, 49);
-          height: 42px;
-          color: rgb(252, 114, 255);
+          height: 40px;
+          color: white;
           @include fluid-type(320px, 1920px, 14px, 16px);
           margin-top: 5px;
           font-weight: 600;
           margin-top: 10px;
+
           &:hover,
           :active,
           :focus,
           :focus-within,
           :focus-visible {
-            background-color: rgb(49, 28, 49) !important;
-            opacity: 0.4;
-            color: rgb(252, 114, 255);
+            background-color: transparent;
+            color: #f98906;
           }
+        }
+
+        .menuBtn {
+          // border-radius: 10px;
+          // background-color: rgb(49, 28, 49);
+          // height: 42px;
+          // color: rgb(252, 114, 255);
+          // @include fluid-type(320px, 1920px, 14px, 16px);
+          // margin-top: 5px;
+          // font-weight: 600;
+          // margin-top: 10px;
+          // &:hover,
+          // :active,
+          // :focus,
+          // :focus-within,
+          // :focus-visible {
+          //   background-color: rgb(49, 28, 49) !important;
+          //   opacity: 0.4;
+          //   color: rgb(252, 114, 255);
+          // }
+          border: none !important;
+          width: 100%;
+          max-width: 150px;
+          border-radius: 20px;
+          margin-left: 10px;
+          background-color: transparent;
+          height: 40px;
+          color: white;
+          @include fluid-type(320px, 1920px, 14px, 16px);
+          margin-top: 5px;
+          font-weight: 600;
+          margin-top: 10px;
+
+          &:hover,
+          :active,
+          :focus,
+          :focus-within,
+          :focus-visible {
+            background-color: transparent;
+            color: #f98906;
+          }
+
+        }
+
+
+        .active {
+          margin-top: 5px !important;
+          font-weight: 600 !important;
+          margin-top: 10px !important;
+          background-color: transparent !important;
+          border: 1px solid #faaf59 !important;
+          color: #f98906 !important;
         }
       }
     }
+
     .connectYourLiq {
       color: #fff;
       text-align: center;
       padding-top: 40px;
     }
+
     .AddLeqSec {
       padding-bottom: 60px;
     }
+
     .addLiq {
       border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+
       .createNewPool {
         padding: 35px 0;
         display: flex;
         gap: 20px;
         align-items: baseline;
+
         h3 {
           font-weight: 600;
           color: #fff;
           @include fluid-type(320px, 1920px, 18px, 24px);
         }
+
         p {
           color: rgba(255, 255, 255, 0.6);
           @include fluid-type(320px, 1920px, 14px, 16px);
@@ -115,23 +186,28 @@
         }
       }
     }
+
     .addLiqbottomSec {
       padding-top: 30px;
       display: flex;
+
       @media (max-width: 991px) {
         flex-direction: column;
         gap: 12px;
       }
+
       // gap: 40px;
       .leftdata {
         max-width: 350px;
         width: 100%;
+
         h4 {
           font-weight: 600;
           color: #fff;
           @include fluid-type(320px, 1920px, 14px, 16px);
           padding-bottom: 8px;
         }
+
         p {
           color: rgba(255, 255, 255, 0.6);
           @include fluid-type(320px, 1920px, 12px, 14px);
@@ -139,63 +215,94 @@
           max-width: 293px;
         }
       }
+
       .right {
         position: relative;
         width: 100%;
+
         .topSelect {
           min-width: 140px;
           width: 100%;
         }
+
         .centered-button {
           button {
-            width: 100%;
-            border-radius: 10px;
-            background-color: rgb(49, 28, 49);
+            // width: 100%;
+            // border-radius: 10px;
+            // background-color: rgb(49, 28, 49);
+            // height: 60px;
+            // color: rgb(252, 114, 255);
+            // @include fluid-type(320px, 1920px, 14px, 16px);
+            // margin-top: 5px;
+            // font-weight: 600;
+            // margin-top: 10px;
+
+            // &:hover,
+            // :active,
+            // :focus,
+            // :focus-within,
+            // :focus-visible {
+            //   background-color: rgb(49, 28, 49) !important;
+            //   opacity: 0.4;
+            //   color: rgb(252, 114, 255);
+            // }
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 60px;
+            color: #fff !important;
+            background: linear-gradient(to right, #f85101, #f98906);
+            border: none;
+            border-radius: 30px;
+            min-width: 200px;
             height: 60px;
-            color: rgb(252, 114, 255);
-            @include fluid-type(320px, 1920px, 14px, 16px);
-            margin-top: 5px;
-            font-weight: 600;
-            margin-top: 10px;
-            &:hover,
-            :active,
-            :focus,
-            :focus-within,
-            :focus-visible {
-              background-color: rgb(49, 28, 49) !important;
-              opacity: 0.4;
-              color: rgb(252, 114, 255);
+            width: 100%;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s, color 0.3s;
+          
+            &:hover {
+              background: linear-gradient(to right, #f98906, #f85101);
+              color: #fff;
             }
           }
         }
+
         .ethDiv {
           background-color: rgba(1, 1, 1, 0.3);
           border-radius: 20px;
           margin-bottom: 15px;
           border: 1px solid #3f3f3f;
           padding: 15px 20px;
+
           .ethfirst,
           .ethsecond {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             h4 {
               color: rgb(155, 155, 155);
               @include fluid-type(320px, 1920px, 20px, 26px);
             }
           }
+
           .ethsecond {
             padding-top: 20px;
+
             h4 {
               @include fluid-type(320px, 1920px, 16px, 18px);
+
               span {
                 color: #fff;
                 @include fluid-type(320px, 1920px, 13px, 14px);
               }
+
               svg {
                 margin-right: 8px;
               }
             }
+
             input {
               height: 60px;
               width: 90%;
@@ -211,15 +318,18 @@
               outline-width: 0px;
             }
           }
+
           .css-13cymwt-control {
             border-radius: 30px !important;
             padding: 3px 5px !important;
           }
+
           .css-t3ipsp-control {
             border-radius: 30px !important;
             padding: 3px 5px !important;
           }
         }
+
         .addressDiv {
           margin-bottom: 15px;
 
@@ -234,34 +344,42 @@
             outline-width: 0px;
           }
         }
+
         .pairDiv {
           background-color: rgba(1, 1, 1, 0.3);
           border-radius: 20px;
           margin-bottom: 15px;
           border: 1px solid #3f3f3f;
           padding: 15px 20px;
+
           .ethfirst,
           .ethsecond {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             h4 {
               color: rgb(155, 155, 155);
               @include fluid-type(320px, 1920px, 20px, 26px);
             }
           }
+
           .ethsecond {
             padding-top: 2px;
+
             h4 {
               @include fluid-type(320px, 1920px, 16px, 18px);
+
               span {
                 color: #fff;
                 @include fluid-type(320px, 1920px, 13px, 14px);
               }
+
               svg {
                 margin-right: 8px;
               }
             }
+
             input {
               height: 60px;
               width: 90%;
@@ -277,10 +395,12 @@
               outline-width: 0px;
             }
           }
+
           .css-13cymwt-control {
             border-radius: 30px !important;
             padding: 3px 5px !important;
           }
+
           .css-t3ipsp-control {
             border-radius: 30px !important;
             padding: 3px 5px !important;
@@ -288,11 +408,13 @@
         }
       }
     }
+
     .selectIcon {
       display: flex;
       gap: 10px;
       align-items: center;
     }
+
     .css-13cymwt-control {
       background-color: transparent !important;
       border-radius: 10px !important;
@@ -303,15 +425,18 @@
         background-color: transparent !important;
       }
     }
+
     .css-1jqq78o-placeholder {
       color: #fff !important;
     }
+
     .containerAdLiq {
       max-width: 1000px;
       width: 100%;
       padding: 0 15px;
       margin: 0 auto;
     }
+
     .css-t3ipsp-control {
       background-color: transparent !important;
       border: 1px solid rgb(41, 42, 41) !important;
@@ -320,20 +445,25 @@
       min-width: 138px !important;
       box-shadow: none !important;
     }
+
     .css-1nmdiq5-menu {
       background-color: rgb(41, 42, 41) !important;
       color: rgb(113, 109, 109) !important;
+
       li {
         background-color: red !important;
+
         &:hover {
           background-color: green !important;
         }
       }
     }
+
     .css-1u9des2-indicatorSeparator {
       width: unset !important;
       background-color: unset !important;
     }
+
     .plusBtn {
       background-color: black;
       border-radius: 50%;
@@ -345,9 +475,11 @@
       position: absolute;
       top: 34.6%;
       right: 50%;
+
       @media (max-width: 1880px) {
         right: 48%;
       }
+
       &:hover,
       :active,
       :target,
@@ -357,6 +489,7 @@
         color: $white;
       }
     }
+
     .selectItm {
       @media (max-width: 991px) {
         width: 306px;
@@ -364,12 +497,14 @@
     }
   }
 }
+
 .pinkbtn {
   border-radius: 10px;
   background-color: rgb(49, 28, 49);
   height: 50px;
   color: rgb(252, 114, 255);
   font-weight: 600;
+
   &:hover {
     background-color: rgb(49, 28, 49);
     opacity: 0.7;
