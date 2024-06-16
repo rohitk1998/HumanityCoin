@@ -70,15 +70,6 @@ const Header = () => {
 
             <div className={style.header_rightSideFlex}>
               <div className={`${style.header_links} ${style.navbarfull}`}>
-                {/* <RouterLink to={`${rootName}${publicRouteObj.ecosystem}`}>
-                Ecosystem
-              </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.community}`}>
-                Community
-              </RouterLink>
-              <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
-                FAQ's
-              </RouterLink> */}
                 <RouterLink to="/" onClick={(e) => handleScroll(e, 'aboutus')}>
                   About us
                 </RouterLink>
@@ -89,7 +80,7 @@ const Header = () => {
                   to="/"
                   onClick={(e) => handleScroll(e, 'tokenmics')}
                 >
-                  Tokenmics
+                  Tokenomics
                 </RouterLink>
                 <RouterLink to="/" onClick={(e) => handleScroll(e, 'faq')}>
                   FAQs
@@ -134,8 +125,7 @@ const Header = () => {
                       <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
                         FAQ's
                       </RouterLink>
-                      {/* <button
-                        style={launchAppButtonStyle}
+                      <button
                         onClick={() => {
                           window.open(
                             `${appRootName}/${publicRouteObj.swap}`,
@@ -143,37 +133,21 @@ const Header = () => {
                           );
                         }}
                       >
-                        Launch App
-                      </button> */}
-                      <img
-                        src={btn}
-                        alt="btn"
-                        style={{ cursor: 'pointer' }}
-                        className={style.resjoin}
-                        onClick={() => {
-                          window.open(`${appRootName}/${publicRouteObj.swap}`, '_blank');
-                        }}
-                      />
+                        Trade Now
+                      </button>
                     </div>
                   </Drawer>
                 </div>
               </div>
             </div>
-            {/* <button
-            style={launchAppButtonStyle}
-            
+            <button
+            onClick={() => {
+              window.open(`${appRootName}/${publicRouteObj.swap}`, '_blank');
+            }}
+            className='tradeNowBtn'
           >
-            Launch App
-          </button> */}
-            <img
-              src={btn}
-              onClick={() => {
-                window.open(`${appRootName}/${publicRouteObj.swap}`, '_blank');
-              }}
-              alt="btn"
-              style={{ cursor: 'pointer' }}
-              className={style.webjoin}
-            />
+           Trade Now
+          </button>
           </div>
         </div>
       </header>

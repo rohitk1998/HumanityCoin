@@ -3,9 +3,8 @@ import "./Tokenmics.scss";
 import tokenmicsImg from "../../../Assets/Images/Frame.png";
 function Tokenomics() {
   const coinData = [
-    { id: 1, name: "Name", value: "Coin of Humanity " },
+    { id: 1, name: "Name", value: "Humanity Coin" },
     { id: 2, name: "$HMN", value: "Symbol " },
-
     { id: 3, name: "18", value: "Decimal " },
   ];
   return (

@@ -9,6 +9,7 @@
   .header {
     width: 100%;
     margin: 0 auto;
+
     .lghtLogo {
       display: none;
     }
@@ -74,6 +75,7 @@
   height: 100%;
   padding-top: 200px;
   min-height: 100vh;
+
   @media (max-width: 991px) {
     padding-top: 50px;
     min-height: unset;
@@ -92,17 +94,21 @@
     @media (max-width: 1399px) {
       padding: 30px;
     }
+
     @media (max-width: 991px) {
       flex-direction: column;
       padding: 400px 10px 60px 10px;
       min-height: 400px;
     }
+
     @media (max-width: 575px) {
       padding: 120px 10px 105px 10px;
       min-height: 200px;
     }
+
     &__left {
       width: 50%;
+
       @media (max-width: 991px) {
         width: 100%;
       }
@@ -116,6 +122,7 @@
         line-height: 1;
         font-weight: 800;
         padding-bottom: 30px;
+
         span {
           // background: linear-gradient(to right, #f85100, #fab70a);
           background: linear-gradient(to right, #F85100, #a35229);
@@ -124,6 +131,7 @@
           background-clip: text;
           text-fill-color: transparent;
         }
+
         opacity: 1;
 
         @media (max-width: 1199px) {
@@ -143,6 +151,7 @@
         max-width: 496px;
         width: 100%;
       }
+
       button {
         padding: 15px 20px;
         font-size: 16px;
@@ -157,18 +166,22 @@
         cursor: pointer;
         outline: none;
         transition: background-color 0.3s, color 0.3s;
+
         &:hover {
           background: linear-gradient(to right, #f98906, #f85101);
           /* Optional hover effect */
           color: #fff;
         }
       }
+
       .uniswap {
         @include fluid-type(320px, 1920px, 30px, 56px);
+
         span {
           font-weight: bold;
         }
       }
+
       .socialIcons {
         display: flex;
         gap: 12px;
@@ -179,21 +192,26 @@
     &__right {
       width: 50%;
       text-align: right;
+
       @media (max-width: 991px) {
         width: 100%;
         display: flex;
         justify-content: center;
       }
+
       .fundADDImg {
         @media (max-width: 991px) {
           max-width: 278px;
         }
+
         @media (max-width: 446px) {
           max-width: 205px;
           padding-top: 17px !important;
         }
+
         @media (max-width: 1199px) {
           padding-top: 30px;
+
           @media (max-width: 991px) {
             padding-top: 0;
             padding-bottom: 40px;
@@ -203,6 +221,7 @@
     }
   }
 }
+
 .alltimetrade {
   background-color: black;
   display: flex;
@@ -210,17 +229,21 @@
   align-items: center;
   gap: 70px;
   padding-top: 100px;
+
   @media (max-width: 991px) {
     gap: 30px;
   }
+
   @media (max-width: 767px) {
     flex-direction: column;
     padding: 40px 15px 0;
   }
+
   h2 {
     color: #fff;
     @include fluid-type(320px, 1920px, 30px, 55px);
     font-weight: 600;
+
     @media (max-width: 767px) {
       max-width: 730px;
       padding: 20px 30px;
@@ -244,6 +267,7 @@
     }
   }
 }
+
 /*-------------footer--------*/
 
 .linearBg {
@@ -260,6 +284,7 @@
     display: none;
   }
 }
+
 /*-----header-------*/
 header {
   background-color: transparent;
@@ -268,6 +293,7 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
+
   .header {
     display: flex;
     align-items: center;
@@ -280,10 +306,12 @@ header {
       align-items: center;
       gap: 10px;
     }
+
     &_links {
       display: flex;
       align-items: center;
       gap: 60px;
+
       a,
       button {
         color: #79799a;
@@ -300,6 +328,7 @@ header {
         &:hover {
           color: rgb(255, 145, 0);
         }
+
         &.blueBtn {
           background-color: $baseblue;
           border-radius: 30px;
@@ -315,11 +344,42 @@ header {
       }
     }
 
+    button {
+      width: 100%;
+      min-width: 70px;
+      max-width: 150px;
+      border-radius: 20px;
+      margin-left: 10px;
+      background-color: transparent;
+      height: 42px;
+      color: white;
+      @include fluid-type(320px, 1920px, 14px, 16px);
+      margin-top: 5px;
+      font-weight: 600;
+      color: #f98906;
+      border: 2px solid rgb(189, 118, 26);
+
+      &:hover,
+      :active,
+      :focus,
+      :focus-within,
+      :focus-visible {
+        background: linear-gradient(to right, #f85101, #f98906);
+        color: white;
+        border: none;
+      }
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
     .navbarfull {
       @media (max-width: 1199px) {
         display: none;
       }
     }
+
     .responsiveSidebar {
       button {
         border-color: #014cec;
@@ -329,6 +389,7 @@ header {
       @media (min-width: 1199px) {
         display: none;
       }
+
       .sidebarHeader {
         margin-top: 60px;
 
@@ -337,18 +398,20 @@ header {
           display: block !important;
           width: 100%;
         }
-        
+
       }
     }
   }
 }
-.aboutTopSec{
+
+.aboutTopSec {
   background-image: url('../../Assets/Images/aboutTopLeft.svg');
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
-  padding:86px 0 40px;
-  .aboutTop{
+  padding: 86px 0 40px;
+
+  .aboutTop {
     max-width: 1196px;
     width: 100%;
     margin: auto;
@@ -357,13 +420,16 @@ header {
   }
 
 }
+
 .futureHumaity {
   position: relative;
+
   video {
     width: 100%;
     height: auto;
     display: block;
   }
+
   .heading {
     position: absolute;
     top: 50%;
@@ -375,6 +441,7 @@ header {
     padding: 10px;
     border-radius: 8px;
   }
+
   h2 {
     background: linear-gradient(167deg, #c61705, #f1aa00);
     -webkit-background-clip: text;
@@ -388,6 +455,7 @@ header {
     text-transform: capitalize;
   }
 }
+
 .aboutUs {
   padding: 80px 0;
   display: flex;
@@ -397,16 +465,19 @@ header {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
+
   h2,
   p {
     text-align: center;
   }
+
   h2 {
     color: #fff;
     @include fluid-type(320px, 1920px, 30px, 60px);
     font-weight: bold;
     padding-bottom: 20px;
   }
+
   p {
     color: #79799a;
     max-width: 1195px;
@@ -414,12 +485,14 @@ header {
     @include fluid-type(320px, 1920px, 14px, 20px);
     margin: auto;
   }
+
   img {
     max-width: 1242px;
     width: 100%;
     margin: auto;
   }
 }
+
 .globecontainer {
   perspective: 1000px;
   display: flex;
@@ -433,21 +506,14 @@ header {
   border-radius: 50%;
 }
 
-// @keyframes rotateGlobe {
-//   from {
-//     transform: rotateY(0deg);
-//   }
-//   to {
-//     transform: rotateY(360deg);
-//   }
-// }
-// }
 .mb24 {
   margin-bottom: 22px;
 }
+
 .connectwallet {
   .header {
     display: flex;
+
     h2 {
       display: block;
       width: 100%;
@@ -455,8 +521,10 @@ header {
       color: white;
     }
   }
+
   .content {
     margin-top: 20px;
+
     .card {
       width: 100%;
       display: flex;
@@ -469,12 +537,15 @@ header {
       border-radius: 8px;
       padding: 8px;
       cursor: pointer;
+
       .card:hover {
         background-color: #282b30;
       }
+
       img {
         border-radius: 40px;
       }
+
       p {
         margin-left: 10px;
         font-weight: 500;
@@ -484,11 +555,13 @@ header {
     }
   }
 }
-.webjoin{
+
+.webjoin {
   @media (max-width:1199px) {
     display: none;
   }
 }
-.resjoin{
-  margin-top:20px;
+
+.resjoin {
+  margin-top: 20px;
 }
