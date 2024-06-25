@@ -22,9 +22,13 @@
     @media (max-width: 1599px) {
       gap: 30px;
     }
+    @media (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
     @media (max-width: 991px) {
       flex-wrap: wrap;
       justify-content: center;
+      margin-bottom: 30px;
     }
     &_left {
       max-width: 769px;
@@ -36,11 +40,16 @@
         border-radius: 20px;
         padding: 12px 53px;
         justify-content: space-between;
+        @media (max-width: 575px) {
+          flex-flow: wrap;
+        }
+        @media (max-width: 375px) {
+          flex-direction: column;
+        }
         &_inner {
           display: flex;
           flex-direction: column;
-
-          h4 {
+          h3 {
             color: $white;
             font-weight: 500;
             @include fluid-type(320px, 1920px, 20px, 24px);
@@ -77,18 +86,6 @@
     position: relative;
     @media (min-width: 1100px) {
       margin-left: 50px;
-    }
-    h4 {
-      background: linear-gradient(45deg, #f1aa00, #eb5305);
-      -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-      @include fluid-type(320px, 1920px, 20px, 24px);
-      font-weight: 700;
-    }
-    p {
-      color: #fff;
-      font-weight: 500;
     }
     .firstText {
       content: "";
@@ -128,17 +125,24 @@
       content: "";
       position: absolute;
       text-align: left;
-      right: 11%;
+      right: 10%;
       top: 51px;
       color: white;
       border-left: 3px solid #9b39f9;
       height: 58px;
       padding-left: 15px;
+      @media (max-width: 1199px) {
+        right: 3%;
+        top: 34px;
+      }
       &:before {
         content: url("../../../Assets/Images/thirdline.svg");
         top: 39px;
         position: absolute;
-        left: -164px;
+        left: -148px;
+        @media (max-width: 1299px) {
+          top: 21px;
+        }
       }
     }
     .fourthText {
@@ -148,9 +152,15 @@
       border-left: 3px solid #fa6142;
       height: 58px;
       padding-left: 15px;
-      right: 10%;
+      right: 7%;
       top: 50%;
       color: white;
+      @media (max-width: 1260px) {
+        right: 4%;
+      }
+      @media (max-width: 1199px) {
+        right: 0;
+      }
       &:before {
         content: url("../../../Assets/Images/fourthline.svg");
         top: 16px;
@@ -165,7 +175,7 @@
       height: 58px;
       padding-left: 15px;
       text-align: left;
-      right: 10%;
+      right: 5%;
       bottom: 33px;
       color: white;
       &:before {
@@ -178,5 +188,71 @@
     .innerImages {
       display: flex;
     }
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+  .restokenMics {
+    display: none;
+    @media (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      gap: 50px;
+      max-width: 400px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      @media (max-width:575px) {
+        margin-left: unset;
+        
+      }
+    }
+    &_one {
+      display: flex;
+      gap: 60px;
+      .dashedborder {
+        position: relative;
+        svg {
+          position: relative;
+          top: 3px;
+        }
+        &_inner {
+          border: 1px dashed #f1aa00;
+          left: 30px;
+          position: absolute;
+          height: 100%;
+        }
+      }
+    }
+    .borderMap:last-child .borderMapDot {
+      border: 0;
+    }
+  }
+  h4 {
+    background: linear-gradient(45deg, #f1aa00, #eb5305);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    @include fluid-type(320px, 1920px, 20px, 24px);
+    font-weight: 700;
+  }
+  p {
+    color: #fff;
+    font-weight: 500;
+  }
+}
+.smallOne {
+  background-color: black;
+  display: block;
+  border: 1px solid #f1aa00;
+  border-radius: 50%;
+  padding: 10px;
+  width: 62px;
+  height: 63px;
+  svg {
+    width: 36px;
+    height: 36px;
+    fill: black;
   }
 }

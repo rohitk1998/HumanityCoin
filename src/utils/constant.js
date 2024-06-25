@@ -3,6 +3,10 @@ import BNBMainnet from "../Components/Assets/Images/bnbIcon.svg"
 import LOGO from "../Components/Assets/Images/logo.png"
 
 
+export const NetworkContextName = 'NETWORK'
+
+
+
 export const rootName = '/';
 export const appRootName = '/app';
 

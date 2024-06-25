@@ -619,7 +619,20 @@ body {
 
 .ant-drawer-title {
   h2 {
-    color: $baseblue !important;
+    color: #f98906 !important;
+  }
+}
+.ant-drawer-close{
+  border:0 !important;
+  background: unset;
+  width: unset !important;
+  &:hover{
+    background: unset !important;
+  }
+  span{
+    svg{
+      fill:#fff;
+    }
   }
 }
 
@@ -634,7 +647,8 @@ body {
     }
 
     &:hover {
-      color: $baseblue;
+      color: #fff;
+      opacity: 0.4;
     }
   }
 }
@@ -661,6 +675,9 @@ body {
     max-width: 1459px;
     width: 100%;
     margin: auto;
+  }
+  @media (max-width:575px) {
+    padding: 0px 15px 0px 2px;
   }
 }
 

@@ -37,6 +37,9 @@
             color: white;
             padding: 16px 60px;
             @include fluid-type(320px, 1920px, 16px, 24px);
+            @media (max-width:575px) {
+              padding:15px;
+            }
           }
           .ant-collapse-expand-icon {
             width: 0;
@@ -62,7 +65,8 @@
               border-radius: 20px;
               padding: 1px 0px 0px 8px;
               @media (max-width: 575px) {
-                font-size: 25px;
+                font-size: 39px;
+                right:15px;
               }
               background: linear-gradient(to right, #fab70a, #f85100);
               -webkit-background-clip: text;
@@ -88,6 +92,10 @@
               line-height: 15px;
               font-weight: 300;
               color: white;
+              @media (max-width:575px) {
+                font-size: 39px;
+                right: 15px;
+              }
             }
 
             span {
@@ -121,8 +129,14 @@
           color: #79799a;
           font-weight: 500;
           padding-top: 0;
+          @media (max-width:575px) {
+            padding:15px;
+          }
         }
       }
     }
+  }
+  @media (max-width:575px) {
+    padding:20px 0 0;
   }
 }

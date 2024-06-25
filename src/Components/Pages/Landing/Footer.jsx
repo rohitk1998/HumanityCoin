@@ -21,6 +21,7 @@ const Footer = () => {
       <div className="footerTop">
         <div className="footerTopLeft">
           <img src={logo} alt="logo" />
+          <p>Lorem ipsum, or lipsum as it is sometimes known,</p>
         </div>
         <div className="footerTopRight">
           <div className="input-container">

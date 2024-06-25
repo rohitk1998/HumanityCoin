@@ -62,8 +62,8 @@ const Header = () => {
           <div className={style.header}>
             <img
               src={logoIcon}
-              width={95}
-              height={95}
+              width={75}
+              height={75}
               className="responsiveLogo"
             />
             <img src={logo} alt="logo" className="webLogo" />
@@ -116,15 +116,21 @@ const Header = () => {
                     afterVisibleChange={handleDrawerStateChange}
                   >
                     <div className={style.sidebarHeader}>
-                      <RouterLink to={`${rootName}${publicRouteObj.ecosystem}`}>
-                        Ecosystem
-                      </RouterLink>
-                      <RouterLink to={`${rootName}${publicRouteObj.community}`}>
-                        Community
-                      </RouterLink>
-                      <RouterLink to={`${rootName}${publicRouteObj.faq}`}>
-                        FAQ's
-                      </RouterLink>
+                    <RouterLink to="/" onClick={(e) => handleScroll(e, 'aboutus')}>
+                  About us
+                </RouterLink>
+                <RouterLink to="/" onClick={(e) => handleScroll(e, 'roadmap')}>
+                  Roadmap
+                </RouterLink>
+                <RouterLink
+                  to="/"
+                  onClick={(e) => handleScroll(e, 'tokenmics')}
+                >
+                  Tokenomics
+                </RouterLink>
+                <RouterLink to="/" onClick={(e) => handleScroll(e, 'faq')}>
+                  FAQs
+                </RouterLink>
                       <button
                         onClick={() => {
                           window.open(
