@@ -11,21 +11,31 @@
     align-items: flex-end;
     border-bottom: 1px solid #252832;
     padding-bottom: 40px;
+    @media (max-width:991px) {
+      flex-flow: wrap;
+    }
     .footerTopLeft {
       p {
         color: #79799a;
         margin-top: 43px;
         @include fluid-type(320px, 1920px, 14px, 18px);
+        @media (max-width:991px) {
+          margin-top: 20px;
+          padding-bottom: 20px;
+        }
       }
     }
     .footerTopRight {
       max-width: 520px;
       width: 100%;
+      @media (max-width:991px) {
+        max-width: 100%;
+      }
       .input-container {
         position: relative;
         .input-field {
           width: 100%;
-          padding: 28px; /* Adjust padding to make room for the icon */
+          padding: 28px;
           box-sizing: border-box;
           border: 0;
           border-radius: 20px;
@@ -34,6 +44,9 @@
           background: linear-gradient(to right, #11131b 20%, #0c0f16);
           outline: none;
           color: #9aa2b7;
+          @media (max-width:575px) {
+            padding:20px;
+          }
         }
 
         .icon {
@@ -51,6 +64,16 @@
     padding-top: 40px;
     padding-bottom: 20px;
     justify-content: space-between;
+    align-items: center;
+    @media (max-width:575px) {
+      padding:20px 0 10px;
+      
+    }
+    @media (max-width:767px) {
+      flex-flow: wrap;
+      gap:20px;
+      justify-content: center;
+    }
     .footerBottomLeft {
       display: flex;
       gap: 40px;

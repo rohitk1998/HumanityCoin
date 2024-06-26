@@ -3,6 +3,11 @@ import BNBMainnet from "../Components/Assets/Images/bnbIcon.svg"
 import LOGO from "../Components/Assets/Images/logo.png"
 
 
+
+export const NetworkContextName = 'NETWORK'
+
+
+
 export const rootName = '/';
 export const appRootName = '/app';
 
@@ -13,8 +18,10 @@ export const SOCIAL_LINK = {
     FACEBOOK : 'https://www.fb.me/hmncrypto' , 
     TWITTER : 'https://x.com/Humanityhmn' , 
     INSTAGRAM : 'https://instagram.com/humanity_hmn?igshid=NGVhN2U2NjQ0Yg==' , 
-    TELEGRAM : 'https://www.linkedin.com/humanityhmn' , 
-    LINKEDIN : 'https://t.me./HMNtoken'
+    TELEGRAM : 'https://t.me./HMNtoken' , 
+    LINKEDIN : 'https://www.linkedin.com/company/humanityhmn/',
+    DISCORD:'https://discord.gg/9F2d7BHSYg',
+    YOUTUBE:'https://www.youtube.com/channel/UCSY6nOYRZ2fpSadeYEFimIQ'
 }
 
 

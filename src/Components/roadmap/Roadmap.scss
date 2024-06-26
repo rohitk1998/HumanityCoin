@@ -1,23 +1,27 @@
 @import "../Assets/Styles/_mixins.scss";
 @import "../Assets/Styles/_vars.scss";
 
-
 .roadmap {
-    h2 {
-            color: #fff;
-            @include fluid-type(320px, 1920px, 30px, 60px);
-            font-weight: bold;
-            text-align: center;
-          }
+  .roadtext {
+    @media (max-width: 767px) {
+      padding: 10px 20px;
+    }
+  }
+  h2 {
+    color: #fff;
+    @include fluid-type(320px, 1920px, 30px, 60px);
+    font-weight: bold;
+    text-align: center;
+  }
 
-          p {
-            color: #79799a;
-            @include fluid-type(320px, 1920px, 14px, 20px);
-            text-align: center;
-          }
-          span {
-            color: #fff;
-          }
+  p {
+    color: #79799a;
+    @include fluid-type(320px, 1920px, 14px, 20px);
+    text-align: center;
+  }
+  span {
+    color: #fff;
+  }
   .roadmapinner {
     background-image: url("../Assets/Images/roadmapbg.png");
     width: 100%;
@@ -26,9 +30,121 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    img{
-        padding-top: 50px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+    img {
+      padding-top: 50px;
+      padding: 50px;
+      width: 100%;
+      @media (max-width: 767px) {
+        padding: 10px;
+      }
+    }
+  }
+  .resRoadMap {
+    display: none;
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      gap: 50px;
+      max-width: 507px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &_one {
+      display: flex;
+      gap: 60px;
+      @media (max-width: 475px) {
+        gap: 22px;
+      }
+      .dashedborder {
+        position: relative;
+
+        svg {
+          position: relative;
+          top: 3px;
+          width: 36px;
+          height: 34px;
+          @media (max-width: 575px) {
+            width: 25px;
+            height: 24px;
+          }
+        }
+        &_inner {
+          border: 1px dashed #f1aa00;
+          left: 30px;
+          position: absolute;
+          height: 100%;
+          @media (max-width: 575px) {
+            left: 26px;
+            height: 107%;
+          }
+          p {
+          }
+        }
+      }
+    }
+    .borderMap:last-child .borderMapDot {
+      border: 0 !important;
+      border: 1px dashed #222233 !important;
+      height: 180px;
+    }
+    .borderMapDot {
+      margin-top: 10px;
+    }
+    h4 {
+      background: linear-gradient(45deg, #f1aa00, #eb5305);
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      @include fluid-type(320px, 1920px, 16px, 24px);
+      font-weight: 700;
+      @media (max-width:991px) {
+        background: unset;
+        -webkit-background-clip: unset;
+        color: unset;
+        -webkit-text-fill-color: unset;
+        color:#da682f;
+        
+      }
+    }
+    .grayMonth{
+      color:#79799a;
+    }
+    p {
+      color: #fff;
+      font-weight: 500;
+      text-align: left;
+      background: linear-gradient(45deg, #0f121a, #0c0f13);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 12px;
+      h3 {
+        color: #fff;
+        @include fluid-type(320px, 1920px, 20px, 24px);
+        font-weight: bold;
+        padding-bottom: 12px;
+      }
+    }
+  }
+  .roadOne {
+    position: relative;
+    top: 0;
+    left: 14px;
+  }
+}
+.listingItem {
+  ul {
+    list-style-image: url("../Assets/Images/Frame.svg");
+    list-style-position: inside;
+    margin-top: 7px;
+    li {
+     line-height: 24px;
+      font-size: 14px;
+      color: #79799a;
     }
   }
 }
-

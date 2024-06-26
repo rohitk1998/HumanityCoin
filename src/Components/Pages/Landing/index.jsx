@@ -28,26 +28,30 @@ const Main = () => {
         <section>
           <div className={style.euroMultiCurrency}>
             <div className="container">
-              <Row className={style.euroMultiCurrency__Everything}>
+              <Row className={style.euroMultiCurrency__Everything} gutter={[20,30]}>
                 <Col
-                  lg={12}
+                  lg={12} sm={24}
                   className={style.euroMultiCurrency__Everything__left}
                 >
                   <h2>
                     To Make <span>the World a Better Place!</span>
                   </h2>
                   <p>
-                    Generating a Daily return on investment, and then seamlessly
-                    convert them into USDT
+                    Investing in human development, every day
                   </p>
                   <button
-                  onClick={() => {
-                    window.open(`${appRootName}/${publicRouteObj.swap}`, '_blank');
-                  }}
-                  >Connect Wallet</button>
+                    onClick={() => {
+                      window.open(
+                        `${appRootName}/${publicRouteObj.swap}`,
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Connect Wallet
+                  </button>
                 </Col>
                 <Col
-                  lg={12}
+                  lg={12}sm={24}
                   style={{ display: "flex", justifyContent: "center" }}
                 >
                   <video src={hero} muted autoPlay loop />
@@ -60,12 +64,7 @@ const Main = () => {
           <div className={style.futureHumaity}>
             <video src={video} muted autoPlay loop />
             <div className={style.heading}>
-              <h2>
-                The future of
-                <br />
-                humanity with <br />
-                Humanty Coin
-              </h2>
+              <h2>The future of humanity with Humanty Coin</h2>
             </div>
           </div>
         </section>
@@ -89,15 +88,29 @@ const Main = () => {
             <video src={aboutbg} muted autoPlay loop />
           </div>
         </section>
-        <section id='tokenmics'>
+        <section id="tokenmics">
           <Tokenmics />
         </section>
         <section id="roadmap">
-          <Roadmap/> 
+          <Roadmap />
         </section>
         <section>
           <div className={style.globecontainer}>
-          <video style={{minWidth:"200px",width:"100%",maxWidth:"500px",minHeight:"200px",height:"100%",maxHeight:"500px",display:"block"}} src={bubbleGif} muted autoPlay loop />
+            <video
+              style={{
+                minWidth: "200px",
+                width: "100%",
+                maxWidth: "500px",
+                minHeight: "200px",
+                height: "100%",
+                maxHeight: "500px",
+                display: "block",
+              }}
+              src={bubbleGif}
+              muted
+              autoPlay
+              loop
+            />
           </div>
         </section>
         <section id="faq">

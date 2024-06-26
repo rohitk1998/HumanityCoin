@@ -1,8 +1,9 @@
 import { Swap, Landing, Configure, Pool , V2Pool, AddLiquidity, Community, FAQ , Migrate, Explorer} from './lazyRoute';
 import { primaryRoutes } from '../staticObjects/routing';
 import Ecosystem from '../Components/Pages/ecosystem/ecosystem';
+import Term_Condition from '../Components/Pages/TermAndCondition';
 
-const { authLanding, swap , configure, pool , v2pool,addLiquidity , community , faq , ecosystem, explorer,migrate } = primaryRoutes;
+const { authLanding, swap , configure, pool , v2pool,addLiquidity , community , faq , ecosystem, explorer,migrate,term_Condition } = primaryRoutes;
 
 export const appRoute = [
   {
@@ -40,16 +41,20 @@ export const mainRoute = [
     path: authLanding,
     component: <Landing />,
   },
+  // {
+  //   path : community,
+  //   component : <Community/>
+  // },
+  // {
+  //   path : faq , 
+  //   component : <FAQ/>
+  // },
+  // {
+  //   path :  ecosystem, 
+  //   component : <Ecosystem/>
+  // },
   {
-    path : community,
-    component : <Community/>
-  },
-  {
-    path : faq , 
-    component : <FAQ/>
-  },
-  {
-    path :  ecosystem, 
-    component : <Ecosystem/>
+    path :  term_Condition, 
+    component : <Term_Condition/>
   }
 ];

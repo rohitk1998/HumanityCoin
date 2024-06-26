@@ -242,19 +242,19 @@ export default function AppHeader() {
             }}
           >
             <div>
-              <RouterLink to={`${appRootName}${publicRouteObj.swap}`}>
+              <RouterLink to={`${appRootName}/${publicRouteObj.swap}`}>
                 Swap
               </RouterLink>
-              <RouterLink to={`${appRootName}${publicRouteObj.explorer}`}>
+              <RouterLink to={`${appRootName}/${publicRouteObj.explorer}`}>
                 Explore
               </RouterLink>
-              <RouterLink to={`${appRootName}${publicRouteObj.migrate}`}>
+              <RouterLink to={`${appRootName}/${publicRouteObj.migrate}`}>
                 Migrate
               </RouterLink>
-              <RouterLink to={`${appRootName}${publicRouteObj.pool}`}>
+              <RouterLink to={`${appRootName}/${publicRouteObj.pool}`}>
                 Pool
               </RouterLink>
-              <RouterLink to={`${appRootName}${publicRouteObj.configure}`}>
+              <RouterLink to={`${appRootName}/${publicRouteObj.configure}`}>
                 Configure
               </RouterLink>
             </div>

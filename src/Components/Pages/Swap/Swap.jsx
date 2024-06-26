@@ -2,12 +2,24 @@ import React, { useState } from "react";
 import "./swap.scss";
 import { Select, Button } from "antd";
 import Send from "./Send";
+import SelectTokenModal from "./selectTokenModal";
 export default function Swap() {
   const [selectedTab,setSelectedTab] = useState(1);
+  const [showModal, setShowModal] = useState(false);
+
   const { Option } = Select;
   function handleChange(value) {
     console.log(`Selected: ${value}`);
   }
+
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <div className="swap">
@@ -30,10 +42,8 @@ export default function Swap() {
                 defaultValue="Option 1"
                 style={{ width: 130 }}
                 onChange={handleChange}
+                onClick={handleOpenModal}
               >
-                <Option value="Option 1">Ethereum</Option>
-                <Option value="Option 2">Arbitrum</Option>
-                <Option value="Option 3">Optimism</Option>
               </Select>
             </div>
             <div className="amountpay" style={{ marginTop: "5px" }}>
@@ -45,10 +55,6 @@ export default function Swap() {
                 style={{ width: 'fit-content' , minWidth:'130px'}}
                 onChange={handleChange}
               >
-                <Option value="Option_0">Select Token</Option>
-                <Option value="Option 1">Ethereum</Option>
-                <Option value="Option 2">Arbitrum</Option>
-                <Option value="Option 3">Optimism</Option>
               </Select>
             </div>
           </div>
@@ -69,6 +75,9 @@ export default function Swap() {
         <Send/>
         }
       </div>
+
+
+      <SelectTokenModal show={showModal} onClose={handleCloseModal} />
     </div>
   )
 }

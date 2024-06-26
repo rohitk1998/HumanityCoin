@@ -4,11 +4,12 @@
 .headerMainEx {
   position: fixed;
   top: 0;
-  background-color: #08080F;
+  background-color: #08080f;
 
   .header {
     width: 100%;
     margin: 0 auto;
+
     .lghtLogo {
       display: none;
     }
@@ -74,8 +75,10 @@
   height: 100%;
   padding-top: 200px;
   min-height: 100vh;
+  @media (max-width: 1199px) {
+    padding-top: 100px;
+  }
   @media (max-width: 991px) {
-    padding-top: 50px;
     min-height: unset;
   }
 
@@ -88,27 +91,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     @media (max-width: 1399px) {
       padding: 30px;
     }
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       flex-direction: column;
-      padding: 400px 10px 60px 10px;
-      min-height: 400px;
     }
     @media (max-width: 575px) {
-      padding: 120px 10px 105px 10px;
-      min-height: 200px;
+      padding: 30px 0px;
     }
+
     &__left {
       width: 50%;
+
       @media (max-width: 991px) {
         width: 100%;
       }
 
       h2 {
-        @include fluid-type(320px, 1920px, 30px, 80px);
+        @include fluid-type(320px, 1920px, 40px, 80px);
         color: #fff;
         max-width: 626px;
         text-decoration: capitalize;
@@ -116,14 +117,19 @@
         line-height: 1;
         font-weight: 800;
         padding-bottom: 30px;
+        @media (max-width: 575px) {
+          padding-bottom: 10px;
+        }
+
         span {
           // background: linear-gradient(to right, #f85100, #fab70a);
-          background: linear-gradient(to right, #F85100, #a35229);
+          background: linear-gradient(to right, #f85100, #a35229);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           text-fill-color: transparent;
         }
+
         opacity: 1;
 
         @media (max-width: 1199px) {
@@ -143,6 +149,7 @@
         max-width: 496px;
         width: 100%;
       }
+
       button {
         padding: 15px 20px;
         font-size: 16px;
@@ -157,93 +164,40 @@
         cursor: pointer;
         outline: none;
         transition: background-color 0.3s, color 0.3s;
+        @media (max-width: 575px) {
+          margin-top: 20px;
+        }
         &:hover {
           background: linear-gradient(to right, #f98906, #f85101);
           /* Optional hover effect */
           color: #fff;
         }
       }
+
       .uniswap {
         @include fluid-type(320px, 1920px, 30px, 56px);
+
         span {
           font-weight: bold;
         }
       }
+
       .socialIcons {
         display: flex;
         gap: 12px;
         margin-top: 20px;
       }
     }
-
-    &__right {
-      width: 50%;
-      text-align: right;
+    video {
       @media (max-width: 991px) {
+        max-width: 500px;
         width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-      .fundADDImg {
-        @media (max-width: 991px) {
-          max-width: 278px;
-        }
-        @media (max-width: 446px) {
-          max-width: 205px;
-          padding-top: 17px !important;
-        }
-        @media (max-width: 1199px) {
-          padding-top: 30px;
-          @media (max-width: 991px) {
-            padding-top: 0;
-            padding-bottom: 40px;
-          }
-        }
+        border-right: 1px solid;
       }
     }
   }
 }
-.alltimetrade {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  padding-top: 100px;
-  @media (max-width: 991px) {
-    gap: 30px;
-  }
-  @media (max-width: 767px) {
-    flex-direction: column;
-    padding: 40px 15px 0;
-  }
-  h2 {
-    color: #fff;
-    @include fluid-type(320px, 1920px, 30px, 55px);
-    font-weight: 600;
-    @media (max-width: 767px) {
-      max-width: 730px;
-      padding: 20px 30px;
-      border: 1px solid rgb(136, 141, 155);
-      width: 100%;
-      border-radius: 20px;
-    }
 
-    p {
-      color: #fff;
-      @include fluid-type(320px, 1920px, 12px, 14px);
-      font-weight: 400;
-    }
-  }
-}
-
-.scrollHeader {
-  .euroCurrency {
-    .headerMainEx {
-      background-color: #17121d;
-    }
-  }
-}
 /*-------------footer--------*/
 
 .linearBg {
@@ -260,6 +214,7 @@
     display: none;
   }
 }
+
 /*-----header-------*/
 header {
   background-color: transparent;
@@ -268,6 +223,7 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
+
   .header {
     display: flex;
     align-items: center;
@@ -280,10 +236,12 @@ header {
       align-items: center;
       gap: 10px;
     }
+
     &_links {
       display: flex;
       align-items: center;
       gap: 60px;
+
       a,
       button {
         color: #79799a;
@@ -300,6 +258,7 @@ header {
         &:hover {
           color: rgb(255, 145, 0);
         }
+
         &.blueBtn {
           background-color: $baseblue;
           border-radius: 30px;
@@ -315,11 +274,42 @@ header {
       }
     }
 
+    button {
+      width: 100%;
+      min-width: 70px;
+      max-width: 150px;
+      border-radius: 20px;
+      margin-left: 10px;
+      background-color: transparent;
+      height: 42px;
+      color: white;
+      @include fluid-type(320px, 1920px, 14px, 16px);
+      margin-top: 5px;
+      font-weight: 600;
+      color: #f98906;
+      border: 2px solid rgb(189, 118, 26);
+
+      &:hover,
+      :active,
+      :focus,
+      :focus-within,
+      :focus-visible {
+        background: linear-gradient(to right, #f85101, #f98906);
+        color: white;
+        border: none;
+      }
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
     .navbarfull {
       @media (max-width: 1199px) {
         display: none;
       }
     }
+
     .responsiveSidebar {
       button {
         border-color: #014cec;
@@ -329,6 +319,7 @@ header {
       @media (min-width: 1199px) {
         display: none;
       }
+
       .sidebarHeader {
         margin-top: 60px;
 
@@ -337,33 +328,55 @@ header {
           display: block !important;
           width: 100%;
         }
-        
       }
     }
   }
 }
-.aboutTopSec{
-  background-image: url('../../Assets/Images/aboutTopLeft.svg');
+
+.aboutTopSec {
+  background-image: url("../../Assets/Images/aboutTopLeft.svg");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
-  padding:86px 0 40px;
-  .aboutTop{
+  padding: 86px 0 40px;
+  @media (max-width: 1299px) {
+    margin: 0 25px;
+  }
+  @media (max-width: 575px) {
+    margin: 0 15px;
+    padding: 40px 0 15px;
+  }
+
+  .aboutTop {
     max-width: 1196px;
     width: 100%;
     margin: auto;
     border-radius: 30px;
     overflow: hidden;
+    video {
+      border-right: 1px solid;
+    }
   }
-
 }
+
 .futureHumaity {
   position: relative;
+  @media (max-width: 991px) {
+    margin: 60px 0 0;
+    padding: 50px;
+  }
+  @media (max-width: 575px) {
+    padding: 10px;
+    margin: 20px 0 0;
+  }
+
   video {
     width: 100%;
     height: auto;
     display: block;
+    border-right: 1px solid;
   }
+
   .heading {
     position: absolute;
     top: 50%;
@@ -374,12 +387,24 @@ header {
     background: transparent;
     padding: 10px;
     border-radius: 8px;
+    @media (max-width: 1199px) {
+      width: 100%;
+      max-width: 1020px;
+      // min-height: 400px;
+    }
+    @media (max-width: 991px) {
+      top: 60%;
+    }
+    @media (max-width: 575px) {
+      min-height: unset;
+    }
   }
+
   h2 {
     background: linear-gradient(167deg, #c61705, #f1aa00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    @include fluid-type(320px, 1920px, 60px, 125px);
+    @include fluid-type(320px, 1920px, 40px, 122px);
     font-weight: 700;
     background-clip: text;
     line-height: 1;
@@ -388,25 +413,38 @@ header {
     text-transform: capitalize;
   }
 }
+
 .aboutUs {
-  padding: 80px 0;
+  padding: 80px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('../../Assets/Images/aboutRight.svg');
+  background-image: url("../../Assets/Images/aboutRight.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
+  @media (max-width: 991px) {
+    padding: 50px 25px;
+  }
+  @media (max-width: 575px) {
+    padding: 20px;
+  }
+
   h2,
   p {
     text-align: center;
+    @media (max-width:575px) {
+      text-align: justify;
+    }
   }
+
   h2 {
     color: #fff;
     @include fluid-type(320px, 1920px, 30px, 60px);
     font-weight: bold;
     padding-bottom: 20px;
   }
+
   p {
     color: #79799a;
     max-width: 1195px;
@@ -414,12 +452,17 @@ header {
     @include fluid-type(320px, 1920px, 14px, 20px);
     margin: auto;
   }
+
   img {
     max-width: 1242px;
     width: 100%;
     margin: auto;
   }
+  video {
+    border-right: 1px solid;
+  }
 }
+
 .globecontainer {
   perspective: 1000px;
   display: flex;
@@ -433,21 +476,14 @@ header {
   border-radius: 50%;
 }
 
-// @keyframes rotateGlobe {
-//   from {
-//     transform: rotateY(0deg);
-//   }
-//   to {
-//     transform: rotateY(360deg);
-//   }
-// }
-// }
 .mb24 {
   margin-bottom: 22px;
 }
+
 .connectwallet {
   .header {
     display: flex;
+
     h2 {
       display: block;
       width: 100%;
@@ -455,8 +491,10 @@ header {
       color: white;
     }
   }
+
   .content {
     margin-top: 20px;
+
     .card {
       width: 100%;
       display: flex;
@@ -469,12 +507,15 @@ header {
       border-radius: 8px;
       padding: 8px;
       cursor: pointer;
+
       .card:hover {
         background-color: #282b30;
       }
+
       img {
         border-radius: 40px;
       }
+
       p {
         margin-left: 10px;
         font-weight: 500;
@@ -484,11 +525,13 @@ header {
     }
   }
 }
-.webjoin{
-  @media (max-width:1199px) {
+
+.webjoin {
+  @media (max-width: 1199px) {
     display: none;
   }
 }
-.resjoin{
-  margin-top:20px;
+
+.resjoin {
+  margin-top: 20px;
 }
