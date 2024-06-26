@@ -1,0 +1,75 @@
+@import "../../Assets/Styles/_vars.scss";
+@import "../../Assets/Styles/_mixins.scss";
+
+.ecosystem {
+  background-color: #08080f;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .terms-content {
+    margin-top: 100px;
+    width: 50%;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #ffffff; /* White text */
+    font-size: 30px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text */
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text */
+  }
+  
+  ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  ol li {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  ol li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .legal {
+    font-size: 0.9rem;
+    color: #cccccc; /* Light grey text */
+    margin-top: 30px;
+  }
+  
+}

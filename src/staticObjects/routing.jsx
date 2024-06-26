@@ -7,6 +7,7 @@ export const publicRouteObj = {
   explorer:'explore',
   configure:'configure',
   pool:'pool',
+  term_Condition:'term&condition'
 };
 
 // Sidebar obj
@@ -56,7 +57,8 @@ export const primaryRoutes = {
   faq:'faq',
   ecosystem : 'ecosystem' , 
   migrate:'migrate',
-  explorer:'explore'
+  explorer:'explore',
+  term_Condition:'term&condition'
 };
 
 const {

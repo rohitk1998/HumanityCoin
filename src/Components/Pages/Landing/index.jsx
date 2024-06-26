@@ -37,8 +37,7 @@ const Main = () => {
                     To Make <span>the World a Better Place!</span>
                   </h2>
                   <p>
-                    Generating a Daily return on investment, and then seamlessly
-                    convert them into USDT
+                    Investing in human development, every day
                   </p>
                   <button
                     onClick={() => {
