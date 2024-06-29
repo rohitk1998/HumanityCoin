@@ -13,6 +13,7 @@
     padding-bottom: 40px;
     @media (max-width:991px) {
       flex-flow: wrap;
+      gap:20px;
     }
     .footerTopLeft {
       p {
@@ -77,6 +78,9 @@
     .footerBottomLeft {
       display: flex;
       gap: 40px;
+      @media (max-width:575px) {
+        gap:15px;
+      }
       .socialLink{
         cursor: pointer;
       }
