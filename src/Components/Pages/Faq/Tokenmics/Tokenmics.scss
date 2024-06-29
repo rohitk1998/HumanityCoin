@@ -211,6 +211,9 @@
     &_one {
       display: flex;
       gap: 60px;
+      @media (max-width:991px) {
+        gap: 40px;
+      }
       .dashedborder {
         position: relative;
         svg {

@@ -28,17 +28,19 @@ const Main = () => {
         <section>
           <div className={style.euroMultiCurrency}>
             <div className="container">
-              <Row className={style.euroMultiCurrency__Everything} gutter={[20,30]}>
+              <Row
+                className={style.euroMultiCurrency__Everything}
+                gutter={[20, 30]}
+              >
                 <Col
-                  lg={12} sm={24}
+                  lg={12}
+                  sm={24}
                   className={style.euroMultiCurrency__Everything__left}
                 >
                   <h2>
                     To Make <span>the World a Better Place!</span>
                   </h2>
-                  <p>
-                    Investing in human development, every day
-                  </p>
+                  <p>Investing in human development, every day</p>
                   <button
                     onClick={() => {
                       window.open(
@@ -51,10 +53,18 @@ const Main = () => {
                   </button>
                 </Col>
                 <Col
-                  lg={12}sm={24}
+                  lg={12}
+                  sm={24}
                   style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <video src={hero} muted autoPlay loop />
+                  <video
+                    src={hero}
+                    muted
+                    autoPlay
+                    loop
+                    playsInline
+                    controls={false}
+                  />
                 </Col>
               </Row>
             </div>
@@ -62,7 +72,14 @@ const Main = () => {
         </section>
         <section className={style.secondSec}>
           <div className={style.futureHumaity}>
-            <video src={video} muted autoPlay loop />
+            <video
+              src={video}
+              muted
+              autoPlay
+              loop
+              playsInline
+              controls={false}
+            />
             <div className={style.heading}>
               <h2>The future of humanity with Humanty Coin</h2>
             </div>
@@ -70,7 +87,14 @@ const Main = () => {
         </section>
         <section className={style.aboutTopSec}>
           <div className={style.aboutTop}>
-            <video src={aboutTop} muted autoPlay loop />
+            <video
+              src={aboutTop}
+              muted
+              autoPlay
+              loop
+              playsInline
+              controls={false}
+            />
           </div>
         </section>
         <section id="aboutus">
@@ -85,7 +109,14 @@ const Main = () => {
               dedicated to using technology and science to positively transform
               the world and make it better, more pleasant to live in…
             </p>
-            <video src={aboutbg} muted autoPlay loop />
+            <video
+              src={aboutbg}
+              muted
+              autoPlay
+              loop
+              playsInline
+              controls={false}
+            />
           </div>
         </section>
         <section id="tokenmics">
@@ -110,6 +141,8 @@ const Main = () => {
               muted
               autoPlay
               loop
+              playsInline
+              controls={false}
             />
           </div>
         </section>
