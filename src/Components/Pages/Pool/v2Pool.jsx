@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
-import './LiquidyProvider.scss';
+import './V2Pool.scss';
 import { Link } from 'react-router-dom';
 import { LiquidityForm } from "./LiquidityForm.jsx"
 import { GetPair } from './GetPair.jsx';
+import { CreatePair } from './createPair.jsx';
 
-function LiquidyProvider() {
+
+const formState = [0,1,2]
+
+function V2Pool() {
+
   const [isFormActive, setIsFormActive] = useState(false);
-  const [selectedForm,setSelectedForm] = useState(1);
+  const [selectedForm,setSelectedForm] = useState(formState[0]);
 
   const items = [
     {
@@ -32,39 +37,31 @@ function LiquidyProvider() {
         </div>
         <div className="createPairSec">
           <div className="left">
-            {/* <h3>Your V2 liquidity</h3> */}
-            {/* <Dropdown
-            className="positionDrop"
-            menu={{
-              items,
-            }}
-            trigger={["click"]}
-          >
-            <a onClick={(e) => e.preventDefault()}>
-              <Space>
-                v3
-                <DownOutlined />
-              </Space>
-            </a>
-          </Dropdown> */}
           </div>
           <div className="right">
+          <Button className={selectedForm === 0 ? "createPairBtn active" : "createPairBtn"}
+            
+            onClick={() => {
+              if (selectedForm === 1 || selectedForm === 2 ) {
+                setSelectedForm(formState[0]);
+              }
+            }}
+            >Create Pair</Button>
             <Button className={selectedForm === 1 ? "transBtn active" : "transBtn"}
             
             onClick={() => {
-              if (selectedForm === 2 ) {
-                setSelectedForm(1);
+              console.log('selectedForm',selectedForm);
+              if (selectedForm === 0 || selectedForm === 2  ) {
+                setSelectedForm(formState[1]);
               }
             }}
-
-
             >Get Pair</Button>
           {/* <Button className="menuBtn">Import pool</Button> */}
             <Button
               className={selectedForm === 2 ? "menuBtn active" : "menuBtn"}
               onClick={() => {
-                if (selectedForm === 1 ) {
-                  setSelectedForm(2);
+                if (selectedForm === 1 || selectedForm === 0 ) {
+                  setSelectedForm(formState[2]);
                 }
               }}
             >
@@ -72,14 +69,10 @@ function LiquidyProvider() {
             </Button>
           </div>
         </div>
-        {/* <div className="connectYourLiq">
-          Connect to a wallet to view your liquidity.
-        </div> */}
-        {selectedForm === 2  ? <LiquidityForm /> : <GetPair/>}
-        {/* <LiquidityForm />  */}
+        {selectedForm === 2  ? <LiquidityForm /> : selectedForm === 1 ? <GetPair/> : <CreatePair/>}
       </div>
     </div>
   );
 }
 
-export default LiquidyProvider;
+export default V2Pool;

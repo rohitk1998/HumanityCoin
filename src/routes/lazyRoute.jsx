@@ -20,7 +20,7 @@ export const Pool = lazy(() =>
   import('../Components/Pages/Pool/pool.jsx')
 );
 export const V2Pool = lazy(() =>
-  import('../Components/Pages/Pool/liquidityProvider.jsx')
+  import('../Components/Pages/Pool/v2Pool.jsx')
 );
 export const AddLiquidity = lazy(() =>
   import('../Components/Pages/AddLiquidity/addLiquidity.jsx')

@@ -6,7 +6,7 @@ import { useWeb3Modal } from '@web3modal/wagmi/react';
 import { useConnectMetamask } from '../../../customHooks/useConnectMetamask.js';
 import { useSelector } from 'react-redux';
 
-export const GetPair = () => {
+export const CreatePair = () => {
   const { isConnected } = useSelector((state) => state.app);
   const { open } = useWeb3Modal();
   const { factoryContractInstance } = useConnectMetamask();
@@ -19,22 +19,24 @@ export const GetPair = () => {
   const [isError, setIsError] = useState('');
   const [txnHash, setHash] = useState(false);
 
-  const handleGetPair = async () => {
-    console.log('get a pair  ', factoryContractInstance);
+  const createPair = async () => {
+    console.log('create a pair', factoryContractInstance);
     try {
-      const result = await factoryContractInstance.getPair(
+      const result = await factoryContractInstance.createPair(
         tokenAddress1,
         tokenAddress2
       );
       console.log('result', result);
-      if (result === '0x0000000000000000000000000000000000000000') {
-        setIsError('Pair not created');
-      } else {
-        setSuccess(true);
-        setHash(result);
-      }
+      setSuccess(true);
+      setHash(result.hash);
     } catch (error) {
-      console.error('ERROR WHILE ADDING LIQUIDITY:', error);
+      console.log('ERROR WHILE ADDING LIQUIDITY:', error.toString().split(' '));
+      const errorArr = error.toString().split(' ');
+      console.log('errorArr', errorArr);
+      if (errorArr.includes('PAIR_EXISTS",')) {
+        console.log('yes');
+        setIsError('Pair already exists');
+      }
     }
   };
 
@@ -45,7 +47,7 @@ export const GetPair = () => {
     } else {
       setValidationError('');
       setIsFormValid(true);
-      handleGetPair();
+      createPair();
     }
   };
 
@@ -78,7 +80,7 @@ export const GetPair = () => {
         <div className="containerAdLiq">
           <div className="createNewPool">
             <div>
-              <h3>Get Pair</h3>
+              <h3>Create Pair</h3>
               <p>Get token pairs from your bucket list.</p>
             </div>
           </div>
@@ -95,12 +97,14 @@ export const GetPair = () => {
               <p style={{ color: 'red' }}>{isError}</p>
             </div>
           ) : isSuccess ? (
-            <div className="infoBoxSuccess">
-              <p>
-                Successfully found your pair address !!
-              </p>
-              <p>{txnHash}</p>
-            </div>
+            <>
+              <div className="infoBoxSuccess">
+                <p>
+                  Successfully initiated transaction
+                </p>
+                <p>{txnHash}</p>
+              </div>
+            </>
           ) : (
             <>
               <div className="addressDiv">
