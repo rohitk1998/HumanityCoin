@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
-import './LiquidyProvider.scss';
+import './V2Pool.scss';
 import Select from 'react-select';
 import btc from '../../Assets/Images/btc.svg';
 import { WalletIcon } from '../../Assets/Svg/Svg.jsx';
@@ -9,6 +9,7 @@ import { useWeb3Modal } from '@web3modal/wagmi/react';
 import { useConnectMetamask } from '../../../customHooks/useConnectMetamask.js';
 import { useSelector } from 'react-redux';
 import { addZeroToDecimalinput, regex } from '../../../helpers/regex.js';
+// import { useTrasactionResult } from '../../../customHooks/useTransactionResult.js';
 
 export const LiquidityForm = () => {
   const [selectedOption1, setSelectedOption1] = useState(null);
@@ -17,6 +18,7 @@ export const LiquidityForm = () => {
   const { open } = useWeb3Modal();
   const { tokenAContractInstance, routerInstance, tokenBContractInstance } =
     useConnectMetamask();
+  // const { isCompleted, setIsCompleted, setTxnHash } = useTrasactionResult();
 
   const [amountTokenA, setAmountTokenA] = useState('');
   const [amountTokenB, setAmountTokenB] = useState('');
@@ -89,13 +91,17 @@ export const LiquidityForm = () => {
             amountAMin,
             amountBMin,
             to,
-            deadline,
+            deadline, 
             { gasLimit: '2000000' }
           );
           console.log('Transaction hash:', tx.hash);
           if (tx.hash) {
             setSuccess(true);
+            // setTxnHash(tx.hash);
           }
+          // if (isCompleted) {
+          //   console.log('success or failure :', isCompleted, tx.hash);
+          // }
         }
       } else {
         console.log('Failed To Approve Txn');
@@ -150,7 +156,7 @@ export const LiquidityForm = () => {
   return (
     <div className="AddLeqSec">
       <div className="addLiq">
-      <div className="containerAdLiq">
+        <div className="containerAdLiq">
           <div className="createNewPool">
             {/* <img src={backicon} alt="imgs" /> */}
             <div>
