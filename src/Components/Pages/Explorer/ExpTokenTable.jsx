@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Table } from "antd";
 import "./Explore.scss";
-import fetch from "node-fetch"; // Import node-fetch
 
 const tokenImagesArray = [
   {
